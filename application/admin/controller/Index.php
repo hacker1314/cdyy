@@ -1,6 +1,5 @@
 <?php
-
-namespace app\index\controller;
+namespace app\admin\controller;
 
 use think\Controller;
 use think\Db;
@@ -18,12 +17,13 @@ use think\Session;
  *
  * @author 陈
  */
-class Admin extends Controller {
+class index extends Controller {
 
     //主页
     public function index() {
         if (!Session::has('id'))
-            $this->error('对不起，请登录后再试!', 'login');
+            return $this->redirect('login');
+        $this->assign('name',Session::get('name'));
         return $this->fetch();
     }
 
@@ -42,7 +42,7 @@ class Admin extends Controller {
     }
 
     //登录检查
-    public function logincheck($username = "", $userpwd = "", $code="") {
+    public function logincheck($username = "", $userpwd = "", $code = "") {
         if (!Session::has('id')) {
             $captcha = new \think\captcha\Captcha();
             if (!$captcha->check($code)) {
@@ -54,7 +54,8 @@ class Admin extends Controller {
                         if ($user->password == $userpwd) {
                             Session::set('name', $username);
                             Session::set('id', $user->id);
-                            $this->success('登录成功!', 'index');
+                            return $this->redirect('index');
+                            //$this->success('登录成功!', 'index');
                         } else {
                             $this->error('密码错误!', 'login');
                         }
