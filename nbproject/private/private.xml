@@ -5,7 +5,8 @@
         <group>
             <file>file:/D:/wamp64/www/tp/application/admin/controller/Index.php</file>
             <file>file:/D:/wamp64/www/tp/application/admin/view/index/index.html</file>
-            <file>file:/D:/wamp64/www/tp/application/admin/view/index/header.html</file>
+            <file>file:/D:/wamp64/www/tp/application/admin/controller/Userinfo.php</file>
+            <file>file:/D:/wamp64/www/tp/application/admin/view/Userinfo/index.html</file>
         </group>
     </open-files>
 </project-private>
