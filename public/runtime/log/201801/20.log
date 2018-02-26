@@ -1,0 +1,28 @@
+---------------------------------------------------------------
+[ 2018-01-20T19:38:12+08:00 ] 127.0.0.1 GET /1
+[ info ] www.tp5.com/1 [运行时间：0.039491s][吞吐率：25.32req/s] [内存消耗：2,411.80kb] [文件加载：38]
+[ info ] [ LANG ] D:\wamp64\www\tp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '1',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.tp5.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Maxthon/5.0 Chrome/55.0.2883.75 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'dnt' => '1',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN',
+  'cookie' => 'UM_distinctid=16113278d194e-00bd491b3486ea-2569791b-1fa400-16113278d1a7cb; CNZZDATA1256793290=1679023239-1516439682-%7C1516439682; pgv_pvi=1248515072; pgv_si=s7725725696',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
