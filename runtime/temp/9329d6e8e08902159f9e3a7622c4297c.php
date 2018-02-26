@@ -1,11 +1,11 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:66:"D:\wamp64\www\tp\public/../application/admin\view\index\index.html";i:1519543441;s:57:"D:\wamp64\www\tp\application\admin\view\index\header.html";i:1519442038;s:57:"D:\wamp64\www\tp\application\admin\view\index\footer.html";i:1519441589;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:66:"D:\wamp64\www\tp\public/../application/admin\view\index\index.html";i:1519543441;s:57:"D:\wamp64\www\tp\application\admin\view\index\header.html";i:1519551429;s:57:"D:\wamp64\www\tp\application\admin\view\index\footer.html";i:1519441589;}*/ ?>
 <!DOCTYPE html>
 <html>
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
         <title>宁德师范学院-场地预约系统-后台管理系统</title>
-        <link rel="stylesheet" href="/static/layui/css/layui.css">
+        <link rel="stylesheet" href="/static/layui/css/layui.css"  media="all">
     </head>
     <body class="layui-layout-body">
         <div class="layui-layout layui-layout-admin">

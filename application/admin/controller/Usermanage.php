@@ -20,7 +20,7 @@ use think\Session;
  */
 class Usermanage extends Controller {
     //put your code here
-    public function index($id) {
+    public function index($id="") {
         if (!Session::has('id'))
             return $this->redirect('Index/login');
         $this->assign('name',Session::get('name'));
@@ -35,9 +35,11 @@ class Usermanage extends Controller {
     }
     
     public function userlist($id=1,$page=1,$limit=10) {
+        if (!Session::has('id'))
+            return $this->redirect('Index/login');
         $utpe= Usertype::getById($id);
         //分页查询
-        $user = User::where('usertype','=',$id)->limit(($page-1)*$limit,$page*$limit)->select();
+        $user = User::where('usertype','=',$id)->field(['id','name','phonenumber','registertime'])->limit(($page-1)*$limit,$page*$limit)->select();
         //common文件设置json转换方法
         $rs1=json(0,'数据返回成功',$utpe->count,$user);
         dump($rs1);
