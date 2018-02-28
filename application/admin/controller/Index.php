@@ -79,6 +79,8 @@ class index extends Controller {
                         if ($user->password == md5($userpwd)) {
                             Session::set('name', $username);
                             Session::set('id', $user->id);
+                            $user->lastlogintime=date("Y-m-d H:i:s",time());
+                            $user->save();
                             return $this->redirect('index');
                             //$this->success('登录成功!', 'index');
                         } else {

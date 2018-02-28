@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:69:"D:\wamp64\www\tp\public/../application/admin\view\userinfo\index.html";i:1519551585;s:57:"D:\wamp64\www\tp\application\admin\view\index\header.html";i:1519551429;s:57:"D:\wamp64\www\tp\application\admin\view\index\footer.html";i:1519441589;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:69:"D:\wamp64\www\tp\public/../application/admin\view\userinfo\index.html";i:1519645475;s:57:"D:\wamp64\www\tp\application\admin\view\index\header.html";i:1519551429;s:57:"D:\wamp64\www\tp\application\admin\view\index\footer.html";i:1519441589;}*/ ?>
 <!DOCTYPE html>
 <html>
     <head>
@@ -72,6 +72,11 @@
 
 <div class="layui-body" style="padding-left: 20px;padding-top: 20px;padding-right: 20px;padding-bottom: 20px;">
     <!-- 内容主体区域 -->
+    <span class="layui-breadcrumb">
+        <a href="/">首页</a>
+        <a><cite>安全设置</cite></a>
+        <hr>
+    </span>
     <div class="layui-collapse">
         <div class="layui-colla-item">
             <h2 class="layui-colla-title"><i class='layui-icon'>&#xe631;</i>安全设置</h2>
