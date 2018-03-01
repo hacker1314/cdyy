@@ -66,15 +66,18 @@
         <a><cite>{$typename}</cite></a>
         <hr>
     </span>
-    <div class="findname">
+    <div class="tableh">
         搜索用户名：
         <div class="layui-inline">
             <input class="layui-input" name="name" id="nametext" autocomplete="off">
         </div>
-        <button class="layui-btn" data-type="reload">搜索</button>
+        <button class="layui-btn" data-type="find"><i class="layui-icon">&#xe615;</i>搜索</button>
+        <div class="layui-btn-group layui-layout-right"  style="margin-top: 60px;margin-right: 30px;">
+            <button class="layui-btn" data-type="add"><i class="layui-icon">&#xe608;</i>增加</button>
+            <button class="layui-btn" data-type="checku"><i class="layui-icon">&#xe6b2;</i>审查用户</button>
+        </div>
     </div>
     <table class="layui-hide" id="usermanage" lay-filter="usertable"></table>
-
 </div>
 <script src="/static/layui/layui.js"></script>
 
@@ -82,161 +85,206 @@
     <a class="layui-btn layui-btn-xs" lay-event="check">审核</a>
     <a class="layui-btn layui-btn-xs" lay-event="reset">重置密码</a>
     <a class="layui-btn layui-btn-danger layui-btn-xs" lay-event="del">删除</a>
-    <!-- 这里同样支持 laytpl 语法，如： -->
-    {{#  if(d.auth > 2){ }}
-    <a class="layui-btn layui-btn-xs" lay-event="ch22eck">解禁</a>
-    {{#  } }}
 </script>
 
 <script>
 //JavaScript代码区域
-layui.use(['layer', 'element', 'table'], function () {
-    var table = layui.table;
-    var $ = layui.$ //重点处
-            , layer = layui.layer;
-    table.render({
-        elem: '#usermanage'
-        , url: '/admin/usermanage/userlist'
-        , where: {id: {$uid}}
-        , cols: [[
-                {field: 'id', width: 80, title: 'ID', sort: true}
-                , {field: 'name', title: '用户名'}
-                , {field: 'mail', title: '邮箱'}
-                , {field: 'phonenumber', title: '手机'}
-                , {field: 'registertime', title: '注册时间'}
-                , {field: 'lastlogintime', title: '最后一次登录时间'}
-                , {field: 'status', width: 100, title: '用户状态', sort: true}
-                , {fixed: 'right', width: 200, align: 'center', toolbar: '#barDemo'} //这里的toolbar值是模板元素的选择器
-            ]]
-        , height: 'full-260'
-        , page: true
-        , done: function (res, page, count) {
-            //如果是异步请求数据方式，res即为你接口返回的信息。
-            //如果是直接赋值的方式，res即为：{data: [], count: 99} data为当前页数据、count为数据总长度
-            console.log(res);
+    layui.use(['layer', 'element', 'table'], function () {
+        var table = layui.table;
+        var $ = layui.$ //重点处
+                , layer = layui.layer;
+        table.render({
+            elem: '#usermanage'
+            , url: '/admin/usermanage/userlist'
+            , where: {id: {$uid}}
+            , cols: [[
+                    {field: 'id', width: 80, minWidth: 80, title: 'ID', sort: true}
+                    , {field: 'name', minWidth: 120, title: '用户名'}
+                    , {field: 'mail', minWidth: 170, title: '邮箱'}
+                    , {field: 'phonenumber', minWidth: 130, title: '手机'}
+                    , {field: 'registertime', minWidth: 170, title: '注册时间'}
+                    , {field: 'lastlogintime', minWidth: 170, title: '最后一次登录时间'}
+                    , {field: 'status', minWidth: 100, title: '用户状态', sort: true}
+                    , {fixed: 'right', minWidth: 200, align: 'center', toolbar: '#barDemo'} //这里的toolbar值是模板元素的选择器
+                ]]
+            , height: 'full-260'
+            , page: true
+            , done: function (res, page, count) {
+                //如果是异步请求数据方式，res即为你接口返回的信息。
+                //如果是直接赋值的方式，res即为：{data: [], count: 99} data为当前页数据、count为数据总长度
+                console.log(res);
 
-            //得到当前页码
-            console.log(page);
+                //得到当前页码
+                console.log(page);
 
-            //得到数据总量
-            console.log(count);
-        }
-        , text: {
-            none: '暂无相关数据' //默认：无数据。注：该属性为 layui 2.2.5 开始新增
-        }
-    });
-    //监听工具条    
-    table.on('tool(usertable)', function (obj) { //注：tool是工具条事件名，test是table原始容器的属性 lay-filter="对应的值"
-        var data = obj.data; //获得当前行数据
-        var layEvent = obj.event; //获得 lay-event 对应的值（也可以是表头的 event 参数对应的值）
-        var tr = obj.tr; //获得当前行 tr 的DOM对象
+                //得到数据总量
+                console.log(count);
+            }
+            , text: {
+                none: '暂无相关数据' //默认：无数据。注：该属性为 layui 2.2.5 开始新增
+            }
+            , id: 'usertable',
+        });
+        //监听工具条    
+        table.on('tool(usertable)', function (obj) { //注：tool是工具条事件名，test是table原始容器的属性 lay-filter="对应的值"
+            var data = obj.data; //获得当前行数据
+            var layEvent = obj.event; //获得 lay-event 对应的值（也可以是表头的 event 参数对应的值）
+            var tr = obj.tr; //获得当前行 tr 的DOM对象
 
-        if (layEvent === 'check') { //查看
-            layer.open({
-                type: 1,
-                title: '审核',
-                content: '' //这里content是一个普通的String
-                , btn: ['通过', '不通过', '限制3周']
-                , yes: function (index, layero) {
-                    //按钮【按钮一】的回调
-                    if (obj.data.status != '正常') {
-                        $.post("{:url('admin/Usermanage/check')}",
-                                {
-                                    id: obj.data.id,
-                                    st: '正常',
-                                },
-                                function (data, status) {
-                                    layer.msg("结果: \n" + data + "\n状态: " + status,{icon: 1});
-                                });
-                        obj.update({
-                            status: '正常'
-                        });
-                    } else
-                        layer.msg("该用户已为正常用户！",{icon: 1});
-                    layer.close(index);
-
-                }
-                , btn2: function (index, layero) {
-                    //按钮【按钮二】的回调
-                    if (obj.data.status == '需审核') {
-                        $.post("{:url('admin/Usermanage/check')}",
-                                {
-                                    id: obj.data.id,
-                                    st: '不通过',
-                                },
-                                function (data, status) {
-                                    layer.msg("结果: \n" + data + "\n状态: " + status,{icon: 1});
-                                });
-                        obj.update({
-                            status: '不通过'
-                        });
-                    } else
-                        layer.msg("该用户审核过，无需审核！",{icon: 5});
-                    layer.close(index);
-                    //return false 开启该代码可禁止点击该按钮关闭
-                }
-                , btn3: function (index, layero) {
-                    //按钮【按钮三】的回调
-                    if (obj.data.status != '需审核') {
-                        $.post("{:url('admin/Usermanage/check')}",
-                                {
-                                    id: obj.data.id,
-                                    st: '限制3周',
-                                },
-                                function (data, status) {
-                                    layer.msg("结果: \n" + data + "\n状态: " + status,{icon: 1});
-                                });
-                        obj.update({
-                            status: '限制3周'
-                        });
-                    } else
-                        layer.msg("该用户为新注册用户，需审核后才能限制！",{icon: 5});
-                    layer.close(index);
-                    //return false 开启该代码可禁止点击该按钮关闭
-                }
-                , cancel: function () {
-                    //右上角关闭回调
-
-                    //return false 开启该代码可禁止点击该按钮关闭
-                }
-            });
-            //do somehing
-        } else if (layEvent === 'del') { //删除
-            layer.confirm('真的删除该用户嘛？', function (index) {
-                if (obj.data.id != 1) {
-                    obj.del(); //删除对应行（tr）的DOM结构，并更新缓存
-                    $.post("{:url('admin/Usermanage/del')}",
-                            {
-                                id: obj.data.id,
-                            },
-                            function (data, status) {
-                                layer.msg("结果: \n" + data + "\n状态: " + status,{icon: 1});
+            if (layEvent === 'check') { //查看
+                layer.open({
+                    type: 1,
+                    title: '审核',
+                    content: '' //这里content是一个普通的String
+                    , btn: ['通过', '不通过', '限制3周']
+                    , yes: function (index, layero) {
+                        //按钮【按钮一】的回调
+                        if (obj.data.status != '正常') {
+                            $.post("{:url('admin/Usermanage/check')}",
+                                    {
+                                        id: obj.data.id,
+                                        st: '正常',
+                                    },
+                                    function (data, status) {
+                                        layer.msg("结果: \n" + data, {icon: 1});
+                                    });
+                            obj.update({
+                                status: '正常'
                             });
-                    //向服务端发送删除指令
-                } else
-                    layer.msg("默认系统管理员用户禁止删除！",{icon: 2});
-                layer.close(index);
+                        } else
+                            layer.msg("该用户已为正常用户！", {icon: 1});
+                        layer.close(index);
 
-            });
-        } else if (layEvent === 'reset') { //重置
-            //do something
-            layer.confirm('确定重置密码嘛？', function (index) {
-                if (obj.data.id != 1) {
-                    $.post("{:url('admin/Usermanage/resetpwd')}",
-                            {
-                                id: obj.data.id,
-                            },
-                            function (data, status) {
-                                layer.msg("结果: \n" + data + "\n<br>状态: " + status,{icon: 1});
+                    }
+                    , btn2: function (index, layero) {
+                        //按钮【按钮二】的回调
+                        if (obj.data.status == '需审核') {
+                            $.post("{:url('admin/Usermanage/check')}",
+                                    {
+                                        id: obj.data.id,
+                                        st: '不通过',
+                                    },
+                                    function (data, status) {
+                                        layer.msg("结果: \n" + data, {icon: 1});
+                                    });
+                            obj.update({
+                                status: '不通过'
                             });
-                    //向服务端发送重置指令
-                } else
-                    layer.msg("默认系统管理员用户不支持重置密码！",{icon: 2});
-                layer.close(index);
+                        } else
+                            layer.msg("该用户审核过，无需审核！", {icon: 5});
+                        layer.close(index);
+                        //return false 开启该代码可禁止点击该按钮关闭
+                    }
+                    , btn3: function (index, layero) {
+                        //按钮【按钮三】的回调
+                        if (obj.data.status != '需审核') {
+                            if (obj.data.id == 1)
+                                layer.msg("系统默认管理员无法限制！", {icon: 5});
+                            else {
+                                if (obj.data.status != '限制3周') {
+                                    $.post("{:url('admin/Usermanage/check')}",
+                                            {
+                                                id: obj.data.id,
+                                                st: '限制3周',
+                                            },
+                                            function (data, status) {
+                                                layer.msg("结果: \n" + data, {icon: 1});
+                                            });
+                                    obj.update({
+                                        status: '限制3周'
+                                    });
+                                } else
+                                    layer.msg("该用户已经被限制3周！");
+                            }
+                        } else
+                            layer.msg("该用户为新注册用户，需审核后才能限制！", {icon: 5});
+                        layer.close(index);
+                        //return false 开启该代码可禁止点击该按钮关闭
+                    }
+                    , cancel: function () {
+                        //右上角关闭回调
 
-            });
-        }
+                        //return false 开启该代码可禁止点击该按钮关闭
+                    }
+                });
+                //do somehing
+            } else if (layEvent === 'del') { //删除
+                layer.confirm('真的删除该用户嘛？', function (index) {
+                    if (obj.data.id != 1) {
+                        obj.del(); //删除对应行（tr）的DOM结构，并更新缓存
+                        $.post("{:url('admin/Usermanage/del')}",
+                                {
+                                    id: obj.data.id,
+                                },
+                                function (data, status) {
+                                    layer.msg("结果: \n" + data, {icon: 1});
+                                });
+                        //向服务端发送删除指令
+                    } else
+                        layer.msg("默认系统管理员用户禁止删除！", {icon: 2});
+                    layer.close(index);
+
+                });
+            } else if (layEvent === 'reset') { //重置
+                //do something
+                layer.confirm('确定重置密码嘛？', function (index) {
+                    if (obj.data.id != 1) {
+                        $.post("{:url('admin/Usermanage/resetpwd')}",
+                                {
+                                    id: obj.data.id,
+                                },
+                                function (data, status) {
+                                    layer.msg("结果: \n" + data, {icon: 1});
+                                });
+                        //向服务端发送重置指令
+                    } else
+                        layer.msg("默认系统管理员用户不支持重置密码！", {icon: 2});
+                    layer.close(index);
+
+                });
+            }
+        });
+
+        var $ = layui.$, active = {
+            find: function () {
+                var nametext = $('#nametext');
+                //执行重载
+                table.reload('usertable', {
+                    url: '/admin/usermanage/finduser'
+                    , page: {
+                        curr: 1 //重新从第 1 页开始
+                    }
+                    , where: {
+                        id: {$uid},
+                        name: nametext.val()
+                    }
+                });
+            }
+            , add: function () {
+                layer.open({
+                    type: 2
+                    ,title:'添加用户'
+                    ,content: "/admin/usermanage/addu?id={$uid}" //这里content是一个普通的String
+                    ,area: ['520px', '450px']
+                });
+            }
+            ,checku:function(){
+                table.reload('usertable', {
+                    url: '/admin/usermanage/unchecklist'
+                    , page: {
+                        curr: 1 //重新从第 1 页开始
+                    }
+                    , where: {
+                        id: {$uid},
+                        check: '未审查'
+                    }
+                });
+            }
+        };
+        $('.tableh .layui-btn').on('click', function () {
+            var type = $(this).data('type');
+            active[type] ? active[type].call(this) : '';
+        });
     });
-});
 </script>
 {include file="index/footer" /}

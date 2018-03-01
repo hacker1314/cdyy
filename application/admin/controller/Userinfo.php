@@ -20,6 +20,7 @@ use think\Session;
  */
 class Userinfo extends Controller {
     //put your code here
+    //后台管理员安全设置
      public function index() {
         if (!Session::has('id'))
             return $this->redirect('Index/login');
@@ -31,6 +32,7 @@ class Userinfo extends Controller {
         return $this->fetch();
     }
     
+    //后台管理安全设置处理模块
     public function changepwd($oldpwd="",$newpwd1="",$newpwd2="") {
         if (!Session::has('id'))
             return $this->redirect('Index/login');

@@ -27,7 +27,7 @@ class index extends Controller {
         }
         print_r($count1);
     }
-    //主页
+    //主页网站信息
     public function index() {
         if (!Session::has('id'))
            return $this->redirect('login');
