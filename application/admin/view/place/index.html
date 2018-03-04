@@ -1,0 +1,84 @@
+{include file="index/header" title="宁德师范学院-场地预约系统-后台管理系统" /}
+<!-- 头部区域（可配合layui已有的水平导航） -->
+<ul class="layui-nav layui-layout-left">
+    <li class="layui-nav-item"><a href="{:url('index/index/index')}">网站首页</a></li>
+    <li class="layui-nav-item"><a href="{:url('admin/index/index')}">网站信息</a></li>
+    <li class="layui-nav-item"><a href="">统计</a></li>
+    <!-- <li class="layui-nav-item">
+        <a href="javascript:;">其它系统</a>
+        <dl class="layui-nav-child">
+            <dd><a href="">邮件管理</a></dd>
+            <dd><a href="">消息管理</a></dd>
+            <dd><a href="">授权管理</a></dd>
+        </dl>
+    </li> -->
+</ul>
+<ul class="layui-nav layui-layout-right">
+    <li class="layui-nav-item">
+        <a href="javascript:;">
+            {$name}
+        </a>
+        <dl class="layui-nav-child">
+            <dd><a href="{:url('admin/Userinfo/index')}">安全设置</a></dd>
+        </dl>
+    </li>
+    <li class="layui-nav-item"><a href="{:url('admin/index/exitadmin')}">退出</a></li>
+</ul>
+</div>
+
+<div class="layui-side layui-bg-black">
+    <div class="layui-side-scroll">
+        <!-- 左侧导航区域（可配合layui已有的垂直导航） -->
+        <ul class="layui-nav layui-nav-tree"  lay-filter="test">
+            <li class="layui-nav-item layui-nav-itemed">
+                <a class="" href="javascript:;"><i class='layui-icon'>&#xe715;</i>体育活动场地</a>
+                <dl class="layui-nav-child">
+                    {volist name="list3" id="id"}
+                    <dd><a href="{:url('admin/place/index')}?id={$id.id}">{$id.name}</a></dd>
+                    {/volist}
+                </dl>
+            </li>
+            <li class="layui-nav-item">
+                <a class="" href="{:url('admin/buildings/index')}"><i class='layui-icon'>&#xe715;</i>学生活动场地</a>
+            </li>
+            <li class="layui-nav-item layui-nav-itemed">
+                <a href="javascript:;"><i class='layui-icon'>&#xe612;</i>用户管理</a>
+                <dl class="layui-nav-child">
+                    {volist name="list1" id="id"}
+                    <dd><a href="{:url('admin/Usermanage/index')}?id={$id.id}">{$id.name}</a></dd>
+                    {/volist}
+                </dl>
+            </li>
+            <li class="layui-nav-item layui-nav-itemed">
+                <a href="javascript:;"><i class='layui-icon'>&#xe7a0;</i>文章管理</a>
+                <dl class="layui-nav-child">
+                    {volist name="list2" id="id"}
+                    <dd><a href="javascript:;">{$id.name}</a></dd>
+                    {/volist}
+                </dl>
+            </li>
+            <li class="layui-nav-item"><a href=""><i class='layui-icon'>&#xe658;</i>预约信息管理</a></li>
+        </ul>
+    </div>
+</div>
+
+<div class="layui-body" style="padding-left: 20px;padding-top: 20px;padding-right: 20px;padding-bottom: 20px;">
+    <!-- 内容主体区域 -->
+    <span class="layui-breadcrumb">
+        <a href="/admin">首页</a>
+        <a href="">体育活动场地</a>
+        <a><cite>{$cd}</cite></a>
+        <hr>
+    </span>
+</div>
+<script src="/static/layui/layui.js"></script>
+<script>
+    //JavaScript代码区域
+    layui.use(['layer', 'element'], function () {
+        var element = layui.element;
+        var layer = layui.layer
+                , form = layui.form;
+
+    });
+</script>
+{include file="index/footer" /}

@@ -48,7 +48,6 @@ class index extends Controller {
             'hostsql' => $sqlver[0]['VERSION()'],
             'count1' =>$count1,
             ]);
-        
         return $this->fetch();
     }
 

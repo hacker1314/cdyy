@@ -21,3 +21,14 @@ function json($code,$msg="",$count,$data=array()){
   echo json_encode($result);
   exit;
 }
+
+function upjson($code,$msg="",$data=array()) {
+    $result=array(
+   'code'=>$code,
+   'msg'=>$msg,
+   'data'=>$data
+  );
+  //输出json
+  echo json_encode($result);
+  exit;
+}
