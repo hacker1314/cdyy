@@ -1,3 +1,4 @@
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:73:"D:\xampp\htdocs\cdyy\public/../application/admin\view\buildings\addb.html";i:1520215155;}*/ ?>
 <!DOCTYPE html>
 <html>
     <head>
@@ -7,7 +8,7 @@
         <link rel="stylesheet" href="/static/layui/css/layui.css"  media="all">
     </head>
     <body>
-        <form class="layui-form layui-form-pane" action="{:url('admin/buildings/addbu')}" style="margin-left: 20px;margin-right: 20px;margin-top: 20px;">
+        <form class="layui-form layui-form-pane" action="<?php echo url('admin/buildings/addbu'); ?>" style="margin-left: 20px;margin-right: 20px;margin-top: 20px;">
             <div class="layui-form-item">
                 <label class="layui-form-label">场地名：</label>
                 <div class="layui-input-block">

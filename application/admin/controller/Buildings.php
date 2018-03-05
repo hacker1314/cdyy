@@ -45,7 +45,7 @@ class Buildings extends Controller {
         $this->assign('uid', $id);
         $list3 = Gymtype::all();
         $this->assign('list3', $list3);
-        
+
         return $this->fetch();
     }
 
@@ -58,15 +58,33 @@ class Buildings extends Controller {
         $user = User::get(Session::get('id'));
         if ($user->usertype != 1)
             return $this->error('对不起您登录的用户不为管理员用户！');
-        $building = Building::field(['id', 'name', 'introduction', 'pictureurl','status'])->limit(($page - 1) * $limit, $page * $limit)->select();
-        $bcount= count(Building::all()) ;
+        $building = Building::field(['id', 'name', 'introduction', 'pictureurl', 'status'])->limit(($page - 1) * $limit, $page * $limit)->select();
+        $bcount = count(Building::all());
         //common文件设置json转换方法
         $rs1 = json(0, '数据返回成功', $bcount, $building);
         dump($rs1);
     }
-    
+
+    //场地列表搜索
+    public function buildingfind($id = 1, $page = 1, $limit = 10, $name = '') {
+        //判断是否登录
+        if (!Session::has('id'))
+            return $this->redirect('index/login');
+        //效验登录用户是否为后台管理员用户
+        $user = User::get(Session::get('id'));
+        if ($user->usertype != 1)
+            return $this->error('对不起您登录的用户不为管理员用户！');
+        if ($name == '')
+            return $this->redirect('buildings/buildinglist');
+        $building = Building::where('name', 'like', '%' . $name . '%')->field(['id', 'name', 'introduction', 'pictureurl', 'status'])->limit(($page - 1) * $limit, $page * $limit)->select();
+        $bcount = count(Building::where('name', 'like', '%' . $name . '%')->select());
+        //common文件设置json转换方法
+        $rs1 = json(0, '数据返回成功', $bcount, $building);
+        dump($rs1);
+    }
+
     //添加场地
-    public function addb(){
+    public function addb() {
         //判断是否登录
         if (!Session::has('id'))
             return $this->redirect('index/login');
@@ -76,4 +94,48 @@ class Buildings extends Controller {
             return $this->error('对不起您登录的用户不为管理员用户！');
         return $this->fetch();
     }
+
+    //添加场地处理
+    public function addbu($buildingname = "", $yuyue = '', $intro = '', $pic = '') {
+        //判断是否登录
+        if (!Session::has('id'))
+            return $this->redirect('index/login');
+        //效验登录用户是否为后台管理员用户
+        $user = User::get(Session::get('id'));
+        if ($user->usertype != 1)
+            return $this->error('对不起您登录的用户不为管理员用户！');
+        if ($buildingname == "")
+            return $this->error('用户名为空！');
+        if ($yuyue == "")
+            return $this->error('请选定该场地是否可预约！');
+        if ($pic == '')
+            return $this->error('图片地址为空！');
+        $add = new Building;
+        $add->name = $buildingname;
+        $add->introduction = $intro;
+        $add->status = $yuyue;
+        $add->pictureurl = $pic;
+        $add->save();
+        return $this->success('场地添加成功，请刷新页面查看！');
+    }
+
+    //编辑场地
+    public function editb($id = '') {
+        //判断是否登录
+        if (!Session::has('id'))
+            return $this->redirect('index/login');
+        //效验登录用户是否为后台管理员用户
+        $user = User::get(Session::get('id'));
+        if ($user->usertype != 1)
+            return $this->error('对不起您登录的用户不为管理员用户！');
+        $b = Buildings::get($id);
+        $this->assign([
+            'buildingname' => $b->name,
+            'intro' => $b->introduction,
+            'yuyue' => $b->status,
+            'pic' =>$b->pictureurl
+        ]);
+        return $this->fetch();
+    }
+
 }
