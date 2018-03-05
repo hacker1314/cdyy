@@ -28,8 +28,9 @@ class Index extends Controller{
         $info = $file->move(ROOT_PATH . 'public' . DS . 'static' . DS . 'image');
         if ($info) {
             $str=$info->getRealPath();
-            $i=strlen(ROOT_PATH)+5;
-            $str=substr($str,$i);
+//            $i=strlen(ROOT_PATH)+6;
+//            $str=substr($str,$i);
+            $str= str_replace(ROOT_PATH. 'public', '', $str);
             $str= str_replace('\\','/',$str);
             return upjson(0, '上传成功', array('src'=>$str));
         } else {

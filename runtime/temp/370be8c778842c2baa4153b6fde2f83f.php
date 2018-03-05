@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:71:"D:\wamp64\www\cdyy\public/../application/admin\view\buildings\addb.html";i:1520177598;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:71:"D:\wamp64\www\cdyy\public/../application/admin\view\buildings\addb.html";i:1520252838;}*/ ?>
 <!DOCTYPE html>
 <html>
     <head>
@@ -8,7 +8,7 @@
         <link rel="stylesheet" href="/static/layui/css/layui.css"  media="all">
     </head>
     <body>
-        <form class="layui-form layui-form-pane" action="<?php echo url('admin/usermanage/adduser'); ?>" style="margin-left: 20px;margin-right: 20px;margin-top: 20px;">
+        <form class="layui-form layui-form-pane" action="<?php echo url('admin/buildings/addbu'); ?>" style="margin-left: 20px;margin-right: 20px;margin-top: 20px;">
             <div class="layui-form-item">
                 <label class="layui-form-label">场地名：</label>
                 <div class="layui-input-block">
@@ -34,7 +34,7 @@
             <div class="layui-form-item">
                 <label class="layui-form-label">添加图片：</label>
                 <div class="layui-input-inline">
-                    <input type="text" name="pic" required  lay-verify="required|email" placeholder="图片地址" autocomplete="off" class="layui-input">
+                    <input type="text" name="pic" id="pic" required  lay-verify="required" placeholder="图片地址，地址请勿修改" autocomplete="off" class="layui-input">
                 </div>
                 <button type="button" class="layui-btn" id="update">
                     <i class="layui-icon">&#xe67c;</i>上传图片
@@ -58,7 +58,6 @@
                 });
                 //图片上传
                 var upload = layui.upload;
-
                 //执行实例
                 var uploadInst = upload.render({
                     elem: '#update' //绑定元素
@@ -66,10 +65,12 @@
                     , done: function (res) {
                         //上传完毕回调
                         layer.msg(res.data.src);
+                        console.log(res.data.src);
+                        document.getElementById("pic").value=res.data.src; // 查找元素 
                     }
                     , error: function () {
                         //请求异常回调
-                        
+
                     }
                     , accept: 'image'
                 });

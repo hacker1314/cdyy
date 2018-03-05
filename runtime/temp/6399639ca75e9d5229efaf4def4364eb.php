@@ -1,3 +1,4 @@
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:72:"D:\wamp64\www\cdyy\public/../application/admin\view\buildings\editb.html";i:1520256599;}*/ ?>
 <!DOCTYPE html>
 <html>
     <head>
@@ -7,17 +8,17 @@
         <link rel="stylesheet" href="/static/layui/css/layui.css"  media="all">
     </head>
     <body>
-        <form class="layui-form layui-form-pane" action="{:url('admin/buildings/editbu')}" style="margin-left: 20px;margin-right: 20px;margin-top: 20px;">
+        <form class="layui-form layui-form-pane" action="<?php echo url('admin/buildings/editbu'); ?>" style="margin-left: 20px;margin-right: 20px;margin-top: 20px;">
             <div class="layui-form-item layui-hide" >
                 <label class="layui-form-label">场地ID：</label>
                 <div class="layui-input-block">
-                    <input type="text" name="id" required  lay-verify="required" placeholder="请输入场地名" autocomplete="off" class="layui-input" value="{$id}">
+                    <input type="text" name="id" required  lay-verify="required" placeholder="请输入场地名" autocomplete="off" class="layui-input" value="<?php echo $id; ?>">
                 </div>
             </div>
             <div class="layui-form-item">
                 <label class="layui-form-label">场地名：</label>
                 <div class="layui-input-block">
-                    <input type="text" name="buildingname" required  lay-verify="required" placeholder="请输入场地名" autocomplete="off" class="layui-input" value="{$buildingname}">
+                    <input type="text" name="buildingname" required  lay-verify="required" placeholder="请输入场地名" autocomplete="off" class="layui-input" value="<?php echo $buildingname; ?>">
                 </div>
             </div>
             <div class="layui-form-item">
@@ -33,13 +34,13 @@
             <div class="layui-form-item layui-form-text">
                 <label class="layui-form-label">简介</label>
                 <div class="layui-input-block">
-                    <textarea name="intro" placeholder="请输入内容" class="layui-textarea">{$intro}</textarea>
+                    <textarea name="intro" placeholder="请输入内容" class="layui-textarea"><?php echo $intro; ?></textarea>
                 </div>
             </div>
             <div class="layui-form-item">
                 <label class="layui-form-label">添加图片：</label>
                 <div class="layui-input-inline">
-                    <input type="text" name="pic" id="pic" required  lay-verify="required" placeholder="图片地址，地址请勿修改" autocomplete="off" class="layui-input" value="{$pic}">
+                    <input type="text" name="pic" id="pic" required  lay-verify="required" placeholder="图片地址，地址请勿修改" autocomplete="off" class="layui-input" value="<?php echo $pic; ?>">
                 </div>
                 <button type="button" class="layui-btn" id="update">
                     <i class="layui-icon">&#xe67c;</i>上传图片

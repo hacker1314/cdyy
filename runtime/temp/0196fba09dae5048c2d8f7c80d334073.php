@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:72:"D:\wamp64\www\cdyy\public/../application/admin\view\buildings\index.html";i:1520157455;s:59:"D:\wamp64\www\cdyy\application\admin\view\index\header.html";i:1519551428;s:59:"D:\wamp64\www\cdyy\application\admin\view\index\footer.html";i:1519441588;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:72:"D:\wamp64\www\cdyy\public/../application/admin\view\buildings\index.html";i:1520256710;s:59:"D:\wamp64\www\cdyy\application\admin\view\index\header.html";i:1519551428;s:59:"D:\wamp64\www\cdyy\application\admin\view\index\footer.html";i:1519441588;}*/ ?>
 <!DOCTYPE html>
 <html>
     <head>
@@ -88,8 +88,8 @@
 </div>
 <script src="/static/layui/layui.js"></script>
 <script type="text/html" id="barDemo">
-    <a class="layui-btn layui-btn-xs" lay-event="check">预约情况</a>
-    <a class="layui-btn layui-btn-xs" lay-event="reset">编辑</a>
+    <a class="layui-btn layui-btn-xs" lay-event="yy">预约情况</a>
+    <a class="layui-btn layui-btn-xs" lay-event="edit">编辑</a>
     <a class="layui-btn layui-btn-danger layui-btn-xs" lay-event="del">删除</a>
 </script>
 <script type="text/html" id="picTpl">
@@ -137,92 +137,18 @@
     , id: 'usertable',
     });
     //监听工具条    
-    table.on('tool(usertable)', function (obj) { //注：tool是工具条事件名，test是table原始容器的属性 lay-filter="对应的值"
+    table.on('tool(buildingtable)', function (obj) { //注：tool是工具条事件名，test是table原始容器的属性 lay-filter="对应的值"
     var data = obj.data; //获得当前行数据
     var layEvent = obj.event; //获得 lay-event 对应的值（也可以是表头的 event 参数对应的值）
     var tr = obj.tr; //获得当前行 tr 的DOM对象
 
-    if (layEvent === 'check') { //查看
-    layer.open({
-    type: 1,
-            title: '审核',
-            content: '' //这里content是一个普通的String
-            , btn: ['通过', '不通过', '限制3周']
-            , yes: function (index, layero) {
-            //按钮【按钮一】的回调
-            if (obj.data.status != '正常') {
-            $.post("<?php echo url('admin/Usermanage/check'); ?>",
-            {
-            id: obj.data.id,
-                    st: '正常',
-            },
-                    function (data, status) {
-                    layer.msg("结果: \n" + data, {icon: 1});
-                    });
-            obj.update({
-            status: '正常'
-            });
-            } else
-                    layer.msg("该用户已为正常用户！", {icon: 1});
-            layer.close(index);
-            }
-    , btn2: function (index, layero) {
-    //按钮【按钮二】的回调
-    if (obj.data.status == '需审核') {
-    $.post("<?php echo url('admin/Usermanage/check'); ?>",
-    {
-    id: obj.data.id,
-            st: '不通过',
-    },
-            function (data, status) {
-            layer.msg("结果: \n" + data, {icon: 1});
-            });
-    obj.update({
-    status: '不通过'
-    });
-    } else
-            layer.msg("该用户审核过，无需审核！", {icon: 5});
-    layer.close(index);
-    //return false 开启该代码可禁止点击该按钮关闭
-    }
-    , btn3: function (index, layero) {
-    //按钮【按钮三】的回调
-    if (obj.data.status != '需审核') {
-    if (obj.data.id == 1)
-            layer.msg("系统默认管理员无法限制！", {icon: 5});
-    else {
-    if (obj.data.status != '限制3周') {
-    $.post("<?php echo url('admin/Usermanage/check'); ?>",
-    {
-    id: obj.data.id,
-            st: '限制3周',
-    },
-            function (data, status) {
-            layer.msg("结果: \n" + data, {icon: 1});
-            });
-    obj.update({
-    status: '限制3周'
-    });
-    } else
-            layer.msg("该用户已经被限制3周！");
-    }
-    } else
-            layer.msg("该用户为新注册用户，需审核后才能限制！", {icon: 5});
-    layer.close(index);
-    //return false 开启该代码可禁止点击该按钮关闭
-    }
-    , cancel: function () {
-    //右上角关闭回调
+    if (layEvent === 'yy') { //查看预约情况
 
-    //return false 开启该代码可禁止点击该按钮关闭
-    }
-    });
     //do somehing
     } else if (layEvent === 'del') { //删除
-    layer.confirm('真的删除该用户嘛？', function (index) {
-    if (obj.data.id != 1) {
+    layer.confirm('真的删除场地嘛？', function (index) {
     obj.del(); //删除对应行（tr）的DOM结构，并更新缓存
-    $.post("<?php echo url('admin/Usermanage/del'); ?>",
+    $.post("<?php echo url('admin/buildings/del'); ?>",
     {
     id: obj.data.id,
     },
@@ -230,25 +156,15 @@
             layer.msg("结果: \n" + data, {icon: 1});
             });
     //向服务端发送删除指令
-    } else
-            layer.msg("默认系统管理员用户禁止删除！", {icon: 2});
     layer.close(index);
     });
-    } else if (layEvent === 'reset') { //重置
+    } else if (layEvent === 'edit') { //编辑
     //do something
-    layer.confirm('确定重置密码嘛？', function (index) {
-    if (obj.data.id != 1) {
-    $.post("<?php echo url('admin/Usermanage/resetpwd'); ?>",
-    {
-    id: obj.data.id,
-    },
-            function (data, status) {
-            layer.msg("结果: \n" + data, {icon: 1});
-            });
-    //向服务端发送重置指令
-    } else
-            layer.msg("默认系统管理员用户不支持重置密码！", {icon: 2});
-    layer.close(index);
+    layer.open({
+    type: 2
+            , title: '添加学生活动场地'
+            , content: "/admin/buildings/editb?id="+obj.data.id //这里content是一个普通的String
+            , area: ['520px', '450px']
     });
     }
     });
@@ -257,7 +173,7 @@
     var nametext = $('#nametext');
     //执行重载
     table.reload('usertable', {
-    url: '/admin/usermanage/finduser'
+    url: '/admin/buildings/buildingfind'
             , page: {
             curr: 1 //重新从第 1 页开始
             }
@@ -273,18 +189,6 @@
             , title: '添加学生活动场地'
             , content: "/admin/buildings/addb" //这里content是一个普通的String
             , area: ['520px', '450px']
-    });
-    }
-    , checku: function () {
-    table.reload('usertable', {
-    url: '/admin/usermanage/unchecklist'
-            , page: {
-            curr: 1 //重新从第 1 页开始
-            }
-    , where: {
-
-    check: '未审查'
-    }
     });
     }
     };

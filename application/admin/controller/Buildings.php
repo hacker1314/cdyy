@@ -131,12 +131,13 @@ class Buildings extends Controller {
         $user = User::get(Session::get('id'));
         if ($user->usertype != 1)
             return $this->error('对不起您登录的用户不为管理员用户！');
-        $b = Buildings::get($id);
+        $b = Building::get($id);
         $this->assign([
             'buildingname' => $b->name,
             'intro' => $b->introduction,
             'yuyue' => $b->status,
-            'pic' => $b->pictureurl
+            'pic' => $b->pictureurl,
+            'id' => $b->id
         ]);
         return $this->fetch();
     }
@@ -153,8 +154,8 @@ class Buildings extends Controller {
         $b = Building::get($id);
         //判断场地名的情况
         if ($b->name != $buildingname) {
-            $bb = Building::getByname($buildingname);
-            if (!$bb)
+            $bb = Building::where('name','=',$buildingname)->select();
+            if (count($bb)<=2)
                 $b->name = $buildingname;
             else
                 return '您要更改的场地名已经存在！请重试！';
@@ -163,6 +164,26 @@ class Buildings extends Controller {
         $b->status = $yuyue;
         $b->pictureurl = $pic;
         $b->save();
+        return '场地编辑成功！';
+    }
+
+    //删除场地
+    public function del($id = '') {
+        //判断是否登录
+        if (!Session::has('id'))
+            return $this->redirect('index/login');
+        //效验登录用户是否为后台管理员用户
+        $user = User::get(Session::get('id'));
+        if ($user->usertype != 1)
+            return $this->error('对不起您登录的用户不为管理员用户！');
+        if ($id == '')
+            return '对不起，删除失败，您未选择任何场地！';
+        $del = Building::get($id);
+        if ($del) {
+            $del->delete();
+            return '删除场地成功！';
+        } else
+            return "需要删除的场地不存在！";
     }
 
 }

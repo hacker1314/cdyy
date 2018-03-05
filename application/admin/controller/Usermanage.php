@@ -15,6 +15,10 @@ use app\index\model\Usertype;
 use app\index\model\Articletype;
 use think\Session;
 use app\index\model\Blackhome;
+use app\index\model\Building;
+use app\index\model\Gym;
+use app\index\model\Gymtype;
+use app\index\model\Gymyy;
 
 /**
  * Description of Usermanage
@@ -36,6 +40,8 @@ class Usermanage extends Controller {
         $typename = Usertype::getById($id);
         $this->assign('typename', $typename->name);
         $this->assign('uid', $id);
+        $list3 = Gymtype::all();
+        $this->assign('list3', $list3);
         return $this->fetch();
     }
 

@@ -5,8 +5,8 @@
         <group>
             <file>file:/D:/wamp64/www/cdyy/application/admin/view/buildings/addb.html</file>
             <file>file:/D:/wamp64/www/cdyy/application/admin/controller/Buildings.php</file>
-            <file>file:/D:/wamp64/www/cdyy/application/index/controller/Index.php</file>
-            <file>file:/D:/wamp64/www/cdyy/application/upload/controller/index.php</file>
+            <file>file:/D:/wamp64/www/cdyy/application/uploads/controller/Index.php</file>
+            <file>file:/D:/wamp64/www/cdyy/application/common.php</file>
         </group>
     </open-files>
 </project-private>
