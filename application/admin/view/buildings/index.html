@@ -45,7 +45,7 @@
                 <a href="javascript:;"><i class='layui-icon'>&#xe7a0;</i>文章管理</a>
                 <dl class="layui-nav-child">
                     {volist name="list2" id="id"}
-                    <dd><a href="javascript:;">{$id.name}</a></dd>
+                    <dd><a href="{:url('admin/art/index')}?id={$id.id}">{$id.name}</a></dd>
                     {/volist}
                 </dl>
             </li>

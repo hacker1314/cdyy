@@ -13,6 +13,10 @@ use app\index\model\User;
 use app\index\model\Usertype;
 use app\index\model\Articletype;
 use think\Session;
+use app\index\model\Blackhome;
+use app\index\model\Gym;
+use app\index\model\Gymtype;
+use app\index\model\Gymyy;
 /**
  * Description of Userinfo
  *
@@ -29,6 +33,8 @@ class Userinfo extends Controller {
         $list2 = Articletype::all();
         $this->assign('list1', $list1);
         $this->assign('list2', $list2);
+        $list3 = Gymtype::all();
+        $this->assign('list3', $list3);
         return $this->fetch();
     }
     

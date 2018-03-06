@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:72:"D:\wamp64\www\cdyy\public/../application/admin\view\buildings\index.html";i:1520256710;s:59:"D:\wamp64\www\cdyy\application\admin\view\index\header.html";i:1519551428;s:59:"D:\wamp64\www\cdyy\application\admin\view\index\footer.html";i:1519441588;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:72:"D:\wamp64\www\cdyy\public/../application/admin\view\buildings\index.html";i:1520332675;s:59:"D:\wamp64\www\cdyy\application\admin\view\index\header.html";i:1519551428;s:59:"D:\wamp64\www\cdyy\application\admin\view\index\footer.html";i:1519441588;}*/ ?>
 <!DOCTYPE html>
 <html>
     <head>
@@ -162,7 +162,7 @@
     //do something
     layer.open({
     type: 2
-            , title: '添加学生活动场地'
+            , title: '编辑学生活动场地'
             , content: "/admin/buildings/editb?id="+obj.data.id //这里content是一个普通的String
             , area: ['520px', '450px']
     });
