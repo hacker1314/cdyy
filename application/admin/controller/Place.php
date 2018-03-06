@@ -27,6 +27,7 @@ use app\index\model\Gymyy;
 class Place extends Controller {
 
     //put your code here
+    //体育活动场地管理
     public function index($id = '') {
         //判断是否登录
         if (!Session::has('id'))

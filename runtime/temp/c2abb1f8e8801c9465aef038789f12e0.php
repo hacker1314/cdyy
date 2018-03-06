@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:75:"D:\xampp\htdocs\cdyy\public/../application/admin\view\usermanage\index.html";i:1520325435;s:61:"D:\xampp\htdocs\cdyy\application\admin\view\index\header.html";i:1519551428;s:61:"D:\xampp\htdocs\cdyy\application\admin\view\index\footer.html";i:1519441588;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:68:"D:\xampp\htdocs\cdyy\public/../application/admin\view\art\index.html";i:1520325981;s:61:"D:\xampp\htdocs\cdyy\application\admin\view\index\header.html";i:1519551428;s:61:"D:\xampp\htdocs\cdyy\application\admin\view\index\footer.html";i:1519441588;}*/ ?>
 <!DOCTYPE html>
 <html>
     <head>
@@ -65,7 +65,7 @@
                 <a href="javascript:;"><i class='layui-icon'>&#xe7a0;</i>文章管理</a>
                 <dl class="layui-nav-child">
                     <?php if(is_array($list2) || $list2 instanceof \think\Collection || $list2 instanceof \think\Paginator): $i = 0; $__LIST__ = $list2;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$id): $mod = ($i % 2 );++$i;?>
-                    <dd><a href="<?php echo url('admin/art/index'); ?>?id=<?php echo $id['id']; ?>"><?php echo $id['name']; ?></a></dd>
+                    <dd><a href="javascript:;"><?php echo $id['name']; ?></a></dd>
                     <?php endforeach; endif; else: echo "" ;endif; ?>
                 </dl>
             </li>
@@ -90,7 +90,7 @@
         <button class="layui-btn" data-type="find"><i class="layui-icon">&#xe615;</i>搜索</button>
         <div class="layui-btn-group layui-layout-right"  style="margin-top: 60px;margin-right: 30px;">
             <button class="layui-btn" data-type="add"><i class="layui-icon">&#xe608;</i>增加</button>
-            <button class="layui-btn" data-type="checku"><i class="layui-icon">&#xe6b2;</i>审查用户</button>
+            <button class="layui-btn" data-type="checku"><i class="layui-icon">&#xe6b2;</i>审核文章</button>
         </div>
     </div>
     <table class="layui-hide" id="usermanage" lay-filter="usertable"></table>
@@ -98,8 +98,9 @@
 <script src="/static/layui/layui.js"></script>
 
 <script type="text/html" id="barDemo">
+    <a class="layui-btn layui-btn-xs" lay-event="detail">详细</a>
     <a class="layui-btn layui-btn-xs" lay-event="check">审核</a>
-    <a class="layui-btn layui-btn-xs" lay-event="reset">重置密码</a>
+    <a class="layui-btn layui-btn-xs" lay-event="edit">编辑</a>
     <a class="layui-btn layui-btn-danger layui-btn-xs" lay-event="del">删除</a>
 </script>
 
@@ -112,16 +113,15 @@
         if ('<?php echo $typename; ?>' != '学生负责人') {
             table.render({
                 elem: '#usermanage'
-                , url: '/admin/usermanage/userlist'
-                , where: {id: <?php echo $uid; ?>}
+                , url: '/admin/art/artlist'
+                , where: {id: <?php echo $aid; ?>}
                 , cols: [[
                         {field: 'id', width: 80, minWidth: 80, title: 'ID', sort: true}
-                        , {field: 'name', minWidth: 120, title: '用户名'}
-                        , {field: 'mail', minWidth: 170, title: '邮箱'}
-                        , {field: 'phonenumber', minWidth: 130, title: '手机'}
-                        , {field: 'registertime', minWidth: 170, title: '注册时间'}
-                        , {field: 'lastlogintime', minWidth: 170, title: '最后一次登录时间'}
-                        , {field: 'status', minWidth: 100, title: '用户状态', sort: true}
+                        , {field: 'title', minWidth: 120, title: '标题'}
+                        , {field: 'content', minWidth: 170, title: '内容概要'}
+                        , {field: 'time', minWidth: 130, title: '编辑时间'}
+                        , {field: 'username', minWidth: 170, title: '作者'}
+                        , {field: 'status', minWidth: 170, title: '文章状态'}
                         , {fixed: 'right', minWidth: 200, align: 'center', toolbar: '#barDemo'} //这里的toolbar值是模板元素的选择器
                     ]]
                 , height: 'full-260'
