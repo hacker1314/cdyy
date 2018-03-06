@@ -19,6 +19,7 @@ use app\index\model\Building;
 use app\index\model\Gym;
 use app\index\model\Gymtype;
 use app\index\model\Gymyy;
+use app\index\model\Studentuser;
 
 /**
  * Description of Usermanage
@@ -52,6 +53,15 @@ class Usermanage extends Controller {
         $utpe = Usertype::getById($id);
         //分页查询
         $user = User::where('usertype', '=', $id)->field(['id', 'name', 'mail', 'status', 'phonenumber', 'registertime', 'lastlogintime'])->limit(($page - 1) * $limit, $page * $limit)->select();
+        if ($utpe->name == '学生负责人'&&$user) {
+            $usera=$user->toArray();
+            $stu= Studentuser::limit(($page - 1) * $limit, $page * $limit)->select()->toArray();
+            $count = count($usera); //获取数组的数量
+            for ($i = 0; $i < $count; $i++) {
+                $all[$i] = array_merge($usera[$i], $stu[$i]);
+            }
+            return $rs1 = json(0, '数据返回成功', $utpe->count, $all);
+        }
         //common文件设置json转换方法
         $rs1 = json(0, '数据返回成功', $utpe->count, $user);
         dump($rs1);
@@ -175,8 +185,8 @@ class Usermanage extends Controller {
     }
 
     //查询未审查用户
-    public function unchecklist($check="",$id="",$page = 1, $limit = 10) {
-         if (!Session::has('id'))
+    public function unchecklist($check = "", $id = "", $page = 1, $limit = 10) {
+        if (!Session::has('id'))
             return $this->redirect('Index/login');
         $utpe = Usertype::getById($id);
         //分页查询
@@ -186,4 +196,5 @@ class Usermanage extends Controller {
         $rs1 = json(0, '数据返回成功', $utpe->ucount, $user);
         dump($rs1);
     }
+
 }

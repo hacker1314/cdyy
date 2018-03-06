@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:70:"D:\xampp\htdocs\cdyy\public/../application/admin\view\place\editp.html";i:1520300020;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:70:"D:\xampp\htdocs\cdyy\public/../application/admin\view\place\editp.html";i:1520300229;}*/ ?>
 <!DOCTYPE html>
 <html>
     <head>
@@ -8,7 +8,7 @@
         <link rel="stylesheet" href="/static/layui/css/layui.css"  media="all">
     </head>
     <body>
-        <form class="layui-form layui-form-pane" action="<?php echo url('admin/buildings/editbu'); ?>" style="margin-left: 20px;margin-right: 20px;margin-top: 20px;">
+        <form class="layui-form layui-form-pane" action="<?php echo url('admin/place/editpl'); ?>" style="margin-left: 20px;margin-right: 20px;margin-top: 20px;">
             <div class="layui-form-item layui-hide" >
                 <label class="layui-form-label">场地ID：</label>
                 <div class="layui-input-block">

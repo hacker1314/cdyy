@@ -152,7 +152,7 @@ class Place extends Controller {
     }
 
     //编辑场地保存处理
-    public function editbu($id = '', $placename = "", $yuyue = '', $intro = '', $pic = '', $tid = '') {
+    public function editpl($id = '', $placename = "", $yuyue = '', $intro = '', $pic = '', $tid = '') {
         //判断是否登录
         if (!Session::has('id'))
             return $this->redirect('index/login');
@@ -174,6 +174,25 @@ class Place extends Controller {
         $b->pictureurl = $pic;
         $b->save();
         return $this->success('场地编辑成功！');
+    }
+
+    //删除场地API
+    public function del($id = '') {
+        //判断是否登录
+        if (!Session::has('id'))
+            return $this->redirect('index/login');
+        //效验登录用户是否为后台管理员用户
+        $user = User::get(Session::get('id'));
+        if ($user->usertype != 1)
+            return $this->error('对不起您登录的用户不为管理员用户！');
+        if ($id == '')
+            return '对不起，删除失败，您未选择任何场地！';
+        $del = Gym::get($id);
+        if ($del) {
+            $del->delete();
+            return '删除场地成功！';
+        } else
+            return "需要删除的场地不存在！";
     }
 
 }

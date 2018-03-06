@@ -97,38 +97,77 @@
         var table = layui.table;
         var $ = layui.$ //重点处
                 , layer = layui.layer;
-        table.render({
-            elem: '#usermanage'
-            , url: '/admin/usermanage/userlist'
-            , where: {id: {$uid}}
-            , cols: [[
-                    {field: 'id', width: 80, minWidth: 80, title: 'ID', sort: true}
-                    , {field: 'name', minWidth: 120, title: '用户名'}
-                    , {field: 'mail', minWidth: 170, title: '邮箱'}
-                    , {field: 'phonenumber', minWidth: 130, title: '手机'}
-                    , {field: 'registertime', minWidth: 170, title: '注册时间'}
-                    , {field: 'lastlogintime', minWidth: 170, title: '最后一次登录时间'}
-                    , {field: 'status', minWidth: 100, title: '用户状态', sort: true}
-                    , {fixed: 'right', minWidth: 200, align: 'center', toolbar: '#barDemo'} //这里的toolbar值是模板元素的选择器
-                ]]
-            , height: 'full-260'
-            , page: true
-            , done: function (res, page, count) {
-                //如果是异步请求数据方式，res即为你接口返回的信息。
-                //如果是直接赋值的方式，res即为：{data: [], count: 99} data为当前页数据、count为数据总长度
-                console.log(res);
+        if ('{$typename}' != '学生负责人') {
+            table.render({
+                elem: '#usermanage'
+                , url: '/admin/usermanage/userlist'
+                , where: {id: {$uid}}
+                , cols: [[
+                        {field: 'id', width: 80, minWidth: 80, title: 'ID', sort: true}
+                        , {field: 'name', minWidth: 120, title: '用户名'}
+                        , {field: 'mail', minWidth: 170, title: '邮箱'}
+                        , {field: 'phonenumber', minWidth: 130, title: '手机'}
+                        , {field: 'registertime', minWidth: 170, title: '注册时间'}
+                        , {field: 'lastlogintime', minWidth: 170, title: '最后一次登录时间'}
+                        , {field: 'status', minWidth: 100, title: '用户状态', sort: true}
+                        , {fixed: 'right', minWidth: 200, align: 'center', toolbar: '#barDemo'} //这里的toolbar值是模板元素的选择器
+                    ]]
+                , height: 'full-260'
+                , page: true
+                , done: function (res, page, count) {
+                    //如果是异步请求数据方式，res即为你接口返回的信息。
+                    //如果是直接赋值的方式，res即为：{data: [], count: 99} data为当前页数据、count为数据总长度
+                    console.log(res);
 
-                //得到当前页码
-                console.log(page);
+                    //得到当前页码
+                    console.log(page);
 
-                //得到数据总量
-                console.log(count);
-            }
-            , text: {
-                none: '暂无相关数据' //默认：无数据。注：该属性为 layui 2.2.5 开始新增
-            }
-            , id: 'usertable',
-        });
+                    //得到数据总量
+                    console.log(count);
+                }
+                , text: {
+                    none: '暂无相关数据' //默认：无数据。注：该属性为 layui 2.2.5 开始新增
+                }
+                , id: 'usertable',
+            });
+        } else {
+            table.render({
+                elem: '#usermanage'
+                , url: '/admin/usermanage/userlist'
+                , where: {id: {$uid}}
+                , cols: [[
+                        {field: 'id', width: 80, minWidth: 80, title: 'ID', sort: true}
+                        , {field: 'xuehao', minWidth: 120, title: '学号'}
+                        , {field: 'name', minWidth: 120, title: '姓名'}
+                        , {field: 'mail', minWidth: 170, title: '邮箱'}
+                        , {field: 'phonenumber', minWidth: 130, title: '手机'}
+                        , {field: 'college', minWidth: 170, title: '学院'}
+                        , {field: 'major', minWidth: 170, title: '专业'}
+                        , {field: 'association', minWidth: 170, title: '社团'}
+                        , {field: 'registertime', minWidth: 170, title: '注册时间'}
+                        , {field: 'lastlogintime', minWidth: 170, title: '最后一次登录时间'}
+                        , {field: 'status', minWidth: 100, title: '用户状态', sort: true}
+                        , {fixed: 'right', minWidth: 200, align: 'center', toolbar: '#barDemo'} //这里的toolbar值是模板元素的选择器
+                    ]]
+                , height: 'full-260'
+                , page: true
+                , done: function (res, page, count) {
+                    //如果是异步请求数据方式，res即为你接口返回的信息。
+                    //如果是直接赋值的方式，res即为：{data: [], count: 99} data为当前页数据、count为数据总长度
+                    console.log(res);
+
+                    //得到当前页码
+                    console.log(page);
+
+                    //得到数据总量
+                    console.log(count);
+                }
+                , text: {
+                    none: '暂无相关数据' //默认：无数据。注：该属性为 layui 2.2.5 开始新增
+                }
+                , id: 'usertable',
+            });
+        }
         //监听工具条    
         table.on('tool(usertable)', function (obj) { //注：tool是工具条事件名，test是table原始容器的属性 lay-filter="对应的值"
             var data = obj.data; //获得当前行数据
@@ -267,12 +306,12 @@
             , add: function () {
                 layer.open({
                     type: 2
-                    ,title:'添加用户'
-                    ,content: "/admin/usermanage/addu?id={$uid}" //这里content是一个普通的String
-                    ,area: ['520px', '450px']
+                    , title: '添加用户'
+                    , content: "/admin/usermanage/addu?id={$uid}" //这里content是一个普通的String
+                    , area: ['520px', '450px']
                 });
             }
-            ,checku:function(){
+            , checku: function () {
                 table.reload('usertable', {
                     url: '/admin/usermanage/unchecklist'
                     , page: {
