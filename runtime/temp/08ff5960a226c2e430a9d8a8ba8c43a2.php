@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:75:"D:\xampp\htdocs\cdyy\public/../application/admin\view\usermanage\index.html";i:1519895888;s:61:"D:\xampp\htdocs\cdyy\application\admin\view\index\header.html";i:1519551428;s:61:"D:\xampp\htdocs\cdyy\application\admin\view\index\footer.html";i:1519441588;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:75:"D:\xampp\htdocs\cdyy\public/../application/admin\view\usermanage\index.html";i:1520293702;s:61:"D:\xampp\htdocs\cdyy\application\admin\view\index\header.html";i:1519551428;s:61:"D:\xampp\htdocs\cdyy\application\admin\view\index\footer.html";i:1519441588;}*/ ?>
 <!DOCTYPE html>
 <html>
     <head>
@@ -42,12 +42,16 @@
     <div class="layui-side-scroll">
         <!-- 左侧导航区域（可配合layui已有的垂直导航） -->
         <ul class="layui-nav layui-nav-tree"  lay-filter="test">
-            <li class="layui-nav-item  layui-nav-itemed">
-                <a class="" href="javascript:;"><i class='layui-icon'>&#xe642;</i>场地管理</a>
+            <li class="layui-nav-item layui-nav-itemed">
+                <a class="" href="javascript:;"><i class='layui-icon'>&#xe715;</i>体育活动场地</a>
                 <dl class="layui-nav-child">
-                    <dd><a href="<?php echo url('admin/place/index'); ?>?id=1">体育活动场地</a></dd>
-                    <dd><a href="<?php echo url('admin/place/index'); ?>?id=2">学生活动场地</a></dd>
+                    <?php if(is_array($list3) || $list3 instanceof \think\Collection || $list3 instanceof \think\Paginator): $i = 0; $__LIST__ = $list3;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$id): $mod = ($i % 2 );++$i;?>
+                    <dd><a href="<?php echo url('admin/place/index'); ?>?id=<?php echo $id['id']; ?>"><?php echo $id['name']; ?></a></dd>
+                    <?php endforeach; endif; else: echo "" ;endif; ?>
                 </dl>
+            </li>
+            <li class="layui-nav-item">
+                <a class="" href="<?php echo url('admin/buildings/index'); ?>"><i class='layui-icon'>&#xe715;</i>学生活动场地</a>
             </li>
             <li class="layui-nav-item layui-nav-itemed">
                 <a href="javascript:;"><i class='layui-icon'>&#xe612;</i>用户管理</a>

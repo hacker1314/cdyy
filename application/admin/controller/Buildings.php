@@ -28,7 +28,7 @@ use app\index\model\Gymyy;
 class Buildings extends Controller {
 
     //put your code here
-    public function index($id = '') {
+    public function index() {
         //判断是否登录
         if (!Session::has('id'))
             return $this->redirect('index/login');
@@ -42,7 +42,6 @@ class Buildings extends Controller {
         $list2 = Articletype::all();
         $this->assign('list1', $list1);
         $this->assign('list2', $list2);
-        $this->assign('uid', $id);
         $list3 = Gymtype::all();
         $this->assign('list3', $list3);
 
@@ -50,7 +49,7 @@ class Buildings extends Controller {
     }
 
     //场地列表API
-    public function buildinglist($id = 1, $page = 1, $limit = 10) {
+    public function buildinglist($page = 1, $limit = 10) {
         //判断是否登录
         if (!Session::has('id'))
             return $this->redirect('index/login');
@@ -66,7 +65,7 @@ class Buildings extends Controller {
     }
 
     //场地列表搜索
-    public function buildingfind($id = 1, $page = 1, $limit = 10, $name = '') {
+    public function buildingfind($page = 1, $limit = 10, $name = '') {
         //判断是否登录
         if (!Session::has('id'))
             return $this->redirect('index/login');
@@ -154,17 +153,17 @@ class Buildings extends Controller {
         $b = Building::get($id);
         //判断场地名的情况
         if ($b->name != $buildingname) {
-            $bb = Building::where('name','=',$buildingname)->select();
-            if (count($bb)<=2)
+            $bb = Building::where('name', '=', $buildingname)->select();
+            if (count($bb) <= 2)
                 $b->name = $buildingname;
             else
-                return '您要更改的场地名已经存在！请重试！';
+                return $this->error('您要更改的场地名已经存在！请重试！');
         }
         $b->introduction = $intro;
         $b->status = $yuyue;
         $b->pictureurl = $pic;
         $b->save();
-        return '场地编辑成功！';
+        return $this->success('场地编辑成功！');
     }
 
     //删除场地

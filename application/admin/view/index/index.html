@@ -30,12 +30,19 @@
     <div class="layui-side-scroll">
         <!-- 左侧导航区域（可配合layui已有的垂直导航） -->
         <ul class="layui-nav layui-nav-tree"  lay-filter="test">
-            <li class="layui-nav-item  layui-nav-itemed">
-                <a class="" href="javascript:;"><i class='layui-icon'>&#xe642;</i>场地管理</a>
+            <div class="layui-side-scroll">
+        <!-- 左侧导航区域（可配合layui已有的垂直导航） -->
+        <ul class="layui-nav layui-nav-tree"  lay-filter="test">
+            <li class="layui-nav-item layui-nav-itemed">
+                <a class="" href="javascript:;"><i class='layui-icon'>&#xe715;</i>体育活动场地</a>
                 <dl class="layui-nav-child">
-                    <dd><a href="{:url('admin/place/index')}?id=1">体育活动场地</a></dd>
-                    <dd><a href="{:url('admin/place/index')}?id=2">学生活动场地</a></dd>
+                    {volist name="list3" id="id"}
+                    <dd><a href="{:url('admin/place/index')}?id={$id.id}">{$id.name}</a></dd>
+                    {/volist}
                 </dl>
+            </li>
+            <li class="layui-nav-item">
+                <a class="" href="{:url('admin/buildings/index')}"><i class='layui-icon'>&#xe715;</i>学生活动场地</a>
             </li>
             <li class="layui-nav-item layui-nav-itemed">
                 <a href="javascript:;"><i class='layui-icon'>&#xe612;</i>用户管理</a>
