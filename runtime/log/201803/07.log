@@ -1,0 +1,3801 @@
+---------------------------------------------------------------
+[ 2018-03-07T10:54:25+08:00 ] 127.0.0.1 GET /admin/index/index.html
+[ info ] www.cdyy.com/admin/index/index.html [运行时间：0.097034s][吞吐率：10.31req/s] [内存消耗：3,209.22kb] [文件加载：62]
+[ info ] [ LANG ] D:\xampp\htdocs\cdyy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.cdyy.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.75 Safari/537.36 Maxthon/5.1.6.3000',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'dnt' => '1',
+  'referer' => 'http://www.cdyy.com/admin/index/login.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN',
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=q0uffe4s4qtvb94ijtq3htb9o1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\index->index[ D:\xampp\htdocs\cdyy\application\admin\controller\Index.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\xampp\htdocs\cdyy\public/../application/admin\view\index\index.html [ array (
+  0 => 'name',
+  1 => 'list1',
+  2 => 'list2',
+  3 => 'hostos',
+  4 => 'hostupload',
+  5 => 'hostsql',
+  6 => 'count1',
+  7 => 'list3',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001511s ] mysql:host=127.0.0.1;port=3306;dbname=cdyy;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `usertype` [ RunTime:0.011209s ]
+[ sql ] [ SQL ] SELECT * FROM `usertype` [ RunTime:0.000516s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `articletype` [ RunTime:0.004601s ]
+[ sql ] [ SQL ] SELECT * FROM `articletype` [ RunTime:0.000485s ]
+[ sql ] [ SQL ] select VERSION() [ RunTime:0.000387s ]
+[ sql ] [ SQL ] SELECT MAX(id) AS tp_max FROM `usertype` LIMIT 1 [ RunTime:0.000401s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.004597s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `user` WHERE  `usertype` = 1 LIMIT 1 [ RunTime:0.000490s ]
+[ sql ] [ SQL ] SELECT MAX(id) AS tp_max FROM `usertype` LIMIT 1 [ RunTime:0.000397s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `user` WHERE  `usertype` = 2 LIMIT 1 [ RunTime:0.000422s ]
+[ sql ] [ SQL ] SELECT MAX(id) AS tp_max FROM `usertype` LIMIT 1 [ RunTime:0.000373s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `user` WHERE  `usertype` = 3 LIMIT 1 [ RunTime:0.000420s ]
+[ sql ] [ SQL ] SELECT MAX(id) AS tp_max FROM `usertype` LIMIT 1 [ RunTime:0.000363s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `user` WHERE  `usertype` = 4 LIMIT 1 [ RunTime:0.000394s ]
+[ sql ] [ SQL ] SELECT MAX(id) AS tp_max FROM `usertype` LIMIT 1 [ RunTime:0.000354s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `user` WHERE  `usertype` = 5 LIMIT 1 [ RunTime:0.000409s ]
+[ sql ] [ SQL ] SELECT MAX(id) AS tp_max FROM `usertype` LIMIT 1 [ RunTime:0.000357s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `user` WHERE  `usertype` = 6 LIMIT 1 [ RunTime:0.000391s ]
+[ sql ] [ SQL ] SELECT MAX(id) AS tp_max FROM `usertype` LIMIT 1 [ RunTime:0.000363s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `user` WHERE  `usertype` = 7 LIMIT 1 [ RunTime:0.000393s ]
+[ sql ] [ SQL ] SELECT MAX(id) AS tp_max FROM `usertype` LIMIT 1 [ RunTime:0.000348s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `user` WHERE  `usertype` = 1 LIMIT 1 [ RunTime:0.000390s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `gymtype` [ RunTime:0.004718s ]
+[ sql ] [ SQL ] SELECT * FROM `gymtype` [ RunTime:0.000487s ]
+---------------------------------------------------------------
+[ 2018-03-07T10:54:27+08:00 ] 127.0.0.1 GET /admin/place/index.html?id=5
+[ info ] www.cdyy.com/admin/place/index.html?id=5 [运行时间：0.328199s][吞吐率：3.05req/s] [内存消耗：3,183.37kb] [文件加载：62]
+[ info ] [ LANG ] D:\xampp\htdocs\cdyy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'place',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.cdyy.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.75 Safari/537.36 Maxthon/5.1.6.3000',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'dnt' => '1',
+  'referer' => 'http://www.cdyy.com/admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN',
+  'cookie' => 'PHPSESSID=q0uffe4s4qtvb94ijtq3htb9o1',
+)
+[ info ] [ PARAM ] array (
+  'id' => '5',
+)
+[ info ] [ RUN ] app\admin\controller\Place->index[ D:\xampp\htdocs\cdyy\application\admin\controller\Place.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\xampp\htdocs\cdyy\public/../application/admin\view\place\index.html [ array (
+  0 => 'name',
+  1 => 'list1',
+  2 => 'list2',
+  3 => 'uid',
+  4 => 'list3',
+  5 => 'cd',
+  6 => 'pid',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001106s ] mysql:host=127.0.0.1;port=3306;dbname=cdyy;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.105070s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000656s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `usertype` [ RunTime:0.068696s ]
+[ sql ] [ SQL ] SELECT * FROM `usertype` [ RunTime:0.000782s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `articletype` [ RunTime:0.055489s ]
+[ sql ] [ SQL ] SELECT * FROM `articletype` [ RunTime:0.000671s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `gymtype` [ RunTime:0.033860s ]
+[ sql ] [ SQL ] SELECT * FROM `gymtype` [ RunTime:0.000649s ]
+[ sql ] [ SQL ] SELECT * FROM `gymtype` WHERE  `id` = 5 LIMIT 1 [ RunTime:0.000646s ]
+---------------------------------------------------------------
+[ 2018-03-07T10:54:28+08:00 ] 127.0.0.1 GET /admin/place/placelist?page=1&limit=10&id=5
+[ info ] www.cdyy.com/admin/place/placelist?page=1&limit=10&id=5 [运行时间：0.172870s][吞吐率：5.78req/s] [内存消耗：2,752.50kb] [文件加载：52]
+[ info ] [ LANG ] D:\xampp\htdocs\cdyy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'place',
+    2 => 'placelist',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.cdyy.com',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.75 Safari/537.36 Maxthon/5.1.6.3000',
+  'dnt' => '1',
+  'referer' => 'http://www.cdyy.com/admin/place/index.html?id=5',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN',
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=q0uffe4s4qtvb94ijtq3htb9o1',
+)
+[ info ] [ PARAM ] array (
+  'page' => '1',
+  'limit' => '10',
+  'id' => '5',
+)
+[ info ] [ RUN ] app\admin\controller\Place->placelist[ D:\xampp\htdocs\cdyy\application\admin\controller\Place.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001022s ] mysql:host=127.0.0.1;port=3306;dbname=cdyy;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.042188s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000661s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `gym` [ RunTime:0.085352s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`introduction`,`pictureurl`,`status` FROM `gym` WHERE  `type` = 5 LIMIT 0,10 [ RunTime:0.000532s ]
+[ sql ] [ SQL ] SELECT * FROM `gym` WHERE  `type` = 5 [ RunTime:0.000460s ]
+---------------------------------------------------------------
+[ 2018-03-07T10:54:30+08:00 ] 127.0.0.1 GET /admin/place/index.html?id=1
+[ info ] www.cdyy.com/admin/place/index.html?id=1 [运行时间：0.080625s][吞吐率：12.40req/s] [内存消耗：3,027.55kb] [文件加载：60]
+[ info ] [ LANG ] D:\xampp\htdocs\cdyy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'place',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.cdyy.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.75 Safari/537.36 Maxthon/5.1.6.3000',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'dnt' => '1',
+  'referer' => 'http://www.cdyy.com/admin/place/index.html?id=5',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN',
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=q0uffe4s4qtvb94ijtq3htb9o1',
+)
+[ info ] [ PARAM ] array (
+  'id' => '1',
+)
+[ info ] [ RUN ] app\admin\controller\Place->index[ D:\xampp\htdocs\cdyy\application\admin\controller\Place.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\xampp\htdocs\cdyy\public/../application/admin\view\place\index.html [ array (
+  0 => 'name',
+  1 => 'list1',
+  2 => 'list2',
+  3 => 'uid',
+  4 => 'list3',
+  5 => 'cd',
+  6 => 'pid',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001215s ] mysql:host=127.0.0.1;port=3306;dbname=cdyy;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.004992s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000625s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `usertype` [ RunTime:0.005190s ]
+[ sql ] [ SQL ] SELECT * FROM `usertype` [ RunTime:0.000685s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `articletype` [ RunTime:0.005139s ]
+[ sql ] [ SQL ] SELECT * FROM `articletype` [ RunTime:0.000552s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `gymtype` [ RunTime:0.006000s ]
+[ sql ] [ SQL ] SELECT * FROM `gymtype` [ RunTime:0.000701s ]
+[ sql ] [ SQL ] SELECT * FROM `gymtype` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000539s ]
+---------------------------------------------------------------
+[ 2018-03-07T10:54:30+08:00 ] 127.0.0.1 GET /admin/place/placelist?page=1&limit=10&id=1
+[ info ] www.cdyy.com/admin/place/placelist?page=1&limit=10&id=1 [运行时间：0.057074s][吞吐率：17.52req/s] [内存消耗：2,756.04kb] [文件加载：52]
+[ info ] [ LANG ] D:\xampp\htdocs\cdyy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'place',
+    2 => 'placelist',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.cdyy.com',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.75 Safari/537.36 Maxthon/5.1.6.3000',
+  'dnt' => '1',
+  'referer' => 'http://www.cdyy.com/admin/place/index.html?id=1',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN',
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=q0uffe4s4qtvb94ijtq3htb9o1',
+)
+[ info ] [ PARAM ] array (
+  'page' => '1',
+  'limit' => '10',
+  'id' => '1',
+)
+[ info ] [ RUN ] app\admin\controller\Place->placelist[ D:\xampp\htdocs\cdyy\application\admin\controller\Place.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001119s ] mysql:host=127.0.0.1;port=3306;dbname=cdyy;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.005356s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000810s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `gym` [ RunTime:0.005196s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`introduction`,`pictureurl`,`status` FROM `gym` WHERE  `type` = 1 LIMIT 0,10 [ RunTime:0.000548s ]
+[ sql ] [ SQL ] SELECT * FROM `gym` WHERE  `type` = 1 [ RunTime:0.000459s ]
+---------------------------------------------------------------
+[ 2018-03-07T10:54:31+08:00 ] 127.0.0.1 GET /admin/art/index.html?id=1
+[ info ] www.cdyy.com/admin/art/index.html?id=1 [运行时间：0.086137s][吞吐率：11.61req/s] [内存消耗：3,141.44kb] [文件加载：61]
+[ info ] [ LANG ] D:\xampp\htdocs\cdyy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'art',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.cdyy.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.75 Safari/537.36 Maxthon/5.1.6.3000',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'dnt' => '1',
+  'referer' => 'http://www.cdyy.com/admin/place/index.html?id=1',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN',
+  'cookie' => 'PHPSESSID=q0uffe4s4qtvb94ijtq3htb9o1',
+)
+[ info ] [ PARAM ] array (
+  'id' => '1',
+)
+[ info ] [ RUN ] app\admin\controller\Art->index[ D:\xampp\htdocs\cdyy\application\admin\controller\Art.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\xampp\htdocs\cdyy\public/../application/admin\view\art\index.html [ array (
+  0 => 'name',
+  1 => 'list1',
+  2 => 'list2',
+  3 => 'list3',
+  4 => 'artt',
+  5 => 'aid',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001186s ] mysql:host=127.0.0.1;port=3306;dbname=cdyy;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `usertype` [ RunTime:0.005312s ]
+[ sql ] [ SQL ] SELECT * FROM `usertype` [ RunTime:0.000536s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `articletype` [ RunTime:0.004630s ]
+[ sql ] [ SQL ] SELECT * FROM `articletype` [ RunTime:0.000458s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `gymtype` [ RunTime:0.004728s ]
+[ sql ] [ SQL ] SELECT * FROM `gymtype` [ RunTime:0.000621s ]
+[ sql ] [ SQL ] SELECT * FROM `articletype` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.011404s ]
+---------------------------------------------------------------
+[ 2018-03-07T10:54:31+08:00 ] 127.0.0.1 GET /admin/art/artlist?page=1&limit=10&id=1
+[ info ] www.cdyy.com/admin/art/artlist?page=1&limit=10&id=1 [运行时间：0.206700s][吞吐率：4.84req/s] [内存消耗：2,776.52kb] [文件加载：53]
+[ info ] [ LANG ] D:\xampp\htdocs\cdyy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'art',
+    2 => 'artlist',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.cdyy.com',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.75 Safari/537.36 Maxthon/5.1.6.3000',
+  'dnt' => '1',
+  'referer' => 'http://www.cdyy.com/admin/art/index.html?id=1',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN',
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=q0uffe4s4qtvb94ijtq3htb9o1',
+)
+[ info ] [ PARAM ] array (
+  'page' => '1',
+  'limit' => '10',
+  'id' => '1',
+)
+[ info ] [ RUN ] app\admin\controller\Art->artlist[ D:\xampp\htdocs\cdyy\application\admin\controller\Art.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001102s ] mysql:host=127.0.0.1;port=3306;dbname=cdyy;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.018896s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000950s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `article` [ RunTime:0.081746s ]
+[ sql ] [ SQL ] SELECT `id`,`title`,`username`,`content`,`time`,`status` FROM `article` WHERE  `articletype` = 1 LIMIT 0,10 [ RunTime:0.000582s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `gym` [ RunTime:0.059689s ]
+[ sql ] [ SQL ] SELECT * FROM `gym` WHERE  `type` = 1 [ RunTime:0.000531s ]
+---------------------------------------------------------------
+[ 2018-03-07T10:54:33+08:00 ] 127.0.0.1 GET /admin/place/index.html?id=5
+[ info ] www.cdyy.com/admin/place/index.html?id=5 [运行时间：0.075728s][吞吐率：13.21req/s] [内存消耗：3,027.55kb] [文件加载：60]
+[ info ] [ LANG ] D:\xampp\htdocs\cdyy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'place',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.cdyy.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.75 Safari/537.36 Maxthon/5.1.6.3000',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'dnt' => '1',
+  'referer' => 'http://www.cdyy.com/admin/art/index.html?id=1',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN',
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=q0uffe4s4qtvb94ijtq3htb9o1',
+)
+[ info ] [ PARAM ] array (
+  'id' => '5',
+)
+[ info ] [ RUN ] app\admin\controller\Place->index[ D:\xampp\htdocs\cdyy\application\admin\controller\Place.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\xampp\htdocs\cdyy\public/../application/admin\view\place\index.html [ array (
+  0 => 'name',
+  1 => 'list1',
+  2 => 'list2',
+  3 => 'uid',
+  4 => 'list3',
+  5 => 'cd',
+  6 => 'pid',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001135s ] mysql:host=127.0.0.1;port=3306;dbname=cdyy;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.004666s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000547s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `usertype` [ RunTime:0.005017s ]
+[ sql ] [ SQL ] SELECT * FROM `usertype` [ RunTime:0.000540s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `articletype` [ RunTime:0.004568s ]
+[ sql ] [ SQL ] SELECT * FROM `articletype` [ RunTime:0.000460s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `gymtype` [ RunTime:0.004330s ]
+[ sql ] [ SQL ] SELECT * FROM `gymtype` [ RunTime:0.000542s ]
+[ sql ] [ SQL ] SELECT * FROM `gymtype` WHERE  `id` = 5 LIMIT 1 [ RunTime:0.000538s ]
+---------------------------------------------------------------
+[ 2018-03-07T10:54:33+08:00 ] 127.0.0.1 GET /admin/place/placelist?page=1&limit=10&id=5
+[ info ] www.cdyy.com/admin/place/placelist?page=1&limit=10&id=5 [运行时间：0.056781s][吞吐率：17.61req/s] [内存消耗：2,752.50kb] [文件加载：52]
+[ info ] [ LANG ] D:\xampp\htdocs\cdyy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'place',
+    2 => 'placelist',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.cdyy.com',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.75 Safari/537.36 Maxthon/5.1.6.3000',
+  'dnt' => '1',
+  'referer' => 'http://www.cdyy.com/admin/place/index.html?id=5',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN',
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=q0uffe4s4qtvb94ijtq3htb9o1',
+)
+[ info ] [ PARAM ] array (
+  'page' => '1',
+  'limit' => '10',
+  'id' => '5',
+)
+[ info ] [ RUN ] app\admin\controller\Place->placelist[ D:\xampp\htdocs\cdyy\application\admin\controller\Place.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001064s ] mysql:host=127.0.0.1;port=3306;dbname=cdyy;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.004814s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000675s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `gym` [ RunTime:0.005228s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`introduction`,`pictureurl`,`status` FROM `gym` WHERE  `type` = 5 LIMIT 0,10 [ RunTime:0.000565s ]
+[ sql ] [ SQL ] SELECT * FROM `gym` WHERE  `type` = 5 [ RunTime:0.000550s ]
+---------------------------------------------------------------
+[ 2018-03-07T10:54:35+08:00 ] 127.0.0.1 GET /admin/buildings/index.html
+[ info ] www.cdyy.com/admin/buildings/index.html [运行时间：0.080223s][吞吐率：12.47req/s] [内存消耗：3,175.27kb] [文件加载：62]
+[ info ] [ LANG ] D:\xampp\htdocs\cdyy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'buildings',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.cdyy.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.75 Safari/537.36 Maxthon/5.1.6.3000',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'dnt' => '1',
+  'referer' => 'http://www.cdyy.com/admin/place/index.html?id=5',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN',
+  'cookie' => 'PHPSESSID=q0uffe4s4qtvb94ijtq3htb9o1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Buildings->index[ D:\xampp\htdocs\cdyy\application\admin\controller\Buildings.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\xampp\htdocs\cdyy\public/../application/admin\view\buildings\index.html [ array (
+  0 => 'name',
+  1 => 'list1',
+  2 => 'list2',
+  3 => 'list3',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001284s ] mysql:host=127.0.0.1;port=3306;dbname=cdyy;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.005080s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000576s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `usertype` [ RunTime:0.004413s ]
+[ sql ] [ SQL ] SELECT * FROM `usertype` [ RunTime:0.000461s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `articletype` [ RunTime:0.005262s ]
+[ sql ] [ SQL ] SELECT * FROM `articletype` [ RunTime:0.000529s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `gymtype` [ RunTime:0.004641s ]
+[ sql ] [ SQL ] SELECT * FROM `gymtype` [ RunTime:0.000458s ]
+---------------------------------------------------------------
+[ 2018-03-07T10:54:35+08:00 ] 127.0.0.1 GET /admin/buildings/buildinglist?page=1&limit=10
+[ info ] www.cdyy.com/admin/buildings/buildinglist?page=1&limit=10 [运行时间：0.060975s][吞吐率：16.40req/s] [内存消耗：2,756.61kb] [文件加载：52]
+[ info ] [ LANG ] D:\xampp\htdocs\cdyy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'buildings',
+    2 => 'buildinglist',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.cdyy.com',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.75 Safari/537.36 Maxthon/5.1.6.3000',
+  'dnt' => '1',
+  'referer' => 'http://www.cdyy.com/admin/buildings/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN',
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=q0uffe4s4qtvb94ijtq3htb9o1',
+)
+[ info ] [ PARAM ] array (
+  'page' => '1',
+  'limit' => '10',
+)
+[ info ] [ RUN ] app\admin\controller\Buildings->buildinglist[ D:\xampp\htdocs\cdyy\application\admin\controller\Buildings.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001097s ] mysql:host=127.0.0.1;port=3306;dbname=cdyy;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.005436s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000701s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `building` [ RunTime:0.006010s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`introduction`,`pictureurl`,`status` FROM `building` LIMIT 0,10 [ RunTime:0.000621s ]
+[ sql ] [ SQL ] SELECT * FROM `building` [ RunTime:0.000674s ]
+---------------------------------------------------------------
+[ 2018-03-07T10:54:37+08:00 ] 127.0.0.1 GET /admin/art/index.html?id=4
+[ info ] www.cdyy.com/admin/art/index.html?id=4 [运行时间：0.070016s][吞吐率：14.28req/s] [内存消耗：2,979.84kb] [文件加载：59]
+[ info ] [ LANG ] D:\xampp\htdocs\cdyy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'art',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.cdyy.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.75 Safari/537.36 Maxthon/5.1.6.3000',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'dnt' => '1',
+  'referer' => 'http://www.cdyy.com/admin/buildings/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN',
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=q0uffe4s4qtvb94ijtq3htb9o1',
+)
+[ info ] [ PARAM ] array (
+  'id' => '4',
+)
+[ info ] [ RUN ] app\admin\controller\Art->index[ D:\xampp\htdocs\cdyy\application\admin\controller\Art.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\xampp\htdocs\cdyy\public/../application/admin\view\art\index.html [ array (
+  0 => 'name',
+  1 => 'list1',
+  2 => 'list2',
+  3 => 'list3',
+  4 => 'artt',
+  5 => 'aid',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001561s ] mysql:host=127.0.0.1;port=3306;dbname=cdyy;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `usertype` [ RunTime:0.004874s ]
+[ sql ] [ SQL ] SELECT * FROM `usertype` [ RunTime:0.000531s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `articletype` [ RunTime:0.004474s ]
+[ sql ] [ SQL ] SELECT * FROM `articletype` [ RunTime:0.000468s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `gymtype` [ RunTime:0.005568s ]
+[ sql ] [ SQL ] SELECT * FROM `gymtype` [ RunTime:0.000516s ]
+[ sql ] [ SQL ] SELECT * FROM `articletype` WHERE  `id` = 4 LIMIT 1 [ RunTime:0.000520s ]
+---------------------------------------------------------------
+[ 2018-03-07T10:54:37+08:00 ] 127.0.0.1 GET /admin/art/artlist?page=1&limit=10&id=4
+[ info ] www.cdyy.com/admin/art/artlist?page=1&limit=10&id=4 [运行时间：0.059529s][吞吐率：16.80req/s] [内存消耗：2,773.23kb] [文件加载：53]
+[ info ] [ LANG ] D:\xampp\htdocs\cdyy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'art',
+    2 => 'artlist',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.cdyy.com',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.75 Safari/537.36 Maxthon/5.1.6.3000',
+  'dnt' => '1',
+  'referer' => 'http://www.cdyy.com/admin/art/index.html?id=4',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN',
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=q0uffe4s4qtvb94ijtq3htb9o1',
+)
+[ info ] [ PARAM ] array (
+  'page' => '1',
+  'limit' => '10',
+  'id' => '4',
+)
+[ info ] [ RUN ] app\admin\controller\Art->artlist[ D:\xampp\htdocs\cdyy\application\admin\controller\Art.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001115s ] mysql:host=127.0.0.1;port=3306;dbname=cdyy;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.004908s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000574s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `article` [ RunTime:0.004627s ]
+[ sql ] [ SQL ] SELECT `id`,`title`,`username`,`content`,`time`,`status` FROM `article` WHERE  `articletype` = 4 LIMIT 0,10 [ RunTime:0.000504s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `gym` [ RunTime:0.004689s ]
+[ sql ] [ SQL ] SELECT * FROM `gym` WHERE  `type` = 4 [ RunTime:0.000566s ]
+---------------------------------------------------------------
+[ 2018-03-07T10:54:40+08:00 ] 127.0.0.1 GET /admin/art/index.html?id=1
+[ info ] www.cdyy.com/admin/art/index.html?id=1 [运行时间：0.068916s][吞吐率：14.51req/s] [内存消耗：2,979.84kb] [文件加载：59]
+[ info ] [ LANG ] D:\xampp\htdocs\cdyy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'art',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.cdyy.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.75 Safari/537.36 Maxthon/5.1.6.3000',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'dnt' => '1',
+  'referer' => 'http://www.cdyy.com/admin/art/index.html?id=4',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN',
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=q0uffe4s4qtvb94ijtq3htb9o1',
+)
+[ info ] [ PARAM ] array (
+  'id' => '1',
+)
+[ info ] [ RUN ] app\admin\controller\Art->index[ D:\xampp\htdocs\cdyy\application\admin\controller\Art.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\xampp\htdocs\cdyy\public/../application/admin\view\art\index.html [ array (
+  0 => 'name',
+  1 => 'list1',
+  2 => 'list2',
+  3 => 'list3',
+  4 => 'artt',
+  5 => 'aid',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001030s ] mysql:host=127.0.0.1;port=3306;dbname=cdyy;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `usertype` [ RunTime:0.004526s ]
+[ sql ] [ SQL ] SELECT * FROM `usertype` [ RunTime:0.000484s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `articletype` [ RunTime:0.004781s ]
+[ sql ] [ SQL ] SELECT * FROM `articletype` [ RunTime:0.000772s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `gymtype` [ RunTime:0.004571s ]
+[ sql ] [ SQL ] SELECT * FROM `gymtype` [ RunTime:0.000475s ]
+[ sql ] [ SQL ] SELECT * FROM `articletype` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000453s ]
+---------------------------------------------------------------
+[ 2018-03-07T10:54:40+08:00 ] 127.0.0.1 GET /admin/art/artlist?page=1&limit=10&id=1
+[ info ] www.cdyy.com/admin/art/artlist?page=1&limit=10&id=1 [运行时间：0.059514s][吞吐率：16.80req/s] [内存消耗：2,776.52kb] [文件加载：53]
+[ info ] [ LANG ] D:\xampp\htdocs\cdyy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'art',
+    2 => 'artlist',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.cdyy.com',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.75 Safari/537.36 Maxthon/5.1.6.3000',
+  'dnt' => '1',
+  'referer' => 'http://www.cdyy.com/admin/art/index.html?id=1',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN',
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=q0uffe4s4qtvb94ijtq3htb9o1',
+)
+[ info ] [ PARAM ] array (
+  'page' => '1',
+  'limit' => '10',
+  'id' => '1',
+)
+[ info ] [ RUN ] app\admin\controller\Art->artlist[ D:\xampp\htdocs\cdyy\application\admin\controller\Art.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001067s ] mysql:host=127.0.0.1;port=3306;dbname=cdyy;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.004624s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000541s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `article` [ RunTime:0.004666s ]
+[ sql ] [ SQL ] SELECT `id`,`title`,`username`,`content`,`time`,`status` FROM `article` WHERE  `articletype` = 1 LIMIT 0,10 [ RunTime:0.000535s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `gym` [ RunTime:0.005094s ]
+[ sql ] [ SQL ] SELECT * FROM `gym` WHERE  `type` = 1 [ RunTime:0.000556s ]
+---------------------------------------------------------------
+[ 2018-03-07T10:56:37+08:00 ] 127.0.0.1 GET /admin/art/adda?id=1
+[ info ] www.cdyy.com/admin/art/adda?id=1 [运行时间：0.060531s][吞吐率：16.52req/s] [内存消耗：2,956.38kb] [文件加载：58]
+[ info ] [ LANG ] D:\xampp\htdocs\cdyy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'art',
+    2 => 'adda',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.cdyy.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.75 Safari/537.36 Maxthon/5.1.6.3000',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'dnt' => '1',
+  'referer' => 'http://www.cdyy.com/admin/art/index.html?id=1',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN',
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=q0uffe4s4qtvb94ijtq3htb9o1',
+)
+[ info ] [ PARAM ] array (
+  'id' => '1',
+)
+[ info ] [ RUN ] app\admin\controller\Art->adda[ D:\xampp\htdocs\cdyy\application\admin\controller\Art.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\xampp\htdocs\cdyy\public/../application/admin\view\art\adda.html [ array (
+  0 => 'aid',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001380s ] mysql:host=127.0.0.1;port=3306;dbname=cdyy;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.004899s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000590s ]
+---------------------------------------------------------------
+[ 2018-03-07T10:57:14+08:00 ] 127.0.0.1 GET /admin/art/adda?id=1
+[ info ] www.cdyy.com/admin/art/adda?id=1 [运行时间：0.058965s][吞吐率：16.96req/s] [内存消耗：2,957.71kb] [文件加载：58]
+[ info ] [ LANG ] D:\xampp\htdocs\cdyy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'art',
+    2 => 'adda',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.cdyy.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.75 Safari/537.36 Maxthon/5.1.6.3000',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'dnt' => '1',
+  'referer' => 'http://www.cdyy.com/admin/art/index.html?id=1',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN',
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=q0uffe4s4qtvb94ijtq3htb9o1',
+)
+[ info ] [ PARAM ] array (
+  'id' => '1',
+)
+[ info ] [ RUN ] app\admin\controller\Art->adda[ D:\xampp\htdocs\cdyy\application\admin\controller\Art.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\xampp\htdocs\cdyy\public/../application/admin\view\art\adda.html [ array (
+  0 => 'aid',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001252s ] mysql:host=127.0.0.1;port=3306;dbname=cdyy;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.004870s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000801s ]
+---------------------------------------------------------------
+[ 2018-03-07T10:57:14+08:00 ] 127.0.0.1 GET /wangEditor.min.js
+[ info ] www.cdyy.com/wangEditor.min.js [运行时间：0.030687s][吞吐率：32.59req/s] [内存消耗：1,429.70kb] [文件加载：43]
+[ info ] [ LANG ] D:\xampp\htdocs\cdyy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'wangEditor.min.js',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.cdyy.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.75 Safari/537.36 Maxthon/5.1.6.3000',
+  'accept' => '*/*',
+  'dnt' => '1',
+  'referer' => 'http://www.cdyy.com/admin/art/adda?id=1',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN',
+  'cookie' => 'PHPSESSID=q0uffe4s4qtvb94ijtq3htb9o1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-07T10:57:29+08:00 ] 127.0.0.1 GET /admin/art/adda?id=1
+[ info ] www.cdyy.com/admin/art/adda?id=1 [运行时间：0.051868s][吞吐率：19.28req/s] [内存消耗：2,813.27kb] [文件加载：56]
+[ info ] [ LANG ] D:\xampp\htdocs\cdyy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'art',
+    2 => 'adda',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.cdyy.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.75 Safari/537.36 Maxthon/5.1.6.3000',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'dnt' => '1',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN',
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=q0uffe4s4qtvb94ijtq3htb9o1',
+)
+[ info ] [ PARAM ] array (
+  'id' => '1',
+)
+[ info ] [ RUN ] app\admin\controller\Art->adda[ D:\xampp\htdocs\cdyy\application\admin\controller\Art.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\xampp\htdocs\cdyy\public/../application/admin\view\art\adda.html [ array (
+  0 => 'aid',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001046s ] mysql:host=127.0.0.1;port=3306;dbname=cdyy;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.004467s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000539s ]
+---------------------------------------------------------------
+[ 2018-03-07T10:57:29+08:00 ] 127.0.0.1 GET /wangEditor.min.js
+[ info ] www.cdyy.com/wangEditor.min.js [运行时间：0.037121s][吞吐率：26.94req/s] [内存消耗：1,429.70kb] [文件加载：43]
+[ info ] [ LANG ] D:\xampp\htdocs\cdyy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'wangEditor.min.js',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.cdyy.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.75 Safari/537.36 Maxthon/5.1.6.3000',
+  'accept' => '*/*',
+  'dnt' => '1',
+  'referer' => 'http://www.cdyy.com/admin/art/adda?id=1',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN',
+  'cookie' => 'PHPSESSID=q0uffe4s4qtvb94ijtq3htb9o1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-07T10:57:56+08:00 ] 127.0.0.1 GET /admin/art/adda?id=1
+[ info ] www.cdyy.com/admin/art/adda?id=1 [运行时间：0.081160s][吞吐率：12.32req/s] [内存消耗：2,957.59kb] [文件加载：58]
+[ info ] [ LANG ] D:\xampp\htdocs\cdyy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'art',
+    2 => 'adda',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.cdyy.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.75 Safari/537.36 Maxthon/5.1.6.3000',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'dnt' => '1',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN',
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=q0uffe4s4qtvb94ijtq3htb9o1',
+)
+[ info ] [ PARAM ] array (
+  'id' => '1',
+)
+[ info ] [ RUN ] app\admin\controller\Art->adda[ D:\xampp\htdocs\cdyy\application\admin\controller\Art.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\xampp\htdocs\cdyy\public/../application/admin\view\art\adda.html [ array (
+  0 => 'aid',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001070s ] mysql:host=127.0.0.1;port=3306;dbname=cdyy;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.030687s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000554s ]
+---------------------------------------------------------------
+[ 2018-03-07T10:58:00+08:00 ] 127.0.0.1 GET /admin/art/adda?id=1
+[ info ] www.cdyy.com/admin/art/adda?id=1 [运行时间：0.054136s][吞吐率：18.47req/s] [内存消耗：2,813.95kb] [文件加载：56]
+[ info ] [ LANG ] D:\xampp\htdocs\cdyy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'art',
+    2 => 'adda',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.cdyy.com',
+  'connection' => 'keep-alive',
+  'x-devtools-emulate-network-conditions-client-id' => '24df0bd2-f3b5-4fb4-94bf-d9a0765097d1',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.75 Safari/537.36 Maxthon/5.1.6.3000',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'dnt' => '1',
+  'referer' => 'http://www.cdyy.com/admin/art/index.html?id=1',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN',
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=q0uffe4s4qtvb94ijtq3htb9o1',
+)
+[ info ] [ PARAM ] array (
+  'id' => '1',
+)
+[ info ] [ RUN ] app\admin\controller\Art->adda[ D:\xampp\htdocs\cdyy\application\admin\controller\Art.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\xampp\htdocs\cdyy\public/../application/admin\view\art\adda.html [ array (
+  0 => 'aid',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001071s ] mysql:host=127.0.0.1;port=3306;dbname=cdyy;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.005065s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000564s ]
+---------------------------------------------------------------
+[ 2018-03-07T10:58:59+08:00 ] 127.0.0.1 GET /admin/art/index.html?id=1
+[ info ] www.cdyy.com/admin/art/index.html?id=1 [运行时间：0.243493s][吞吐率：4.11req/s] [内存消耗：3,141.73kb] [文件加载：61]
+[ info ] [ LANG ] D:\xampp\htdocs\cdyy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'art',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.cdyy.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.75 Safari/537.36 Maxthon/5.1.6.3000',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'dnt' => '1',
+  'referer' => 'http://www.cdyy.com/admin/art/index.html?id=4',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN',
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=q0uffe4s4qtvb94ijtq3htb9o1',
+)
+[ info ] [ PARAM ] array (
+  'id' => '1',
+)
+[ info ] [ RUN ] app\admin\controller\Art->index[ D:\xampp\htdocs\cdyy\application\admin\controller\Art.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\xampp\htdocs\cdyy\public/../application/admin\view\art\index.html [ array (
+  0 => 'name',
+  1 => 'list1',
+  2 => 'list2',
+  3 => 'list3',
+  4 => 'artt',
+  5 => 'aid',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001295s ] mysql:host=127.0.0.1;port=3306;dbname=cdyy;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `usertype` [ RunTime:0.033086s ]
+[ sql ] [ SQL ] SELECT * FROM `usertype` [ RunTime:0.000644s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `articletype` [ RunTime:0.067755s ]
+[ sql ] [ SQL ] SELECT * FROM `articletype` [ RunTime:0.000606s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `gymtype` [ RunTime:0.079064s ]
+[ sql ] [ SQL ] SELECT * FROM `gymtype` [ RunTime:0.000660s ]
+[ sql ] [ SQL ] SELECT * FROM `articletype` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000650s ]
+---------------------------------------------------------------
+[ 2018-03-07T10:58:59+08:00 ] 127.0.0.1 GET /admin/art/artlist?page=1&limit=10&id=1
+[ info ] www.cdyy.com/admin/art/artlist?page=1&limit=10&id=1 [运行时间：0.057736s][吞吐率：17.32req/s] [内存消耗：2,776.52kb] [文件加载：53]
+[ info ] [ LANG ] D:\xampp\htdocs\cdyy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'art',
+    2 => 'artlist',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.cdyy.com',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.75 Safari/537.36 Maxthon/5.1.6.3000',
+  'dnt' => '1',
+  'referer' => 'http://www.cdyy.com/admin/art/index.html?id=1',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN',
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=q0uffe4s4qtvb94ijtq3htb9o1',
+)
+[ info ] [ PARAM ] array (
+  'page' => '1',
+  'limit' => '10',
+  'id' => '1',
+)
+[ info ] [ RUN ] app\admin\controller\Art->artlist[ D:\xampp\htdocs\cdyy\application\admin\controller\Art.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001087s ] mysql:host=127.0.0.1;port=3306;dbname=cdyy;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.004425s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000573s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `article` [ RunTime:0.004322s ]
+[ sql ] [ SQL ] SELECT `id`,`title`,`username`,`content`,`time`,`status` FROM `article` WHERE  `articletype` = 1 LIMIT 0,10 [ RunTime:0.000488s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `gym` [ RunTime:0.004460s ]
+[ sql ] [ SQL ] SELECT * FROM `gym` WHERE  `type` = 1 [ RunTime:0.000608s ]
+---------------------------------------------------------------
+[ 2018-03-07T10:59:00+08:00 ] 127.0.0.1 GET /admin/art/adda?id=1
+[ info ] www.cdyy.com/admin/art/adda?id=1 [运行时间：0.055007s][吞吐率：18.18req/s] [内存消耗：2,813.59kb] [文件加载：56]
+[ info ] [ LANG ] D:\xampp\htdocs\cdyy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'art',
+    2 => 'adda',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.cdyy.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.75 Safari/537.36 Maxthon/5.1.6.3000',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'dnt' => '1',
+  'referer' => 'http://www.cdyy.com/admin/art/index.html?id=1',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN',
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=q0uffe4s4qtvb94ijtq3htb9o1',
+)
+[ info ] [ PARAM ] array (
+  'id' => '1',
+)
+[ info ] [ RUN ] app\admin\controller\Art->adda[ D:\xampp\htdocs\cdyy\application\admin\controller\Art.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\xampp\htdocs\cdyy\public/../application/admin\view\art\adda.html [ array (
+  0 => 'aid',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001335s ] mysql:host=127.0.0.1;port=3306;dbname=cdyy;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.005180s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000576s ]
+---------------------------------------------------------------
+[ 2018-03-07T10:59:15+08:00 ] 127.0.0.1 GET /admin/art/adda?id=1
+[ info ] www.cdyy.com/admin/art/adda?id=1 [运行时间：0.058038s][吞吐率：17.23req/s] [内存消耗：2,957.05kb] [文件加载：58]
+[ info ] [ LANG ] D:\xampp\htdocs\cdyy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'art',
+    2 => 'adda',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.cdyy.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.75 Safari/537.36 Maxthon/5.1.6.3000',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'dnt' => '1',
+  'referer' => 'http://www.cdyy.com/admin/art/index.html?id=1',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN',
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=q0uffe4s4qtvb94ijtq3htb9o1',
+)
+[ info ] [ PARAM ] array (
+  'id' => '1',
+)
+[ info ] [ RUN ] app\admin\controller\Art->adda[ D:\xampp\htdocs\cdyy\application\admin\controller\Art.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\xampp\htdocs\cdyy\public/../application/admin\view\art\adda.html [ array (
+  0 => 'aid',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001464s ] mysql:host=127.0.0.1;port=3306;dbname=cdyy;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.005140s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000717s ]
+---------------------------------------------------------------
+[ 2018-03-07T10:59:18+08:00 ] 127.0.0.1 GET /admin/art/index.html?id=1
+[ info ] www.cdyy.com/admin/art/index.html?id=1 [运行时间：0.234721s][吞吐率：4.26req/s] [内存消耗：2,980.06kb] [文件加载：59]
+[ info ] [ LANG ] D:\xampp\htdocs\cdyy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'art',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.cdyy.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.75 Safari/537.36 Maxthon/5.1.6.3000',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'dnt' => '1',
+  'referer' => 'http://www.cdyy.com/admin/art/index.html?id=4',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN',
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=q0uffe4s4qtvb94ijtq3htb9o1',
+)
+[ info ] [ PARAM ] array (
+  'id' => '1',
+)
+[ info ] [ RUN ] app\admin\controller\Art->index[ D:\xampp\htdocs\cdyy\application\admin\controller\Art.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\xampp\htdocs\cdyy\public/../application/admin\view\art\index.html [ array (
+  0 => 'name',
+  1 => 'list1',
+  2 => 'list2',
+  3 => 'list3',
+  4 => 'artt',
+  5 => 'aid',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001138s ] mysql:host=127.0.0.1;port=3306;dbname=cdyy;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `usertype` [ RunTime:0.057517s ]
+[ sql ] [ SQL ] SELECT * FROM `usertype` [ RunTime:0.000557s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `articletype` [ RunTime:0.079138s ]
+[ sql ] [ SQL ] SELECT * FROM `articletype` [ RunTime:0.000499s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `gymtype` [ RunTime:0.043815s ]
+[ sql ] [ SQL ] SELECT * FROM `gymtype` [ RunTime:0.000544s ]
+[ sql ] [ SQL ] SELECT * FROM `articletype` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000482s ]
+---------------------------------------------------------------
+[ 2018-03-07T10:59:18+08:00 ] 127.0.0.1 GET /admin/art/artlist?page=1&limit=10&id=1
+[ info ] www.cdyy.com/admin/art/artlist?page=1&limit=10&id=1 [运行时间：0.059425s][吞吐率：16.83req/s] [内存消耗：2,776.52kb] [文件加载：53]
+[ info ] [ LANG ] D:\xampp\htdocs\cdyy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'art',
+    2 => 'artlist',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.cdyy.com',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.75 Safari/537.36 Maxthon/5.1.6.3000',
+  'dnt' => '1',
+  'referer' => 'http://www.cdyy.com/admin/art/index.html?id=1',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN',
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=q0uffe4s4qtvb94ijtq3htb9o1',
+)
+[ info ] [ PARAM ] array (
+  'page' => '1',
+  'limit' => '10',
+  'id' => '1',
+)
+[ info ] [ RUN ] app\admin\controller\Art->artlist[ D:\xampp\htdocs\cdyy\application\admin\controller\Art.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001096s ] mysql:host=127.0.0.1;port=3306;dbname=cdyy;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.004464s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000557s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `article` [ RunTime:0.004542s ]
+[ sql ] [ SQL ] SELECT `id`,`title`,`username`,`content`,`time`,`status` FROM `article` WHERE  `articletype` = 1 LIMIT 0,10 [ RunTime:0.000509s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `gym` [ RunTime:0.004504s ]
+[ sql ] [ SQL ] SELECT * FROM `gym` WHERE  `type` = 1 [ RunTime:0.000575s ]
+---------------------------------------------------------------
+[ 2018-03-07T10:59:19+08:00 ] 127.0.0.1 GET /admin/art/adda?id=1
+[ info ] www.cdyy.com/admin/art/adda?id=1 [运行时间：0.053726s][吞吐率：18.61req/s] [内存消耗：2,813.59kb] [文件加载：56]
+[ info ] [ LANG ] D:\xampp\htdocs\cdyy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'art',
+    2 => 'adda',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.cdyy.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.75 Safari/537.36 Maxthon/5.1.6.3000',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'dnt' => '1',
+  'referer' => 'http://www.cdyy.com/admin/art/index.html?id=1',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN',
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=q0uffe4s4qtvb94ijtq3htb9o1',
+)
+[ info ] [ PARAM ] array (
+  'id' => '1',
+)
+[ info ] [ RUN ] app\admin\controller\Art->adda[ D:\xampp\htdocs\cdyy\application\admin\controller\Art.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\xampp\htdocs\cdyy\public/../application/admin\view\art\adda.html [ array (
+  0 => 'aid',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001107s ] mysql:host=127.0.0.1;port=3306;dbname=cdyy;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.004356s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000526s ]
+---------------------------------------------------------------
+[ 2018-03-07T11:00:09+08:00 ] 127.0.0.1 GET /admin/art/index.html?id=1
+[ info ] www.cdyy.com/admin/art/index.html?id=1 [运行时间：0.231277s][吞吐率：4.32req/s] [内存消耗：3,142.01kb] [文件加载：61]
+[ info ] [ LANG ] D:\xampp\htdocs\cdyy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'art',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.cdyy.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'x-devtools-emulate-network-conditions-client-id' => '24df0bd2-f3b5-4fb4-94bf-d9a0765097d1',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.75 Safari/537.36 Maxthon/5.1.6.3000',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'dnt' => '1',
+  'referer' => 'http://www.cdyy.com/admin/art/index.html?id=4',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN',
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=q0uffe4s4qtvb94ijtq3htb9o1',
+)
+[ info ] [ PARAM ] array (
+  'id' => '1',
+)
+[ info ] [ RUN ] app\admin\controller\Art->index[ D:\xampp\htdocs\cdyy\application\admin\controller\Art.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\xampp\htdocs\cdyy\public/../application/admin\view\art\index.html [ array (
+  0 => 'name',
+  1 => 'list1',
+  2 => 'list2',
+  3 => 'list3',
+  4 => 'artt',
+  5 => 'aid',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001161s ] mysql:host=127.0.0.1;port=3306;dbname=cdyy;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `usertype` [ RunTime:0.055713s ]
+[ sql ] [ SQL ] SELECT * FROM `usertype` [ RunTime:0.000530s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `articletype` [ RunTime:0.076722s ]
+[ sql ] [ SQL ] SELECT * FROM `articletype` [ RunTime:0.000513s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `gymtype` [ RunTime:0.037987s ]
+[ sql ] [ SQL ] SELECT * FROM `gymtype` [ RunTime:0.000488s ]
+[ sql ] [ SQL ] SELECT * FROM `articletype` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000490s ]
+---------------------------------------------------------------
+[ 2018-03-07T11:00:09+08:00 ] 127.0.0.1 GET /admin/art/artlist?page=1&limit=10&id=1
+[ info ] www.cdyy.com/admin/art/artlist?page=1&limit=10&id=1 [运行时间：0.066196s][吞吐率：15.11req/s] [内存消耗：2,776.88kb] [文件加载：53]
+[ info ] [ LANG ] D:\xampp\htdocs\cdyy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'art',
+    2 => 'artlist',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.cdyy.com',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'x-devtools-emulate-network-conditions-client-id' => '24df0bd2-f3b5-4fb4-94bf-d9a0765097d1',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.75 Safari/537.36 Maxthon/5.1.6.3000',
+  'dnt' => '1',
+  'referer' => 'http://www.cdyy.com/admin/art/index.html?id=1',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN',
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=q0uffe4s4qtvb94ijtq3htb9o1',
+)
+[ info ] [ PARAM ] array (
+  'page' => '1',
+  'limit' => '10',
+  'id' => '1',
+)
+[ info ] [ RUN ] app\admin\controller\Art->artlist[ D:\xampp\htdocs\cdyy\application\admin\controller\Art.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001366s ] mysql:host=127.0.0.1;port=3306;dbname=cdyy;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.004777s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000682s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `article` [ RunTime:0.005673s ]
+[ sql ] [ SQL ] SELECT `id`,`title`,`username`,`content`,`time`,`status` FROM `article` WHERE  `articletype` = 1 LIMIT 0,10 [ RunTime:0.000754s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `gym` [ RunTime:0.005570s ]
+[ sql ] [ SQL ] SELECT * FROM `gym` WHERE  `type` = 1 [ RunTime:0.000678s ]
+---------------------------------------------------------------
+[ 2018-03-07T11:00:10+08:00 ] 127.0.0.1 GET /admin/art/adda?id=1
+[ info ] www.cdyy.com/admin/art/adda?id=1 [运行时间：0.056580s][吞吐率：17.67req/s] [内存消耗：2,813.88kb] [文件加载：56]
+[ info ] [ LANG ] D:\xampp\htdocs\cdyy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'art',
+    2 => 'adda',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.cdyy.com',
+  'connection' => 'keep-alive',
+  'x-devtools-emulate-network-conditions-client-id' => '24df0bd2-f3b5-4fb4-94bf-d9a0765097d1',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.75 Safari/537.36 Maxthon/5.1.6.3000',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'dnt' => '1',
+  'referer' => 'http://www.cdyy.com/admin/art/index.html?id=1',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN',
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=q0uffe4s4qtvb94ijtq3htb9o1',
+)
+[ info ] [ PARAM ] array (
+  'id' => '1',
+)
+[ info ] [ RUN ] app\admin\controller\Art->adda[ D:\xampp\htdocs\cdyy\application\admin\controller\Art.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\xampp\htdocs\cdyy\public/../application/admin\view\art\adda.html [ array (
+  0 => 'aid',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001618s ] mysql:host=127.0.0.1;port=3306;dbname=cdyy;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.005083s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000682s ]
+---------------------------------------------------------------
+[ 2018-03-07T11:00:32+08:00 ] 127.0.0.1 GET /admin/art/index.html?id=1
+[ info ] www.cdyy.com/admin/art/index.html?id=1 [运行时间：0.194095s][吞吐率：5.15req/s] [内存消耗：3,142.01kb] [文件加载：61]
+[ info ] [ LANG ] D:\xampp\htdocs\cdyy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'art',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.cdyy.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'x-devtools-emulate-network-conditions-client-id' => '24df0bd2-f3b5-4fb4-94bf-d9a0765097d1',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.75 Safari/537.36 Maxthon/5.1.6.3000',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'dnt' => '1',
+  'referer' => 'http://www.cdyy.com/admin/art/index.html?id=4',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN',
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=q0uffe4s4qtvb94ijtq3htb9o1',
+)
+[ info ] [ PARAM ] array (
+  'id' => '1',
+)
+[ info ] [ RUN ] app\admin\controller\Art->index[ D:\xampp\htdocs\cdyy\application\admin\controller\Art.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\xampp\htdocs\cdyy\public/../application/admin\view\art\index.html [ array (
+  0 => 'name',
+  1 => 'list1',
+  2 => 'list2',
+  3 => 'list3',
+  4 => 'artt',
+  5 => 'aid',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001101s ] mysql:host=127.0.0.1;port=3306;dbname=cdyy;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `usertype` [ RunTime:0.020341s ]
+[ sql ] [ SQL ] SELECT * FROM `usertype` [ RunTime:0.000555s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `articletype` [ RunTime:0.067033s ]
+[ sql ] [ SQL ] SELECT * FROM `articletype` [ RunTime:0.000520s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `gymtype` [ RunTime:0.047431s ]
+[ sql ] [ SQL ] SELECT * FROM `gymtype` [ RunTime:0.000492s ]
+[ sql ] [ SQL ] SELECT * FROM `articletype` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000496s ]
+---------------------------------------------------------------
+[ 2018-03-07T11:00:32+08:00 ] 127.0.0.1 GET /admin/art/artlist?page=1&limit=10&id=1
+[ info ] www.cdyy.com/admin/art/artlist?page=1&limit=10&id=1 [运行时间：0.093418s][吞吐率：10.70req/s] [内存消耗：2,776.88kb] [文件加载：53]
+[ info ] [ LANG ] D:\xampp\htdocs\cdyy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'art',
+    2 => 'artlist',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.cdyy.com',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'x-devtools-emulate-network-conditions-client-id' => '24df0bd2-f3b5-4fb4-94bf-d9a0765097d1',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.75 Safari/537.36 Maxthon/5.1.6.3000',
+  'dnt' => '1',
+  'referer' => 'http://www.cdyy.com/admin/art/index.html?id=1',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN',
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=q0uffe4s4qtvb94ijtq3htb9o1',
+)
+[ info ] [ PARAM ] array (
+  'page' => '1',
+  'limit' => '10',
+  'id' => '1',
+)
+[ info ] [ RUN ] app\admin\controller\Art->artlist[ D:\xampp\htdocs\cdyy\application\admin\controller\Art.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001376s ] mysql:host=127.0.0.1;port=3306;dbname=cdyy;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.033943s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000658s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `article` [ RunTime:0.005126s ]
+[ sql ] [ SQL ] SELECT `id`,`title`,`username`,`content`,`time`,`status` FROM `article` WHERE  `articletype` = 1 LIMIT 0,10 [ RunTime:0.000565s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `gym` [ RunTime:0.005067s ]
+[ sql ] [ SQL ] SELECT * FROM `gym` WHERE  `type` = 1 [ RunTime:0.000639s ]
+---------------------------------------------------------------
+[ 2018-03-07T11:00:33+08:00 ] 127.0.0.1 GET /admin/art/adda?id=1
+[ info ] www.cdyy.com/admin/art/adda?id=1 [运行时间：0.059649s][吞吐率：16.76req/s] [内存消耗：2,813.88kb] [文件加载：56]
+[ info ] [ LANG ] D:\xampp\htdocs\cdyy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'art',
+    2 => 'adda',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.cdyy.com',
+  'connection' => 'keep-alive',
+  'x-devtools-emulate-network-conditions-client-id' => '24df0bd2-f3b5-4fb4-94bf-d9a0765097d1',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.75 Safari/537.36 Maxthon/5.1.6.3000',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'dnt' => '1',
+  'referer' => 'http://www.cdyy.com/admin/art/index.html?id=1',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN',
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=q0uffe4s4qtvb94ijtq3htb9o1',
+)
+[ info ] [ PARAM ] array (
+  'id' => '1',
+)
+[ info ] [ RUN ] app\admin\controller\Art->adda[ D:\xampp\htdocs\cdyy\application\admin\controller\Art.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\xampp\htdocs\cdyy\public/../application/admin\view\art\adda.html [ array (
+  0 => 'aid',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001588s ] mysql:host=127.0.0.1;port=3306;dbname=cdyy;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.005602s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000673s ]
+---------------------------------------------------------------
+[ 2018-03-07T11:00:46+08:00 ] 127.0.0.1 GET /admin/art/index.html?id=1
+[ info ] www.cdyy.com/admin/art/index.html?id=1 [运行时间：0.251683s][吞吐率：3.97req/s] [内存消耗：3,141.73kb] [文件加载：61]
+[ info ] [ LANG ] D:\xampp\htdocs\cdyy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'art',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.cdyy.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.75 Safari/537.36 Maxthon/5.1.6.3000',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'dnt' => '1',
+  'referer' => 'http://www.cdyy.com/admin/art/index.html?id=4',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN',
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=q0uffe4s4qtvb94ijtq3htb9o1',
+)
+[ info ] [ PARAM ] array (
+  'id' => '1',
+)
+[ info ] [ RUN ] app\admin\controller\Art->index[ D:\xampp\htdocs\cdyy\application\admin\controller\Art.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\xampp\htdocs\cdyy\public/../application/admin\view\art\index.html [ array (
+  0 => 'name',
+  1 => 'list1',
+  2 => 'list2',
+  3 => 'list3',
+  4 => 'artt',
+  5 => 'aid',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001079s ] mysql:host=127.0.0.1;port=3306;dbname=cdyy;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `usertype` [ RunTime:0.039699s ]
+[ sql ] [ SQL ] SELECT * FROM `usertype` [ RunTime:0.000510s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `articletype` [ RunTime:0.077153s ]
+[ sql ] [ SQL ] SELECT * FROM `articletype` [ RunTime:0.000493s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `gymtype` [ RunTime:0.076457s ]
+[ sql ] [ SQL ] SELECT * FROM `gymtype` [ RunTime:0.000471s ]
+[ sql ] [ SQL ] SELECT * FROM `articletype` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000454s ]
+---------------------------------------------------------------
+[ 2018-03-07T11:00:46+08:00 ] 127.0.0.1 GET /admin/art/artlist?page=1&limit=10&id=1
+[ info ] www.cdyy.com/admin/art/artlist?page=1&limit=10&id=1 [运行时间：0.111869s][吞吐率：8.94req/s] [内存消耗：2,776.52kb] [文件加载：53]
+[ info ] [ LANG ] D:\xampp\htdocs\cdyy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'art',
+    2 => 'artlist',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.cdyy.com',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.75 Safari/537.36 Maxthon/5.1.6.3000',
+  'dnt' => '1',
+  'referer' => 'http://www.cdyy.com/admin/art/index.html?id=1',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN',
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=q0uffe4s4qtvb94ijtq3htb9o1',
+)
+[ info ] [ PARAM ] array (
+  'page' => '1',
+  'limit' => '10',
+  'id' => '1',
+)
+[ info ] [ RUN ] app\admin\controller\Art->artlist[ D:\xampp\htdocs\cdyy\application\admin\controller\Art.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001116s ] mysql:host=127.0.0.1;port=3306;dbname=cdyy;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.055287s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000583s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `article` [ RunTime:0.004540s ]
+[ sql ] [ SQL ] SELECT `id`,`title`,`username`,`content`,`time`,`status` FROM `article` WHERE  `articletype` = 1 LIMIT 0,10 [ RunTime:0.000525s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `gym` [ RunTime:0.004654s ]
+[ sql ] [ SQL ] SELECT * FROM `gym` WHERE  `type` = 1 [ RunTime:0.000612s ]
+---------------------------------------------------------------
+[ 2018-03-07T11:00:47+08:00 ] 127.0.0.1 GET /admin/art/adda?id=1
+[ info ] www.cdyy.com/admin/art/adda?id=1 [运行时间：0.055096s][吞吐率：18.15req/s] [内存消耗：2,813.59kb] [文件加载：56]
+[ info ] [ LANG ] D:\xampp\htdocs\cdyy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'art',
+    2 => 'adda',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.cdyy.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.75 Safari/537.36 Maxthon/5.1.6.3000',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'dnt' => '1',
+  'referer' => 'http://www.cdyy.com/admin/art/index.html?id=1',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN',
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=q0uffe4s4qtvb94ijtq3htb9o1',
+)
+[ info ] [ PARAM ] array (
+  'id' => '1',
+)
+[ info ] [ RUN ] app\admin\controller\Art->adda[ D:\xampp\htdocs\cdyy\application\admin\controller\Art.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\xampp\htdocs\cdyy\public/../application/admin\view\art\adda.html [ array (
+  0 => 'aid',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001091s ] mysql:host=127.0.0.1;port=3306;dbname=cdyy;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.004981s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000627s ]
+---------------------------------------------------------------
+[ 2018-03-07T11:00:57+08:00 ] 127.0.0.1 GET /admin/art/index.html?id=1
+[ info ] www.cdyy.com/admin/art/index.html?id=1 [运行时间：0.206344s][吞吐率：4.85req/s] [内存消耗：3,141.73kb] [文件加载：61]
+[ info ] [ LANG ] D:\xampp\htdocs\cdyy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'art',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.cdyy.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.75 Safari/537.36 Maxthon/5.1.6.3000',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'dnt' => '1',
+  'referer' => 'http://www.cdyy.com/admin/art/index.html?id=4',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN',
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=q0uffe4s4qtvb94ijtq3htb9o1',
+)
+[ info ] [ PARAM ] array (
+  'id' => '1',
+)
+[ info ] [ RUN ] app\admin\controller\Art->index[ D:\xampp\htdocs\cdyy\application\admin\controller\Art.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\xampp\htdocs\cdyy\public/../application/admin\view\art\index.html [ array (
+  0 => 'name',
+  1 => 'list1',
+  2 => 'list2',
+  3 => 'list3',
+  4 => 'artt',
+  5 => 'aid',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001033s ] mysql:host=127.0.0.1;port=3306;dbname=cdyy;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `usertype` [ RunTime:0.061348s ]
+[ sql ] [ SQL ] SELECT * FROM `usertype` [ RunTime:0.000592s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `articletype` [ RunTime:0.078061s ]
+[ sql ] [ SQL ] SELECT * FROM `articletype` [ RunTime:0.000543s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `gymtype` [ RunTime:0.004355s ]
+[ sql ] [ SQL ] SELECT * FROM `gymtype` [ RunTime:0.000458s ]
+[ sql ] [ SQL ] SELECT * FROM `articletype` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000454s ]
+---------------------------------------------------------------
+[ 2018-03-07T11:00:57+08:00 ] 127.0.0.1 GET /admin/art/artlist?page=1&limit=10&id=1
+[ info ] www.cdyy.com/admin/art/artlist?page=1&limit=10&id=1 [运行时间：0.061003s][吞吐率：16.39req/s] [内存消耗：2,776.52kb] [文件加载：53]
+[ info ] [ LANG ] D:\xampp\htdocs\cdyy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'art',
+    2 => 'artlist',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.cdyy.com',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.75 Safari/537.36 Maxthon/5.1.6.3000',
+  'dnt' => '1',
+  'referer' => 'http://www.cdyy.com/admin/art/index.html?id=1',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN',
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=q0uffe4s4qtvb94ijtq3htb9o1',
+)
+[ info ] [ PARAM ] array (
+  'page' => '1',
+  'limit' => '10',
+  'id' => '1',
+)
+[ info ] [ RUN ] app\admin\controller\Art->artlist[ D:\xampp\htdocs\cdyy\application\admin\controller\Art.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001113s ] mysql:host=127.0.0.1;port=3306;dbname=cdyy;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.004582s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000573s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `article` [ RunTime:0.004403s ]
+[ sql ] [ SQL ] SELECT `id`,`title`,`username`,`content`,`time`,`status` FROM `article` WHERE  `articletype` = 1 LIMIT 0,10 [ RunTime:0.000502s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `gym` [ RunTime:0.004659s ]
+[ sql ] [ SQL ] SELECT * FROM `gym` WHERE  `type` = 1 [ RunTime:0.000734s ]
+---------------------------------------------------------------
+[ 2018-03-07T11:00:57+08:00 ] 127.0.0.1 GET /admin/art/adda?id=1
+[ info ] www.cdyy.com/admin/art/adda?id=1 [运行时间：0.054243s][吞吐率：18.44req/s] [内存消耗：2,813.59kb] [文件加载：56]
+[ info ] [ LANG ] D:\xampp\htdocs\cdyy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'art',
+    2 => 'adda',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.cdyy.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.75 Safari/537.36 Maxthon/5.1.6.3000',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'dnt' => '1',
+  'referer' => 'http://www.cdyy.com/admin/art/index.html?id=1',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN',
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=q0uffe4s4qtvb94ijtq3htb9o1',
+)
+[ info ] [ PARAM ] array (
+  'id' => '1',
+)
+[ info ] [ RUN ] app\admin\controller\Art->adda[ D:\xampp\htdocs\cdyy\application\admin\controller\Art.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\xampp\htdocs\cdyy\public/../application/admin\view\art\adda.html [ array (
+  0 => 'aid',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001239s ] mysql:host=127.0.0.1;port=3306;dbname=cdyy;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.004423s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000538s ]
+---------------------------------------------------------------
+[ 2018-03-07T11:01:13+08:00 ] 127.0.0.1 GET /admin/art/index.html?id=1
+[ info ] www.cdyy.com/admin/art/index.html?id=1 [运行时间：0.210513s][吞吐率：4.75req/s] [内存消耗：3,141.73kb] [文件加载：61]
+[ info ] [ LANG ] D:\xampp\htdocs\cdyy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'art',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.cdyy.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.75 Safari/537.36 Maxthon/5.1.6.3000',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'dnt' => '1',
+  'referer' => 'http://www.cdyy.com/admin/art/index.html?id=4',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN',
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=q0uffe4s4qtvb94ijtq3htb9o1',
+)
+[ info ] [ PARAM ] array (
+  'id' => '1',
+)
+[ info ] [ RUN ] app\admin\controller\Art->index[ D:\xampp\htdocs\cdyy\application\admin\controller\Art.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\xampp\htdocs\cdyy\public/../application/admin\view\art\index.html [ array (
+  0 => 'name',
+  1 => 'list1',
+  2 => 'list2',
+  3 => 'list3',
+  4 => 'artt',
+  5 => 'aid',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001283s ] mysql:host=127.0.0.1;port=3306;dbname=cdyy;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `usertype` [ RunTime:0.035490s ]
+[ sql ] [ SQL ] SELECT * FROM `usertype` [ RunTime:0.000642s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `articletype` [ RunTime:0.068109s ]
+[ sql ] [ SQL ] SELECT * FROM `articletype` [ RunTime:0.000598s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `gymtype` [ RunTime:0.036782s ]
+[ sql ] [ SQL ] SELECT * FROM `gymtype` [ RunTime:0.000638s ]
+[ sql ] [ SQL ] SELECT * FROM `articletype` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000586s ]
+---------------------------------------------------------------
+[ 2018-03-07T11:01:13+08:00 ] 127.0.0.1 GET /admin/art/artlist?page=1&limit=10&id=1
+[ info ] www.cdyy.com/admin/art/artlist?page=1&limit=10&id=1 [运行时间：0.080938s][吞吐率：12.36req/s] [内存消耗：2,776.52kb] [文件加载：53]
+[ info ] [ LANG ] D:\xampp\htdocs\cdyy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'art',
+    2 => 'artlist',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.cdyy.com',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.75 Safari/537.36 Maxthon/5.1.6.3000',
+  'dnt' => '1',
+  'referer' => 'http://www.cdyy.com/admin/art/index.html?id=1',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN',
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=q0uffe4s4qtvb94ijtq3htb9o1',
+)
+[ info ] [ PARAM ] array (
+  'page' => '1',
+  'limit' => '10',
+  'id' => '1',
+)
+[ info ] [ RUN ] app\admin\controller\Art->artlist[ D:\xampp\htdocs\cdyy\application\admin\controller\Art.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001077s ] mysql:host=127.0.0.1;port=3306;dbname=cdyy;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.025310s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000549s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `article` [ RunTime:0.004407s ]
+[ sql ] [ SQL ] SELECT `id`,`title`,`username`,`content`,`time`,`status` FROM `article` WHERE  `articletype` = 1 LIMIT 0,10 [ RunTime:0.000492s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `gym` [ RunTime:0.004471s ]
+[ sql ] [ SQL ] SELECT * FROM `gym` WHERE  `type` = 1 [ RunTime:0.000529s ]
+---------------------------------------------------------------
+[ 2018-03-07T11:01:13+08:00 ] 127.0.0.1 GET /admin/art/adda?id=1
+[ info ] www.cdyy.com/admin/art/adda?id=1 [运行时间：0.056081s][吞吐率：17.83req/s] [内存消耗：2,813.59kb] [文件加载：56]
+[ info ] [ LANG ] D:\xampp\htdocs\cdyy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'art',
+    2 => 'adda',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.cdyy.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.75 Safari/537.36 Maxthon/5.1.6.3000',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'dnt' => '1',
+  'referer' => 'http://www.cdyy.com/admin/art/index.html?id=1',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN',
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=q0uffe4s4qtvb94ijtq3htb9o1',
+)
+[ info ] [ PARAM ] array (
+  'id' => '1',
+)
+[ info ] [ RUN ] app\admin\controller\Art->adda[ D:\xampp\htdocs\cdyy\application\admin\controller\Art.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\xampp\htdocs\cdyy\public/../application/admin\view\art\adda.html [ array (
+  0 => 'aid',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001141s ] mysql:host=127.0.0.1;port=3306;dbname=cdyy;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.004664s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000704s ]
+---------------------------------------------------------------
+[ 2018-03-07T11:01:22+08:00 ] 127.0.0.1 GET /admin/art/index.html?id=1
+[ info ] www.cdyy.com/admin/art/index.html?id=1 [运行时间：0.221899s][吞吐率：4.51req/s] [内存消耗：3,141.73kb] [文件加载：61]
+[ info ] [ LANG ] D:\xampp\htdocs\cdyy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'art',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.cdyy.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.75 Safari/537.36 Maxthon/5.1.6.3000',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'dnt' => '1',
+  'referer' => 'http://www.cdyy.com/admin/art/index.html?id=4',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN',
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=q0uffe4s4qtvb94ijtq3htb9o1',
+)
+[ info ] [ PARAM ] array (
+  'id' => '1',
+)
+[ info ] [ RUN ] app\admin\controller\Art->index[ D:\xampp\htdocs\cdyy\application\admin\controller\Art.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\xampp\htdocs\cdyy\public/../application/admin\view\art\index.html [ array (
+  0 => 'name',
+  1 => 'list1',
+  2 => 'list2',
+  3 => 'list3',
+  4 => 'artt',
+  5 => 'aid',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001786s ] mysql:host=127.0.0.1;port=3306;dbname=cdyy;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `usertype` [ RunTime:0.052313s ]
+[ sql ] [ SQL ] SELECT * FROM `usertype` [ RunTime:0.000530s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `articletype` [ RunTime:0.072655s ]
+[ sql ] [ SQL ] SELECT * FROM `articletype` [ RunTime:0.000498s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `gymtype` [ RunTime:0.033252s ]
+[ sql ] [ SQL ] SELECT * FROM `gymtype` [ RunTime:0.000489s ]
+[ sql ] [ SQL ] SELECT * FROM `articletype` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000479s ]
+---------------------------------------------------------------
+[ 2018-03-07T11:01:22+08:00 ] 127.0.0.1 GET /admin/art/artlist?page=1&limit=10&id=1
+[ info ] www.cdyy.com/admin/art/artlist?page=1&limit=10&id=1 [运行时间：0.061323s][吞吐率：16.31req/s] [内存消耗：2,776.52kb] [文件加载：53]
+[ info ] [ LANG ] D:\xampp\htdocs\cdyy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'art',
+    2 => 'artlist',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.cdyy.com',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.75 Safari/537.36 Maxthon/5.1.6.3000',
+  'dnt' => '1',
+  'referer' => 'http://www.cdyy.com/admin/art/index.html?id=1',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN',
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=q0uffe4s4qtvb94ijtq3htb9o1',
+)
+[ info ] [ PARAM ] array (
+  'page' => '1',
+  'limit' => '10',
+  'id' => '1',
+)
+[ info ] [ RUN ] app\admin\controller\Art->artlist[ D:\xampp\htdocs\cdyy\application\admin\controller\Art.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001046s ] mysql:host=127.0.0.1;port=3306;dbname=cdyy;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.005023s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000574s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `article` [ RunTime:0.004801s ]
+[ sql ] [ SQL ] SELECT `id`,`title`,`username`,`content`,`time`,`status` FROM `article` WHERE  `articletype` = 1 LIMIT 0,10 [ RunTime:0.000518s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `gym` [ RunTime:0.004643s ]
+[ sql ] [ SQL ] SELECT * FROM `gym` WHERE  `type` = 1 [ RunTime:0.000609s ]
+---------------------------------------------------------------
+[ 2018-03-07T11:01:23+08:00 ] 127.0.0.1 GET /admin/art/adda?id=1
+[ info ] www.cdyy.com/admin/art/adda?id=1 [运行时间：0.054438s][吞吐率：18.37req/s] [内存消耗：2,813.59kb] [文件加载：56]
+[ info ] [ LANG ] D:\xampp\htdocs\cdyy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'art',
+    2 => 'adda',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.cdyy.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.75 Safari/537.36 Maxthon/5.1.6.3000',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'dnt' => '1',
+  'referer' => 'http://www.cdyy.com/admin/art/index.html?id=1',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN',
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=q0uffe4s4qtvb94ijtq3htb9o1',
+)
+[ info ] [ PARAM ] array (
+  'id' => '1',
+)
+[ info ] [ RUN ] app\admin\controller\Art->adda[ D:\xampp\htdocs\cdyy\application\admin\controller\Art.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\xampp\htdocs\cdyy\public/../application/admin\view\art\adda.html [ array (
+  0 => 'aid',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001127s ] mysql:host=127.0.0.1;port=3306;dbname=cdyy;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.004835s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000563s ]
+---------------------------------------------------------------
+[ 2018-03-07T11:01:55+08:00 ] 127.0.0.1 GET /admin/art/adda?id=1
+[ info ] www.cdyy.com/admin/art/adda?id=1 [运行时间：0.139400s][吞吐率：7.17req/s] [内存消耗：2,813.44kb] [文件加载：56]
+[ info ] [ LANG ] D:\xampp\htdocs\cdyy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'art',
+    2 => 'adda',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.cdyy.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.75 Safari/537.36 Maxthon/5.1.6.3000',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'dnt' => '1',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN',
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=q0uffe4s4qtvb94ijtq3htb9o1',
+)
+[ info ] [ PARAM ] array (
+  'id' => '1',
+)
+[ info ] [ RUN ] app\admin\controller\Art->adda[ D:\xampp\htdocs\cdyy\application\admin\controller\Art.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\xampp\htdocs\cdyy\public/../application/admin\view\art\adda.html [ array (
+  0 => 'aid',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001170s ] mysql:host=127.0.0.1;port=3306;dbname=cdyy;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.090983s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000558s ]
+---------------------------------------------------------------
+[ 2018-03-07T11:02:08+08:00 ] 127.0.0.1 GET /admin/art/adda?id=1
+[ info ] www.cdyy.com/admin/art/adda?id=1 [运行时间：0.087815s][吞吐率：11.39req/s] [内存消耗：2,813.74kb] [文件加载：56]
+[ info ] [ LANG ] D:\xampp\htdocs\cdyy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'art',
+    2 => 'adda',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.cdyy.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'x-devtools-emulate-network-conditions-client-id' => 'ca00b149-f905-4f49-9db0-b04377e41730',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.75 Safari/537.36 Maxthon/5.1.6.3000',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'dnt' => '1',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN',
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=q0uffe4s4qtvb94ijtq3htb9o1',
+)
+[ info ] [ PARAM ] array (
+  'id' => '1',
+)
+[ info ] [ RUN ] app\admin\controller\Art->adda[ D:\xampp\htdocs\cdyy\application\admin\controller\Art.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\xampp\htdocs\cdyy\public/../application/admin\view\art\adda.html [ array (
+  0 => 'aid',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001120s ] mysql:host=127.0.0.1;port=3306;dbname=cdyy;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.038477s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000570s ]
+---------------------------------------------------------------
+[ 2018-03-07T11:03:22+08:00 ] 127.0.0.1 GET /admin/art/adda?id=1
+[ info ] www.cdyy.com/admin/art/adda?id=1 [运行时间：0.094187s][吞吐率：10.62req/s] [内存消耗：2,957.36kb] [文件加载：58]
+[ info ] [ LANG ] D:\xampp\htdocs\cdyy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'art',
+    2 => 'adda',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.cdyy.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'x-devtools-emulate-network-conditions-client-id' => 'ca00b149-f905-4f49-9db0-b04377e41730',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.75 Safari/537.36 Maxthon/5.1.6.3000',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'dnt' => '1',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN',
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=q0uffe4s4qtvb94ijtq3htb9o1',
+)
+[ info ] [ PARAM ] array (
+  'id' => '1',
+)
+[ info ] [ RUN ] app\admin\controller\Art->adda[ D:\xampp\htdocs\cdyy\application\admin\controller\Art.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\xampp\htdocs\cdyy\public/../application/admin\view\art\adda.html [ array (
+  0 => 'aid',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001123s ] mysql:host=127.0.0.1;port=3306;dbname=cdyy;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.040922s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000593s ]
+---------------------------------------------------------------
+[ 2018-03-07T11:03:26+08:00 ] 127.0.0.1 GET /admin/art/index.html?id=1
+[ info ] www.cdyy.com/admin/art/index.html?id=1 [运行时间：0.295420s][吞吐率：3.39req/s] [内存消耗：2,980.06kb] [文件加载：59]
+[ info ] [ LANG ] D:\xampp\htdocs\cdyy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'art',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.cdyy.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.75 Safari/537.36 Maxthon/5.1.6.3000',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'dnt' => '1',
+  'referer' => 'http://www.cdyy.com/admin/art/index.html?id=4',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN',
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=q0uffe4s4qtvb94ijtq3htb9o1',
+)
+[ info ] [ PARAM ] array (
+  'id' => '1',
+)
+[ info ] [ RUN ] app\admin\controller\Art->index[ D:\xampp\htdocs\cdyy\application\admin\controller\Art.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\xampp\htdocs\cdyy\public/../application/admin\view\art\index.html [ array (
+  0 => 'name',
+  1 => 'list1',
+  2 => 'list2',
+  3 => 'list3',
+  4 => 'artt',
+  5 => 'aid',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001045s ] mysql:host=127.0.0.1;port=3306;dbname=cdyy;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `usertype` [ RunTime:0.088305s ]
+[ sql ] [ SQL ] SELECT * FROM `usertype` [ RunTime:0.000543s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `articletype` [ RunTime:0.073427s ]
+[ sql ] [ SQL ] SELECT * FROM `articletype` [ RunTime:0.000499s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `gymtype` [ RunTime:0.078182s ]
+[ sql ] [ SQL ] SELECT * FROM `gymtype` [ RunTime:0.000630s ]
+[ sql ] [ SQL ] SELECT * FROM `articletype` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000509s ]
+---------------------------------------------------------------
+[ 2018-03-07T11:03:26+08:00 ] 127.0.0.1 GET /admin/art/artlist?page=1&limit=10&id=1
+[ info ] www.cdyy.com/admin/art/artlist?page=1&limit=10&id=1 [运行时间：0.060334s][吞吐率：16.57req/s] [内存消耗：2,776.52kb] [文件加载：53]
+[ info ] [ LANG ] D:\xampp\htdocs\cdyy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'art',
+    2 => 'artlist',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.cdyy.com',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.75 Safari/537.36 Maxthon/5.1.6.3000',
+  'dnt' => '1',
+  'referer' => 'http://www.cdyy.com/admin/art/index.html?id=1',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN',
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=q0uffe4s4qtvb94ijtq3htb9o1',
+)
+[ info ] [ PARAM ] array (
+  'page' => '1',
+  'limit' => '10',
+  'id' => '1',
+)
+[ info ] [ RUN ] app\admin\controller\Art->artlist[ D:\xampp\htdocs\cdyy\application\admin\controller\Art.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001158s ] mysql:host=127.0.0.1;port=3306;dbname=cdyy;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.004492s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000525s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `article` [ RunTime:0.004624s ]
+[ sql ] [ SQL ] SELECT `id`,`title`,`username`,`content`,`time`,`status` FROM `article` WHERE  `articletype` = 1 LIMIT 0,10 [ RunTime:0.000502s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `gym` [ RunTime:0.004943s ]
+[ sql ] [ SQL ] SELECT * FROM `gym` WHERE  `type` = 1 [ RunTime:0.000571s ]
+---------------------------------------------------------------
+[ 2018-03-07T11:03:27+08:00 ] 127.0.0.1 GET /admin/art/adda?id=1
+[ info ] www.cdyy.com/admin/art/adda?id=1 [运行时间：0.055587s][吞吐率：17.99req/s] [内存消耗：2,813.55kb] [文件加载：56]
+[ info ] [ LANG ] D:\xampp\htdocs\cdyy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'art',
+    2 => 'adda',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.cdyy.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.75 Safari/537.36 Maxthon/5.1.6.3000',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'dnt' => '1',
+  'referer' => 'http://www.cdyy.com/admin/art/index.html?id=1',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN',
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=q0uffe4s4qtvb94ijtq3htb9o1',
+)
+[ info ] [ PARAM ] array (
+  'id' => '1',
+)
+[ info ] [ RUN ] app\admin\controller\Art->adda[ D:\xampp\htdocs\cdyy\application\admin\controller\Art.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\xampp\htdocs\cdyy\public/../application/admin\view\art\adda.html [ array (
+  0 => 'aid',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001323s ] mysql:host=127.0.0.1;port=3306;dbname=cdyy;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.004795s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000579s ]
+---------------------------------------------------------------
+[ 2018-03-07T11:03:40+08:00 ] 127.0.0.1 GET /admin/art/index.html?id=1
+[ info ] www.cdyy.com/admin/art/index.html?id=1 [运行时间：0.179532s][吞吐率：5.57req/s] [内存消耗：3,141.73kb] [文件加载：61]
+[ info ] [ LANG ] D:\xampp\htdocs\cdyy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'art',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.cdyy.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.75 Safari/537.36 Maxthon/5.1.6.3000',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'dnt' => '1',
+  'referer' => 'http://www.cdyy.com/admin/art/index.html?id=4',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN',
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=q0uffe4s4qtvb94ijtq3htb9o1',
+)
+[ info ] [ PARAM ] array (
+  'id' => '1',
+)
+[ info ] [ RUN ] app\admin\controller\Art->index[ D:\xampp\htdocs\cdyy\application\admin\controller\Art.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\xampp\htdocs\cdyy\public/../application/admin\view\art\index.html [ array (
+  0 => 'name',
+  1 => 'list1',
+  2 => 'list2',
+  3 => 'list3',
+  4 => 'artt',
+  5 => 'aid',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001077s ] mysql:host=127.0.0.1;port=3306;dbname=cdyy;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `usertype` [ RunTime:0.049593s ]
+[ sql ] [ SQL ] SELECT * FROM `usertype` [ RunTime:0.000602s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `articletype` [ RunTime:0.065755s ]
+[ sql ] [ SQL ] SELECT * FROM `articletype` [ RunTime:0.000513s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `gymtype` [ RunTime:0.004488s ]
+[ sql ] [ SQL ] SELECT * FROM `gymtype` [ RunTime:0.000479s ]
+[ sql ] [ SQL ] SELECT * FROM `articletype` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000453s ]
+---------------------------------------------------------------
+[ 2018-03-07T11:03:40+08:00 ] 127.0.0.1 GET /admin/art/artlist?page=1&limit=10&id=1
+[ info ] www.cdyy.com/admin/art/artlist?page=1&limit=10&id=1 [运行时间：0.059767s][吞吐率：16.73req/s] [内存消耗：2,776.52kb] [文件加载：53]
+[ info ] [ LANG ] D:\xampp\htdocs\cdyy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'art',
+    2 => 'artlist',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.cdyy.com',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.75 Safari/537.36 Maxthon/5.1.6.3000',
+  'dnt' => '1',
+  'referer' => 'http://www.cdyy.com/admin/art/index.html?id=1',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN',
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=q0uffe4s4qtvb94ijtq3htb9o1',
+)
+[ info ] [ PARAM ] array (
+  'page' => '1',
+  'limit' => '10',
+  'id' => '1',
+)
+[ info ] [ RUN ] app\admin\controller\Art->artlist[ D:\xampp\htdocs\cdyy\application\admin\controller\Art.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001226s ] mysql:host=127.0.0.1;port=3306;dbname=cdyy;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.004556s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000555s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `article` [ RunTime:0.004535s ]
+[ sql ] [ SQL ] SELECT `id`,`title`,`username`,`content`,`time`,`status` FROM `article` WHERE  `articletype` = 1 LIMIT 0,10 [ RunTime:0.000526s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `gym` [ RunTime:0.004626s ]
+[ sql ] [ SQL ] SELECT * FROM `gym` WHERE  `type` = 1 [ RunTime:0.000515s ]
+---------------------------------------------------------------
+[ 2018-03-07T11:03:41+08:00 ] 127.0.0.1 GET /admin/art/adda?id=1
+[ info ] www.cdyy.com/admin/art/adda?id=1 [运行时间：0.059832s][吞吐率：16.71req/s] [内存消耗：2,813.55kb] [文件加载：56]
+[ info ] [ LANG ] D:\xampp\htdocs\cdyy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'art',
+    2 => 'adda',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.cdyy.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.75 Safari/537.36 Maxthon/5.1.6.3000',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'dnt' => '1',
+  'referer' => 'http://www.cdyy.com/admin/art/index.html?id=1',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN',
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=q0uffe4s4qtvb94ijtq3htb9o1',
+)
+[ info ] [ PARAM ] array (
+  'id' => '1',
+)
+[ info ] [ RUN ] app\admin\controller\Art->adda[ D:\xampp\htdocs\cdyy\application\admin\controller\Art.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\xampp\htdocs\cdyy\public/../application/admin\view\art\adda.html [ array (
+  0 => 'aid',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001095s ] mysql:host=127.0.0.1;port=3306;dbname=cdyy;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.009607s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000604s ]
+---------------------------------------------------------------
+[ 2018-03-07T11:17:18+08:00 ] 127.0.0.1 GET /admin/art/adda?id=1
+[ info ] www.cdyy.com/admin/art/adda?id=1 [运行时间：0.093377s][吞吐率：10.71req/s] [内存消耗：2,957.94kb] [文件加载：58]
+[ info ] [ LANG ] D:\xampp\htdocs\cdyy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'art',
+    2 => 'adda',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.cdyy.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'x-devtools-emulate-network-conditions-client-id' => 'ca00b149-f905-4f49-9db0-b04377e41730',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.75 Safari/537.36 Maxthon/5.1.6.3000',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'dnt' => '1',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN',
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=q0uffe4s4qtvb94ijtq3htb9o1',
+)
+[ info ] [ PARAM ] array (
+  'id' => '1',
+)
+[ info ] [ RUN ] app\admin\controller\Art->adda[ D:\xampp\htdocs\cdyy\application\admin\controller\Art.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\xampp\htdocs\cdyy\public/../application/admin\view\art\adda.html [ array (
+  0 => 'aid',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001231s ] mysql:host=127.0.0.1;port=3306;dbname=cdyy;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.040215s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000568s ]
+---------------------------------------------------------------
+[ 2018-03-07T11:17:43+08:00 ] 127.0.0.1 GET /admin/art/adda?id=1
+[ info ] www.cdyy.com/admin/art/adda?id=1 [运行时间：0.112427s][吞吐率：8.89req/s] [内存消耗：2,957.95kb] [文件加载：58]
+[ info ] [ LANG ] D:\xampp\htdocs\cdyy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'art',
+    2 => 'adda',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.cdyy.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'x-devtools-emulate-network-conditions-client-id' => 'ca00b149-f905-4f49-9db0-b04377e41730',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.75 Safari/537.36 Maxthon/5.1.6.3000',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'dnt' => '1',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN',
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=q0uffe4s4qtvb94ijtq3htb9o1',
+)
+[ info ] [ PARAM ] array (
+  'id' => '1',
+)
+[ info ] [ RUN ] app\admin\controller\Art->adda[ D:\xampp\htdocs\cdyy\application\admin\controller\Art.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\xampp\htdocs\cdyy\public/../application/admin\view\art\adda.html [ array (
+  0 => 'aid',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001354s ] mysql:host=127.0.0.1;port=3306;dbname=cdyy;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.059366s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000660s ]
+---------------------------------------------------------------
+[ 2018-03-07T11:17:44+08:00 ] 127.0.0.1 GET /admin/art/adda?id=1
+[ info ] www.cdyy.com/admin/art/adda?id=1 [运行时间：0.099508s][吞吐率：10.05req/s] [内存消耗：2,813.77kb] [文件加载：56]
+[ info ] [ LANG ] D:\xampp\htdocs\cdyy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'art',
+    2 => 'adda',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.cdyy.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'x-devtools-emulate-network-conditions-client-id' => 'ca00b149-f905-4f49-9db0-b04377e41730',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.75 Safari/537.36 Maxthon/5.1.6.3000',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'dnt' => '1',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN',
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=q0uffe4s4qtvb94ijtq3htb9o1',
+)
+[ info ] [ PARAM ] array (
+  'id' => '1',
+)
+[ info ] [ RUN ] app\admin\controller\Art->adda[ D:\xampp\htdocs\cdyy\application\admin\controller\Art.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\xampp\htdocs\cdyy\public/../application/admin\view\art\adda.html [ array (
+  0 => 'aid',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001344s ] mysql:host=127.0.0.1;port=3306;dbname=cdyy;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.049340s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000619s ]
+---------------------------------------------------------------
+[ 2018-03-07T11:17:45+08:00 ] 127.0.0.1 GET /admin/art/adda?id=1
+[ info ] www.cdyy.com/admin/art/adda?id=1 [运行时间：0.112957s][吞吐率：8.85req/s] [内存消耗：2,813.76kb] [文件加载：56]
+[ info ] [ LANG ] D:\xampp\htdocs\cdyy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'art',
+    2 => 'adda',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.cdyy.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'x-devtools-emulate-network-conditions-client-id' => 'ca00b149-f905-4f49-9db0-b04377e41730',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.75 Safari/537.36 Maxthon/5.1.6.3000',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'dnt' => '1',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN',
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=q0uffe4s4qtvb94ijtq3htb9o1',
+)
+[ info ] [ PARAM ] array (
+  'id' => '1',
+)
+[ info ] [ RUN ] app\admin\controller\Art->adda[ D:\xampp\htdocs\cdyy\application\admin\controller\Art.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\xampp\htdocs\cdyy\public/../application/admin\view\art\adda.html [ array (
+  0 => 'aid',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001246s ] mysql:host=127.0.0.1;port=3306;dbname=cdyy;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.062988s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000680s ]
+---------------------------------------------------------------
+[ 2018-03-07T11:18:38+08:00 ] 127.0.0.1 GET /admin/art/adda?id=1
+[ info ] www.cdyy.com/admin/art/adda?id=1 [运行时间：0.087777s][吞吐率：11.39req/s] [内存消耗：2,957.95kb] [文件加载：58]
+[ info ] [ LANG ] D:\xampp\htdocs\cdyy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'art',
+    2 => 'adda',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.cdyy.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'x-devtools-emulate-network-conditions-client-id' => 'ca00b149-f905-4f49-9db0-b04377e41730',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.75 Safari/537.36 Maxthon/5.1.6.3000',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'dnt' => '1',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN',
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=q0uffe4s4qtvb94ijtq3htb9o1',
+)
+[ info ] [ PARAM ] array (
+  'id' => '1',
+)
+[ info ] [ RUN ] app\admin\controller\Art->adda[ D:\xampp\htdocs\cdyy\application\admin\controller\Art.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\xampp\htdocs\cdyy\public/../application/admin\view\art\adda.html [ array (
+  0 => 'aid',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001149s ] mysql:host=127.0.0.1;port=3306;dbname=cdyy;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.035901s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000592s ]
+---------------------------------------------------------------
+[ 2018-03-07T11:18:39+08:00 ] 127.0.0.1 GET /admin/art/adda?id=1
+[ info ] www.cdyy.com/admin/art/adda?id=1 [运行时间：0.093376s][吞吐率：10.71req/s] [内存消耗：2,813.76kb] [文件加载：56]
+[ info ] [ LANG ] D:\xampp\htdocs\cdyy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'art',
+    2 => 'adda',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.cdyy.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'x-devtools-emulate-network-conditions-client-id' => 'ca00b149-f905-4f49-9db0-b04377e41730',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.75 Safari/537.36 Maxthon/5.1.6.3000',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'dnt' => '1',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN',
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=q0uffe4s4qtvb94ijtq3htb9o1',
+)
+[ info ] [ PARAM ] array (
+  'id' => '1',
+)
+[ info ] [ RUN ] app\admin\controller\Art->adda[ D:\xampp\htdocs\cdyy\application\admin\controller\Art.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\xampp\htdocs\cdyy\public/../application/admin\view\art\adda.html [ array (
+  0 => 'aid',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001090s ] mysql:host=127.0.0.1;port=3306;dbname=cdyy;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.045159s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000696s ]
+---------------------------------------------------------------
+[ 2018-03-07T11:18:40+08:00 ] 127.0.0.1 GET /admin/art/adda?id=1
+[ info ] www.cdyy.com/admin/art/adda?id=1 [运行时间：0.102960s][吞吐率：9.71req/s] [内存消耗：2,813.76kb] [文件加载：56]
+[ info ] [ LANG ] D:\xampp\htdocs\cdyy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'art',
+    2 => 'adda',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.cdyy.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'x-devtools-emulate-network-conditions-client-id' => 'ca00b149-f905-4f49-9db0-b04377e41730',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.75 Safari/537.36 Maxthon/5.1.6.3000',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'dnt' => '1',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN',
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=q0uffe4s4qtvb94ijtq3htb9o1',
+)
+[ info ] [ PARAM ] array (
+  'id' => '1',
+)
+[ info ] [ RUN ] app\admin\controller\Art->adda[ D:\xampp\htdocs\cdyy\application\admin\controller\Art.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\xampp\htdocs\cdyy\public/../application/admin\view\art\adda.html [ array (
+  0 => 'aid',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001065s ] mysql:host=127.0.0.1;port=3306;dbname=cdyy;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.054599s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000581s ]
+---------------------------------------------------------------
+[ 2018-03-07T11:19:13+08:00 ] 127.0.0.1 GET /admin/art/adda?id=1
+[ info ] www.cdyy.com/admin/art/adda?id=1 [运行时间：0.100489s][吞吐率：9.95req/s] [内存消耗：2,957.96kb] [文件加载：58]
+[ info ] [ LANG ] D:\xampp\htdocs\cdyy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'art',
+    2 => 'adda',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.cdyy.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'x-devtools-emulate-network-conditions-client-id' => 'ca00b149-f905-4f49-9db0-b04377e41730',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.75 Safari/537.36 Maxthon/5.1.6.3000',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'dnt' => '1',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN',
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=q0uffe4s4qtvb94ijtq3htb9o1',
+)
+[ info ] [ PARAM ] array (
+  'id' => '1',
+)
+[ info ] [ RUN ] app\admin\controller\Art->adda[ D:\xampp\htdocs\cdyy\application\admin\controller\Art.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\xampp\htdocs\cdyy\public/../application/admin\view\art\adda.html [ array (
+  0 => 'aid',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001341s ] mysql:host=127.0.0.1;port=3306;dbname=cdyy;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.046954s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000592s ]
+---------------------------------------------------------------
+[ 2018-03-07T11:19:14+08:00 ] 127.0.0.1 GET /admin/art/adda?id=1
+[ info ] www.cdyy.com/admin/art/adda?id=1 [运行时间：0.086141s][吞吐率：11.61req/s] [内存消耗：2,813.77kb] [文件加载：56]
+[ info ] [ LANG ] D:\xampp\htdocs\cdyy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'art',
+    2 => 'adda',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.cdyy.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'x-devtools-emulate-network-conditions-client-id' => 'ca00b149-f905-4f49-9db0-b04377e41730',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.75 Safari/537.36 Maxthon/5.1.6.3000',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'dnt' => '1',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN',
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=q0uffe4s4qtvb94ijtq3htb9o1',
+)
+[ info ] [ PARAM ] array (
+  'id' => '1',
+)
+[ info ] [ RUN ] app\admin\controller\Art->adda[ D:\xampp\htdocs\cdyy\application\admin\controller\Art.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\xampp\htdocs\cdyy\public/../application/admin\view\art\adda.html [ array (
+  0 => 'aid',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001087s ] mysql:host=127.0.0.1;port=3306;dbname=cdyy;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.037862s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000591s ]
+---------------------------------------------------------------
+[ 2018-03-07T11:19:15+08:00 ] 127.0.0.1 GET /admin/art/adda?id=1
+[ info ] www.cdyy.com/admin/art/adda?id=1 [运行时间：0.099210s][吞吐率：10.08req/s] [内存消耗：2,813.77kb] [文件加载：56]
+[ info ] [ LANG ] D:\xampp\htdocs\cdyy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'art',
+    2 => 'adda',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.cdyy.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'x-devtools-emulate-network-conditions-client-id' => 'ca00b149-f905-4f49-9db0-b04377e41730',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.75 Safari/537.36 Maxthon/5.1.6.3000',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'dnt' => '1',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN',
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=q0uffe4s4qtvb94ijtq3htb9o1',
+)
+[ info ] [ PARAM ] array (
+  'id' => '1',
+)
+[ info ] [ RUN ] app\admin\controller\Art->adda[ D:\xampp\htdocs\cdyy\application\admin\controller\Art.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\xampp\htdocs\cdyy\public/../application/admin\view\art\adda.html [ array (
+  0 => 'aid',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001112s ] mysql:host=127.0.0.1;port=3306;dbname=cdyy;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.050535s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000604s ]
+---------------------------------------------------------------
+[ 2018-03-07T11:19:52+08:00 ] 127.0.0.1 GET /admin/art/adda?id=1
+[ info ] www.cdyy.com/admin/art/adda?id=1 [运行时间：0.109913s][吞吐率：9.10req/s] [内存消耗：2,957.91kb] [文件加载：58]
+[ info ] [ LANG ] D:\xampp\htdocs\cdyy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'art',
+    2 => 'adda',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.cdyy.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'x-devtools-emulate-network-conditions-client-id' => 'ca00b149-f905-4f49-9db0-b04377e41730',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.75 Safari/537.36 Maxthon/5.1.6.3000',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'dnt' => '1',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN',
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=q0uffe4s4qtvb94ijtq3htb9o1',
+)
+[ info ] [ PARAM ] array (
+  'id' => '1',
+)
+[ info ] [ RUN ] app\admin\controller\Art->adda[ D:\xampp\htdocs\cdyy\application\admin\controller\Art.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\xampp\htdocs\cdyy\public/../application/admin\view\art\adda.html [ array (
+  0 => 'aid',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001111s ] mysql:host=127.0.0.1;port=3306;dbname=cdyy;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.056396s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000694s ]
+---------------------------------------------------------------
+[ 2018-03-07T11:20:36+08:00 ] 127.0.0.1 GET /admin/art/adda?id=1
+[ info ] www.cdyy.com/admin/art/adda?id=1 [运行时间：0.126691s][吞吐率：7.89req/s] [内存消耗：2,957.95kb] [文件加载：58]
+[ info ] [ LANG ] D:\xampp\htdocs\cdyy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'art',
+    2 => 'adda',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.cdyy.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'x-devtools-emulate-network-conditions-client-id' => 'ca00b149-f905-4f49-9db0-b04377e41730',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.75 Safari/537.36 Maxthon/5.1.6.3000',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'dnt' => '1',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN',
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=q0uffe4s4qtvb94ijtq3htb9o1',
+)
+[ info ] [ PARAM ] array (
+  'id' => '1',
+)
+[ info ] [ RUN ] app\admin\controller\Art->adda[ D:\xampp\htdocs\cdyy\application\admin\controller\Art.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\xampp\htdocs\cdyy\public/../application/admin\view\art\adda.html [ array (
+  0 => 'aid',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001152s ] mysql:host=127.0.0.1;port=3306;dbname=cdyy;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.074791s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000616s ]
+---------------------------------------------------------------
+[ 2018-03-07T11:20:37+08:00 ] 127.0.0.1 GET /admin/art/adda?id=1
+[ info ] www.cdyy.com/admin/art/adda?id=1 [运行时间：0.097158s][吞吐率：10.29req/s] [内存消耗：2,813.77kb] [文件加载：56]
+[ info ] [ LANG ] D:\xampp\htdocs\cdyy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'art',
+    2 => 'adda',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.cdyy.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'x-devtools-emulate-network-conditions-client-id' => 'ca00b149-f905-4f49-9db0-b04377e41730',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.75 Safari/537.36 Maxthon/5.1.6.3000',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'dnt' => '1',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN',
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=q0uffe4s4qtvb94ijtq3htb9o1',
+)
+[ info ] [ PARAM ] array (
+  'id' => '1',
+)
+[ info ] [ RUN ] app\admin\controller\Art->adda[ D:\xampp\htdocs\cdyy\application\admin\controller\Art.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\xampp\htdocs\cdyy\public/../application/admin\view\art\adda.html [ array (
+  0 => 'aid',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001077s ] mysql:host=127.0.0.1;port=3306;dbname=cdyy;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.048962s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000550s ]
+---------------------------------------------------------------
+[ 2018-03-07T11:20:38+08:00 ] 127.0.0.1 GET /admin/art/adda?id=1
+[ info ] www.cdyy.com/admin/art/adda?id=1 [运行时间：0.099805s][吞吐率：10.02req/s] [内存消耗：2,813.77kb] [文件加载：56]
+[ info ] [ LANG ] D:\xampp\htdocs\cdyy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'art',
+    2 => 'adda',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.cdyy.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'x-devtools-emulate-network-conditions-client-id' => 'ca00b149-f905-4f49-9db0-b04377e41730',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.75 Safari/537.36 Maxthon/5.1.6.3000',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'dnt' => '1',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN',
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=q0uffe4s4qtvb94ijtq3htb9o1',
+)
+[ info ] [ PARAM ] array (
+  'id' => '1',
+)
+[ info ] [ RUN ] app\admin\controller\Art->adda[ D:\xampp\htdocs\cdyy\application\admin\controller\Art.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\xampp\htdocs\cdyy\public/../application/admin\view\art\adda.html [ array (
+  0 => 'aid',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001042s ] mysql:host=127.0.0.1;port=3306;dbname=cdyy;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.050856s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000567s ]
+---------------------------------------------------------------
+[ 2018-03-07T11:21:30+08:00 ] 127.0.0.1 GET /admin/art/adda?id=1
+[ info ] www.cdyy.com/admin/art/adda?id=1 [运行时间：0.100398s][吞吐率：9.96req/s] [内存消耗：2,957.97kb] [文件加载：58]
+[ info ] [ LANG ] D:\xampp\htdocs\cdyy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'art',
+    2 => 'adda',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.cdyy.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'x-devtools-emulate-network-conditions-client-id' => 'ca00b149-f905-4f49-9db0-b04377e41730',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.75 Safari/537.36 Maxthon/5.1.6.3000',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'dnt' => '1',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN',
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=q0uffe4s4qtvb94ijtq3htb9o1',
+)
+[ info ] [ PARAM ] array (
+  'id' => '1',
+)
+[ info ] [ RUN ] app\admin\controller\Art->adda[ D:\xampp\htdocs\cdyy\application\admin\controller\Art.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\xampp\htdocs\cdyy\public/../application/admin\view\art\adda.html [ array (
+  0 => 'aid',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001198s ] mysql:host=127.0.0.1;port=3306;dbname=cdyy;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.048694s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000606s ]
+---------------------------------------------------------------
+[ 2018-03-07T11:22:03+08:00 ] 127.0.0.1 GET /admin/art/adda?id=1
+[ info ] www.cdyy.com/admin/art/adda?id=1 [运行时间：0.105737s][吞吐率：9.46req/s] [内存消耗：2,959.03kb] [文件加载：58]
+[ info ] [ LANG ] D:\xampp\htdocs\cdyy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'art',
+    2 => 'adda',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.cdyy.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'x-devtools-emulate-network-conditions-client-id' => 'ca00b149-f905-4f49-9db0-b04377e41730',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.75 Safari/537.36 Maxthon/5.1.6.3000',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'dnt' => '1',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN',
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=q0uffe4s4qtvb94ijtq3htb9o1',
+)
+[ info ] [ PARAM ] array (
+  'id' => '1',
+)
+[ info ] [ RUN ] app\admin\controller\Art->adda[ D:\xampp\htdocs\cdyy\application\admin\controller\Art.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\xampp\htdocs\cdyy\public/../application/admin\view\art\adda.html [ array (
+  0 => 'aid',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001258s ] mysql:host=127.0.0.1;port=3306;dbname=cdyy;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.051990s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000584s ]
+---------------------------------------------------------------
+[ 2018-03-07T11:22:03+08:00 ] 127.0.0.1 GET /admin/art/layui.js
+[ info ] www.cdyy.com/admin/art/layui.js [运行时间：0.038698s][吞吐率：25.84req/s] [内存消耗：1,736.50kb] [文件加载：50]
+[ info ] [ LANG ] D:\xampp\htdocs\cdyy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'art',
+    2 => 'layui.js',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.cdyy.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.75 Safari/537.36 Maxthon/5.1.6.3000',
+  'x-devtools-emulate-network-conditions-client-id' => 'ca00b149-f905-4f49-9db0-b04377e41730',
+  'accept' => '*/*',
+  'dnt' => '1',
+  'referer' => 'http://www.cdyy.com/admin/art/adda?id=1',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN',
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=q0uffe4s4qtvb94ijtq3htb9o1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-07T11:22:04+08:00 ] 127.0.0.1 GET /admin/art/adda?id=1
+[ info ] www.cdyy.com/admin/art/adda?id=1 [运行时间：0.094848s][吞吐率：10.54req/s] [内存消耗：2,813.75kb] [文件加载：56]
+[ info ] [ LANG ] D:\xampp\htdocs\cdyy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'art',
+    2 => 'adda',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.cdyy.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'x-devtools-emulate-network-conditions-client-id' => 'ca00b149-f905-4f49-9db0-b04377e41730',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.75 Safari/537.36 Maxthon/5.1.6.3000',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'dnt' => '1',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN',
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=q0uffe4s4qtvb94ijtq3htb9o1',
+)
+[ info ] [ PARAM ] array (
+  'id' => '1',
+)
+[ info ] [ RUN ] app\admin\controller\Art->adda[ D:\xampp\htdocs\cdyy\application\admin\controller\Art.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\xampp\htdocs\cdyy\public/../application/admin\view\art\adda.html [ array (
+  0 => 'aid',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001036s ] mysql:host=127.0.0.1;port=3306;dbname=cdyy;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.046708s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000544s ]
+---------------------------------------------------------------
+[ 2018-03-07T11:22:04+08:00 ] 127.0.0.1 GET /admin/art/layui.js
+[ info ] www.cdyy.com/admin/art/layui.js [运行时间：0.044388s][吞吐率：22.53req/s] [内存消耗：1,736.50kb] [文件加载：50]
+[ info ] [ LANG ] D:\xampp\htdocs\cdyy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'art',
+    2 => 'layui.js',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.cdyy.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.75 Safari/537.36 Maxthon/5.1.6.3000',
+  'x-devtools-emulate-network-conditions-client-id' => 'ca00b149-f905-4f49-9db0-b04377e41730',
+  'accept' => '*/*',
+  'dnt' => '1',
+  'referer' => 'http://www.cdyy.com/admin/art/adda?id=1',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN',
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=q0uffe4s4qtvb94ijtq3htb9o1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-07T11:22:04+08:00 ] 127.0.0.1 GET /admin/art/adda?id=1
+[ info ] www.cdyy.com/admin/art/adda?id=1 [运行时间：0.104141s][吞吐率：9.60req/s] [内存消耗：2,813.75kb] [文件加载：56]
+[ info ] [ LANG ] D:\xampp\htdocs\cdyy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'art',
+    2 => 'adda',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.cdyy.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'x-devtools-emulate-network-conditions-client-id' => 'ca00b149-f905-4f49-9db0-b04377e41730',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.75 Safari/537.36 Maxthon/5.1.6.3000',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'dnt' => '1',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN',
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=q0uffe4s4qtvb94ijtq3htb9o1',
+)
+[ info ] [ PARAM ] array (
+  'id' => '1',
+)
+[ info ] [ RUN ] app\admin\controller\Art->adda[ D:\xampp\htdocs\cdyy\application\admin\controller\Art.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\xampp\htdocs\cdyy\public/../application/admin\view\art\adda.html [ array (
+  0 => 'aid',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001092s ] mysql:host=127.0.0.1;port=3306;dbname=cdyy;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.055668s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000534s ]
+---------------------------------------------------------------
+[ 2018-03-07T11:22:04+08:00 ] 127.0.0.1 GET /admin/art/layui.js
+[ info ] www.cdyy.com/admin/art/layui.js [运行时间：0.042588s][吞吐率：23.48req/s] [内存消耗：1,736.50kb] [文件加载：50]
+[ info ] [ LANG ] D:\xampp\htdocs\cdyy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'art',
+    2 => 'layui.js',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.cdyy.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.75 Safari/537.36 Maxthon/5.1.6.3000',
+  'x-devtools-emulate-network-conditions-client-id' => 'ca00b149-f905-4f49-9db0-b04377e41730',
+  'accept' => '*/*',
+  'dnt' => '1',
+  'referer' => 'http://www.cdyy.com/admin/art/adda?id=1',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN',
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=q0uffe4s4qtvb94ijtq3htb9o1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-07T11:22:05+08:00 ] 127.0.0.1 GET /admin/art/adda?id=1
+[ info ] www.cdyy.com/admin/art/adda?id=1 [运行时间：0.075828s][吞吐率：13.19req/s] [内存消耗：2,813.75kb] [文件加载：56]
+[ info ] [ LANG ] D:\xampp\htdocs\cdyy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'art',
+    2 => 'adda',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.cdyy.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'x-devtools-emulate-network-conditions-client-id' => 'ca00b149-f905-4f49-9db0-b04377e41730',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.75 Safari/537.36 Maxthon/5.1.6.3000',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'dnt' => '1',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN',
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=q0uffe4s4qtvb94ijtq3htb9o1',
+)
+[ info ] [ PARAM ] array (
+  'id' => '1',
+)
+[ info ] [ RUN ] app\admin\controller\Art->adda[ D:\xampp\htdocs\cdyy\application\admin\controller\Art.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\xampp\htdocs\cdyy\public/../application/admin\view\art\adda.html [ array (
+  0 => 'aid',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001171s ] mysql:host=127.0.0.1;port=3306;dbname=cdyy;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.026098s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000571s ]
+---------------------------------------------------------------
+[ 2018-03-07T11:22:05+08:00 ] 127.0.0.1 GET /admin/art/layui.js
+[ info ] www.cdyy.com/admin/art/layui.js [运行时间：0.037500s][吞吐率：26.67req/s] [内存消耗：1,736.50kb] [文件加载：50]
+[ info ] [ LANG ] D:\xampp\htdocs\cdyy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'art',
+    2 => 'layui.js',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.cdyy.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.75 Safari/537.36 Maxthon/5.1.6.3000',
+  'x-devtools-emulate-network-conditions-client-id' => 'ca00b149-f905-4f49-9db0-b04377e41730',
+  'accept' => '*/*',
+  'dnt' => '1',
+  'referer' => 'http://www.cdyy.com/admin/art/adda?id=1',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN',
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=q0uffe4s4qtvb94ijtq3htb9o1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-07T11:22:33+08:00 ] 127.0.0.1 GET /admin/art/adda?id=1
+[ info ] www.cdyy.com/admin/art/adda?id=1 [运行时间：0.093844s][吞吐率：10.66req/s] [内存消耗：2,958.15kb] [文件加载：58]
+[ info ] [ LANG ] D:\xampp\htdocs\cdyy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'art',
+    2 => 'adda',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.cdyy.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'x-devtools-emulate-network-conditions-client-id' => 'ca00b149-f905-4f49-9db0-b04377e41730',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.75 Safari/537.36 Maxthon/5.1.6.3000',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'dnt' => '1',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN',
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=q0uffe4s4qtvb94ijtq3htb9o1',
+)
+[ info ] [ PARAM ] array (
+  'id' => '1',
+)
+[ info ] [ RUN ] app\admin\controller\Art->adda[ D:\xampp\htdocs\cdyy\application\admin\controller\Art.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\xampp\htdocs\cdyy\public/../application/admin\view\art\adda.html [ array (
+  0 => 'aid',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001171s ] mysql:host=127.0.0.1;port=3306;dbname=cdyy;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.041957s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000626s ]
+---------------------------------------------------------------
+[ 2018-03-07T11:23:25+08:00 ] 127.0.0.1 GET /admin/art/adda?id=1
+[ info ] www.cdyy.com/admin/art/adda?id=1 [运行时间：0.104142s][吞吐率：9.60req/s] [内存消耗：2,958.64kb] [文件加载：58]
+[ info ] [ LANG ] D:\xampp\htdocs\cdyy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'art',
+    2 => 'adda',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.cdyy.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'x-devtools-emulate-network-conditions-client-id' => 'ca00b149-f905-4f49-9db0-b04377e41730',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.75 Safari/537.36 Maxthon/5.1.6.3000',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'dnt' => '1',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN',
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=q0uffe4s4qtvb94ijtq3htb9o1',
+)
+[ info ] [ PARAM ] array (
+  'id' => '1',
+)
+[ info ] [ RUN ] app\admin\controller\Art->adda[ D:\xampp\htdocs\cdyy\application\admin\controller\Art.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\xampp\htdocs\cdyy\public/../application/admin\view\art\adda.html [ array (
+  0 => 'aid',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001228s ] mysql:host=127.0.0.1;port=3306;dbname=cdyy;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.051604s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000557s ]
+---------------------------------------------------------------
+[ 2018-03-07T11:36:58+08:00 ] 127.0.0.1 GET /admin/art/adda?id=1
+[ info ] www.cdyy.com/admin/art/adda?id=1 [运行时间：0.062538s][吞吐率：15.99req/s] [内存消耗：2,813.57kb] [文件加载：56]
+[ info ] [ LANG ] D:\xampp\htdocs\cdyy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'art',
+    2 => 'adda',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.cdyy.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.75 Safari/537.36 Maxthon/5.1.6.3000',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'dnt' => '1',
+  'referer' => 'http://www.cdyy.com/admin/art/index.html?id=1',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN',
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=q0uffe4s4qtvb94ijtq3htb9o1',
+)
+[ info ] [ PARAM ] array (
+  'id' => '1',
+)
+[ info ] [ RUN ] app\admin\controller\Art->adda[ D:\xampp\htdocs\cdyy\application\admin\controller\Art.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\xampp\htdocs\cdyy\public/../application/admin\view\art\adda.html [ array (
+  0 => 'aid',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002633s ] mysql:host=127.0.0.1;port=3306;dbname=cdyy;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.005879s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000725s ]

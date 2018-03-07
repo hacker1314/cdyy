@@ -1,3 +1,4 @@
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:67:"D:\xampp\htdocs\cdyy\public/../application/admin\view\art\adda.html";i:1520393002;}*/ ?>
 <!DOCTYPE html>
 <html>
     <head>
@@ -7,7 +8,7 @@
         <link rel="stylesheet" href="/static/layui/css/layui.css"  media="all">
     </head>
     <body>
-        <form class="layui-form layui-form-pane" action="{:url('admin/place/addpl')}" style="margin-left: 20px;margin-right: 20px;margin-top: 20px;">
+        <form class="layui-form layui-form-pane" action="<?php echo url('admin/place/addpl'); ?>" style="margin-left: 20px;margin-right: 20px;margin-top: 20px;">
             <div class="layui-form-item">
                 <label class="layui-form-label">标题：</label>
                 <div class="layui-input-block">
@@ -17,7 +18,7 @@
             <div class="layui-form-item layui-hide">
                 <label class="layui-form-label">文章类型类型：</label>
                 <div class="layui-input-block">
-                    <input type="text" name="aid" required  lay-verify="required" placeholder="请输入场地名" autocomplete="off" class="layui-input" value="{$aid}">
+                    <input type="text" name="aid" required  lay-verify="required" placeholder="请输入场地名" autocomplete="off" class="layui-input" value="<?php echo $aid; ?>">
                 </div>
             </div>
             <div id="editor">

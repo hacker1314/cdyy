@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:74:"D:\xampp\htdocs\cdyy\public/../application/admin\view\buildings\index.html";i:1520299258;s:61:"D:\xampp\htdocs\cdyy\application\admin\view\index\header.html";i:1519551428;s:61:"D:\xampp\htdocs\cdyy\application\admin\view\index\footer.html";i:1519441588;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:74:"D:\xampp\htdocs\cdyy\public/../application/admin\view\buildings\index.html";i:1520391259;s:61:"D:\xampp\htdocs\cdyy\application\admin\view\index\header.html";i:1519551428;s:61:"D:\xampp\htdocs\cdyy\application\admin\view\index\footer.html";i:1519441588;}*/ ?>
 <!DOCTYPE html>
 <html>
     <head>
@@ -57,7 +57,7 @@
                 <a href="javascript:;"><i class='layui-icon'>&#xe7a0;</i>文章管理</a>
                 <dl class="layui-nav-child">
                     <?php if(is_array($list2) || $list2 instanceof \think\Collection || $list2 instanceof \think\Paginator): $i = 0; $__LIST__ = $list2;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$id): $mod = ($i % 2 );++$i;?>
-                    <dd><a href="javascript:;"><?php echo $id['name']; ?></a></dd>
+                    <dd><a href="<?php echo url('admin/art/index'); ?>?id=<?php echo $id['id']; ?>"><?php echo $id['name']; ?></a></dd>
                     <?php endforeach; endif; else: echo "" ;endif; ?>
                 </dl>
             </li>
