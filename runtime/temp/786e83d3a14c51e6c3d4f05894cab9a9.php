@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:66:"D:\wamp64\www\cdyy\public/../application/admin\view\art\index.html";i:1520347298;s:59:"D:\wamp64\www\cdyy\application\admin\view\index\header.html";i:1519551428;s:59:"D:\wamp64\www\cdyy\application\admin\view\index\footer.html";i:1519441588;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:66:"D:\wamp64\www\cdyy\public/../application/admin\view\art\index.html";i:1520664105;s:59:"D:\wamp64\www\cdyy\application\admin\view\index\header.html";i:1519551428;s:59:"D:\wamp64\www\cdyy\application\admin\view\index\footer.html";i:1519441588;}*/ ?>
 <!DOCTYPE html>
 <html>
     <head>
@@ -125,7 +125,7 @@ layui.use(['layer', 'element', 'table'], function () {
         , cols: [[
                 {field: 'id', width: 80, minWidth: 80, title: 'ID', sort: true}
                 , {field: 'title', minWidth: 120, title: '标题'}
-                , {field: 'content', minWidth: 170, title: '内容概要'}
+                , {field: 'gaiyao', minWidth: 170, title: '内容概要'}
                 , {field: 'time', minWidth: 170, title: '编辑时间'}
                 , {field: 'username', minWidth: 170, title: '作者'}
                 , {field: 'status', minWidth: 130, title: '文章状态', templet: '#statusTpl'}
@@ -255,9 +255,9 @@ layui.use(['layer', 'element', 'table'], function () {
         , add: function () {
             layer.open({
                 type: 2
-                , title: '添加用户'
+                , title: '添加<?php echo $artt; ?>'
                 , content: "/admin/art/adda?id=<?php echo $aid; ?>" //这里content是一个普通的String
-                , area: ['520px', '450px']
+                , area: ['720px', '580px']
             });
         }
         , checku: function () {

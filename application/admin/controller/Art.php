@@ -41,7 +41,7 @@ class Art extends Controller {
         $this->assign('list2', $list2);
         $list3 = Gymtype::all();
         $this->assign('list3', $list3);
-        $artt= Articletype::get($id);
+        $artt = Articletype::get($id);
         $this->assign('artt', $artt->name);
         $this->assign('aid', $id);
         return $this->fetch();
@@ -56,7 +56,7 @@ class Art extends Controller {
         $user = User::get(Session::get('id'));
         if ($user->usertype != 1)
             return $this->error('对不起您登录的用户不为管理员用户！');
-        $place = article::where('articletype', '=', $id)->field(['id', 'title', 'username', 'content', 'time', 'status'])->limit(($page - 1) * $limit, $page * $limit)->select();
+        $place = article::where('articletype', '=', $id)->field(['id', 'title', 'username', 'gaiyao', 'time', 'status'])->limit(($page - 1) * $limit, $page * $limit)->select();
         $pcount = count(Gym::where('type', '=', $id)->select());
         //common文件设置json转换方法
         $rs1 = json(0, '数据返回成功', $pcount, $place);
@@ -75,18 +75,18 @@ class Art extends Controller {
         if ($name == '')
             return $this->redirect('art/artlist', ['id' => $id]);
         $art = article::where([
-                    'name' => ['like', '%' . $name . '%'],
+                    'title' => ['like', '%' . $name . '%'],
                     'articletype' => ['=', $id]
-                ])->field(['id', 'name', 'introduction', 'pictureurl', 'status'])->limit(($page - 1) * $limit, $page * $limit)->select();
-        $acount = count(article::wherewhere([
-                    'name' => ['like', '%' . $name . '%'],
+                ])->field(['id', 'title', 'username', 'gaiyao', 'time', 'status'])->limit(($page - 1) * $limit, $page * $limit)->select();
+        $acount = count(article::where([
+                    'title' => ['like', '%' . $name . '%'],
                     'articletype' => ['=', $id]
                 ])->select());
         //common文件设置json转换方法
         $rs1 = json(0, '数据返回成功', $acount, $art);
         dump($rs1);
     }
-    
+
     //文章状态审核
     public function check($id = "", $st = "") {
         if (!Session::has('id'))
@@ -97,19 +97,19 @@ class Art extends Controller {
             return '需要审核的文章为空！';
         $art = article::get($id);
         if ($art) {
-            if($st==1){
-                $art->status=1;
+            if ($st == 1) {
+                $art->status = 1;
                 return '该文章审核成功！结果为通过！';
             }
-            if($st==2){
-                $art->status=2;
+            if ($st == 2) {
+                $art->status = 2;
                 return '该文章审核成功！结果为不通过！';
             }
         } else {
             return '需要审核的用户不存在';
         }
     }
-    
+
     //添加文章
     public function adda($id = 1) {
         //判断是否登录
@@ -122,8 +122,38 @@ class Art extends Controller {
         $this->assign('aid', $id);
         return $this->fetch();
     }
-    
-     //删除文章API
+
+    //添加文章操作
+    public function addar($title = '', $keyword = '', $aid = '', $contents = '') {
+        //判断是否登录
+        if (!Session::has('id'))
+            return $this->redirect('index/login');
+        //效验登录用户是否为后台管理员用户
+        $user = User::get(Session::get('id'));
+        if ($user->usertype != 1)
+            return $this->error('对不起您登录的用户不为管理员用户！');
+        if ($title == '')
+            return $this->error('标题不能为空请重试！');
+        if ($aid == '')
+            return $this->error('文章分类不能为空，请重试！');
+        if ($keyword == '')
+            return $this->error('文章概要不能为空！');
+        if (strlen($keyword) > 240)
+            return $this->error('文章概要字数超过限定字数，目前已经超出' . (strlen($keyword) - 240).'字');
+        $art = new article;
+        $art->title = $title;
+        $art->time = date("Y-m-d H:i:s", time());
+        $art->userid = Session::get('id');
+        $art->username = Session::get('name');
+        $art->content = $contents;
+        $art->gaiyao = $keyword;
+        $art->status = 1;
+        $art->articletype = $aid;
+        $art->save();
+        return $this->success('发布成功，请刷新后查看！');
+    }
+
+    //删除文章API
     public function del($id = '') {
         //判断是否登录
         if (!Session::has('id'))
@@ -141,4 +171,5 @@ class Art extends Controller {
         } else
             return "需要删除的文章不存在！";
     }
+
 }
