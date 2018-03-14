@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:68:"D:\xampp\htdocs\cdyy\public/../application/admin\view\art\index.html";i:1520391819;s:61:"D:\xampp\htdocs\cdyy\application\admin\view\index\header.html";i:1519551428;s:61:"D:\xampp\htdocs\cdyy\application\admin\view\index\footer.html";i:1519441588;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:68:"D:\xampp\htdocs\cdyy\public/../application/admin\view\art\index.html";i:1520995147;s:61:"D:\xampp\htdocs\cdyy\application\admin\view\index\header.html";i:1519551428;s:61:"D:\xampp\htdocs\cdyy\application\admin\view\index\footer.html";i:1519441588;}*/ ?>
 <!DOCTYPE html>
 <html>
     <head>
@@ -125,7 +125,7 @@ layui.use(['layer', 'element', 'table'], function () {
         , cols: [[
                 {field: 'id', width: 80, minWidth: 80, title: 'ID', sort: true}
                 , {field: 'title', minWidth: 120, title: '标题'}
-                , {field: 'content', minWidth: 170, title: '内容概要'}
+                , {field: 'gaiyao', minWidth: 170, title: '内容概要'}
                 , {field: 'time', minWidth: 170, title: '编辑时间'}
                 , {field: 'username', minWidth: 170, title: '作者'}
                 , {field: 'status', minWidth: 130, title: '文章状态', templet: '#statusTpl'}
@@ -163,7 +163,7 @@ layui.use(['layer', 'element', 'table'], function () {
                 , btn: ['通过', '不通过']
                 , yes: function (index, layero) {
                     //按钮【按钮一】的回调
-                    if (obj.data.status == 0) {
+                    if (obj.data.status != 0) {
                         $.post("<?php echo url('admin/art/check'); ?>",
                                 {
                                     id: obj.data.id,
@@ -182,17 +182,17 @@ layui.use(['layer', 'element', 'table'], function () {
                 }
                 , btn2: function (index, layero) {
                     //按钮【按钮二】的回调
-                        $.post("<?php echo url('admin/art/check'); ?>",
-                                {
-                                    id: obj.data.id,
-                                    st: 2,
-                                },
-                                function (data, status) {
-                                    layer.msg("结果: \n" + data, {icon: 1});
-                                });
-                        obj.update({
-                            status: 2
-                        });
+                    $.post("<?php echo url('admin/art/check'); ?>",
+                            {
+                                id: obj.data.id,
+                                st: 2,
+                            },
+                            function (data, status) {
+                                layer.msg("结果: \n" + data, {icon: 1});
+                            });
+                    obj.update({
+                        status: 2
+                    });
                     layer.close(index);
                     //return false 开启该代码可禁止点击该按钮关闭
                 }
@@ -205,36 +205,32 @@ layui.use(['layer', 'element', 'table'], function () {
             //do somehing
         } else if (layEvent === 'del') { //删除
             layer.confirm('真的删除该文章？', function (index) {
-                    obj.del(); //删除对应行（tr）的DOM结构，并更新缓存
-                    $.post("<?php echo url('admin/art/del'); ?>",
-                            {
-                                id: obj.data.id,
-                            },
-                            function (data, status) {
-                                layer.msg("结果: \n" + data, {icon: 1});
-                            });
-                    //向服务端发送删除指令
+                obj.del(); //删除对应行（tr）的DOM结构，并更新缓存
+                $.post("<?php echo url('admin/art/del'); ?>",
+                        {
+                            id: obj.data.id,
+                        },
+                        function (data, status) {
+                            layer.msg("结果: \n" + data, {icon: 1});
+                        });
+                //向服务端发送删除指令
                 layer.close(index);
 
             });
-        } else if (layEvent === 'reset') { //重置
-            //do something
-            layer.confirm('确定重置密码嘛？', function (index) {
-                if (obj.data.id != 1) {
-                    $.post("<?php echo url('admin/art/resetpwd'); ?>",
-                            {
-                                id: obj.data.id,
-                            },
-                            function (data, status) {
-                                layer.msg("结果: \n" + data, {icon: 1});
-                            });
-                    //向服务端发送重置指令
-                } else
-                    layer.msg("默认系统管理员用户不支持重置密码！", {icon: 2});
-                layer.close(index);
-
+        } else if (layEvent === 'detail') { //重置
+            layer.open({
+                type: 2
+                , title: '编辑<?php echo $artt; ?>'
+                , content: "/admin/art/detail?id=" + obj.data.id //这里content是一个普通的String
+                , area: ['720px', '580px']
             });
-        } else if (layEvent === 'reset') {
+        } else if (layEvent === 'edit') {
+            layer.open({
+                type: 2
+                , title: '编辑<?php echo $artt; ?>'
+                , content: "/admin/art/edit?id=" + obj.data.id //这里content是一个普通的String
+                , area: ['720px', '580px']
+            });
         }
     });
     var $ = layui.$, active = {
@@ -257,18 +253,18 @@ layui.use(['layer', 'element', 'table'], function () {
                 type: 2
                 , title: '添加<?php echo $artt; ?>'
                 , content: "/admin/art/adda?id=<?php echo $aid; ?>" //这里content是一个普通的String
-                , area: ['700px', '520px']
+                , area: ['720px', '580px']
             });
         }
         , checku: function () {
             table.reload('arttable', {
-                url: '/admin/art/unchecklist'
+                url: '/admin/art/uncheck'
                 , page: {
                     curr: 1 //重新从第 1 页开始
                 }
                 , where: {
                     id: <?php echo $aid; ?>,
-                    check: '未审查'
+                    status: 0
                 }
             });
         }

@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:67:"D:\xampp\htdocs\cdyy\public/../application/admin\view\art\adda.html";i:1520393002;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:67:"D:\xampp\htdocs\cdyy\public/../application/admin\view\art\adda.html";i:1520997286;}*/ ?>
 <!DOCTYPE html>
 <html>
     <head>
@@ -8,35 +8,43 @@
         <link rel="stylesheet" href="/static/layui/css/layui.css"  media="all">
     </head>
     <body>
-        <form class="layui-form layui-form-pane" action="<?php echo url('admin/place/addpl'); ?>" style="margin-left: 20px;margin-right: 20px;margin-top: 20px;">
+        <form class="layui-form layui-form-pane" action="<?php echo url('admin/art/addar'); ?>"  method="post" style="margin-left: 20px;margin-right: 20px;margin-top: 20px;">
             <div class="layui-form-item">
                 <label class="layui-form-label">标题：</label>
                 <div class="layui-input-block">
-                    <input type="text" name="placename" required  lay-verify="required" placeholder="请输入场地名" autocomplete="off" class="layui-input">
+                    <input type="text" name="title" required  lay-verify="required" placeholder="标题" autocomplete="off" class="layui-input">
                 </div>
             </div>
             <div class="layui-form-item layui-hide">
-                <label class="layui-form-label">文章类型类型：</label>
+                <label class="layui-form-label">文章类型：</label>
                 <div class="layui-input-block">
-                    <input type="text" name="aid" required  lay-verify="required" placeholder="请输入场地名" autocomplete="off" class="layui-input" value="<?php echo $aid; ?>">
+                    <input type="text" name="aid" required  lay-verify="required" placeholder="请输入类型" autocomplete="off" class="layui-input" value="<?php echo $aid; ?>">
                 </div>
             </div>
-            <div id="editor">
-                <p>欢迎使用 <b>wangEditor</b> 富文本编辑器</p>
-            </div>
-            <div class="layui-form-item layui-form-text">
-                <label class="layui-form-label">简介</label>
+            <div class="layui-form-item ">
+                <label class="layui-form-label">文章概要</label>
                 <div class="layui-input-block">
-                    <textarea name="intro" id="texta" placeholder="请输入内容" class="layui-textarea"></textarea>
+                    <input type="text" name="keyword" required  lay-verify="required" placeholder="文章概要（240字以内）" autocomplete="off" class="layui-input">
+                </div>
+            </div>
+
+            <div id="editor"></div>
+
+            <div class="layui-form-item layui-form-text layui-hide">
+                <label class="layui-form-label">内容</label>
+                <div class="layui-input-block">
+                    <textarea name="contents" id="texta" placeholder="请输入内容" class="layui-textarea"></textarea>
                 </div>
             </div>
             <!-- 注意， 只需要引用 JS，无需引用任何 CSS ！！！-->
-             <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+            <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
             <script type="text/javascript" src="/static/wangEditor/wangEditor.min.js"></script>
             <script type="text/javascript">
                 var E = window.wangEditor
                 var editor = new E('#editor')
                 var $text1 = $('#texta')
+                editor.customConfig.uploadImgServer = '/uploads/index/edit'
+                editor.customConfig.uploadFileName = 'file'
                 editor.customConfig.onchange = function (html) {
                     // 监控变化，同步更新到 textarea
                     $text1.val(html)

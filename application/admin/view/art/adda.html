@@ -7,7 +7,7 @@
         <link rel="stylesheet" href="/static/layui/css/layui.css"  media="all">
     </head>
     <body>
-        <form class="layui-form layui-form-pane" action="{:url('admin/art/addar')}" style="margin-left: 20px;margin-right: 20px;margin-top: 20px;">
+        <form class="layui-form layui-form-pane" action="{:url('admin/art/addar')}"  method="post" style="margin-left: 20px;margin-right: 20px;margin-top: 20px;">
             <div class="layui-form-item">
                 <label class="layui-form-label">标题：</label>
                 <div class="layui-input-block">
@@ -42,6 +42,9 @@
                 var E = window.wangEditor
                 var editor = new E('#editor')
                 var $text1 = $('#texta')
+                editor.customConfig.uploadImgServer = '/uploads/index/edit'
+                editor.customConfig.uploadFileName = 'file'
+                editor.customConfig.uploadImgMaxLength = 1
                 editor.customConfig.onchange = function (html) {
                     // 监控变化，同步更新到 textarea
                     $text1.val(html)

@@ -151,7 +151,7 @@ layui.use(['layer', 'element', 'table'], function () {
                 , btn: ['通过', '不通过']
                 , yes: function (index, layero) {
                     //按钮【按钮一】的回调
-                    if (obj.data.status == 0) {
+                    if (obj.data.status != 0) {
                         $.post("{:url('admin/art/check')}",
                                 {
                                     id: obj.data.id,
@@ -170,17 +170,17 @@ layui.use(['layer', 'element', 'table'], function () {
                 }
                 , btn2: function (index, layero) {
                     //按钮【按钮二】的回调
-                        $.post("{:url('admin/art/check')}",
-                                {
-                                    id: obj.data.id,
-                                    st: 2,
-                                },
-                                function (data, status) {
-                                    layer.msg("结果: \n" + data, {icon: 1});
-                                });
-                        obj.update({
-                            status: 2
-                        });
+                    $.post("{:url('admin/art/check')}",
+                            {
+                                id: obj.data.id,
+                                st: 2,
+                            },
+                            function (data, status) {
+                                layer.msg("结果: \n" + data, {icon: 1});
+                            });
+                    obj.update({
+                        status: 2
+                    });
                     layer.close(index);
                     //return false 开启该代码可禁止点击该按钮关闭
                 }
@@ -193,36 +193,32 @@ layui.use(['layer', 'element', 'table'], function () {
             //do somehing
         } else if (layEvent === 'del') { //删除
             layer.confirm('真的删除该文章？', function (index) {
-                    obj.del(); //删除对应行（tr）的DOM结构，并更新缓存
-                    $.post("{:url('admin/art/del')}",
-                            {
-                                id: obj.data.id,
-                            },
-                            function (data, status) {
-                                layer.msg("结果: \n" + data, {icon: 1});
-                            });
-                    //向服务端发送删除指令
+                obj.del(); //删除对应行（tr）的DOM结构，并更新缓存
+                $.post("{:url('admin/art/del')}",
+                        {
+                            id: obj.data.id,
+                        },
+                        function (data, status) {
+                            layer.msg("结果: \n" + data, {icon: 1});
+                        });
+                //向服务端发送删除指令
                 layer.close(index);
 
             });
-        } else if (layEvent === 'reset') { //重置
-            //do something
-            layer.confirm('确定重置密码嘛？', function (index) {
-                if (obj.data.id != 1) {
-                    $.post("{:url('admin/art/resetpwd')}",
-                            {
-                                id: obj.data.id,
-                            },
-                            function (data, status) {
-                                layer.msg("结果: \n" + data, {icon: 1});
-                            });
-                    //向服务端发送重置指令
-                } else
-                    layer.msg("默认系统管理员用户不支持重置密码！", {icon: 2});
-                layer.close(index);
-
+        } else if (layEvent === 'detail') { //重置
+            layer.open({
+                type: 2
+                , title: '编辑{$artt}'
+                , content: "/admin/art/detail?id=" + obj.data.id //这里content是一个普通的String
+                , area: ['720px', '580px']
             });
-        } else if (layEvent === 'reset') {
+        } else if (layEvent === 'edit') {
+            layer.open({
+                type: 2
+                , title: '编辑{$artt}'
+                , content: "/admin/art/edit?id=" + obj.data.id //这里content是一个普通的String
+                , area: ['720px', '580px']
+            });
         }
     });
     var $ = layui.$, active = {
@@ -250,13 +246,13 @@ layui.use(['layer', 'element', 'table'], function () {
         }
         , checku: function () {
             table.reload('arttable', {
-                url: '/admin/art/unchecklist'
+                url: '/admin/art/uncheck'
                 , page: {
                     curr: 1 //重新从第 1 页开始
                 }
                 , where: {
                     id: {$aid},
-                    check: '未审查'
+                    status: 0
                 }
             });
         }

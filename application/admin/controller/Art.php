@@ -99,10 +99,12 @@ class Art extends Controller {
         if ($art) {
             if ($st == 1) {
                 $art->status = 1;
+                $art->save();
                 return '该文章审核成功！结果为通过！';
             }
             if ($st == 2) {
                 $art->status = 2;
+                $art->save();
                 return '该文章审核成功！结果为不通过！';
             }
         } else {
@@ -139,7 +141,7 @@ class Art extends Controller {
         if ($keyword == '')
             return $this->error('文章概要不能为空！');
         if (strlen($keyword) > 240)
-            return $this->error('文章概要字数超过限定字数，目前已经超出' . (strlen($keyword) - 240).'字');
+            return $this->error('文章概要字数超过限定字数，目前已经超出' . (strlen($keyword) - 240) . '字');
         $art = new article;
         $art->title = $title;
         $art->time = date("Y-m-d H:i:s", time());
@@ -172,4 +174,46 @@ class Art extends Controller {
             return "需要删除的文章不存在！";
     }
 
+    //搜索未审核文章列表API
+    public function uncheck($id = 1, $page = 1, $limit = 10, $status = '') {
+        //判断是否登录
+        if (!Session::has('id'))
+            return $this->redirect('index/login');
+        //效验登录用户是否为后台管理员用户
+        $user = User::get(Session::get('id'));
+        if ($user->usertype != 1)
+            return $this->error('对不起您登录的用户不为管理员用户！');
+        if ($status == '')
+            return $this->redirect('art/artlist', ['id' => $id]);
+        $art = article::where([
+                    'status' => ['=', $status],
+                    'articletype' => ['=', $id]
+                ])->field(['id', 'title', 'username', 'gaiyao', 'time', 'status'])->limit(($page - 1) * $limit, $page * $limit)->select();
+        $acount = count(article::where([
+                    'status' => ['=', $status],
+                    'articletype' => ['=', $id]
+                ])->select());
+        //common文件设置json转换方法
+        $rs1 = json(0, '数据返回成功', $acount, $art);
+        dump($rs1);
+    }
+
+    //查看文章
+    public function detail($id="") {
+        //判断是否登录
+        if (!Session::has('id'))
+            return $this->redirect('index/login');
+        //效验登录用户是否为后台管理员用户
+        $user = User::get(Session::get('id'));
+        if ($user->usertype != 1)
+            return $this->error('对不起您登录的用户不为管理员用户！');
+        $art= article::get($id);
+        $this->assign('content', $art->content);
+        return $this->fetch();
+    }
+    
+    //编辑文章
+    public function edit($param) {
+        
+    }
 }

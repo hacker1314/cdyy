@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:75:"D:\xampp\htdocs\cdyy\public/../application/admin\view\usermanage\index.html";i:1520325435;s:61:"D:\xampp\htdocs\cdyy\application\admin\view\index\header.html";i:1519551428;s:61:"D:\xampp\htdocs\cdyy\application\admin\view\index\footer.html";i:1519441588;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:75:"D:\xampp\htdocs\cdyy\public/../application/admin\view\usermanage\index.html";i:1520391259;s:61:"D:\xampp\htdocs\cdyy\application\admin\view\index\header.html";i:1519551428;s:61:"D:\xampp\htdocs\cdyy\application\admin\view\index\footer.html";i:1519441588;}*/ ?>
 <!DOCTYPE html>
 <html>
     <head>
@@ -78,7 +78,7 @@
     <!-- 内容主体区域 -->
     <span class="layui-breadcrumb">
         <a href="/">首页</a>
-        <a href="/demo/">用户管理</a>
+        <a href="/usermanage">用户管理</a>
         <a><cite><?php echo $typename; ?></cite></a>
         <hr>
     </span>

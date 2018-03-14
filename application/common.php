@@ -32,3 +32,13 @@ function upjson($code,$msg="",$data=array()) {
   echo json_encode($result);
   exit;
 }
+
+function editjson($code,$data=array()) {
+    $result=array(
+   'errno'=>$code,
+   'data'=>$data
+  );
+  //输出json
+  echo json_encode($result);
+  exit;
+}

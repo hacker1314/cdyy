@@ -38,4 +38,24 @@ class Index extends Controller{
             return $file->getError();
         }
     }
+    public function edit(Request $request) {
+        // 获取表单上传文件
+        $file = $request->file('file');
+        if (empty($file)) {
+            return '请选择上传文件';
+        }
+        // 移动到框架应用根目录目录下
+        $info = $file->move(ROOT_PATH . 'public' . DS . 'static' . DS . 'image');
+        if ($info) {
+            $str=$info->getRealPath();
+//            $i=strlen(ROOT_PATH)+6;
+//            $str=substr($str,$i);
+            $str= str_replace(ROOT_PATH. 'public', '', $str);
+            $str= str_replace('\\','/',$str);
+            return editjson(0, array(0=>$str));
+        } else {
+            // 上传失败获取错误信息
+            return $file->getError();
+        }
+    }
 }

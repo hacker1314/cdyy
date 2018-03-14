@@ -84,14 +84,17 @@
 
 </div>
 <script src="/static/layui/layui.js"></script>
+
 <script type="text/html" id="barDemo">
     <a class="layui-btn layui-btn-xs" lay-event="yy">预约情况</a>
     <a class="layui-btn layui-btn-xs" lay-event="edit">编辑</a>
     <a class="layui-btn layui-btn-danger layui-btn-xs" lay-event="del">删除</a>
 </script>
+
 <script type="text/html" id="picTpl">
     <a href="javascript:void(0);" onclick='showpic("{{d.pictureurl}}")' class="layui-table-link">查看照片</a>
 </script>
+
 <script type="text/html" id="statusTpl">
     {{#  if(d.status==1){ }}
     可预约
@@ -99,6 +102,7 @@
     不可预约
     {{#  } }}
 </script>
+
 <script>
 //JavaScript代码区域
     layui.use(['laytpl', 'layer', 'element', 'table'], function () {
@@ -108,16 +112,16 @@
             , layer = layui.layer;
     table.render({
     elem: '#placemanage'
-            , url: '/admin/place/placelist'
-            , where: {id: {$pid}}
-            , cols: [[
-            {field: 'id', width: 70, minWidth: 80, title: 'ID', sort: true}
-            , {field: 'name', minWidth: 120, title: '场地名'}
-            , {field: 'introduction', minWidth: 300, title: '简介'}
-            , {field: 'status', minWidth: 80, title: '可否预约', templet: '#statusTpl'}
-            , {field: 'pictureurl', minWidth: 80, title: '照片', templet: '#picTpl'}
-            , {fixed: 'right', minWidth: 200, align: 'center', toolbar: '#barDemo'} //这里的toolbar值是模板元素的选择器
-            ]]
+    , url: '/admin/place/placelist'
+    , where: {id: {$pid}}
+    , cols: [[
+    {field: 'id', width: 70, minWidth: 80, title: 'ID', sort: true}
+    , {field: 'name', minWidth: 120, title: '场地名'}
+    , {field: 'introduction', minWidth: 300, title: '简介'}
+    , {field: 'status', minWidth: 80, title: '可否预约', templet: '#statusTpl'}
+    , {field: 'pictureurl', minWidth: 80, title: '照片', templet: '#picTpl'}
+    , {fixed: 'right', minWidth: 200, align: 'center', toolbar: '#barDemo'} //这里的toolbar值是模板元素的选择器
+    ]]
             , height: 'full-260'
             , page: true
             , done: function (res, page, count) {
@@ -141,7 +145,7 @@
     var tr = obj.tr; //获得当前行 tr 的DOM对象
 
     if (layEvent === 'yy') { //查看预约情况
-
+    // 
     //do somehing
     } else if (layEvent === 'del') { //删除
     layer.confirm('真的删除场地嘛？', function (index) {
@@ -160,7 +164,7 @@
     //do something
     layer.open({
     type: 2
-            , title: '添加学生活动场地'
+            , title: '编辑学生活动场地'
             , content: "/admin/place/editp?id=" + obj.data.id //这里content是一个普通的String
             , area: ['520px', '450px']
     });
@@ -176,7 +180,6 @@
             curr: 1 //重新从第 1 页开始
             }
     , where: {
-
     name: nametext.val()
     }
     });
