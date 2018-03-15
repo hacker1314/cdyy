@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:67:"D:\xampp\htdocs\cdyy\public/../application/admin\view\art\edit.html";i:1521072202;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:67:"D:\xampp\htdocs\cdyy\public/../application/admin\view\art\edit.html";i:1521091718;}*/ ?>
 <!DOCTYPE html>
 <html>
     <head>
@@ -8,7 +8,13 @@
         <link rel="stylesheet" href="/static/layui/css/layui.css"  media="all">
     </head>
     <body>
-        <form class="layui-form layui-form-pane" action="<?php echo url('admin/art/addar'); ?>"  method="post" style="margin-left: 20px;margin-right: 20px;margin-top: 20px;">
+        <form class="layui-form layui-form-pane" action="<?php echo url('admin/art/edita'); ?>"  method="post" style="margin-left: 20px;margin-right: 20px;margin-top: 20px;">
+            <div class="layui-form-item layui-hide">
+                <label class="layui-form-label">ID：</label>
+                <div class="layui-input-block">
+                    <input type="text" name="id" required  lay-verify="required" placeholder="id" autocomplete="off" class="layui-input" value="<?php echo $id; ?>">
+                </div>
+            </div>
             <div class="layui-form-item">
                 <label class="layui-form-label">标题：</label>
                 <div class="layui-input-block">

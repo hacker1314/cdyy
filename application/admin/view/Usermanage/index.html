@@ -30,7 +30,7 @@
     <div class="layui-side-scroll">
         <!-- 左侧导航区域（可配合layui已有的垂直导航） -->
         <ul class="layui-nav layui-nav-tree"  lay-filter="test">
-            <li class="layui-nav-item layui-nav-itemed">
+            <li class="layui-nav-item">
                 <a class="" href="javascript:;"><i class='layui-icon'>&#xe715;</i>体育活动场地</a>
                 <dl class="layui-nav-child">
                     {volist name="list3" id="id"}
@@ -49,7 +49,7 @@
                     {/volist}
                 </dl>
             </li>
-            <li class="layui-nav-item layui-nav-itemed">
+            <li class="layui-nav-item">
                 <a href="javascript:;"><i class='layui-icon'>&#xe7a0;</i>文章管理</a>
                 <dl class="layui-nav-child">
                     {volist name="list2" id="id"}
@@ -57,7 +57,13 @@
                     {/volist}
                 </dl>
             </li>
-            <li class="layui-nav-item"><a href=""><i class='layui-icon'>&#xe658;</i>预约信息管理</a></li>
+            <li class="layui-nav-item">
+                <a href="javascript:;"><i class='layui-icon'>&#xe658;</i>预约信息管理</a>
+                <dl class="layui-nav-child">
+                    <dd><a href="{:url('admin/yuyue/place')}">体育活动场地预约管理</a></dd>
+                    <dd><a href="{:url('admin/yuyue/building')}">体育活动场地预约管理</a></dd>
+                </dl>
+            </li>
         </ul>
     </div>
 </div>

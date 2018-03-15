@@ -32,8 +32,13 @@ class Art extends Controller {
     //put your code here
     //文章管理首页
     public function index($id = "") {
+       //判断是否登录
         if (!Session::has('id'))
-            return $this->redirect('Index/login');
+            return $this->redirect('index/login');
+        //效验登录用户是否为后台管理员用户
+        $user = User::get(Session::get('id'));
+        if ($user->usertype != 1)
+            return $this->error('对不起您登录的用户不为管理员用户！');
         $this->assign('name', Session::get('name'));
         $list1 = Usertype::all();
         $list2 = Articletype::all();
@@ -234,7 +239,7 @@ class Art extends Controller {
     }
 
     //编辑文章API
-    public function edita($title = '', $keyword = '', $aid = '', $contents = '') {
+    public function edita($title = '', $keyword = '', $aid = '', $contents = '',$id='') {
         //判断是否登录
         if (!Session::has('id'))
             return $this->redirect('index/login');
