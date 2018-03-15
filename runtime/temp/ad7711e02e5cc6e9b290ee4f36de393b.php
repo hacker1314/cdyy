@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:70:"D:\xampp\htdocs\cdyy\public/../application/admin\view\place\index.html";i:1520994623;s:61:"D:\xampp\htdocs\cdyy\application\admin\view\index\header.html";i:1519551428;s:61:"D:\xampp\htdocs\cdyy\application\admin\view\index\footer.html";i:1519441588;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:70:"D:\xampp\htdocs\cdyy\public/../application/admin\view\place\index.html";i:1521073978;s:61:"D:\xampp\htdocs\cdyy\application\admin\view\index\header.html";i:1519551428;s:61:"D:\xampp\htdocs\cdyy\application\admin\view\index\footer.html";i:1519441588;}*/ ?>
 <!DOCTYPE html>
 <html>
     <head>
@@ -124,12 +124,13 @@
             , layer = layui.layer;
     table.render({
     elem: '#placemanage'
-    , url: '/admin/place/placelist'
-    , where: {id: <?php echo $pid; ?>}
+            , url: '/admin/place/placelist'
+            , where: {id: <?php echo $pid; ?>}
     , cols: [[
     {field: 'id', width: 70, minWidth: 80, title: 'ID', sort: true}
     , {field: 'name', minWidth: 120, title: '场地名'}
     , {field: 'introduction', minWidth: 300, title: '简介'}
+    , {field: 'child', minWidth: 80, title: '子场地数量', sort: true}
     , {field: 'status', minWidth: 80, title: '可否预约', templet: '#statusTpl'}
     , {field: 'pictureurl', minWidth: 80, title: '照片', templet: '#picTpl'}
     , {fixed: 'right', minWidth: 200, align: 'center', toolbar: '#barDemo'} //这里的toolbar值是模板元素的选择器
@@ -178,7 +179,7 @@
     type: 2
             , title: '编辑学生活动场地'
             , content: "/admin/place/editp?id=" + obj.data.id //这里content是一个普通的String
-            , area: ['520px', '450px']
+            , area: ['520px', '500px']
     });
     }
     });
@@ -201,7 +202,7 @@
     type: 2
             , title: '添加体育活动场地-<?php echo $cd; ?>'
             , content: "/admin/place/addp?id=<?php echo $pid; ?>" //这里content是一个普通的String
-            , area: ['520px', '450px']
+            , area: ['520px', '500px']
     });
     }
     };

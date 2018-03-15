@@ -9901,3 +9901,48 @@
 )
 [ info ] [ RUN ] app\uploads\controller\Index->edit[ D:\xampp\htdocs\cdyy\application\uploads\controller\Index.php ]
 [ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-14T11:26:26+08:00 ] 127.0.0.1 GET /admin/art/adda?id=1
+[ info ] www.cdyy.com/admin/art/adda?id=1 [运行时间：0.064921s][吞吐率：15.40req/s] [内存消耗：2,978.70kb] [文件加载：58]
+[ info ] [ LANG ] D:\xampp\htdocs\cdyy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'art',
+    2 => 'adda',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.cdyy.com',
+  'connection' => 'keep-alive',
+  'x-devtools-emulate-network-conditions-client-id' => 'a80ea084-3795-4380-82fd-88b029b4deae',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.75 Safari/537.36 Maxthon/5.1.6.3000',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'dnt' => '1',
+  'referer' => 'http://www.cdyy.com/admin/art/index.html?id=1',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN',
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=45iatq7a0b5rjpe4vi6rvanvs1; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+  'id' => '1',
+)
+[ info ] [ RUN ] app\admin\controller\Art->adda[ D:\xampp\htdocs\cdyy\application\admin\controller\Art.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\xampp\htdocs\cdyy\public/../application/admin\view\art\adda.html [ array (
+  0 => 'aid',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000754s ] mysql:host=127.0.0.1;port=3306;dbname=cdyy;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.004829s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000366s ]

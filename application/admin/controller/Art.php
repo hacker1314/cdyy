@@ -152,6 +152,9 @@ class Art extends Controller {
         $art->status = 1;
         $art->articletype = $aid;
         $art->save();
+        $ap = Articletype::get($aid);
+        $ap->count = $ap->count + 1;
+        $ap->save();
         return $this->success('发布成功，请刷新后查看！');
     }
 
@@ -199,7 +202,7 @@ class Art extends Controller {
     }
 
     //查看文章
-    public function detail($id="") {
+    public function detail($id = "") {
         //判断是否登录
         if (!Session::has('id'))
             return $this->redirect('index/login');
@@ -207,13 +210,57 @@ class Art extends Controller {
         $user = User::get(Session::get('id'));
         if ($user->usertype != 1)
             return $this->error('对不起您登录的用户不为管理员用户！');
-        $art= article::get($id);
+        $art = article::get($id);
         $this->assign('content', $art->content);
         return $this->fetch();
     }
-    
-    //编辑文章
-    public function edit($param) {
-        
+
+    //编辑文章界面
+    public function edit($id = '') {
+        //判断是否登录
+        if (!Session::has('id'))
+            return $this->redirect('index/login');
+        //效验登录用户是否为后台管理员用户
+        $user = User::get(Session::get('id'));
+        if ($user->usertype != 1)
+            return $this->error('对不起您登录的用户不为管理员用户！');
+        $art = article::get($id);
+        $this->assign('content', $art->content);
+        $this->assign('aid', $art->articletype);
+        $this->assign('title', $art->title);
+        $this->assign('gaiyao', $art->gaiyao);
+        $this->assign('id', $art->id);
+        return $this->fetch();
     }
+
+    //编辑文章API
+    public function edita($title = '', $keyword = '', $aid = '', $contents = '') {
+        //判断是否登录
+        if (!Session::has('id'))
+            return $this->redirect('index/login');
+        //效验登录用户是否为后台管理员用户
+        $user = User::get(Session::get('id'));
+        if ($user->usertype != 1)
+            return $this->error('对不起您登录的用户不为管理员用户！');
+        if ($title == '')
+            return $this->error('标题不能为空请重试！');
+        if ($aid == '')
+            return $this->error('文章分类不能为空，请重试！');
+        if ($keyword == '')
+            return $this->error('文章概要不能为空！');
+        if (strlen($keyword) > 240)
+            return $this->error('文章概要字数超过限定字数，目前已经超出' . (strlen($keyword) - 240) . '字');
+        $art = article::get($id);
+        $art->title = $title;
+        $art->time = date("Y-m-d H:i:s", time());
+        $art->userid = Session::get('id');
+        $art->username = Session::get('name');
+        $art->content = $contents;
+        $art->gaiyao = $keyword;
+        $art->status = 1;
+        $art->articletype = $aid;
+        $art->save();
+        return $this->success('保存成功，请刷新后查看！');
+    }
+
 }

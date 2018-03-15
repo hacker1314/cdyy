@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:69:"D:\xampp\htdocs\cdyy\public/../application/admin\view\place\addp.html";i:1520391259;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:69:"D:\xampp\htdocs\cdyy\public/../application/admin\view\place\addp.html";i:1521073915;}*/ ?>
 <!DOCTYPE html>
 <html>
     <head>
@@ -19,6 +19,12 @@
                 <label class="layui-form-label">场地类型：</label>
                 <div class="layui-input-block">
                     <input type="text" name="tid" required  lay-verify="required" placeholder="请输入场地名" autocomplete="off" class="layui-input" value="<?php echo $tid; ?>">
+                </div>
+            </div>
+            <div class="layui-form-item">
+                <label class="layui-form-label">场地类型：</label>
+                <div class="layui-input-block">
+                    <input type="text" name="child" required  lay-verify="required" placeholder="请输入子场地数量" autocomplete="off" class="layui-input">
                 </div>
             </div>
             <div class="layui-form-item">

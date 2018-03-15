@@ -60,7 +60,7 @@ class Place extends Controller {
         $user = User::get(Session::get('id'));
         if ($user->usertype != 1)
             return $this->error('对不起您登录的用户不为管理员用户！');
-        $place = Gym::where('type', '=', $id)->field(['id', 'name', 'introduction', 'pictureurl', 'status'])->limit(($page - 1) * $limit, $page * $limit)->select();
+        $place = Gym::where('type', '=', $id)->field(['id', 'name', 'introduction', 'pictureurl', 'status','child'])->limit(($page - 1) * $limit, $page * $limit)->select();
         $pcount = count(Gym::where('type', '=', $id)->select());
         //common文件设置json转换方法
         $rs1 = json(0, '数据返回成功', $pcount, $place);
@@ -120,6 +120,7 @@ class Place extends Controller {
             return $this->error('图片地址为空！');
         if (!Gym::getByName($placename)) {
             $add = new Gym;
+            $add->child=$child;
             $add->name = $placename;
             $add->introduction = $intro;
             $add->status = $yuyue;
@@ -147,13 +148,14 @@ class Place extends Controller {
             'yuyue' => $b->status,
             'pic' => $b->pictureurl,
             'id' => $b->id,
-            'tid' => $b->type
+            'tid' => $b->type,
+            'child' =>$b->child
         ]);
         return $this->fetch();
     }
 
     //编辑场地保存处理
-    public function editpl($id = '', $placename = "", $yuyue = '', $intro = '', $pic = '', $tid = '') {
+    public function editpl($id = '', $placename = "", $yuyue = '', $intro = '', $pic = '', $tid = '',$child="") {
         //判断是否登录
         if (!Session::has('id'))
             return $this->redirect('index/login');
@@ -170,6 +172,7 @@ class Place extends Controller {
             else
                 return $this->error('您要更改的场地名已经存在！请重试！');
         }
+        $b->child=$child;
         $b->introduction = $intro;
         $b->status = $yuyue;
         $b->pictureurl = $pic;

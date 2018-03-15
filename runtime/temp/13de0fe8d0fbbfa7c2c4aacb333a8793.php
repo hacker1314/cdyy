@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:67:"D:\xampp\htdocs\cdyy\public/../application/admin\view\art\adda.html";i:1520997725;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:67:"D:\xampp\htdocs\cdyy\public/../application/admin\view\art\edit.html";i:1521072202;}*/ ?>
 <!DOCTYPE html>
 <html>
     <head>
@@ -12,7 +12,7 @@
             <div class="layui-form-item">
                 <label class="layui-form-label">标题：</label>
                 <div class="layui-input-block">
-                    <input type="text" name="title" required  lay-verify="required" placeholder="标题" autocomplete="off" class="layui-input">
+                    <input type="text" name="title" required  lay-verify="required" placeholder="标题" autocomplete="off" class="layui-input" value="<?php echo $title; ?>">
                 </div>
             </div>
             <div class="layui-form-item layui-hide">
@@ -24,16 +24,16 @@
             <div class="layui-form-item ">
                 <label class="layui-form-label">文章概要</label>
                 <div class="layui-input-block">
-                    <input type="text" name="keyword" required  lay-verify="required" placeholder="文章概要（240字以内）" autocomplete="off" class="layui-input">
+                    <input type="text" name="keyword" required  lay-verify="required" placeholder="文章概要（240字以内）" autocomplete="off" class="layui-input" value="<?php echo $gaiyao; ?>">
                 </div>
             </div>
 
-            <div id="editor"></div>
+            <div id="editor"><?php echo $content; ?></div>
 
             <div class="layui-form-item layui-form-text layui-hide">
                 <label class="layui-form-label">内容</label>
                 <div class="layui-input-block">
-                    <textarea name="contents" id="texta" placeholder="请输入内容" class="layui-textarea"></textarea>
+                    <textarea name="contents" id="texta" placeholder="请输入内容" class="layui-textarea"><?php echo $content; ?></textarea>
                 </div>
             </div>
             <!-- 注意， 只需要引用 JS，无需引用任何 CSS ！！！-->
