@@ -12,8 +12,8 @@ class Index extends Controller {
         return "主页！";
     }
 
-    public function login() {
-        return "hello";
+    public function reg() {
+        return $this->fetch();
     }
 
     public function LoginCheck($mail = '', $pwd = '') {
@@ -30,7 +30,7 @@ class Index extends Controller {
             echo '邮箱未注册';
     }
 
-    public function t() {
+    public function login() {
         return view();
     }
 

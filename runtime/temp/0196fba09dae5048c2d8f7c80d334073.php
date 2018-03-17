@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:72:"D:\wamp64\www\cdyy\public/../application/admin\view\buildings\index.html";i:1520339908;s:59:"D:\wamp64\www\cdyy\application\admin\view\index\header.html";i:1519551428;s:59:"D:\wamp64\www\cdyy\application\admin\view\index\footer.html";i:1519441588;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:72:"D:\wamp64\www\cdyy\public/../application/admin\view\buildings\index.html";i:1521253502;s:59:"D:\wamp64\www\cdyy\application\admin\view\index\header.html";i:1519551428;s:59:"D:\wamp64\www\cdyy\application\admin\view\index\footer.html";i:1519441588;}*/ ?>
 <!DOCTYPE html>
 <html>
     <head>
@@ -34,7 +34,7 @@
     <div class="layui-side-scroll">
         <!-- 左侧导航区域（可配合layui已有的垂直导航） -->
         <ul class="layui-nav layui-nav-tree"  lay-filter="test">
-            <li class="layui-nav-item layui-nav-itemed">
+            <li class="layui-nav-item">
                 <a class="" href="javascript:;"><i class='layui-icon'>&#xe715;</i>体育活动场地</a>
                 <dl class="layui-nav-child">
                     <?php if(is_array($list3) || $list3 instanceof \think\Collection || $list3 instanceof \think\Paginator): $i = 0; $__LIST__ = $list3;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$id): $mod = ($i % 2 );++$i;?>
@@ -42,10 +42,10 @@
                     <?php endforeach; endif; else: echo "" ;endif; ?>
                 </dl>
             </li>
-            <li class="layui-nav-item">
+            <li class="layui-nav-item ">
                 <a class="" href="<?php echo url('admin/buildings/index'); ?>"><i class='layui-icon'>&#xe715;</i>学生活动场地</a>
             </li>
-            <li class="layui-nav-item layui-nav-itemed">
+            <li class="layui-nav-item">
                 <a href="javascript:;"><i class='layui-icon'>&#xe612;</i>用户管理</a>
                 <dl class="layui-nav-child">
                     <?php if(is_array($list1) || $list1 instanceof \think\Collection || $list1 instanceof \think\Paginator): $i = 0; $__LIST__ = $list1;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$id): $mod = ($i % 2 );++$i;?>
@@ -53,7 +53,7 @@
                     <?php endforeach; endif; else: echo "" ;endif; ?>
                 </dl>
             </li>
-            <li class="layui-nav-item layui-nav-itemed">
+            <li class="layui-nav-item">
                 <a href="javascript:;"><i class='layui-icon'>&#xe7a0;</i>文章管理</a>
                 <dl class="layui-nav-child">
                     <?php if(is_array($list2) || $list2 instanceof \think\Collection || $list2 instanceof \think\Paginator): $i = 0; $__LIST__ = $list2;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$id): $mod = ($i % 2 );++$i;?>
@@ -61,7 +61,13 @@
                     <?php endforeach; endif; else: echo "" ;endif; ?>
                 </dl>
             </li>
-            <li class="layui-nav-item"><a href=""><i class='layui-icon'>&#xe658;</i>预约信息管理</a></li>
+            <li class="layui-nav-item">
+                <a href="javascript:;"><i class='layui-icon'>&#xe658;</i>预约信息管理</a>
+                <dl class="layui-nav-child">
+                    <dd><a href="<?php echo url('admin/yuyue/place'); ?>">体育活动场地预约管理</a></dd>
+                    <dd><a href="<?php echo url('admin/yuyue/building'); ?>">体育活动场地预约管理</a></dd>
+                </dl>
+            </li>
         </ul>
     </div>
 </div>

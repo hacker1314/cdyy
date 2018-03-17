@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:68:"D:\wamp64\www\cdyy\public/../application/admin\view\place\index.html";i:1520339918;s:59:"D:\wamp64\www\cdyy\application\admin\view\index\header.html";i:1519551428;s:59:"D:\wamp64\www\cdyy\application\admin\view\index\footer.html";i:1519441588;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:68:"D:\wamp64\www\cdyy\public/../application/admin\view\place\index.html";i:1521253502;s:59:"D:\wamp64\www\cdyy\application\admin\view\index\header.html";i:1519551428;s:59:"D:\wamp64\www\cdyy\application\admin\view\index\footer.html";i:1519441588;}*/ ?>
 <!DOCTYPE html>
 <html>
     <head>
@@ -53,7 +53,7 @@
             <li class="layui-nav-item">
                 <a class="" href="<?php echo url('admin/buildings/index'); ?>"><i class='layui-icon'>&#xe715;</i>学生活动场地</a>
             </li>
-            <li class="layui-nav-item layui-nav-itemed">
+            <li class="layui-nav-item">
                 <a href="javascript:;"><i class='layui-icon'>&#xe612;</i>用户管理</a>
                 <dl class="layui-nav-child">
                     <?php if(is_array($list1) || $list1 instanceof \think\Collection || $list1 instanceof \think\Paginator): $i = 0; $__LIST__ = $list1;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$id): $mod = ($i % 2 );++$i;?>
@@ -61,7 +61,7 @@
                     <?php endforeach; endif; else: echo "" ;endif; ?>
                 </dl>
             </li>
-            <li class="layui-nav-item layui-nav-itemed">
+            <li class="layui-nav-item">
                 <a href="javascript:;"><i class='layui-icon'>&#xe7a0;</i>文章管理</a>
                 <dl class="layui-nav-child">
                     <?php if(is_array($list2) || $list2 instanceof \think\Collection || $list2 instanceof \think\Paginator): $i = 0; $__LIST__ = $list2;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$id): $mod = ($i % 2 );++$i;?>
@@ -69,7 +69,13 @@
                     <?php endforeach; endif; else: echo "" ;endif; ?>
                 </dl>
             </li>
-            <li class="layui-nav-item"><a href=""><i class='layui-icon'>&#xe658;</i>预约信息管理</a></li>
+            <li class="layui-nav-item">
+                <a href="javascript:;"><i class='layui-icon'>&#xe658;</i>预约信息管理</a>
+                <dl class="layui-nav-child">
+                    <dd><a href="<?php echo url('admin/yuyue/place'); ?>">体育活动场地预约管理</a></dd>
+                    <dd><a href="<?php echo url('admin/yuyue/building'); ?>">体育活动场地预约管理</a></dd>
+                </dl>
+            </li>
         </ul>
     </div>
 </div>
@@ -96,14 +102,17 @@
 
 </div>
 <script src="/static/layui/layui.js"></script>
+
 <script type="text/html" id="barDemo">
     <a class="layui-btn layui-btn-xs" lay-event="yy">预约情况</a>
     <a class="layui-btn layui-btn-xs" lay-event="edit">编辑</a>
     <a class="layui-btn layui-btn-danger layui-btn-xs" lay-event="del">删除</a>
 </script>
+
 <script type="text/html" id="picTpl">
     <a href="javascript:void(0);" onclick='showpic("{{d.pictureurl}}")' class="layui-table-link">查看照片</a>
 </script>
+
 <script type="text/html" id="statusTpl">
     {{#  if(d.status==1){ }}
     可预约
@@ -111,6 +120,7 @@
     不可预约
     {{#  } }}
 </script>
+
 <script>
 //JavaScript代码区域
     layui.use(['laytpl', 'layer', 'element', 'table'], function () {
@@ -122,14 +132,15 @@
     elem: '#placemanage'
             , url: '/admin/place/placelist'
             , where: {id: <?php echo $pid; ?>}
-            , cols: [[
-            {field: 'id', width: 70, minWidth: 80, title: 'ID', sort: true}
-            , {field: 'name', minWidth: 120, title: '场地名'}
-            , {field: 'introduction', minWidth: 300, title: '简介'}
-            , {field: 'status', minWidth: 80, title: '可否预约', templet: '#statusTpl'}
-            , {field: 'pictureurl', minWidth: 80, title: '照片', templet: '#picTpl'}
-            , {fixed: 'right', minWidth: 200, align: 'center', toolbar: '#barDemo'} //这里的toolbar值是模板元素的选择器
-            ]]
+    , cols: [[
+    {field: 'id', width: 70, minWidth: 80, title: 'ID', sort: true}
+    , {field: 'name', minWidth: 120, title: '场地名'}
+    , {field: 'introduction', minWidth: 300, title: '简介'}
+    , {field: 'child', width: 120, minWidth: 120, title: '子场地数量', sort: true}
+    , {field: 'status', width: 120, minWidth: 110, title: '可否预约', templet: '#statusTpl'}
+    , {field: 'pictureurl', width: 120, minWidth: 90, title: '照片', templet: '#picTpl'}
+    , {fixed: 'right', width: 180, minWidth: 180, align: 'center', toolbar: '#barDemo'} //这里的toolbar值是模板元素的选择器
+    ]]
             , height: 'full-260'
             , page: true
             , done: function (res, page, count) {
@@ -153,7 +164,7 @@
     var tr = obj.tr; //获得当前行 tr 的DOM对象
 
     if (layEvent === 'yy') { //查看预约情况
-
+    // 
     //do somehing
     } else if (layEvent === 'del') { //删除
     layer.confirm('真的删除场地嘛？', function (index) {
@@ -172,9 +183,9 @@
     //do something
     layer.open({
     type: 2
-            , title: '添加学生活动场地'
+            , title: '编辑学生活动场地'
             , content: "/admin/place/editp?id=" + obj.data.id //这里content是一个普通的String
-            , area: ['520px', '450px']
+            , area: ['520px', '500px']
     });
     }
     });
@@ -188,7 +199,6 @@
             curr: 1 //重新从第 1 页开始
             }
     , where: {
-
     name: nametext.val()
     }
     });
@@ -198,7 +208,7 @@
     type: 2
             , title: '添加体育活动场地-<?php echo $cd; ?>'
             , content: "/admin/place/addp?id=<?php echo $pid; ?>" //这里content是一个普通的String
-            , area: ['520px', '450px']
+            , area: ['520px', '500px']
     });
     }
     };
