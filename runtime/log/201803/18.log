@@ -1,14 +1,14 @@
 ---------------------------------------------------------------
-[ 2018-03-18T00:00:04+08:00 ] 127.0.0.1 GET /index/index/login
-[ info ] www.cdyy.com/index/index/login [运行时间：0.061903s][吞吐率：16.15req/s] [内存消耗：3,314.84kb] [文件加载：51]
+[ 2018-03-18T20:28:35+08:00 ] 127.0.0.1 GET /register/index/email
+[ info ] www.cdyy.com/register/index/email [运行时间：0.047273s][吞吐率：21.15req/s] [内存消耗：3,133.52kb] [文件加载：51]
 [ info ] [ LANG ] D:\wamp64\www\cdyy\thinkphp\lang\zh-cn.php
 [ info ] [ ROUTE ] array (
   'type' => 'module',
   'module' => 
   array (
-    0 => 'index',
+    0 => 'register',
     1 => 'index',
-    2 => 'login',
+    2 => 'email',
   ),
 )
 [ info ] [ HEADER ] array (
@@ -21,25 +21,34 @@
   'dnt' => '1',
   'accept-encoding' => 'gzip, deflate',
   'accept-language' => 'zh-CN',
-  'cookie' => 'thinkphp_show_page_trace=0|0; UM_distinctid=161eff712a0a1-0f790bb8cc872e-2569791b-100200-161eff712a145a; uid=www5a9ba399cb7bb9.60490532; CNZZDATA30088308=cnzz_eid%3D2112333325-1521272508-%26ntime%3D1521272508; CNZZDATA1256793290=1948844775-1520144149-%7C1521299773',
+  'cookie' => 'thinkphp_show_page_trace=0|0; UM_distinctid=161eff712a0a1-0f790bb8cc872e-2569791b-100200-161eff712a145a; uid=www5a9ba399cb7bb9.60490532; CNZZDATA30088308=cnzz_eid%3D2112333325-1521272508-%26ntime%3D1521272508; PHPSESSID=80t63vjv70n3a6f9in9gqh1kg6; thinkphp_show_page_trace=0|0; CNZZDATA1256793290=1948844775-1520144149-%7C1521375374',
 )
 [ info ] [ PARAM ] array (
 )
-[ info ] [ RUN ] app\index\controller\Index->login[ D:\wamp64\www\cdyy\application\index\controller\Index.php ]
-[ info ] [ VIEW ] D:\wamp64\www\cdyy\public/../application/index\view\index\login.html [ array (
-) ]
+[ info ] [ RUN ] app\register\controller\Index->email[ D:\wamp64\www\cdyy\application\register\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [1]Class 'PHPMailer\PHPMailer\PHPMailer' not found[D:\wamp64\www\cdyy\application\common.php:56]
+---------------------------------------------------------------
+[ 2018-03-18T12:31:24+00:00 ] 127.0.0.1 GET /register/index/email
+[ info ] www.cdyy.com/register/index/email [运行时间：0.106138s][吞吐率：9.42req/s] [内存消耗：2,488.19kb] [文件加载：40]
+[ error ] [4]syntax error, unexpected '$mail' (T_VARIABLE)[D:\wamp64\www\cdyy\application\common.php:57]
 [ info ] [ LOG ] INIT File
 ---------------------------------------------------------------
-[ 2018-03-18T00:00:16+08:00 ] 127.0.0.1 GET /index/index/login
-[ info ] www.cdyy.com/index/index/login [运行时间：0.062264s][吞吐率：16.06req/s] [内存消耗：3,314.84kb] [文件加载：51]
+[ 2018-03-18T12:31:34+00:00 ] 127.0.0.1 GET /register/index/email
+[ info ] www.cdyy.com/register/index/email [运行时间：0.031439s][吞吐率：31.81req/s] [内存消耗：2,488.19kb] [文件加载：40]
+[ error ] [4]syntax error, unexpected '$mail' (T_VARIABLE)[D:\wamp64\www\cdyy\application\common.php:57]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-18T20:31:44+08:00 ] 127.0.0.1 GET /register/index/email
+[ info ] www.cdyy.com/register/index/email [运行时间：0.073546s][吞吐率：13.60req/s] [内存消耗：3,133.51kb] [文件加载：51]
 [ info ] [ LANG ] D:\wamp64\www\cdyy\thinkphp\lang\zh-cn.php
 [ info ] [ ROUTE ] array (
   'type' => 'module',
   'module' => 
   array (
-    0 => 'index',
+    0 => 'register',
     1 => 'index',
-    2 => 'login',
+    2 => 'email',
   ),
 )
 [ info ] [ HEADER ] array (
@@ -52,25 +61,24 @@
   'dnt' => '1',
   'accept-encoding' => 'gzip, deflate',
   'accept-language' => 'zh-CN',
-  'cookie' => 'thinkphp_show_page_trace=0|0; UM_distinctid=161eff712a0a1-0f790bb8cc872e-2569791b-100200-161eff712a145a; uid=www5a9ba399cb7bb9.60490532; CNZZDATA30088308=cnzz_eid%3D2112333325-1521272508-%26ntime%3D1521272508; CNZZDATA1256793290=1948844775-1520144149-%7C1521299773',
+  'cookie' => 'thinkphp_show_page_trace=0|0; UM_distinctid=161eff712a0a1-0f790bb8cc872e-2569791b-100200-161eff712a145a; uid=www5a9ba399cb7bb9.60490532; CNZZDATA30088308=cnzz_eid%3D2112333325-1521272508-%26ntime%3D1521272508; PHPSESSID=80t63vjv70n3a6f9in9gqh1kg6; thinkphp_show_page_trace=0|0; CNZZDATA1256793290=1948844775-1520144149-%7C1521375374',
 )
 [ info ] [ PARAM ] array (
 )
-[ info ] [ RUN ] app\index\controller\Index->login[ D:\wamp64\www\cdyy\application\index\controller\Index.php ]
-[ info ] [ VIEW ] D:\wamp64\www\cdyy\public/../application/index\view\index\login.html [ array (
-) ]
+[ info ] [ RUN ] app\register\controller\Index->email[ D:\wamp64\www\cdyy\application\register\controller\Index.php ]
 [ info ] [ LOG ] INIT File
+[ error ] [1]Class 'PHPMailer\PHPMailer\PHPMailer' not found[D:\wamp64\www\cdyy\application\common.php:56]
 ---------------------------------------------------------------
-[ 2018-03-18T00:00:41+08:00 ] 127.0.0.1 GET /index/index/login
-[ info ] www.cdyy.com/index/index/login [运行时间：0.063622s][吞吐率：15.72req/s] [内存消耗：3,314.84kb] [文件加载：51]
+[ 2018-03-18T20:32:36+08:00 ] 127.0.0.1 GET /register/index/email
+[ info ] www.cdyy.com/register/index/email [运行时间：0.046734s][吞吐率：21.40req/s] [内存消耗：3,133.48kb] [文件加载：51]
 [ info ] [ LANG ] D:\wamp64\www\cdyy\thinkphp\lang\zh-cn.php
 [ info ] [ ROUTE ] array (
   'type' => 'module',
   'module' => 
   array (
-    0 => 'index',
+    0 => 'register',
     1 => 'index',
-    2 => 'login',
+    2 => 'email',
   ),
 )
 [ info ] [ HEADER ] array (
@@ -83,25 +91,24 @@
   'dnt' => '1',
   'accept-encoding' => 'gzip, deflate',
   'accept-language' => 'zh-CN',
-  'cookie' => 'thinkphp_show_page_trace=0|0; UM_distinctid=161eff712a0a1-0f790bb8cc872e-2569791b-100200-161eff712a145a; uid=www5a9ba399cb7bb9.60490532; CNZZDATA30088308=cnzz_eid%3D2112333325-1521272508-%26ntime%3D1521272508; CNZZDATA1256793290=1948844775-1520144149-%7C1521299773',
+  'cookie' => 'thinkphp_show_page_trace=0|0; UM_distinctid=161eff712a0a1-0f790bb8cc872e-2569791b-100200-161eff712a145a; uid=www5a9ba399cb7bb9.60490532; CNZZDATA30088308=cnzz_eid%3D2112333325-1521272508-%26ntime%3D1521272508; PHPSESSID=80t63vjv70n3a6f9in9gqh1kg6; thinkphp_show_page_trace=0|0; CNZZDATA1256793290=1948844775-1520144149-%7C1521375374',
 )
 [ info ] [ PARAM ] array (
 )
-[ info ] [ RUN ] app\index\controller\Index->login[ D:\wamp64\www\cdyy\application\index\controller\Index.php ]
-[ info ] [ VIEW ] D:\wamp64\www\cdyy\public/../application/index\view\index\login.html [ array (
-) ]
+[ info ] [ RUN ] app\register\controller\Index->email[ D:\wamp64\www\cdyy\application\register\controller\Index.php ]
 [ info ] [ LOG ] INIT File
+[ error ] [1]Class 'PHPMailer\PHPMailer\PHPMailer' not found[D:\wamp64\www\cdyy\application\common.php:56]
 ---------------------------------------------------------------
-[ 2018-03-18T00:00:53+08:00 ] 127.0.0.1 GET /index/index/login
-[ info ] www.cdyy.com/index/index/login [运行时间：0.061025s][吞吐率：16.39req/s] [内存消耗：3,314.84kb] [文件加载：51]
+[ 2018-03-18T20:32:45+08:00 ] 127.0.0.1 GET /register/index/email
+[ info ] www.cdyy.com/register/index/email [运行时间：0.052022s][吞吐率：19.22req/s] [内存消耗：4,028.73kb] [文件加载：52]
 [ info ] [ LANG ] D:\wamp64\www\cdyy\thinkphp\lang\zh-cn.php
 [ info ] [ ROUTE ] array (
   'type' => 'module',
   'module' => 
   array (
-    0 => 'index',
+    0 => 'register',
     1 => 'index',
-    2 => 'login',
+    2 => 'email',
   ),
 )
 [ info ] [ HEADER ] array (
@@ -114,25 +121,29 @@
   'dnt' => '1',
   'accept-encoding' => 'gzip, deflate',
   'accept-language' => 'zh-CN',
-  'cookie' => 'thinkphp_show_page_trace=0|0; UM_distinctid=161eff712a0a1-0f790bb8cc872e-2569791b-100200-161eff712a145a; uid=www5a9ba399cb7bb9.60490532; CNZZDATA30088308=cnzz_eid%3D2112333325-1521272508-%26ntime%3D1521272508; CNZZDATA1256793290=1948844775-1520144149-%7C1521299773',
+  'cookie' => 'thinkphp_show_page_trace=0|0; UM_distinctid=161eff712a0a1-0f790bb8cc872e-2569791b-100200-161eff712a145a; uid=www5a9ba399cb7bb9.60490532; CNZZDATA30088308=cnzz_eid%3D2112333325-1521272508-%26ntime%3D1521272508; PHPSESSID=80t63vjv70n3a6f9in9gqh1kg6; thinkphp_show_page_trace=0|0; CNZZDATA1256793290=1948844775-1520144149-%7C1521375374',
 )
 [ info ] [ PARAM ] array (
 )
-[ info ] [ RUN ] app\index\controller\Index->login[ D:\wamp64\www\cdyy\application\index\controller\Index.php ]
-[ info ] [ VIEW ] D:\wamp64\www\cdyy\public/../application/index\view\index\login.html [ array (
-) ]
+[ info ] [ RUN ] app\register\controller\Index->email[ D:\wamp64\www\cdyy\application\register\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [1]Class 'PHPMailer\PHPMailer' not found[D:\wamp64\www\cdyy\application\common.php:56]
+---------------------------------------------------------------
+[ 2018-03-18T12:33:26+00:00 ] 127.0.0.1 GET /register/index/email
+[ info ] www.cdyy.com/register/index/email [运行时间：0.085807s][吞吐率：11.65req/s] [内存消耗：2,468.84kb] [文件加载：41]
+[ error ] [2]The use statement with non-compound name 'PHPMailer' has no effect[D:\wamp64\www\cdyy\application\common.php:11]
 [ info ] [ LOG ] INIT File
 ---------------------------------------------------------------
-[ 2018-03-18T00:01:37+08:00 ] 127.0.0.1 GET /index/index/login
-[ info ] www.cdyy.com/index/index/login [运行时间：0.064205s][吞吐率：15.58req/s] [内存消耗：3,314.55kb] [文件加载：51]
+[ 2018-03-18T20:33:41+08:00 ] 127.0.0.1 GET /register/index/email
+[ info ] www.cdyy.com/register/index/email [运行时间：0.049496s][吞吐率：20.20req/s] [内存消耗：3,133.64kb] [文件加载：51]
 [ info ] [ LANG ] D:\wamp64\www\cdyy\thinkphp\lang\zh-cn.php
 [ info ] [ ROUTE ] array (
   'type' => 'module',
   'module' => 
   array (
-    0 => 'index',
+    0 => 'register',
     1 => 'index',
-    2 => 'login',
+    2 => 'email',
   ),
 )
 [ info ] [ HEADER ] array (
@@ -145,58 +156,24 @@
   'dnt' => '1',
   'accept-encoding' => 'gzip, deflate',
   'accept-language' => 'zh-CN',
-  'cookie' => 'thinkphp_show_page_trace=0|0; UM_distinctid=161eff712a0a1-0f790bb8cc872e-2569791b-100200-161eff712a145a; uid=www5a9ba399cb7bb9.60490532; CNZZDATA30088308=cnzz_eid%3D2112333325-1521272508-%26ntime%3D1521272508; CNZZDATA1256793290=1948844775-1520144149-%7C1521299773',
+  'cookie' => 'thinkphp_show_page_trace=0|0; UM_distinctid=161eff712a0a1-0f790bb8cc872e-2569791b-100200-161eff712a145a; uid=www5a9ba399cb7bb9.60490532; CNZZDATA30088308=cnzz_eid%3D2112333325-1521272508-%26ntime%3D1521272508; PHPSESSID=80t63vjv70n3a6f9in9gqh1kg6; thinkphp_show_page_trace=0|0; CNZZDATA1256793290=1948844775-1520144149-%7C1521375374',
 )
 [ info ] [ PARAM ] array (
 )
-[ info ] [ RUN ] app\index\controller\Index->login[ D:\wamp64\www\cdyy\application\index\controller\Index.php ]
-[ info ] [ VIEW ] D:\wamp64\www\cdyy\public/../application/index\view\index\login.html [ array (
-) ]
+[ info ] [ RUN ] app\register\controller\Index->email[ D:\wamp64\www\cdyy\application\register\controller\Index.php ]
 [ info ] [ LOG ] INIT File
+[ error ] [1]Class 'PHPMailer' not found[D:\wamp64\www\cdyy\application\common.php:56]
 ---------------------------------------------------------------
-[ 2018-03-18T00:01:40+08:00 ] 127.0.0.1 GET /index/index/login?name=admin&password=19961104
-[ info ] www.cdyy.com/index/index/login?name=admin&password=19961104 [运行时间：0.072712s][吞吐率：13.75req/s] [内存消耗：3,063.84kb] [文件加载：49]
+[ 2018-03-18T20:33:57+08:00 ] 127.0.0.1 GET /register/index/email
+[ info ] www.cdyy.com/register/index/email [运行时间：0.070617s][吞吐率：14.16req/s] [内存消耗：3,133.64kb] [文件加载：51]
 [ info ] [ LANG ] D:\wamp64\www\cdyy\thinkphp\lang\zh-cn.php
 [ info ] [ ROUTE ] array (
   'type' => 'module',
   'module' => 
   array (
-    0 => 'index',
+    0 => 'register',
     1 => 'index',
-    2 => 'login',
-  ),
-)
-[ info ] [ HEADER ] array (
-  'host' => 'www.cdyy.com',
-  'connection' => 'keep-alive',
-  'upgrade-insecure-requests' => '1',
-  'user-agent' => 'Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Maxthon/5.0 Chrome/55.0.2883.75 Safari/537.36',
-  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
-  'dnt' => '1',
-  'referer' => 'http://www.cdyy.com/index/index/login',
-  'accept-encoding' => 'gzip, deflate',
-  'accept-language' => 'zh-CN',
-  'cookie' => 'thinkphp_show_page_trace=0|0; UM_distinctid=161eff712a0a1-0f790bb8cc872e-2569791b-100200-161eff712a145a; uid=www5a9ba399cb7bb9.60490532; CNZZDATA30088308=cnzz_eid%3D2112333325-1521272508-%26ntime%3D1521272508; CNZZDATA1256793290=1948844775-1520144149-%7C1521299773',
-)
-[ info ] [ PARAM ] array (
-  'name' => 'admin',
-  'password' => '19961104',
-)
-[ info ] [ RUN ] app\index\controller\Index->login[ D:\wamp64\www\cdyy\application\index\controller\Index.php ]
-[ info ] [ VIEW ] D:\wamp64\www\cdyy\public/../application/index\view\index\login.html [ array (
-) ]
-[ info ] [ LOG ] INIT File
----------------------------------------------------------------
-[ 2018-03-18T00:01:42+08:00 ] 127.0.0.1 GET /index/index/login?name=admin&password=19961104
-[ info ] www.cdyy.com/index/index/login?name=admin&password=19961104 [运行时间：0.059762s][吞吐率：16.73req/s] [内存消耗：3,064.04kb] [文件加载：49]
-[ info ] [ LANG ] D:\wamp64\www\cdyy\thinkphp\lang\zh-cn.php
-[ info ] [ ROUTE ] array (
-  'type' => 'module',
-  'module' => 
-  array (
-    0 => 'index',
-    1 => 'index',
-    2 => 'login',
+    2 => 'email',
   ),
 )
 [ info ] [ HEADER ] array (
@@ -207,30 +184,26 @@
   'user-agent' => 'Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Maxthon/5.0 Chrome/55.0.2883.75 Safari/537.36',
   'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
   'dnt' => '1',
-  'referer' => 'http://www.cdyy.com/index/index/login',
   'accept-encoding' => 'gzip, deflate',
   'accept-language' => 'zh-CN',
-  'cookie' => 'thinkphp_show_page_trace=0|0; UM_distinctid=161eff712a0a1-0f790bb8cc872e-2569791b-100200-161eff712a145a; uid=www5a9ba399cb7bb9.60490532; CNZZDATA30088308=cnzz_eid%3D2112333325-1521272508-%26ntime%3D1521272508; CNZZDATA1256793290=1948844775-1520144149-%7C1521299773',
+  'cookie' => 'thinkphp_show_page_trace=0|0; UM_distinctid=161eff712a0a1-0f790bb8cc872e-2569791b-100200-161eff712a145a; uid=www5a9ba399cb7bb9.60490532; CNZZDATA30088308=cnzz_eid%3D2112333325-1521272508-%26ntime%3D1521272508; PHPSESSID=80t63vjv70n3a6f9in9gqh1kg6; thinkphp_show_page_trace=0|0; CNZZDATA1256793290=1948844775-1520144149-%7C1521375374',
 )
 [ info ] [ PARAM ] array (
-  'name' => 'admin',
-  'password' => '19961104',
 )
-[ info ] [ RUN ] app\index\controller\Index->login[ D:\wamp64\www\cdyy\application\index\controller\Index.php ]
-[ info ] [ VIEW ] D:\wamp64\www\cdyy\public/../application/index\view\index\login.html [ array (
-) ]
+[ info ] [ RUN ] app\register\controller\Index->email[ D:\wamp64\www\cdyy\application\register\controller\Index.php ]
 [ info ] [ LOG ] INIT File
+[ error ] [1]Class 'PHPMailer' not found[D:\wamp64\www\cdyy\application\common.php:56]
 ---------------------------------------------------------------
-[ 2018-03-18T00:01:48+08:00 ] 127.0.0.1 GET /index/index/login?name=admin&password=19961104
-[ info ] www.cdyy.com/index/index/login?name=admin&password=19961104 [运行时间：0.063200s][吞吐率：15.82req/s] [内存消耗：3,315.67kb] [文件加载：51]
+[ 2018-03-18T20:33:58+08:00 ] 127.0.0.1 GET /register/index/email
+[ info ] www.cdyy.com/register/index/email [运行时间：0.044088s][吞吐率：22.68req/s] [内存消耗：3,133.64kb] [文件加载：51]
 [ info ] [ LANG ] D:\wamp64\www\cdyy\thinkphp\lang\zh-cn.php
 [ info ] [ ROUTE ] array (
   'type' => 'module',
   'module' => 
   array (
-    0 => 'index',
+    0 => 'register',
     1 => 'index',
-    2 => 'login',
+    2 => 'email',
   ),
 )
 [ info ] [ HEADER ] array (
@@ -241,205 +214,26 @@
   'user-agent' => 'Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Maxthon/5.0 Chrome/55.0.2883.75 Safari/537.36',
   'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
   'dnt' => '1',
-  'referer' => 'http://www.cdyy.com/index/index/login',
   'accept-encoding' => 'gzip, deflate',
   'accept-language' => 'zh-CN',
-  'cookie' => 'thinkphp_show_page_trace=0|0; UM_distinctid=161eff712a0a1-0f790bb8cc872e-2569791b-100200-161eff712a145a; uid=www5a9ba399cb7bb9.60490532; CNZZDATA30088308=cnzz_eid%3D2112333325-1521272508-%26ntime%3D1521272508; CNZZDATA1256793290=1948844775-1520144149-%7C1521299773',
+  'cookie' => 'thinkphp_show_page_trace=0|0; UM_distinctid=161eff712a0a1-0f790bb8cc872e-2569791b-100200-161eff712a145a; uid=www5a9ba399cb7bb9.60490532; CNZZDATA30088308=cnzz_eid%3D2112333325-1521272508-%26ntime%3D1521272508; PHPSESSID=80t63vjv70n3a6f9in9gqh1kg6; thinkphp_show_page_trace=0|0; CNZZDATA1256793290=1948844775-1520144149-%7C1521375374',
 )
 [ info ] [ PARAM ] array (
-  'name' => 'admin',
-  'password' => '19961104',
 )
-[ info ] [ RUN ] app\index\controller\Index->login[ D:\wamp64\www\cdyy\application\index\controller\Index.php ]
-[ info ] [ VIEW ] D:\wamp64\www\cdyy\public/../application/index\view\index\login.html [ array (
-) ]
+[ info ] [ RUN ] app\register\controller\Index->email[ D:\wamp64\www\cdyy\application\register\controller\Index.php ]
 [ info ] [ LOG ] INIT File
+[ error ] [1]Class 'PHPMailer' not found[D:\wamp64\www\cdyy\application\common.php:56]
 ---------------------------------------------------------------
-[ 2018-03-18T00:02:16+08:00 ] 127.0.0.1 GET /index/index/login?name=admin&password=19961104
-[ info ] www.cdyy.com/index/index/login?name=admin&password=19961104 [运行时间：0.072705s][吞吐率：13.75req/s] [内存消耗：3,315.90kb] [文件加载：51]
+[ 2018-03-18T20:33:59+08:00 ] 127.0.0.1 GET /register/index/email
+[ info ] www.cdyy.com/register/index/email [运行时间：0.043927s][吞吐率：22.77req/s] [内存消耗：3,133.64kb] [文件加载：51]
 [ info ] [ LANG ] D:\wamp64\www\cdyy\thinkphp\lang\zh-cn.php
 [ info ] [ ROUTE ] array (
   'type' => 'module',
   'module' => 
   array (
-    0 => 'index',
+    0 => 'register',
     1 => 'index',
-    2 => 'login',
-  ),
-)
-[ info ] [ HEADER ] array (
-  'host' => 'www.cdyy.com',
-  'connection' => 'keep-alive',
-  'cache-control' => 'max-age=0',
-  'x-devtools-emulate-network-conditions-client-id' => '5f4266ca-f785-48f9-b96d-3e047b9ee6f4',
-  'upgrade-insecure-requests' => '1',
-  'user-agent' => 'Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Maxthon/5.0 Chrome/55.0.2883.75 Safari/537.36',
-  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
-  'dnt' => '1',
-  'referer' => 'http://www.cdyy.com/index/index/login',
-  'accept-encoding' => 'gzip, deflate',
-  'accept-language' => 'zh-CN',
-  'cookie' => 'thinkphp_show_page_trace=0|0; UM_distinctid=161eff712a0a1-0f790bb8cc872e-2569791b-100200-161eff712a145a; uid=www5a9ba399cb7bb9.60490532; CNZZDATA30088308=cnzz_eid%3D2112333325-1521272508-%26ntime%3D1521272508; CNZZDATA1256793290=1948844775-1520144149-%7C1521299773',
-)
-[ info ] [ PARAM ] array (
-  'name' => 'admin',
-  'password' => '19961104',
-)
-[ info ] [ RUN ] app\index\controller\Index->login[ D:\wamp64\www\cdyy\application\index\controller\Index.php ]
-[ info ] [ VIEW ] D:\wamp64\www\cdyy\public/../application/index\view\index\login.html [ array (
-) ]
-[ info ] [ LOG ] INIT File
----------------------------------------------------------------
-[ 2018-03-18T00:03:09+08:00 ] 127.0.0.1 GET /index/index/login?name=admin&password=19961104
-[ info ] www.cdyy.com/index/index/login?name=admin&password=19961104 [运行时间：0.058957s][吞吐率：16.96req/s] [内存消耗：3,064.34kb] [文件加载：49]
-[ info ] [ LANG ] D:\wamp64\www\cdyy\thinkphp\lang\zh-cn.php
-[ info ] [ ROUTE ] array (
-  'type' => 'module',
-  'module' => 
-  array (
-    0 => 'index',
-    1 => 'index',
-    2 => 'login',
-  ),
-)
-[ info ] [ HEADER ] array (
-  'host' => 'www.cdyy.com',
-  'connection' => 'keep-alive',
-  'cache-control' => 'max-age=0',
-  'x-devtools-emulate-network-conditions-client-id' => '5f4266ca-f785-48f9-b96d-3e047b9ee6f4',
-  'upgrade-insecure-requests' => '1',
-  'user-agent' => 'Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Maxthon/5.0 Chrome/55.0.2883.75 Safari/537.36',
-  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
-  'dnt' => '1',
-  'referer' => 'http://www.cdyy.com/index/index/login',
-  'accept-encoding' => 'gzip, deflate',
-  'accept-language' => 'zh-CN',
-  'cookie' => 'thinkphp_show_page_trace=0|0; UM_distinctid=161eff712a0a1-0f790bb8cc872e-2569791b-100200-161eff712a145a; uid=www5a9ba399cb7bb9.60490532; CNZZDATA30088308=cnzz_eid%3D2112333325-1521272508-%26ntime%3D1521272508; CNZZDATA1256793290=1948844775-1520144149-%7C1521299773',
-)
-[ info ] [ PARAM ] array (
-  'name' => 'admin',
-  'password' => '19961104',
-)
-[ info ] [ RUN ] app\index\controller\Index->login[ D:\wamp64\www\cdyy\application\index\controller\Index.php ]
-[ info ] [ VIEW ] D:\wamp64\www\cdyy\public/../application/index\view\index\login.html [ array (
-) ]
-[ info ] [ LOG ] INIT File
----------------------------------------------------------------
-[ 2018-03-18T00:04:38+08:00 ] 127.0.0.1 GET /index/index/login?name=admin&password=19961104
-[ info ] www.cdyy.com/index/index/login?name=admin&password=19961104 [运行时间：0.062639s][吞吐率：15.96req/s] [内存消耗：3,316.02kb] [文件加载：51]
-[ info ] [ LANG ] D:\wamp64\www\cdyy\thinkphp\lang\zh-cn.php
-[ info ] [ ROUTE ] array (
-  'type' => 'module',
-  'module' => 
-  array (
-    0 => 'index',
-    1 => 'index',
-    2 => 'login',
-  ),
-)
-[ info ] [ HEADER ] array (
-  'host' => 'www.cdyy.com',
-  'connection' => 'keep-alive',
-  'cache-control' => 'max-age=0',
-  'x-devtools-emulate-network-conditions-client-id' => '5f4266ca-f785-48f9-b96d-3e047b9ee6f4',
-  'upgrade-insecure-requests' => '1',
-  'user-agent' => 'Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Maxthon/5.0 Chrome/55.0.2883.75 Safari/537.36',
-  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
-  'dnt' => '1',
-  'referer' => 'http://www.cdyy.com/index/index/login',
-  'accept-encoding' => 'gzip, deflate',
-  'accept-language' => 'zh-CN',
-  'cookie' => 'thinkphp_show_page_trace=0|0; UM_distinctid=161eff712a0a1-0f790bb8cc872e-2569791b-100200-161eff712a145a; uid=www5a9ba399cb7bb9.60490532; CNZZDATA30088308=cnzz_eid%3D2112333325-1521272508-%26ntime%3D1521272508; CNZZDATA1256793290=1948844775-1520144149-%7C1521299773',
-)
-[ info ] [ PARAM ] array (
-  'name' => 'admin',
-  'password' => '19961104',
-)
-[ info ] [ RUN ] app\index\controller\Index->login[ D:\wamp64\www\cdyy\application\index\controller\Index.php ]
-[ info ] [ VIEW ] D:\wamp64\www\cdyy\public/../application/index\view\index\login.html [ array (
-) ]
-[ info ] [ LOG ] INIT File
----------------------------------------------------------------
-[ 2018-03-18T00:04:54+08:00 ] 127.0.0.1 GET /index/index/login?name=admin&password=19961104
-[ info ] www.cdyy.com/index/index/login?name=admin&password=19961104 [运行时间：0.085588s][吞吐率：11.68req/s] [内存消耗：3,315.89kb] [文件加载：51]
-[ info ] [ LANG ] D:\wamp64\www\cdyy\thinkphp\lang\zh-cn.php
-[ info ] [ ROUTE ] array (
-  'type' => 'module',
-  'module' => 
-  array (
-    0 => 'index',
-    1 => 'index',
-    2 => 'login',
-  ),
-)
-[ info ] [ HEADER ] array (
-  'host' => 'www.cdyy.com',
-  'connection' => 'keep-alive',
-  'cache-control' => 'max-age=0',
-  'x-devtools-emulate-network-conditions-client-id' => '5f4266ca-f785-48f9-b96d-3e047b9ee6f4',
-  'upgrade-insecure-requests' => '1',
-  'user-agent' => 'Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Maxthon/5.0 Chrome/55.0.2883.75 Safari/537.36',
-  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
-  'dnt' => '1',
-  'referer' => 'http://www.cdyy.com/index/index/login',
-  'accept-encoding' => 'gzip, deflate',
-  'accept-language' => 'zh-CN',
-  'cookie' => 'thinkphp_show_page_trace=0|0; UM_distinctid=161eff712a0a1-0f790bb8cc872e-2569791b-100200-161eff712a145a; uid=www5a9ba399cb7bb9.60490532; CNZZDATA30088308=cnzz_eid%3D2112333325-1521272508-%26ntime%3D1521272508; CNZZDATA1256793290=1948844775-1520144149-%7C1521299773',
-)
-[ info ] [ PARAM ] array (
-  'name' => 'admin',
-  'password' => '19961104',
-)
-[ info ] [ RUN ] app\index\controller\Index->login[ D:\wamp64\www\cdyy\application\index\controller\Index.php ]
-[ info ] [ VIEW ] D:\wamp64\www\cdyy\public/../application/index\view\index\login.html [ array (
-) ]
-[ info ] [ LOG ] INIT File
----------------------------------------------------------------
-[ 2018-03-18T00:05:16+08:00 ] 127.0.0.1 GET /index/index/login?name=admin&password=19961104
-[ info ] www.cdyy.com/index/index/login?name=admin&password=19961104 [运行时间：0.065646s][吞吐率：15.23req/s] [内存消耗：3,315.93kb] [文件加载：51]
-[ info ] [ LANG ] D:\wamp64\www\cdyy\thinkphp\lang\zh-cn.php
-[ info ] [ ROUTE ] array (
-  'type' => 'module',
-  'module' => 
-  array (
-    0 => 'index',
-    1 => 'index',
-    2 => 'login',
-  ),
-)
-[ info ] [ HEADER ] array (
-  'host' => 'www.cdyy.com',
-  'connection' => 'keep-alive',
-  'cache-control' => 'max-age=0',
-  'x-devtools-emulate-network-conditions-client-id' => '5f4266ca-f785-48f9-b96d-3e047b9ee6f4',
-  'upgrade-insecure-requests' => '1',
-  'user-agent' => 'Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Maxthon/5.0 Chrome/55.0.2883.75 Safari/537.36',
-  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
-  'dnt' => '1',
-  'referer' => 'http://www.cdyy.com/index/index/login',
-  'accept-encoding' => 'gzip, deflate',
-  'accept-language' => 'zh-CN',
-  'cookie' => 'thinkphp_show_page_trace=0|0; UM_distinctid=161eff712a0a1-0f790bb8cc872e-2569791b-100200-161eff712a145a; uid=www5a9ba399cb7bb9.60490532; CNZZDATA30088308=cnzz_eid%3D2112333325-1521272508-%26ntime%3D1521272508; CNZZDATA1256793290=1948844775-1520144149-%7C1521299773',
-)
-[ info ] [ PARAM ] array (
-  'name' => 'admin',
-  'password' => '19961104',
-)
-[ info ] [ RUN ] app\index\controller\Index->login[ D:\wamp64\www\cdyy\application\index\controller\Index.php ]
-[ info ] [ VIEW ] D:\wamp64\www\cdyy\public/../application/index\view\index\login.html [ array (
-) ]
-[ info ] [ LOG ] INIT File
----------------------------------------------------------------
-[ 2018-03-18T00:09:54+08:00 ] 127.0.0.1 GET /index/index/login?name=admin&password=19961104
-[ info ] www.cdyy.com/index/index/login?name=admin&password=19961104 [运行时间：0.076646s][吞吐率：13.05req/s] [内存消耗：3,064.16kb] [文件加载：49]
-[ info ] [ LANG ] D:\wamp64\www\cdyy\thinkphp\lang\zh-cn.php
-[ info ] [ ROUTE ] array (
-  'type' => 'module',
-  'module' => 
-  array (
-    0 => 'index',
-    1 => 'index',
-    2 => 'login',
+    2 => 'email',
   ),
 )
 [ info ] [ HEADER ] array (
@@ -450,30 +244,26 @@
   'user-agent' => 'Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Maxthon/5.0 Chrome/55.0.2883.75 Safari/537.36',
   'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
   'dnt' => '1',
-  'referer' => 'http://www.cdyy.com/index/index/login',
   'accept-encoding' => 'gzip, deflate',
   'accept-language' => 'zh-CN',
-  'cookie' => 'thinkphp_show_page_trace=0|0; UM_distinctid=161eff712a0a1-0f790bb8cc872e-2569791b-100200-161eff712a145a; uid=www5a9ba399cb7bb9.60490532; CNZZDATA30088308=cnzz_eid%3D2112333325-1521272508-%26ntime%3D1521272508; CNZZDATA1256793290=1948844775-1520144149-%7C1521299773',
+  'cookie' => 'thinkphp_show_page_trace=0|0; UM_distinctid=161eff712a0a1-0f790bb8cc872e-2569791b-100200-161eff712a145a; uid=www5a9ba399cb7bb9.60490532; CNZZDATA30088308=cnzz_eid%3D2112333325-1521272508-%26ntime%3D1521272508; PHPSESSID=80t63vjv70n3a6f9in9gqh1kg6; thinkphp_show_page_trace=0|0; CNZZDATA1256793290=1948844775-1520144149-%7C1521375374',
 )
 [ info ] [ PARAM ] array (
-  'name' => 'admin',
-  'password' => '19961104',
 )
-[ info ] [ RUN ] app\index\controller\Index->login[ D:\wamp64\www\cdyy\application\index\controller\Index.php ]
-[ info ] [ VIEW ] D:\wamp64\www\cdyy\public/../application/index\view\index\login.html [ array (
-) ]
+[ info ] [ RUN ] app\register\controller\Index->email[ D:\wamp64\www\cdyy\application\register\controller\Index.php ]
 [ info ] [ LOG ] INIT File
+[ error ] [1]Class 'PHPMailer' not found[D:\wamp64\www\cdyy\application\common.php:56]
 ---------------------------------------------------------------
-[ 2018-03-18T00:11:43+08:00 ] 127.0.0.1 GET /index/index/login?name=admin&password=19961104
-[ info ] www.cdyy.com/index/index/login?name=admin&password=19961104 [运行时间：0.057109s][吞吐率：17.51req/s] [内存消耗：3,064.16kb] [文件加载：49]
+[ 2018-03-18T20:38:30+08:00 ] 127.0.0.1 GET /register/index/email
+[ info ] www.cdyy.com/register/index/email [运行时间：2.876191s][吞吐率：0.35req/s] [内存消耗：4,310.78kb] [文件加载：54]
 [ info ] [ LANG ] D:\wamp64\www\cdyy\thinkphp\lang\zh-cn.php
 [ info ] [ ROUTE ] array (
   'type' => 'module',
   'module' => 
   array (
-    0 => 'index',
+    0 => 'register',
     1 => 'index',
-    2 => 'login',
+    2 => 'email',
   ),
 )
 [ info ] [ HEADER ] array (
@@ -484,30 +274,26 @@
   'user-agent' => 'Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Maxthon/5.0 Chrome/55.0.2883.75 Safari/537.36',
   'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
   'dnt' => '1',
-  'referer' => 'http://www.cdyy.com/index/index/login',
   'accept-encoding' => 'gzip, deflate',
   'accept-language' => 'zh-CN',
-  'cookie' => 'thinkphp_show_page_trace=0|0; UM_distinctid=161eff712a0a1-0f790bb8cc872e-2569791b-100200-161eff712a145a; uid=www5a9ba399cb7bb9.60490532; CNZZDATA30088308=cnzz_eid%3D2112333325-1521272508-%26ntime%3D1521272508; CNZZDATA1256793290=1948844775-1520144149-%7C1521299773',
+  'cookie' => 'thinkphp_show_page_trace=0|0; UM_distinctid=161eff712a0a1-0f790bb8cc872e-2569791b-100200-161eff712a145a; uid=www5a9ba399cb7bb9.60490532; CNZZDATA30088308=cnzz_eid%3D2112333325-1521272508-%26ntime%3D1521272508; PHPSESSID=80t63vjv70n3a6f9in9gqh1kg6; thinkphp_show_page_trace=0|0; CNZZDATA1256793290=1948844775-1520144149-%7C1521375374',
 )
 [ info ] [ PARAM ] array (
-  'name' => 'admin',
-  'password' => '19961104',
 )
-[ info ] [ RUN ] app\index\controller\Index->login[ D:\wamp64\www\cdyy\application\index\controller\Index.php ]
-[ info ] [ VIEW ] D:\wamp64\www\cdyy\public/../application/index\view\index\login.html [ array (
-) ]
+[ info ] [ RUN ] app\register\controller\Index->email[ D:\wamp64\www\cdyy\application\register\controller\Index.php ]
 [ info ] [ LOG ] INIT File
+[ error ] [1]Class 'PHPMailer\Exception' not found[D:\wamp64\www\cdyy\extend\PHPMailer\PHPMailer.php:1911]
 ---------------------------------------------------------------
-[ 2018-03-18T00:12:28+08:00 ] 127.0.0.1 GET /index/index/login?name=admin&password=19961104
-[ info ] www.cdyy.com/index/index/login?name=admin&password=19961104 [运行时间：0.066754s][吞吐率：14.98req/s] [内存消耗：3,315.74kb] [文件加载：51]
+[ 2018-03-18T20:40:27+08:00 ] 127.0.0.1 GET /register/index/email
+[ info ] www.cdyy.com/register/index/email [运行时间：0.279669s][吞吐率：3.58req/s] [内存消耗：4,181.09kb] [文件加载：49]
 [ info ] [ LANG ] D:\wamp64\www\cdyy\thinkphp\lang\zh-cn.php
 [ info ] [ ROUTE ] array (
   'type' => 'module',
   'module' => 
   array (
-    0 => 'index',
+    0 => 'register',
     1 => 'index',
-    2 => 'login',
+    2 => 'email',
   ),
 )
 [ info ] [ HEADER ] array (
@@ -518,30 +304,25 @@
   'user-agent' => 'Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Maxthon/5.0 Chrome/55.0.2883.75 Safari/537.36',
   'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
   'dnt' => '1',
-  'referer' => 'http://www.cdyy.com/index/index/login',
   'accept-encoding' => 'gzip, deflate',
   'accept-language' => 'zh-CN',
-  'cookie' => 'thinkphp_show_page_trace=0|0; UM_distinctid=161eff712a0a1-0f790bb8cc872e-2569791b-100200-161eff712a145a; uid=www5a9ba399cb7bb9.60490532; CNZZDATA30088308=cnzz_eid%3D2112333325-1521272508-%26ntime%3D1521272508; CNZZDATA1256793290=1948844775-1520144149-%7C1521299773',
+  'cookie' => 'thinkphp_show_page_trace=0|0; UM_distinctid=161eff712a0a1-0f790bb8cc872e-2569791b-100200-161eff712a145a; uid=www5a9ba399cb7bb9.60490532; CNZZDATA30088308=cnzz_eid%3D2112333325-1521272508-%26ntime%3D1521272508; PHPSESSID=80t63vjv70n3a6f9in9gqh1kg6; thinkphp_show_page_trace=0|0; CNZZDATA1256793290=1948844775-1520144149-%7C1521375374',
 )
 [ info ] [ PARAM ] array (
-  'name' => 'admin',
-  'password' => '19961104',
 )
-[ info ] [ RUN ] app\index\controller\Index->login[ D:\wamp64\www\cdyy\application\index\controller\Index.php ]
-[ info ] [ VIEW ] D:\wamp64\www\cdyy\public/../application/index\view\index\login.html [ array (
-) ]
+[ info ] [ RUN ] app\register\controller\Index->email[ D:\wamp64\www\cdyy\application\register\controller\Index.php ]
 [ info ] [ LOG ] INIT File
 ---------------------------------------------------------------
-[ 2018-03-18T00:12:54+08:00 ] 127.0.0.1 GET /index/index/login?name=admin&password=19961104
-[ info ] www.cdyy.com/index/index/login?name=admin&password=19961104 [运行时间：0.061732s][吞吐率：16.20req/s] [内存消耗：3,315.78kb] [文件加载：51]
+[ 2018-03-18T20:42:22+08:00 ] 127.0.0.1 GET /register/index/email
+[ info ] www.cdyy.com/register/index/email [运行时间：0.262706s][吞吐率：3.81req/s] [内存消耗：4,181.05kb] [文件加载：49]
 [ info ] [ LANG ] D:\wamp64\www\cdyy\thinkphp\lang\zh-cn.php
 [ info ] [ ROUTE ] array (
   'type' => 'module',
   'module' => 
   array (
-    0 => 'index',
+    0 => 'register',
     1 => 'index',
-    2 => 'login',
+    2 => 'email',
   ),
 )
 [ info ] [ HEADER ] array (
@@ -552,30 +333,25 @@
   'user-agent' => 'Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Maxthon/5.0 Chrome/55.0.2883.75 Safari/537.36',
   'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
   'dnt' => '1',
-  'referer' => 'http://www.cdyy.com/index/index/login',
   'accept-encoding' => 'gzip, deflate',
   'accept-language' => 'zh-CN',
-  'cookie' => 'thinkphp_show_page_trace=0|0; UM_distinctid=161eff712a0a1-0f790bb8cc872e-2569791b-100200-161eff712a145a; uid=www5a9ba399cb7bb9.60490532; CNZZDATA30088308=cnzz_eid%3D2112333325-1521272508-%26ntime%3D1521272508; CNZZDATA1256793290=1948844775-1520144149-%7C1521299773',
+  'cookie' => 'thinkphp_show_page_trace=0|0; UM_distinctid=161eff712a0a1-0f790bb8cc872e-2569791b-100200-161eff712a145a; uid=www5a9ba399cb7bb9.60490532; CNZZDATA30088308=cnzz_eid%3D2112333325-1521272508-%26ntime%3D1521272508; PHPSESSID=80t63vjv70n3a6f9in9gqh1kg6; thinkphp_show_page_trace=0|0; CNZZDATA1256793290=1948844775-1520144149-%7C1521375374',
 )
 [ info ] [ PARAM ] array (
-  'name' => 'admin',
-  'password' => '19961104',
 )
-[ info ] [ RUN ] app\index\controller\Index->login[ D:\wamp64\www\cdyy\application\index\controller\Index.php ]
-[ info ] [ VIEW ] D:\wamp64\www\cdyy\public/../application/index\view\index\login.html [ array (
-) ]
+[ info ] [ RUN ] app\register\controller\Index->email[ D:\wamp64\www\cdyy\application\register\controller\Index.php ]
 [ info ] [ LOG ] INIT File
 ---------------------------------------------------------------
-[ 2018-03-18T00:13:37+08:00 ] 127.0.0.1 GET /index/index/login?name=admin&password=19961104
-[ info ] www.cdyy.com/index/index/login?name=admin&password=19961104 [运行时间：0.071972s][吞吐率：13.89req/s] [内存消耗：3,316.09kb] [文件加载：51]
+[ 2018-03-18T20:42:24+08:00 ] 127.0.0.1 GET /register/index/email
+[ info ] www.cdyy.com/register/index/email [运行时间：0.266815s][吞吐率：3.75req/s] [内存消耗：4,181.17kb] [文件加载：49]
 [ info ] [ LANG ] D:\wamp64\www\cdyy\thinkphp\lang\zh-cn.php
 [ info ] [ ROUTE ] array (
   'type' => 'module',
   'module' => 
   array (
-    0 => 'index',
+    0 => 'register',
     1 => 'index',
-    2 => 'login',
+    2 => 'email',
   ),
 )
 [ info ] [ HEADER ] array (
@@ -586,30 +362,25 @@
   'user-agent' => 'Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Maxthon/5.0 Chrome/55.0.2883.75 Safari/537.36',
   'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
   'dnt' => '1',
-  'referer' => 'http://www.cdyy.com/index/index/login',
   'accept-encoding' => 'gzip, deflate',
   'accept-language' => 'zh-CN',
-  'cookie' => 'thinkphp_show_page_trace=0|0; UM_distinctid=161eff712a0a1-0f790bb8cc872e-2569791b-100200-161eff712a145a; uid=www5a9ba399cb7bb9.60490532; CNZZDATA30088308=cnzz_eid%3D2112333325-1521272508-%26ntime%3D1521272508; CNZZDATA1256793290=1948844775-1520144149-%7C1521299773',
+  'cookie' => 'thinkphp_show_page_trace=0|0; UM_distinctid=161eff712a0a1-0f790bb8cc872e-2569791b-100200-161eff712a145a; uid=www5a9ba399cb7bb9.60490532; CNZZDATA30088308=cnzz_eid%3D2112333325-1521272508-%26ntime%3D1521272508; PHPSESSID=80t63vjv70n3a6f9in9gqh1kg6; thinkphp_show_page_trace=0|0; CNZZDATA1256793290=1948844775-1520144149-%7C1521375374',
 )
 [ info ] [ PARAM ] array (
-  'name' => 'admin',
-  'password' => '19961104',
 )
-[ info ] [ RUN ] app\index\controller\Index->login[ D:\wamp64\www\cdyy\application\index\controller\Index.php ]
-[ info ] [ VIEW ] D:\wamp64\www\cdyy\public/../application/index\view\index\login.html [ array (
-) ]
+[ info ] [ RUN ] app\register\controller\Index->email[ D:\wamp64\www\cdyy\application\register\controller\Index.php ]
 [ info ] [ LOG ] INIT File
 ---------------------------------------------------------------
-[ 2018-03-18T00:14:49+08:00 ] 127.0.0.1 GET /index/index/login?name=admin&password=19961104
-[ info ] www.cdyy.com/index/index/login?name=admin&password=19961104 [运行时间：0.062997s][吞吐率：15.87req/s] [内存消耗：3,316.11kb] [文件加载：51]
+[ 2018-03-18T20:43:00+08:00 ] 127.0.0.1 GET /register/index/email
+[ info ] www.cdyy.com/register/index/email [运行时间：0.296792s][吞吐率：3.37req/s] [内存消耗：4,181.09kb] [文件加载：49]
 [ info ] [ LANG ] D:\wamp64\www\cdyy\thinkphp\lang\zh-cn.php
 [ info ] [ ROUTE ] array (
   'type' => 'module',
   'module' => 
   array (
-    0 => 'index',
+    0 => 'register',
     1 => 'index',
-    2 => 'login',
+    2 => 'email',
   ),
 )
 [ info ] [ HEADER ] array (
@@ -620,16 +391,389 @@
   'user-agent' => 'Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Maxthon/5.0 Chrome/55.0.2883.75 Safari/537.36',
   'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
   'dnt' => '1',
-  'referer' => 'http://www.cdyy.com/index/index/login',
   'accept-encoding' => 'gzip, deflate',
   'accept-language' => 'zh-CN',
-  'cookie' => 'thinkphp_show_page_trace=0|0; UM_distinctid=161eff712a0a1-0f790bb8cc872e-2569791b-100200-161eff712a145a; uid=www5a9ba399cb7bb9.60490532; CNZZDATA30088308=cnzz_eid%3D2112333325-1521272508-%26ntime%3D1521272508; CNZZDATA1256793290=1948844775-1520144149-%7C1521299773',
+  'cookie' => 'thinkphp_show_page_trace=0|0; UM_distinctid=161eff712a0a1-0f790bb8cc872e-2569791b-100200-161eff712a145a; uid=www5a9ba399cb7bb9.60490532; CNZZDATA30088308=cnzz_eid%3D2112333325-1521272508-%26ntime%3D1521272508; PHPSESSID=80t63vjv70n3a6f9in9gqh1kg6; thinkphp_show_page_trace=0|0; CNZZDATA1256793290=1948844775-1520144149-%7C1521375374',
 )
 [ info ] [ PARAM ] array (
-  'name' => 'admin',
-  'password' => '19961104',
 )
-[ info ] [ RUN ] app\index\controller\Index->login[ D:\wamp64\www\cdyy\application\index\controller\Index.php ]
-[ info ] [ VIEW ] D:\wamp64\www\cdyy\public/../application/index\view\index\login.html [ array (
-) ]
+[ info ] [ RUN ] app\register\controller\Index->email[ D:\wamp64\www\cdyy\application\register\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-18T20:43:01+08:00 ] 127.0.0.1 GET /register/index/email
+[ info ] www.cdyy.com/register/index/email [运行时间：0.298179s][吞吐率：3.35req/s] [内存消耗：4,181.09kb] [文件加载：49]
+[ info ] [ LANG ] D:\wamp64\www\cdyy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'register',
+    1 => 'index',
+    2 => 'email',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.cdyy.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Maxthon/5.0 Chrome/55.0.2883.75 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'dnt' => '1',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN',
+  'cookie' => 'thinkphp_show_page_trace=0|0; UM_distinctid=161eff712a0a1-0f790bb8cc872e-2569791b-100200-161eff712a145a; uid=www5a9ba399cb7bb9.60490532; CNZZDATA30088308=cnzz_eid%3D2112333325-1521272508-%26ntime%3D1521272508; PHPSESSID=80t63vjv70n3a6f9in9gqh1kg6; thinkphp_show_page_trace=0|0; CNZZDATA1256793290=1948844775-1520144149-%7C1521375374',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\register\controller\Index->email[ D:\wamp64\www\cdyy\application\register\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-18T20:43:03+08:00 ] 127.0.0.1 GET /register/index/email
+[ info ] www.cdyy.com/register/index/email [运行时间：0.257087s][吞吐率：3.89req/s] [内存消耗：4,181.09kb] [文件加载：49]
+[ info ] [ LANG ] D:\wamp64\www\cdyy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'register',
+    1 => 'index',
+    2 => 'email',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.cdyy.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Maxthon/5.0 Chrome/55.0.2883.75 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'dnt' => '1',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN',
+  'cookie' => 'thinkphp_show_page_trace=0|0; UM_distinctid=161eff712a0a1-0f790bb8cc872e-2569791b-100200-161eff712a145a; uid=www5a9ba399cb7bb9.60490532; CNZZDATA30088308=cnzz_eid%3D2112333325-1521272508-%26ntime%3D1521272508; PHPSESSID=80t63vjv70n3a6f9in9gqh1kg6; thinkphp_show_page_trace=0|0; CNZZDATA1256793290=1948844775-1520144149-%7C1521375374',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\register\controller\Index->email[ D:\wamp64\www\cdyy\application\register\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-18T20:44:15+08:00 ] 127.0.0.1 GET /register/index/email
+[ info ] www.cdyy.com/register/index/email [运行时间：0.266107s][吞吐率：3.76req/s] [内存消耗：4,181.17kb] [文件加载：49]
+[ info ] [ LANG ] D:\wamp64\www\cdyy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'register',
+    1 => 'index',
+    2 => 'email',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.cdyy.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Maxthon/5.0 Chrome/55.0.2883.75 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'dnt' => '1',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN',
+  'cookie' => 'thinkphp_show_page_trace=0|0; UM_distinctid=161eff712a0a1-0f790bb8cc872e-2569791b-100200-161eff712a145a; uid=www5a9ba399cb7bb9.60490532; CNZZDATA30088308=cnzz_eid%3D2112333325-1521272508-%26ntime%3D1521272508; PHPSESSID=80t63vjv70n3a6f9in9gqh1kg6; thinkphp_show_page_trace=0|0; CNZZDATA1256793290=1948844775-1520144149-%7C1521375374',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\register\controller\Index->email[ D:\wamp64\www\cdyy\application\register\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-18T20:46:18+08:00 ] 127.0.0.1 GET /register/index/email
+[ info ] www.cdyy.com/register/index/email [运行时间：0.284907s][吞吐率：3.51req/s] [内存消耗：4,181.17kb] [文件加载：49]
+[ info ] [ LANG ] D:\wamp64\www\cdyy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'register',
+    1 => 'index',
+    2 => 'email',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.cdyy.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Maxthon/5.0 Chrome/55.0.2883.75 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'dnt' => '1',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN',
+  'cookie' => 'thinkphp_show_page_trace=0|0; UM_distinctid=161eff712a0a1-0f790bb8cc872e-2569791b-100200-161eff712a145a; uid=www5a9ba399cb7bb9.60490532; CNZZDATA30088308=cnzz_eid%3D2112333325-1521272508-%26ntime%3D1521272508; PHPSESSID=80t63vjv70n3a6f9in9gqh1kg6; thinkphp_show_page_trace=0|0; CNZZDATA1256793290=1948844775-1520144149-%7C1521375374',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\register\controller\Index->email[ D:\wamp64\www\cdyy\application\register\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-18T20:46:59+08:00 ] 127.0.0.1 GET /register/index/email
+[ info ] www.cdyy.com/register/index/email [运行时间：0.287665s][吞吐率：3.48req/s] [内存消耗：4,181.13kb] [文件加载：49]
+[ info ] [ LANG ] D:\wamp64\www\cdyy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'register',
+    1 => 'index',
+    2 => 'email',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.cdyy.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Maxthon/5.0 Chrome/55.0.2883.75 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'dnt' => '1',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN',
+  'cookie' => 'thinkphp_show_page_trace=0|0; UM_distinctid=161eff712a0a1-0f790bb8cc872e-2569791b-100200-161eff712a145a; uid=www5a9ba399cb7bb9.60490532; CNZZDATA30088308=cnzz_eid%3D2112333325-1521272508-%26ntime%3D1521272508; PHPSESSID=80t63vjv70n3a6f9in9gqh1kg6; thinkphp_show_page_trace=0|0; CNZZDATA1256793290=1948844775-1520144149-%7C1521375374',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\register\controller\Index->email[ D:\wamp64\www\cdyy\application\register\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-18T20:50:16+08:00 ] 127.0.0.1 GET /register/index/email
+[ info ] www.cdyy.com/register/index/email [运行时间：0.152461s][吞吐率：6.56req/s] [内存消耗：4,179.02kb] [文件加载：49]
+[ info ] [ LANG ] D:\wamp64\www\cdyy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'register',
+    1 => 'index',
+    2 => 'email',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.cdyy.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Maxthon/5.0 Chrome/55.0.2883.75 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'dnt' => '1',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN',
+  'cookie' => 'thinkphp_show_page_trace=0|0; UM_distinctid=161eff712a0a1-0f790bb8cc872e-2569791b-100200-161eff712a145a; uid=www5a9ba399cb7bb9.60490532; CNZZDATA30088308=cnzz_eid%3D2112333325-1521272508-%26ntime%3D1521272508; PHPSESSID=80t63vjv70n3a6f9in9gqh1kg6; thinkphp_show_page_trace=0|0; CNZZDATA1256793290=1948844775-1520144149-%7C1521375374',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\register\controller\Index->email[ D:\wamp64\www\cdyy\application\register\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-18T20:50:18+08:00 ] 127.0.0.1 GET /register/index/email
+[ info ] www.cdyy.com/register/index/email [运行时间：0.101159s][吞吐率：9.89req/s] [内存消耗：4,179.02kb] [文件加载：49]
+[ info ] [ LANG ] D:\wamp64\www\cdyy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'register',
+    1 => 'index',
+    2 => 'email',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.cdyy.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Maxthon/5.0 Chrome/55.0.2883.75 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'dnt' => '1',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN',
+  'cookie' => 'thinkphp_show_page_trace=0|0; UM_distinctid=161eff712a0a1-0f790bb8cc872e-2569791b-100200-161eff712a145a; uid=www5a9ba399cb7bb9.60490532; CNZZDATA30088308=cnzz_eid%3D2112333325-1521272508-%26ntime%3D1521272508; PHPSESSID=80t63vjv70n3a6f9in9gqh1kg6; thinkphp_show_page_trace=0|0; CNZZDATA1256793290=1948844775-1520144149-%7C1521375374',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\register\controller\Index->email[ D:\wamp64\www\cdyy\application\register\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-18T20:52:20+08:00 ] 127.0.0.1 GET /register/index/email
+[ info ] www.cdyy.com/register/index/email [运行时间：1.179840s][吞吐率：0.85req/s] [内存消耗：4,181.11kb] [文件加载：49]
+[ info ] [ LANG ] D:\wamp64\www\cdyy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'register',
+    1 => 'index',
+    2 => 'email',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.cdyy.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Maxthon/5.0 Chrome/55.0.2883.75 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'dnt' => '1',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN',
+  'cookie' => 'thinkphp_show_page_trace=0|0; UM_distinctid=161eff712a0a1-0f790bb8cc872e-2569791b-100200-161eff712a145a; uid=www5a9ba399cb7bb9.60490532; CNZZDATA30088308=cnzz_eid%3D2112333325-1521272508-%26ntime%3D1521272508; PHPSESSID=80t63vjv70n3a6f9in9gqh1kg6; thinkphp_show_page_trace=0|0; CNZZDATA1256793290=1948844775-1520144149-%7C1521375374',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\register\controller\Index->email[ D:\wamp64\www\cdyy\application\register\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-18T20:53:24+08:00 ] 127.0.0.1 GET /register/index/email
+[ info ] www.cdyy.com/register/index/email [运行时间：1.462898s][吞吐率：0.68req/s] [内存消耗：4,181.13kb] [文件加载：49]
+[ info ] [ LANG ] D:\wamp64\www\cdyy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'register',
+    1 => 'index',
+    2 => 'email',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.cdyy.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Maxthon/5.0 Chrome/55.0.2883.75 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'dnt' => '1',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN',
+  'cookie' => 'thinkphp_show_page_trace=0|0; UM_distinctid=161eff712a0a1-0f790bb8cc872e-2569791b-100200-161eff712a145a; uid=www5a9ba399cb7bb9.60490532; CNZZDATA30088308=cnzz_eid%3D2112333325-1521272508-%26ntime%3D1521272508; PHPSESSID=80t63vjv70n3a6f9in9gqh1kg6; thinkphp_show_page_trace=0|0; CNZZDATA1256793290=1948844775-1520144149-%7C1521375374',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\register\controller\Index->email[ D:\wamp64\www\cdyy\application\register\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-18T20:54:12+08:00 ] 127.0.0.1 GET /register/index/email
+[ info ] www.cdyy.com/register/index/email [运行时间：1.351976s][吞吐率：0.74req/s] [内存消耗：4,181.14kb] [文件加载：49]
+[ info ] [ LANG ] D:\wamp64\www\cdyy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'register',
+    1 => 'index',
+    2 => 'email',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.cdyy.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Maxthon/5.0 Chrome/55.0.2883.75 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'dnt' => '1',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN',
+  'cookie' => 'thinkphp_show_page_trace=0|0; UM_distinctid=161eff712a0a1-0f790bb8cc872e-2569791b-100200-161eff712a145a; uid=www5a9ba399cb7bb9.60490532; CNZZDATA30088308=cnzz_eid%3D2112333325-1521272508-%26ntime%3D1521272508; PHPSESSID=80t63vjv70n3a6f9in9gqh1kg6; thinkphp_show_page_trace=0|0; CNZZDATA1256793290=1948844775-1520144149-%7C1521375374',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\register\controller\Index->email[ D:\wamp64\www\cdyy\application\register\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-18T20:55:28+08:00 ] 127.0.0.1 GET /register/index/email
+[ info ] www.cdyy.com/register/index/email [运行时间：0.049716s][吞吐率：20.11req/s] [内存消耗：3,125.05kb] [文件加载：51]
+[ info ] [ LANG ] D:\wamp64\www\cdyy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'register',
+    1 => 'index',
+    2 => 'email',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.cdyy.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Maxthon/5.0 Chrome/55.0.2883.75 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'dnt' => '1',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN',
+  'cookie' => 'thinkphp_show_page_trace=0|0; UM_distinctid=161eff712a0a1-0f790bb8cc872e-2569791b-100200-161eff712a145a; uid=www5a9ba399cb7bb9.60490532; CNZZDATA30088308=cnzz_eid%3D2112333325-1521272508-%26ntime%3D1521272508; PHPSESSID=80t63vjv70n3a6f9in9gqh1kg6; thinkphp_show_page_trace=0|0; CNZZDATA1256793290=1948844775-1520144149-%7C1521375374',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\register\controller\Index->email[ D:\wamp64\www\cdyy\application\register\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义变量: name[D:\wamp64\www\cdyy\application\register\controller\Index.php:36]
+---------------------------------------------------------------
+[ 2018-03-18T20:56:20+08:00 ] 127.0.0.1 GET /register/index/email
+[ info ] www.cdyy.com/register/index/email [运行时间：1.692736s][吞吐率：0.59req/s] [内存消耗：4,181.04kb] [文件加载：49]
+[ info ] [ LANG ] D:\wamp64\www\cdyy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'register',
+    1 => 'index',
+    2 => 'email',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.cdyy.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Maxthon/5.0 Chrome/55.0.2883.75 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'dnt' => '1',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN',
+  'cookie' => 'thinkphp_show_page_trace=0|0; UM_distinctid=161eff712a0a1-0f790bb8cc872e-2569791b-100200-161eff712a145a; uid=www5a9ba399cb7bb9.60490532; CNZZDATA30088308=cnzz_eid%3D2112333325-1521272508-%26ntime%3D1521272508; PHPSESSID=80t63vjv70n3a6f9in9gqh1kg6; thinkphp_show_page_trace=0|0; CNZZDATA1256793290=1948844775-1520144149-%7C1521375374',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\register\controller\Index->email[ D:\wamp64\www\cdyy\application\register\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-18T20:58:09+08:00 ] 127.0.0.1 GET /register/index/email
+[ info ] www.cdyy.com/register/index/email [运行时间：1.586583s][吞吐率：0.63req/s] [内存消耗：4,180.98kb] [文件加载：49]
+[ info ] [ LANG ] D:\wamp64\www\cdyy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'register',
+    1 => 'index',
+    2 => 'email',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.cdyy.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Maxthon/5.0 Chrome/55.0.2883.75 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'dnt' => '1',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN',
+  'cookie' => 'thinkphp_show_page_trace=0|0; UM_distinctid=161eff712a0a1-0f790bb8cc872e-2569791b-100200-161eff712a145a; uid=www5a9ba399cb7bb9.60490532; CNZZDATA30088308=cnzz_eid%3D2112333325-1521272508-%26ntime%3D1521272508; PHPSESSID=80t63vjv70n3a6f9in9gqh1kg6; thinkphp_show_page_trace=0|0; CNZZDATA1256793290=1948844775-1520144149-%7C1521375374',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\register\controller\Index->email[ D:\wamp64\www\cdyy\application\register\controller\Index.php ]
 [ info ] [ LOG ] INIT File
