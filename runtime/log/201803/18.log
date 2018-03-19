@@ -777,3 +777,655 @@
 )
 [ info ] [ RUN ] app\register\controller\Index->email[ D:\wamp64\www\cdyy\application\register\controller\Index.php ]
 [ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-18T22:17:48+08:00 ] 127.0.0.1 GET /register/index/email
+[ info ] www.cdyy.com/register/index/email [运行时间：1.071643s][吞吐率：0.93req/s] [内存消耗：4,180.88kb] [文件加载：49]
+[ info ] [ LANG ] D:\wamp64\www\cdyy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'register',
+    1 => 'index',
+    2 => 'email',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.cdyy.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Maxthon/5.0 Chrome/55.0.2883.75 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'dnt' => '1',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN',
+  'cookie' => 'thinkphp_show_page_trace=0|0; UM_distinctid=161eff712a0a1-0f790bb8cc872e-2569791b-100200-161eff712a145a; uid=www5a9ba399cb7bb9.60490532; CNZZDATA30088308=cnzz_eid%3D2112333325-1521272508-%26ntime%3D1521272508; PHPSESSID=80t63vjv70n3a6f9in9gqh1kg6; thinkphp_show_page_trace=0|0; CNZZDATA1256793290=1948844775-1520144149-%7C1521375374',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\register\controller\Index->email[ D:\wamp64\www\cdyy\application\register\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-18T22:17:54+08:00 ] 127.0.0.1 GET /register/
+[ info ] www.cdyy.com/register/ [运行时间：0.045144s][吞吐率：22.15req/s] [内存消耗：3,422.40kb] [文件加载：51]
+[ info ] [ LANG ] D:\wamp64\www\cdyy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'register',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.cdyy.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Maxthon/5.0 Chrome/55.0.2883.75 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'dnt' => '1',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN',
+  'cookie' => 'UM_distinctid=161eff712a0a1-0f790bb8cc872e-2569791b-100200-161eff712a145a; uid=www5a9ba399cb7bb9.60490532; CNZZDATA30088308=cnzz_eid%3D2112333325-1521272508-%26ntime%3D1521272508; PHPSESSID=80t63vjv70n3a6f9in9gqh1kg6; thinkphp_show_page_trace=0|0; CNZZDATA1256793290=1948844775-1520144149-%7C1521380774',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\register\controller\Index->index[ D:\wamp64\www\cdyy\application\register\controller\Index.php ]
+[ info ] [ VIEW ] D:\wamp64\www\cdyy\public/../application/register\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-18T22:17:54+08:00 ] 127.0.0.1 GET /captcha.html
+[ info ] www.cdyy.com/captcha.html [运行时间：0.112485s][吞吐率：8.89req/s] [内存消耗：2,542.43kb] [文件加载：39]
+[ info ] [ LANG ] D:\wamp64\www\cdyy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\captcha\\CaptchaController',
+    1 => 'index',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.cdyy.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Maxthon/5.0 Chrome/55.0.2883.75 Safari/537.36',
+  'accept' => 'image/webp,image/*,*/*;q=0.8',
+  'dnt' => '1',
+  'referer' => 'http://www.cdyy.com/register/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN',
+  'cookie' => 'UM_distinctid=161eff712a0a1-0f790bb8cc872e-2569791b-100200-161eff712a145a; uid=www5a9ba399cb7bb9.60490532; CNZZDATA30088308=cnzz_eid%3D2112333325-1521272508-%26ntime%3D1521272508; PHPSESSID=80t63vjv70n3a6f9in9gqh1kg6; thinkphp_show_page_trace=0|0; CNZZDATA1256793290=1948844775-1520144149-%7C1521380774',
+)
+[ info ] [ PARAM ] array (
+  'id' => NULL,
+)
+[ info ] [ RUN ] think\captcha\CaptchaController->index[ D:\wamp64\www\cdyy\vendor\topthink\think-captcha\src\CaptchaController.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-18T22:21:09+08:00 ] 127.0.0.1 GET /register/
+[ info ] www.cdyy.com/register/ [运行时间：0.057889s][吞吐率：17.27req/s] [内存消耗：3,422.84kb] [文件加载：51]
+[ info ] [ LANG ] D:\wamp64\www\cdyy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'register',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.cdyy.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Maxthon/5.0 Chrome/55.0.2883.75 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'dnt' => '1',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN',
+  'cookie' => 'thinkphp_show_page_trace=0|0; UM_distinctid=161eff712a0a1-0f790bb8cc872e-2569791b-100200-161eff712a145a; uid=www5a9ba399cb7bb9.60490532; CNZZDATA30088308=cnzz_eid%3D2112333325-1521272508-%26ntime%3D1521272508; PHPSESSID=80t63vjv70n3a6f9in9gqh1kg6; thinkphp_show_page_trace=0|0; CNZZDATA1256793290=1948844775-1520144149-%7C1521380774',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\register\controller\Index->index[ D:\wamp64\www\cdyy\application\register\controller\Index.php ]
+[ info ] [ VIEW ] D:\wamp64\www\cdyy\public/../application/register\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-18T22:21:10+08:00 ] 127.0.0.1 GET /captcha.html
+[ info ] www.cdyy.com/captcha.html [运行时间：0.063947s][吞吐率：15.64req/s] [内存消耗：2,542.32kb] [文件加载：39]
+[ info ] [ LANG ] D:\wamp64\www\cdyy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\captcha\\CaptchaController',
+    1 => 'index',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.cdyy.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Maxthon/5.0 Chrome/55.0.2883.75 Safari/537.36',
+  'accept' => 'image/webp,image/*,*/*;q=0.8',
+  'dnt' => '1',
+  'referer' => 'http://www.cdyy.com/register/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN',
+  'cookie' => 'UM_distinctid=161eff712a0a1-0f790bb8cc872e-2569791b-100200-161eff712a145a; uid=www5a9ba399cb7bb9.60490532; CNZZDATA30088308=cnzz_eid%3D2112333325-1521272508-%26ntime%3D1521272508; PHPSESSID=80t63vjv70n3a6f9in9gqh1kg6; thinkphp_show_page_trace=0|0; CNZZDATA1256793290=1948844775-1520144149-%7C1521380774',
+)
+[ info ] [ PARAM ] array (
+  'id' => NULL,
+)
+[ info ] [ RUN ] think\captcha\CaptchaController->index[ D:\wamp64\www\cdyy\vendor\topthink\think-captcha\src\CaptchaController.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-18T22:21:18+08:00 ] 127.0.0.1 GET /register/
+[ info ] www.cdyy.com/register/ [运行时间：0.069808s][吞吐率：14.33req/s] [内存消耗：3,422.65kb] [文件加载：51]
+[ info ] [ LANG ] D:\wamp64\www\cdyy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'register',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.cdyy.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Maxthon/5.0 Chrome/55.0.2883.75 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'dnt' => '1',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN',
+  'cookie' => 'thinkphp_show_page_trace=0|0; UM_distinctid=161eff712a0a1-0f790bb8cc872e-2569791b-100200-161eff712a145a; uid=www5a9ba399cb7bb9.60490532; CNZZDATA30088308=cnzz_eid%3D2112333325-1521272508-%26ntime%3D1521272508; PHPSESSID=80t63vjv70n3a6f9in9gqh1kg6; thinkphp_show_page_trace=0|0; CNZZDATA1256793290=1948844775-1520144149-%7C1521380774',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\register\controller\Index->index[ D:\wamp64\www\cdyy\application\register\controller\Index.php ]
+[ info ] [ VIEW ] D:\wamp64\www\cdyy\public/../application/register\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-18T22:21:18+08:00 ] 127.0.0.1 GET /captcha.html
+[ info ] www.cdyy.com/captcha.html [运行时间：0.084408s][吞吐率：11.85req/s] [内存消耗：2,542.28kb] [文件加载：39]
+[ info ] [ LANG ] D:\wamp64\www\cdyy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\captcha\\CaptchaController',
+    1 => 'index',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.cdyy.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Maxthon/5.0 Chrome/55.0.2883.75 Safari/537.36',
+  'accept' => 'image/webp,image/*,*/*;q=0.8',
+  'dnt' => '1',
+  'referer' => 'http://www.cdyy.com/register/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN',
+  'cookie' => 'UM_distinctid=161eff712a0a1-0f790bb8cc872e-2569791b-100200-161eff712a145a; uid=www5a9ba399cb7bb9.60490532; CNZZDATA30088308=cnzz_eid%3D2112333325-1521272508-%26ntime%3D1521272508; PHPSESSID=80t63vjv70n3a6f9in9gqh1kg6; thinkphp_show_page_trace=0|0; CNZZDATA1256793290=1948844775-1520144149-%7C1521380774',
+)
+[ info ] [ PARAM ] array (
+  'id' => NULL,
+)
+[ info ] [ RUN ] think\captcha\CaptchaController->index[ D:\wamp64\www\cdyy\vendor\topthink\think-captcha\src\CaptchaController.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-18T22:24:35+08:00 ] 127.0.0.1 GET /register/
+[ info ] www.cdyy.com/register/ [运行时间：0.044152s][吞吐率：22.65req/s] [内存消耗：3,166.08kb] [文件加载：49]
+[ info ] [ LANG ] D:\wamp64\www\cdyy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'register',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.cdyy.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Maxthon/5.0 Chrome/55.0.2883.75 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'dnt' => '1',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN',
+  'cookie' => 'thinkphp_show_page_trace=0|0; UM_distinctid=161eff712a0a1-0f790bb8cc872e-2569791b-100200-161eff712a145a; uid=www5a9ba399cb7bb9.60490532; CNZZDATA30088308=cnzz_eid%3D2112333325-1521272508-%26ntime%3D1521272508; PHPSESSID=80t63vjv70n3a6f9in9gqh1kg6; thinkphp_show_page_trace=0|0; CNZZDATA1256793290=1948844775-1520144149-%7C1521380774',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\register\controller\Index->index[ D:\wamp64\www\cdyy\application\register\controller\Index.php ]
+[ info ] [ VIEW ] D:\wamp64\www\cdyy\public/../application/register\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-18T22:24:36+08:00 ] 127.0.0.1 GET /captcha.html
+[ info ] www.cdyy.com/captcha.html [运行时间：0.092229s][吞吐率：10.84req/s] [内存消耗：2,542.30kb] [文件加载：39]
+[ info ] [ LANG ] D:\wamp64\www\cdyy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\captcha\\CaptchaController',
+    1 => 'index',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.cdyy.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Maxthon/5.0 Chrome/55.0.2883.75 Safari/537.36',
+  'accept' => 'image/webp,image/*,*/*;q=0.8',
+  'dnt' => '1',
+  'referer' => 'http://www.cdyy.com/register/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN',
+  'cookie' => 'UM_distinctid=161eff712a0a1-0f790bb8cc872e-2569791b-100200-161eff712a145a; uid=www5a9ba399cb7bb9.60490532; CNZZDATA30088308=cnzz_eid%3D2112333325-1521272508-%26ntime%3D1521272508; PHPSESSID=80t63vjv70n3a6f9in9gqh1kg6; thinkphp_show_page_trace=0|0; CNZZDATA1256793290=1948844775-1520144149-%7C1521380774',
+)
+[ info ] [ PARAM ] array (
+  'id' => NULL,
+)
+[ info ] [ RUN ] think\captcha\CaptchaController->index[ D:\wamp64\www\cdyy\vendor\topthink\think-captcha\src\CaptchaController.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-18T22:25:47+08:00 ] 127.0.0.1 GET /register/
+[ info ] www.cdyy.com/register/ [运行时间：0.052040s][吞吐率：19.22req/s] [内存消耗：3,422.66kb] [文件加载：51]
+[ info ] [ LANG ] D:\wamp64\www\cdyy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'register',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.cdyy.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Maxthon/5.0 Chrome/55.0.2883.75 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'dnt' => '1',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN',
+  'cookie' => 'thinkphp_show_page_trace=0|0; UM_distinctid=161eff712a0a1-0f790bb8cc872e-2569791b-100200-161eff712a145a; uid=www5a9ba399cb7bb9.60490532; CNZZDATA30088308=cnzz_eid%3D2112333325-1521272508-%26ntime%3D1521272508; PHPSESSID=80t63vjv70n3a6f9in9gqh1kg6; thinkphp_show_page_trace=0|0; CNZZDATA1256793290=1948844775-1520144149-%7C1521380774',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\register\controller\Index->index[ D:\wamp64\www\cdyy\application\register\controller\Index.php ]
+[ info ] [ VIEW ] D:\wamp64\www\cdyy\public/../application/register\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-18T22:25:48+08:00 ] 127.0.0.1 GET /captcha.html
+[ info ] www.cdyy.com/captcha.html [运行时间：0.077459s][吞吐率：12.91req/s] [内存消耗：2,542.25kb] [文件加载：39]
+[ info ] [ LANG ] D:\wamp64\www\cdyy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\captcha\\CaptchaController',
+    1 => 'index',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.cdyy.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Maxthon/5.0 Chrome/55.0.2883.75 Safari/537.36',
+  'accept' => 'image/webp,image/*,*/*;q=0.8',
+  'dnt' => '1',
+  'referer' => 'http://www.cdyy.com/register/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN',
+  'cookie' => 'UM_distinctid=161eff712a0a1-0f790bb8cc872e-2569791b-100200-161eff712a145a; uid=www5a9ba399cb7bb9.60490532; CNZZDATA30088308=cnzz_eid%3D2112333325-1521272508-%26ntime%3D1521272508; PHPSESSID=80t63vjv70n3a6f9in9gqh1kg6; thinkphp_show_page_trace=0|0; CNZZDATA1256793290=1948844775-1520144149-%7C1521380774',
+)
+[ info ] [ PARAM ] array (
+  'id' => NULL,
+)
+[ info ] [ RUN ] think\captcha\CaptchaController->index[ D:\wamp64\www\cdyy\vendor\topthink\think-captcha\src\CaptchaController.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-18T22:26:11+08:00 ] 127.0.0.1 GET /register/
+[ info ] www.cdyy.com/register/ [运行时间：0.067704s][吞吐率：14.77req/s] [内存消耗：3,422.66kb] [文件加载：51]
+[ info ] [ LANG ] D:\wamp64\www\cdyy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'register',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.cdyy.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Maxthon/5.0 Chrome/55.0.2883.75 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'dnt' => '1',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN',
+  'cookie' => 'thinkphp_show_page_trace=0|0; UM_distinctid=161eff712a0a1-0f790bb8cc872e-2569791b-100200-161eff712a145a; uid=www5a9ba399cb7bb9.60490532; CNZZDATA30088308=cnzz_eid%3D2112333325-1521272508-%26ntime%3D1521272508; PHPSESSID=80t63vjv70n3a6f9in9gqh1kg6; thinkphp_show_page_trace=0|0; CNZZDATA1256793290=1948844775-1520144149-%7C1521380774',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\register\controller\Index->index[ D:\wamp64\www\cdyy\application\register\controller\Index.php ]
+[ info ] [ VIEW ] D:\wamp64\www\cdyy\public/../application/register\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-18T22:26:11+08:00 ] 127.0.0.1 GET /captcha.html
+[ info ] www.cdyy.com/captcha.html [运行时间：0.057787s][吞吐率：17.30req/s] [内存消耗：2,542.40kb] [文件加载：39]
+[ info ] [ LANG ] D:\wamp64\www\cdyy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\captcha\\CaptchaController',
+    1 => 'index',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.cdyy.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Maxthon/5.0 Chrome/55.0.2883.75 Safari/537.36',
+  'accept' => 'image/webp,image/*,*/*;q=0.8',
+  'dnt' => '1',
+  'referer' => 'http://www.cdyy.com/register/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN',
+  'cookie' => 'UM_distinctid=161eff712a0a1-0f790bb8cc872e-2569791b-100200-161eff712a145a; uid=www5a9ba399cb7bb9.60490532; CNZZDATA30088308=cnzz_eid%3D2112333325-1521272508-%26ntime%3D1521272508; PHPSESSID=80t63vjv70n3a6f9in9gqh1kg6; thinkphp_show_page_trace=0|0; CNZZDATA1256793290=1948844775-1520144149-%7C1521380774',
+)
+[ info ] [ PARAM ] array (
+  'id' => NULL,
+)
+[ info ] [ RUN ] think\captcha\CaptchaController->index[ D:\wamp64\www\cdyy\vendor\topthink\think-captcha\src\CaptchaController.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-18T22:27:10+08:00 ] 127.0.0.1 GET /register/
+[ info ] www.cdyy.com/register/ [运行时间：0.045561s][吞吐率：21.95req/s] [内存消耗：3,166.52kb] [文件加载：49]
+[ info ] [ LANG ] D:\wamp64\www\cdyy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'register',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.cdyy.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'x-devtools-emulate-network-conditions-client-id' => 'e2b227b2-d11b-44f6-87cd-4b22bd8b2afd',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Maxthon/5.0 Chrome/55.0.2883.75 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'dnt' => '1',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN',
+  'cookie' => 'thinkphp_show_page_trace=0|0; UM_distinctid=161eff712a0a1-0f790bb8cc872e-2569791b-100200-161eff712a145a; uid=www5a9ba399cb7bb9.60490532; CNZZDATA30088308=cnzz_eid%3D2112333325-1521272508-%26ntime%3D1521272508; PHPSESSID=80t63vjv70n3a6f9in9gqh1kg6; thinkphp_show_page_trace=0|0; CNZZDATA1256793290=1948844775-1520144149-%7C1521380774',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\register\controller\Index->index[ D:\wamp64\www\cdyy\application\register\controller\Index.php ]
+[ info ] [ VIEW ] D:\wamp64\www\cdyy\public/../application/register\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-18T22:27:11+08:00 ] 127.0.0.1 GET /captcha.html
+[ info ] www.cdyy.com/captcha.html [运行时间：0.082375s][吞吐率：12.14req/s] [内存消耗：2,542.88kb] [文件加载：39]
+[ info ] [ LANG ] D:\wamp64\www\cdyy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\captcha\\CaptchaController',
+    1 => 'index',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.cdyy.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Maxthon/5.0 Chrome/55.0.2883.75 Safari/537.36',
+  'x-devtools-emulate-network-conditions-client-id' => 'e2b227b2-d11b-44f6-87cd-4b22bd8b2afd',
+  'accept' => 'image/webp,image/*,*/*;q=0.8',
+  'dnt' => '1',
+  'referer' => 'http://www.cdyy.com/register/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN',
+  'cookie' => 'UM_distinctid=161eff712a0a1-0f790bb8cc872e-2569791b-100200-161eff712a145a; uid=www5a9ba399cb7bb9.60490532; CNZZDATA30088308=cnzz_eid%3D2112333325-1521272508-%26ntime%3D1521272508; PHPSESSID=80t63vjv70n3a6f9in9gqh1kg6; thinkphp_show_page_trace=0|0; CNZZDATA1256793290=1948844775-1520144149-%7C1521380774',
+)
+[ info ] [ PARAM ] array (
+  'id' => NULL,
+)
+[ info ] [ RUN ] think\captcha\CaptchaController->index[ D:\wamp64\www\cdyy\vendor\topthink\think-captcha\src\CaptchaController.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-18T23:57:24+08:00 ] 127.0.0.1 GET /register/
+[ info ] www.cdyy.com/register/ [运行时间：0.049786s][吞吐率：20.09req/s] [内存消耗：3,422.84kb] [文件加载：51]
+[ info ] [ LANG ] D:\wamp64\www\cdyy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'register',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.cdyy.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Maxthon/5.0 Chrome/55.0.2883.75 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'dnt' => '1',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN',
+  'cookie' => 'thinkphp_show_page_trace=0|0; UM_distinctid=161eff712a0a1-0f790bb8cc872e-2569791b-100200-161eff712a145a; uid=www5a9ba399cb7bb9.60490532; CNZZDATA30088308=cnzz_eid%3D2112333325-1521272508-%26ntime%3D1521272508; PHPSESSID=80t63vjv70n3a6f9in9gqh1kg6; thinkphp_show_page_trace=0|0; CNZZDATA1256793290=1948844775-1520144149-%7C1521380774',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\register\controller\Index->index[ D:\wamp64\www\cdyy\application\register\controller\Index.php ]
+[ info ] [ VIEW ] D:\wamp64\www\cdyy\public/../application/register\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-18T23:57:24+08:00 ] 127.0.0.1 GET /captcha.html
+[ info ] www.cdyy.com/captcha.html [运行时间：0.065491s][吞吐率：15.27req/s] [内存消耗：2,542.27kb] [文件加载：39]
+[ info ] [ LANG ] D:\wamp64\www\cdyy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\captcha\\CaptchaController',
+    1 => 'index',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.cdyy.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Maxthon/5.0 Chrome/55.0.2883.75 Safari/537.36',
+  'accept' => 'image/webp,image/*,*/*;q=0.8',
+  'dnt' => '1',
+  'referer' => 'http://www.cdyy.com/register/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN',
+  'cookie' => 'UM_distinctid=161eff712a0a1-0f790bb8cc872e-2569791b-100200-161eff712a145a; uid=www5a9ba399cb7bb9.60490532; CNZZDATA30088308=cnzz_eid%3D2112333325-1521272508-%26ntime%3D1521272508; PHPSESSID=80t63vjv70n3a6f9in9gqh1kg6; thinkphp_show_page_trace=0|0; CNZZDATA1256793290=1948844775-1520144149-%7C1521380774',
+)
+[ info ] [ PARAM ] array (
+  'id' => NULL,
+)
+[ info ] [ RUN ] think\captcha\CaptchaController->index[ D:\wamp64\www\cdyy\vendor\topthink\think-captcha\src\CaptchaController.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-18T23:59:18+08:00 ] 127.0.0.1 GET /register/
+[ info ] www.cdyy.com/register/ [运行时间：0.044446s][吞吐率：22.50req/s] [内存消耗：3,423.34kb] [文件加载：51]
+[ info ] [ LANG ] D:\wamp64\www\cdyy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'register',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.cdyy.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'x-devtools-emulate-network-conditions-client-id' => 'e2b227b2-d11b-44f6-87cd-4b22bd8b2afd',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Maxthon/5.0 Chrome/55.0.2883.75 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'dnt' => '1',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN',
+  'cookie' => 'thinkphp_show_page_trace=0|0; UM_distinctid=161eff712a0a1-0f790bb8cc872e-2569791b-100200-161eff712a145a; uid=www5a9ba399cb7bb9.60490532; CNZZDATA30088308=cnzz_eid%3D2112333325-1521272508-%26ntime%3D1521272508; PHPSESSID=80t63vjv70n3a6f9in9gqh1kg6; thinkphp_show_page_trace=0|0; CNZZDATA1256793290=1948844775-1520144149-%7C1521386174',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\register\controller\Index->index[ D:\wamp64\www\cdyy\application\register\controller\Index.php ]
+[ info ] [ VIEW ] D:\wamp64\www\cdyy\public/../application/register\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-18T23:59:18+08:00 ] 127.0.0.1 GET /captcha.html
+[ info ] www.cdyy.com/captcha.html [运行时间：0.107614s][吞吐率：9.29req/s] [内存消耗：2,542.87kb] [文件加载：39]
+[ info ] [ LANG ] D:\wamp64\www\cdyy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\captcha\\CaptchaController',
+    1 => 'index',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.cdyy.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Maxthon/5.0 Chrome/55.0.2883.75 Safari/537.36',
+  'x-devtools-emulate-network-conditions-client-id' => 'e2b227b2-d11b-44f6-87cd-4b22bd8b2afd',
+  'accept' => 'image/webp,image/*,*/*;q=0.8',
+  'dnt' => '1',
+  'referer' => 'http://www.cdyy.com/register/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN',
+  'cookie' => 'UM_distinctid=161eff712a0a1-0f790bb8cc872e-2569791b-100200-161eff712a145a; uid=www5a9ba399cb7bb9.60490532; CNZZDATA30088308=cnzz_eid%3D2112333325-1521272508-%26ntime%3D1521272508; PHPSESSID=80t63vjv70n3a6f9in9gqh1kg6; thinkphp_show_page_trace=0|0; CNZZDATA1256793290=1948844775-1520144149-%7C1521386174',
+)
+[ info ] [ PARAM ] array (
+  'id' => NULL,
+)
+[ info ] [ RUN ] think\captcha\CaptchaController->index[ D:\wamp64\www\cdyy\vendor\topthink\think-captcha\src\CaptchaController.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
