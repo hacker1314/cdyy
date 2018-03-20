@@ -1,3 +1,4 @@
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:73:"D:\xampp\htdocs\cdyy\public/../application/register\view\index\index.html";i:1521510103;}*/ ?>
 <!DOCTYPE html>
 <html>
     <head>
@@ -95,7 +96,7 @@
                         <div class="layui-input-inline">
                             <input type="text" name="code" required lay-verify="required|code" placeholder="请输入验证码" autocomplete="off" class="layui-input">
                         </div>
-                        <div class="layui-word-aux"><img src="{:captcha_src()}" alt="captcha" style="width: 150px" /></div>
+                        <div class="layui-word-aux"><img src="<?php echo captcha_src(); ?>" alt="captcha" style="width: 150px" /></div>
                     </div>
                     <div class="layui-form-item" >
                         <div style="margin-left:auto;margin-right:auto; width: 280px">

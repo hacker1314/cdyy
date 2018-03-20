@@ -1,0 +1,4458 @@
+---------------------------------------------------------------
+[ 2018-03-20T08:19:40+08:00 ] 127.0.0.1 GET /admin
+[ info ] www.cdyy.com/admin [运行时间：0.122140s][吞吐率：8.19req/s] [内存消耗：1,733.02kb] [文件加载：47]
+[ info ] [ LANG ] D:\xampp\htdocs\cdyy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.cdyy.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.75 Safari/537.36 Maxthon/5.1.7.2000',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'dnt' => '1',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\index->index[ D:\xampp\htdocs\cdyy\application\admin\controller\Index.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-20T08:19:40+08:00 ] 127.0.0.1 GET /admin/index/login.html
+[ info ] www.cdyy.com/admin/index/login.html [运行时间：0.065880s][吞吐率：15.18req/s] [内存消耗：1,933.81kb] [文件加载：52]
+[ info ] [ LANG ] D:\xampp\htdocs\cdyy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.cdyy.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.75 Safari/537.36 Maxthon/5.1.7.2000',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'dnt' => '1',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN',
+  'cookie' => 'PHPSESSID=on7l6h0uaaottum2g0cm4cmb27',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\index->login[ D:\xampp\htdocs\cdyy\application\admin\controller\Index.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] D:\xampp\htdocs\cdyy\public/../application/admin\view\index\login.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-20T08:19:41+08:00 ] 127.0.0.1 GET /static/admin_login/jquery.ui.base.css
+[ info ] www.cdyy.com/static/admin_login/jquery.ui.base.css [运行时间：0.048763s][吞吐率：20.51req/s] [内存消耗：1,435.45kb] [文件加载：43]
+[ info ] [ LANG ] D:\xampp\htdocs\cdyy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'admin_login',
+    2 => 'jquery.ui.base.css',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.cdyy.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.75 Safari/537.36 Maxthon/5.1.7.2000',
+  'accept' => 'text/css,*/*;q=0.1',
+  'dnt' => '1',
+  'referer' => 'http://www.cdyy.com/admin/index/login.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN',
+  'cookie' => 'PHPSESSID=on7l6h0uaaottum2g0cm4cmb27',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-20T08:19:41+08:00 ] 127.0.0.1 GET /static/admin_login/jquery.ui.theme.css
+[ info ] www.cdyy.com/static/admin_login/jquery.ui.theme.css [运行时间：0.059495s][吞吐率：16.81req/s] [内存消耗：1,435.48kb] [文件加载：43]
+[ info ] [ LANG ] D:\xampp\htdocs\cdyy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'admin_login',
+    2 => 'jquery.ui.theme.css',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.cdyy.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.75 Safari/537.36 Maxthon/5.1.7.2000',
+  'accept' => 'text/css,*/*;q=0.1',
+  'dnt' => '1',
+  'referer' => 'http://www.cdyy.com/admin/index/login.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN',
+  'cookie' => 'PHPSESSID=on7l6h0uaaottum2g0cm4cmb27',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-20T08:19:41+08:00 ] 127.0.0.1 GET /captcha.html
+[ info ] www.cdyy.com/captcha.html [运行时间：0.185797s][吞吐率：5.38req/s] [内存消耗：1,415.92kb] [文件加载：39]
+[ info ] [ LANG ] D:\xampp\htdocs\cdyy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\captcha\\CaptchaController',
+    1 => 'index',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.cdyy.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.75 Safari/537.36 Maxthon/5.1.7.2000',
+  'accept' => 'image/webp,image/*,*/*;q=0.8',
+  'dnt' => '1',
+  'referer' => 'http://www.cdyy.com/admin/index/login.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN',
+  'cookie' => 'PHPSESSID=on7l6h0uaaottum2g0cm4cmb27',
+)
+[ info ] [ PARAM ] array (
+  'id' => NULL,
+)
+[ info ] [ RUN ] think\captcha\CaptchaController->index[ D:\xampp\htdocs\cdyy\vendor\topthink\think-captcha\src\CaptchaController.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-20T08:19:41+08:00 ] 127.0.0.1 GET /static/images/txt_input_bg.gif
+[ info ] www.cdyy.com/static/images/txt_input_bg.gif [运行时间：0.046579s][吞吐率：21.47req/s] [内存消耗：1,435.47kb] [文件加载：43]
+[ info ] [ LANG ] D:\xampp\htdocs\cdyy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'images',
+    2 => 'txt_input_bg.gif',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.cdyy.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.75 Safari/537.36 Maxthon/5.1.7.2000',
+  'accept' => 'image/webp,image/*,*/*;q=0.8',
+  'dnt' => '1',
+  'referer' => 'http://www.cdyy.com/static/admin_login/style_log.css',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN',
+  'cookie' => 'PHPSESSID=on7l6h0uaaottum2g0cm4cmb27',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-20T08:19:44+08:00 ] 127.0.0.1 GET /admin/index/login.html
+[ info ] www.cdyy.com/admin/index/login.html [运行时间：0.088283s][吞吐率：11.33req/s] [内存消耗：1,789.66kb] [文件加载：50]
+[ info ] [ LANG ] D:\xampp\htdocs\cdyy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.cdyy.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.75 Safari/537.36 Maxthon/5.1.7.2000',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'dnt' => '1',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN',
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=on7l6h0uaaottum2g0cm4cmb27',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\index->login[ D:\xampp\htdocs\cdyy\application\admin\controller\Index.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] D:\xampp\htdocs\cdyy\public/../application/admin\view\index\login.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-20T08:19:44+08:00 ] 127.0.0.1 GET /captcha.html
+[ info ] www.cdyy.com/captcha.html [运行时间：0.117646s][吞吐率：8.50req/s] [内存消耗：1,415.91kb] [文件加载：39]
+[ info ] [ LANG ] D:\xampp\htdocs\cdyy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\captcha\\CaptchaController',
+    1 => 'index',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.cdyy.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.75 Safari/537.36 Maxthon/5.1.7.2000',
+  'accept' => 'image/webp,image/*,*/*;q=0.8',
+  'dnt' => '1',
+  'referer' => 'http://www.cdyy.com/admin/index/login.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN',
+  'cookie' => 'PHPSESSID=on7l6h0uaaottum2g0cm4cmb27',
+)
+[ info ] [ PARAM ] array (
+  'id' => NULL,
+)
+[ info ] [ RUN ] think\captcha\CaptchaController->index[ D:\xampp\htdocs\cdyy\vendor\topthink\think-captcha\src\CaptchaController.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-20T08:19:44+08:00 ] 127.0.0.1 GET /static/admin_login/jquery.ui.base.css
+[ info ] www.cdyy.com/static/admin_login/jquery.ui.base.css [运行时间：0.048915s][吞吐率：20.44req/s] [内存消耗：1,435.45kb] [文件加载：43]
+[ info ] [ LANG ] D:\xampp\htdocs\cdyy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'admin_login',
+    2 => 'jquery.ui.base.css',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.cdyy.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.75 Safari/537.36 Maxthon/5.1.7.2000',
+  'accept' => 'text/css,*/*;q=0.1',
+  'dnt' => '1',
+  'referer' => 'http://www.cdyy.com/admin/index/login.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN',
+  'cookie' => 'PHPSESSID=on7l6h0uaaottum2g0cm4cmb27',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-20T08:19:44+08:00 ] 127.0.0.1 GET /static/admin_login/jquery.ui.theme.css
+[ info ] www.cdyy.com/static/admin_login/jquery.ui.theme.css [运行时间：0.066548s][吞吐率：15.03req/s] [内存消耗：1,435.48kb] [文件加载：43]
+[ info ] [ LANG ] D:\xampp\htdocs\cdyy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'admin_login',
+    2 => 'jquery.ui.theme.css',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.cdyy.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.75 Safari/537.36 Maxthon/5.1.7.2000',
+  'accept' => 'text/css,*/*;q=0.1',
+  'dnt' => '1',
+  'referer' => 'http://www.cdyy.com/admin/index/login.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN',
+  'cookie' => 'PHPSESSID=on7l6h0uaaottum2g0cm4cmb27',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-20T08:19:44+08:00 ] 127.0.0.1 GET /static/images/txt_input_bg.gif
+[ info ] www.cdyy.com/static/images/txt_input_bg.gif [运行时间：0.046953s][吞吐率：21.30req/s] [内存消耗：1,435.47kb] [文件加载：43]
+[ info ] [ LANG ] D:\xampp\htdocs\cdyy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'images',
+    2 => 'txt_input_bg.gif',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.cdyy.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.75 Safari/537.36 Maxthon/5.1.7.2000',
+  'accept' => 'image/webp,image/*,*/*;q=0.8',
+  'dnt' => '1',
+  'referer' => 'http://www.cdyy.com/static/admin_login/style_log.css',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN',
+  'cookie' => 'PHPSESSID=on7l6h0uaaottum2g0cm4cmb27',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-20T08:20:24+08:00 ] 127.0.0.1 GET /register
+[ info ] www.cdyy.com/register [运行时间：0.118005s][吞吐率：8.47req/s] [内存消耗：1,920.80kb] [文件加载：51]
+[ info ] [ LANG ] D:\xampp\htdocs\cdyy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'register',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.cdyy.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.75 Safari/537.36 Maxthon/5.1.7.2000',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'dnt' => '1',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN',
+  'cookie' => 'PHPSESSID=on7l6h0uaaottum2g0cm4cmb27',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\register\controller\Index->index[ D:\xampp\htdocs\cdyy\application\register\controller\Index.php ]
+[ info ] [ VIEW ] D:\xampp\htdocs\cdyy\public/../application/register\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-20T08:20:25+08:00 ] 127.0.0.1 GET /captcha.html
+[ info ] www.cdyy.com/captcha.html [运行时间：0.120092s][吞吐率：8.33req/s] [内存消耗：1,415.91kb] [文件加载：39]
+[ info ] [ LANG ] D:\xampp\htdocs\cdyy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\captcha\\CaptchaController',
+    1 => 'index',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.cdyy.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.75 Safari/537.36 Maxthon/5.1.7.2000',
+  'accept' => 'image/webp,image/*,*/*;q=0.8',
+  'dnt' => '1',
+  'referer' => 'http://www.cdyy.com/register',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN',
+  'cookie' => 'PHPSESSID=on7l6h0uaaottum2g0cm4cmb27',
+)
+[ info ] [ PARAM ] array (
+  'id' => NULL,
+)
+[ info ] [ RUN ] think\captcha\CaptchaController->index[ D:\xampp\htdocs\cdyy\vendor\topthink\think-captcha\src\CaptchaController.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-20T08:24:16+08:00 ] 127.0.0.1 GET /register/index/check?name=chenji1&email=chenji1%40cdyy.com&phone=15512345678&password1=GP%252%40%230U&password2=GP%252%40%230U&code=ju3b
+[ info ] www.cdyy.com/register/index/check?name=chenji1&email=chenji1%40cdyy.com&phone=15512345678&password1=GP%252%40%230U&password2=GP%252%40%230U&code=ju3b [运行时间：0.200880s][吞吐率：4.98req/s] [内存消耗：2,673.48kb] [文件加载：53]
+[ info ] [ LANG ] D:\xampp\htdocs\cdyy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'register',
+    1 => 'index',
+    2 => 'check',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.cdyy.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.75 Safari/537.36 Maxthon/5.1.7.2000',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'dnt' => '1',
+  'referer' => 'http://www.cdyy.com/register',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN',
+  'cookie' => 'PHPSESSID=on7l6h0uaaottum2g0cm4cmb27; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+  'name' => 'chenji1',
+  'email' => 'chenji1@cdyy.com',
+  'phone' => '15512345678',
+  'password1' => 'GP%2@#0U',
+  'password2' => 'GP%2@#0U',
+  'code' => 'ju3b',
+)
+[ info ] [ RUN ] app\register\controller\Index->check[ D:\xampp\htdocs\cdyy\application\register\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012796s ] mysql:host=127.0.0.1;port=3306;dbname=cdyy;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.028654s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `name` = 'chenji1' LIMIT 1 [ RunTime:0.002872s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `mail` = 'chenji1@cdyy.com' LIMIT 1 [ RunTime:0.000286s ]
+[ sql ] [ SQL ] INSERT INTO `user` (`name` , `mail` , `phonenumber` , `password` , `usertype` , `registertime` , `status`) VALUES ('chenji1' , 'chenji1@cdyy.com' , '15512345678' , '988325d3c4de5f97612ffc48cc562020' , 7 , '2018-03-20 08:24:16' , '邮箱未验证') [ RunTime:0.000407s ]
+---------------------------------------------------------------
+[ 2018-03-20T08:24:16+08:00 ] 127.0.0.1 GET /register/index/checkshow
+[ info ] www.cdyy.com/register/index/checkshow [运行时间：0.062399s][吞吐率：16.03req/s] [内存消耗：1,858.96kb] [文件加载：50]
+[ info ] [ LANG ] D:\xampp\htdocs\cdyy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'register',
+    1 => 'index',
+    2 => 'checkshow',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.cdyy.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.75 Safari/537.36 Maxthon/5.1.7.2000',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'dnt' => '1',
+  'referer' => 'http://www.cdyy.com/register',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN',
+  'cookie' => 'PHPSESSID=on7l6h0uaaottum2g0cm4cmb27; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\register\controller\Index->checkshow[ D:\xampp\htdocs\cdyy\application\register\controller\Index.php ]
+[ info ] [ VIEW ] D:\xampp\htdocs\cdyy\public/../application/register\view\index\checkshow.html [ array (
+  0 => 'email',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-20T08:25:33+08:00 ] 127.0.0.1 GET /register/index/checkshow
+[ info ] www.cdyy.com/register/index/checkshow [运行时间：0.043170s][吞吐率：23.16req/s] [内存消耗：1,710.30kb] [文件加载：48]
+[ info ] [ LANG ] D:\xampp\htdocs\cdyy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'register',
+    1 => 'index',
+    2 => 'checkshow',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.cdyy.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.75 Safari/537.36 Maxthon/5.1.7.2000',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'dnt' => '1',
+  'referer' => 'http://www.cdyy.com/register',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN',
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=on7l6h0uaaottum2g0cm4cmb27; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\register\controller\Index->checkshow[ D:\xampp\htdocs\cdyy\application\register\controller\Index.php ]
+[ info ] [ VIEW ] D:\xampp\htdocs\cdyy\public/../application/register\view\index\checkshow.html [ array (
+  0 => 'email',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-20T08:25:35+08:00 ] 127.0.0.1 GET /register/index/checkshow
+[ info ] www.cdyy.com/register/index/checkshow [运行时间：0.042073s][吞吐率：23.77req/s] [内存消耗：1,710.30kb] [文件加载：48]
+[ info ] [ LANG ] D:\xampp\htdocs\cdyy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'register',
+    1 => 'index',
+    2 => 'checkshow',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.cdyy.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.75 Safari/537.36 Maxthon/5.1.7.2000',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'dnt' => '1',
+  'referer' => 'http://www.cdyy.com/register',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN',
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=on7l6h0uaaottum2g0cm4cmb27; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\register\controller\Index->checkshow[ D:\xampp\htdocs\cdyy\application\register\controller\Index.php ]
+[ info ] [ VIEW ] D:\xampp\htdocs\cdyy\public/../application/register\view\index\checkshow.html [ array (
+  0 => 'email',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-20T08:25:36+08:00 ] 127.0.0.1 GET /register/index/checkshow
+[ info ] www.cdyy.com/register/index/checkshow [运行时间：0.046029s][吞吐率：21.73req/s] [内存消耗：1,710.30kb] [文件加载：48]
+[ info ] [ LANG ] D:\xampp\htdocs\cdyy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'register',
+    1 => 'index',
+    2 => 'checkshow',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.cdyy.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.75 Safari/537.36 Maxthon/5.1.7.2000',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'dnt' => '1',
+  'referer' => 'http://www.cdyy.com/register',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN',
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=on7l6h0uaaottum2g0cm4cmb27; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\register\controller\Index->checkshow[ D:\xampp\htdocs\cdyy\application\register\controller\Index.php ]
+[ info ] [ VIEW ] D:\xampp\htdocs\cdyy\public/../application/register\view\index\checkshow.html [ array (
+  0 => 'email',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-20T08:25:36+08:00 ] 127.0.0.1 GET /register/index/checkshow
+[ info ] www.cdyy.com/register/index/checkshow [运行时间：0.041857s][吞吐率：23.89req/s] [内存消耗：1,710.30kb] [文件加载：48]
+[ info ] [ LANG ] D:\xampp\htdocs\cdyy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'register',
+    1 => 'index',
+    2 => 'checkshow',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.cdyy.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.75 Safari/537.36 Maxthon/5.1.7.2000',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'dnt' => '1',
+  'referer' => 'http://www.cdyy.com/register',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN',
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=on7l6h0uaaottum2g0cm4cmb27; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\register\controller\Index->checkshow[ D:\xampp\htdocs\cdyy\application\register\controller\Index.php ]
+[ info ] [ VIEW ] D:\xampp\htdocs\cdyy\public/../application/register\view\index\checkshow.html [ array (
+  0 => 'email',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-20T08:25:37+08:00 ] 127.0.0.1 GET /register/index/checkshow
+[ info ] www.cdyy.com/register/index/checkshow [运行时间：0.041756s][吞吐率：23.95req/s] [内存消耗：1,710.30kb] [文件加载：48]
+[ info ] [ LANG ] D:\xampp\htdocs\cdyy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'register',
+    1 => 'index',
+    2 => 'checkshow',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.cdyy.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.75 Safari/537.36 Maxthon/5.1.7.2000',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'dnt' => '1',
+  'referer' => 'http://www.cdyy.com/register',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN',
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=on7l6h0uaaottum2g0cm4cmb27; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\register\controller\Index->checkshow[ D:\xampp\htdocs\cdyy\application\register\controller\Index.php ]
+[ info ] [ VIEW ] D:\xampp\htdocs\cdyy\public/../application/register\view\index\checkshow.html [ array (
+  0 => 'email',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-20T08:25:38+08:00 ] 127.0.0.1 GET /register/index/checkshow
+[ info ] www.cdyy.com/register/index/checkshow [运行时间：0.043452s][吞吐率：23.01req/s] [内存消耗：1,710.30kb] [文件加载：48]
+[ info ] [ LANG ] D:\xampp\htdocs\cdyy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'register',
+    1 => 'index',
+    2 => 'checkshow',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.cdyy.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.75 Safari/537.36 Maxthon/5.1.7.2000',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'dnt' => '1',
+  'referer' => 'http://www.cdyy.com/register',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN',
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=on7l6h0uaaottum2g0cm4cmb27; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\register\controller\Index->checkshow[ D:\xampp\htdocs\cdyy\application\register\controller\Index.php ]
+[ info ] [ VIEW ] D:\xampp\htdocs\cdyy\public/../application/register\view\index\checkshow.html [ array (
+  0 => 'email',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-20T08:25:52+08:00 ] 127.0.0.1 GET /register
+[ info ] www.cdyy.com/register [运行时间：0.043648s][吞吐率：22.91req/s] [内存消耗：1,771.47kb] [文件加载：49]
+[ info ] [ LANG ] D:\xampp\htdocs\cdyy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'register',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.cdyy.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.75 Safari/537.36 Maxthon/5.1.7.2000',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'dnt' => '1',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN',
+  'cookie' => 'PHPSESSID=on7l6h0uaaottum2g0cm4cmb27; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\register\controller\Index->index[ D:\xampp\htdocs\cdyy\application\register\controller\Index.php ]
+[ info ] [ VIEW ] D:\xampp\htdocs\cdyy\public/../application/register\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-20T08:25:52+08:00 ] 127.0.0.1 GET /captcha.html
+[ info ] www.cdyy.com/captcha.html [运行时间：0.076319s][吞吐率：13.10req/s] [内存消耗：1,415.98kb] [文件加载：39]
+[ info ] [ LANG ] D:\xampp\htdocs\cdyy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\captcha\\CaptchaController',
+    1 => 'index',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.cdyy.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.75 Safari/537.36 Maxthon/5.1.7.2000',
+  'accept' => 'image/webp,image/*,*/*;q=0.8',
+  'dnt' => '1',
+  'referer' => 'http://www.cdyy.com/register',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN',
+  'cookie' => 'PHPSESSID=on7l6h0uaaottum2g0cm4cmb27; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+  'id' => NULL,
+)
+[ info ] [ RUN ] think\captcha\CaptchaController->index[ D:\xampp\htdocs\cdyy\vendor\topthink\think-captcha\src\CaptchaController.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-20T08:26:00+08:00 ] 127.0.0.1 GET /register/index/check?name=chenji12&email=chenji12%40cdyy.com&phone=15512345678&password1=GP%252%40%230U&password2=GP%252%40%230U&code=fmkx
+[ info ] www.cdyy.com/register/index/check?name=chenji12&email=chenji12%40cdyy.com&phone=15512345678&password1=GP%252%40%230U&password2=GP%252%40%230U&code=fmkx [运行时间：0.058582s][吞吐率：17.07req/s] [内存消耗：2,736.01kb] [文件加载：54]
+[ info ] [ LANG ] D:\xampp\htdocs\cdyy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'register',
+    1 => 'index',
+    2 => 'check',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.cdyy.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.75 Safari/537.36 Maxthon/5.1.7.2000',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'dnt' => '1',
+  'referer' => 'http://www.cdyy.com/register',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN',
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=on7l6h0uaaottum2g0cm4cmb27; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+  'name' => 'chenji12',
+  'email' => 'chenji12@cdyy.com',
+  'phone' => '15512345678',
+  'password1' => 'GP%2@#0U',
+  'password2' => 'GP%2@#0U',
+  'code' => 'fmkx',
+)
+[ info ] [ RUN ] app\register\controller\Index->check[ D:\xampp\htdocs\cdyy\application\register\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000875s ] mysql:host=127.0.0.1;port=3306;dbname=cdyy;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.005416s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `name` = 'chenji12' LIMIT 1 [ RunTime:0.000413s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `mail` = 'chenji12@cdyy.com' LIMIT 1 [ RunTime:0.000301s ]
+[ sql ] [ SQL ] INSERT INTO `user` (`name` , `mail` , `phonenumber` , `password` , `usertype` , `registertime` , `status`) VALUES ('chenji12' , 'chenji12@cdyy.com' , '15512345678' , '988325d3c4de5f97612ffc48cc562020' , 7 , '2018-03-20 08:26:00' , '邮箱未验证') [ RunTime:0.000383s ]
+---------------------------------------------------------------
+[ 2018-03-20T08:26:00+08:00 ] 127.0.0.1 GET /register/index/checkshow/mail/chenji12%40cdyy.com.html
+[ info ] www.cdyy.com/register/index/checkshow/mail/chenji12%40cdyy.com.html [运行时间：0.045903s][吞吐率：21.79req/s] [内存消耗：1,710.53kb] [文件加载：48]
+[ info ] [ LANG ] D:\xampp\htdocs\cdyy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'register',
+    1 => 'index',
+    2 => 'checkshow',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.cdyy.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.75 Safari/537.36 Maxthon/5.1.7.2000',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'dnt' => '1',
+  'referer' => 'http://www.cdyy.com/register',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN',
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=on7l6h0uaaottum2g0cm4cmb27; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+  'mail' => 'chenji12@cdyy.com',
+)
+[ info ] [ RUN ] app\register\controller\Index->checkshow[ D:\xampp\htdocs\cdyy\application\register\controller\Index.php ]
+[ info ] [ VIEW ] D:\xampp\htdocs\cdyy\public/../application/register\view\index\checkshow.html [ array (
+  0 => 'email',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-20T08:26:41+08:00 ] 127.0.0.1 GET /register
+[ info ] www.cdyy.com/register [运行时间：0.046503s][吞吐率：21.50req/s] [内存消耗：1,771.47kb] [文件加载：49]
+[ info ] [ LANG ] D:\xampp\htdocs\cdyy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'register',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.cdyy.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.75 Safari/537.36 Maxthon/5.1.7.2000',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'dnt' => '1',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN',
+  'cookie' => 'PHPSESSID=on7l6h0uaaottum2g0cm4cmb27; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\register\controller\Index->index[ D:\xampp\htdocs\cdyy\application\register\controller\Index.php ]
+[ info ] [ VIEW ] D:\xampp\htdocs\cdyy\public/../application/register\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-20T08:26:41+08:00 ] 127.0.0.1 GET /captcha.html
+[ info ] www.cdyy.com/captcha.html [运行时间：0.090910s][吞吐率：11.00req/s] [内存消耗：1,415.97kb] [文件加载：39]
+[ info ] [ LANG ] D:\xampp\htdocs\cdyy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\captcha\\CaptchaController',
+    1 => 'index',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.cdyy.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.75 Safari/537.36 Maxthon/5.1.7.2000',
+  'accept' => 'image/webp,image/*,*/*;q=0.8',
+  'dnt' => '1',
+  'referer' => 'http://www.cdyy.com/register',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN',
+  'cookie' => 'PHPSESSID=on7l6h0uaaottum2g0cm4cmb27; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+  'id' => NULL,
+)
+[ info ] [ RUN ] think\captcha\CaptchaController->index[ D:\xampp\htdocs\cdyy\vendor\topthink\think-captcha\src\CaptchaController.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-20T08:26:51+08:00 ] 127.0.0.1 GET /register/index/check?name=chenji122&email=846513101%40qq.com&phone=15512345678&password1=GP%252%40%230U&password2=GP%252%40%230U&code=aegg
+[ info ] www.cdyy.com/register/index/check?name=chenji122&email=846513101%40qq.com&phone=15512345678&password1=GP%252%40%230U&password2=GP%252%40%230U&code=aegg [运行时间：0.112692s][吞吐率：8.87req/s] [内存消耗：2,736.00kb] [文件加载：54]
+[ info ] [ LANG ] D:\xampp\htdocs\cdyy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'register',
+    1 => 'index',
+    2 => 'check',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.cdyy.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.75 Safari/537.36 Maxthon/5.1.7.2000',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'dnt' => '1',
+  'referer' => 'http://www.cdyy.com/register',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN',
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=on7l6h0uaaottum2g0cm4cmb27; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+  'name' => 'chenji122',
+  'email' => '846513101@qq.com',
+  'phone' => '15512345678',
+  'password1' => 'GP%2@#0U',
+  'password2' => 'GP%2@#0U',
+  'code' => 'aegg',
+)
+[ info ] [ RUN ] app\register\controller\Index->check[ D:\xampp\htdocs\cdyy\application\register\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000639s ] mysql:host=127.0.0.1;port=3306;dbname=cdyy;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.057884s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `name` = 'chenji122' LIMIT 1 [ RunTime:0.000415s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `mail` = '846513101@qq.com' LIMIT 1 [ RunTime:0.000293s ]
+[ sql ] [ SQL ] INSERT INTO `user` (`name` , `mail` , `phonenumber` , `password` , `usertype` , `registertime` , `status`) VALUES ('chenji122' , '846513101@qq.com' , '15512345678' , '988325d3c4de5f97612ffc48cc562020' , 7 , '2018-03-20 08:26:51' , '邮箱未验证') [ RunTime:0.000322s ]
+---------------------------------------------------------------
+[ 2018-03-20T08:26:51+08:00 ] 127.0.0.1 GET /register/index/checkshow/mail/846513101%40qq.com.html
+[ info ] www.cdyy.com/register/index/checkshow/mail/846513101%40qq.com.html [运行时间：0.044287s][吞吐率：22.58req/s] [内存消耗：1,710.63kb] [文件加载：48]
+[ info ] [ LANG ] D:\xampp\htdocs\cdyy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'register',
+    1 => 'index',
+    2 => 'checkshow',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.cdyy.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.75 Safari/537.36 Maxthon/5.1.7.2000',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'dnt' => '1',
+  'referer' => 'http://www.cdyy.com/register',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; PHPSESSID=on7l6h0uaaottum2g0cm4cmb27; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+  'mail' => '846513101@qq.com',
+)
+[ info ] [ RUN ] app\register\controller\Index->checkshow[ D:\xampp\htdocs\cdyy\application\register\controller\Index.php ]
+[ info ] [ VIEW ] D:\xampp\htdocs\cdyy\public/../application/register\view\index\checkshow.html [ array (
+  0 => 'email',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-20T08:26:57+08:00 ] 127.0.0.1 POST /register/index/resend
+[ info ] www.cdyy.com/register/index/resend [运行时间：3.052062s][吞吐率：0.33req/s] [内存消耗：3,370.77kb] [文件加载：55]
+[ info ] [ LANG ] D:\xampp\htdocs\cdyy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'register',
+    1 => 'index',
+    2 => 'resend',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.cdyy.com',
+  'connection' => 'keep-alive',
+  'content-length' => '23',
+  'accept' => '*/*',
+  'origin' => 'http://www.cdyy.com',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.75 Safari/537.36 Maxthon/5.1.7.2000',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'dnt' => '1',
+  'referer' => 'http://www.cdyy.com/register/index/checkshow/mail/846513101%40qq.com.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN',
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=on7l6h0uaaottum2g0cm4cmb27; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+  'mail' => '846513101@qq.com',
+)
+[ info ] [ RUN ] app\register\controller\Index->resend[ D:\xampp\htdocs\cdyy\application\register\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000674s ] mysql:host=127.0.0.1;port=3306;dbname=cdyy;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.004938s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `mail` = '846513101@qq.com' LIMIT 1 [ RunTime:0.000356s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mailcode` [ RunTime:0.005755s ]
+[ sql ] [ SQL ] SELECT * FROM `mailcode` WHERE  `mail` = '846513101@qq.com' LIMIT 1 [ RunTime:0.000332s ]
+[ sql ] [ SQL ] INSERT INTO `mailcode` (`mail` , `code`) VALUES ('846513101@qq.com' , '821911') [ RunTime:0.000343s ]
+---------------------------------------------------------------
+[ 2018-03-20T08:29:36+08:00 ] 127.0.0.1 GET /register/index/checkshow/mail/846513101%40qq.com.html
+[ info ] www.cdyy.com/register/index/checkshow/mail/846513101%40qq.com.html [运行时间：0.051998s][吞吐率：19.23req/s] [内存消耗：1,860.18kb] [文件加载：50]
+[ info ] [ LANG ] D:\xampp\htdocs\cdyy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'register',
+    1 => 'index',
+    2 => 'checkshow',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.cdyy.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.75 Safari/537.36 Maxthon/5.1.7.2000',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'dnt' => '1',
+  'referer' => 'http://www.cdyy.com/register',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; PHPSESSID=on7l6h0uaaottum2g0cm4cmb27; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+  'mail' => '846513101@qq.com',
+)
+[ info ] [ RUN ] app\register\controller\Index->checkshow[ D:\xampp\htdocs\cdyy\application\register\controller\Index.php ]
+[ info ] [ VIEW ] D:\xampp\htdocs\cdyy\public/../application/register\view\index\checkshow.html [ array (
+  0 => 'email',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-20T08:29:40+08:00 ] 127.0.0.1 POST /register/index/resend
+[ info ] www.cdyy.com/register/index/resend [运行时间：1.593364s][吞吐率：0.63req/s] [内存消耗：3,457.36kb] [文件加载：58]
+[ info ] [ LANG ] D:\xampp\htdocs\cdyy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'register',
+    1 => 'index',
+    2 => 'resend',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.cdyy.com',
+  'connection' => 'keep-alive',
+  'content-length' => '23',
+  'accept' => '*/*',
+  'origin' => 'http://www.cdyy.com',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.75 Safari/537.36 Maxthon/5.1.7.2000',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'dnt' => '1',
+  'referer' => 'http://www.cdyy.com/register/index/checkshow/mail/846513101%40qq.com.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN',
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=on7l6h0uaaottum2g0cm4cmb27; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+  'mail' => '846513101@qq.com',
+)
+[ info ] [ RUN ] app\register\controller\Index->resend[ D:\xampp\htdocs\cdyy\application\register\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000748s ] mysql:host=127.0.0.1;port=3306;dbname=cdyy;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.044959s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `mail` = '846513101@qq.com' LIMIT 1 [ RunTime:0.000627s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mailcode` [ RunTime:0.044482s ]
+[ sql ] [ SQL ] SELECT * FROM `mailcode` WHERE  `mail` = '846513101@qq.com' LIMIT 1 [ RunTime:0.000337s ]
+[ sql ] [ SQL ] UPDATE `mailcode`  SET `code`='658682'  WHERE  `id` = 2 [ RunTime:0.000607s ]
+---------------------------------------------------------------
+[ 2018-03-20T08:29:55+08:00 ] 127.0.0.1 POST /register/index/checkshow/mail/846513101%40qq.com.html
+[ info ] www.cdyy.com/register/index/checkshow/mail/846513101%40qq.com.html [运行时间：0.043207s][吞吐率：23.14req/s] [内存消耗：1,711.04kb] [文件加载：48]
+[ info ] [ LANG ] D:\xampp\htdocs\cdyy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'register',
+    1 => 'index',
+    2 => 'checkshow',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.cdyy.com',
+  'connection' => 'keep-alive',
+  'content-length' => '11',
+  'cache-control' => 'max-age=0',
+  'origin' => 'http://www.cdyy.com',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.75 Safari/537.36 Maxthon/5.1.7.2000',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'dnt' => '1',
+  'referer' => 'http://www.cdyy.com/register/index/checkshow/mail/846513101%40qq.com.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; PHPSESSID=on7l6h0uaaottum2g0cm4cmb27; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+  'code' => '658682',
+  'mail' => '846513101@qq.com',
+)
+[ info ] [ RUN ] app\register\controller\Index->checkshow[ D:\xampp\htdocs\cdyy\application\register\controller\Index.php ]
+[ info ] [ VIEW ] D:\xampp\htdocs\cdyy\public/../application/register\view\index\checkshow.html [ array (
+  0 => 'email',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-20T08:40:57+08:00 ] 127.0.0.1 GET /admin
+[ info ] www.cdyy.com/admin [运行时间：0.037411s][吞吐率：26.73req/s] [内存消耗：1,734.41kb] [文件加载：47]
+[ info ] [ LANG ] D:\xampp\htdocs\cdyy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.cdyy.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'x-devtools-emulate-network-conditions-client-id' => 'f7c4187e-ccfa-4058-94ad-ea87fca5975b',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.75 Safari/537.36 Maxthon/5.1.7.2000',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'dnt' => '1',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN',
+  'cookie' => 'PHPSESSID=on7l6h0uaaottum2g0cm4cmb27; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\index->index[ D:\xampp\htdocs\cdyy\application\admin\controller\Index.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-20T08:40:57+08:00 ] 127.0.0.1 GET /admin/index/login.html
+[ info ] www.cdyy.com/admin/index/login.html [运行时间：0.043155s][吞吐率：23.17req/s] [内存消耗：1,790.26kb] [文件加载：50]
+[ info ] [ LANG ] D:\xampp\htdocs\cdyy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.cdyy.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'x-devtools-emulate-network-conditions-client-id' => 'f7c4187e-ccfa-4058-94ad-ea87fca5975b',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.75 Safari/537.36 Maxthon/5.1.7.2000',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'dnt' => '1',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN',
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=on7l6h0uaaottum2g0cm4cmb27; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\index->login[ D:\xampp\htdocs\cdyy\application\admin\controller\Index.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] D:\xampp\htdocs\cdyy\public/../application/admin\view\index\login.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-20T08:40:57+08:00 ] 127.0.0.1 GET /captcha.html
+[ info ] www.cdyy.com/captcha.html [运行时间：0.105121s][吞吐率：9.51req/s] [内存消耗：1,416.44kb] [文件加载：39]
+[ info ] [ LANG ] D:\xampp\htdocs\cdyy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\captcha\\CaptchaController',
+    1 => 'index',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.cdyy.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.75 Safari/537.36 Maxthon/5.1.7.2000',
+  'x-devtools-emulate-network-conditions-client-id' => 'f7c4187e-ccfa-4058-94ad-ea87fca5975b',
+  'accept' => 'image/webp,image/*,*/*;q=0.8',
+  'dnt' => '1',
+  'referer' => 'http://www.cdyy.com/admin/index/login.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN',
+  'cookie' => 'PHPSESSID=on7l6h0uaaottum2g0cm4cmb27; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+  'id' => NULL,
+)
+[ info ] [ RUN ] think\captcha\CaptchaController->index[ D:\xampp\htdocs\cdyy\vendor\topthink\think-captcha\src\CaptchaController.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-20T08:40:57+08:00 ] 127.0.0.1 GET /static/admin_login/jquery.ui.theme.css
+[ info ] www.cdyy.com/static/admin_login/jquery.ui.theme.css [运行时间：0.046074s][吞吐率：21.70req/s] [内存消耗：1,436.10kb] [文件加载：43]
+[ info ] [ LANG ] D:\xampp\htdocs\cdyy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'admin_login',
+    2 => 'jquery.ui.theme.css',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.cdyy.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.75 Safari/537.36 Maxthon/5.1.7.2000',
+  'x-devtools-emulate-network-conditions-client-id' => 'f7c4187e-ccfa-4058-94ad-ea87fca5975b',
+  'accept' => 'text/css,*/*;q=0.1',
+  'dnt' => '1',
+  'referer' => 'http://www.cdyy.com/admin/index/login.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN',
+  'cookie' => 'PHPSESSID=on7l6h0uaaottum2g0cm4cmb27; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-20T08:40:57+08:00 ] 127.0.0.1 GET /static/admin_login/jquery.ui.base.css
+[ info ] www.cdyy.com/static/admin_login/jquery.ui.base.css [运行时间：0.045595s][吞吐率：21.93req/s] [内存消耗：1,436.01kb] [文件加载：43]
+[ info ] [ LANG ] D:\xampp\htdocs\cdyy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'admin_login',
+    2 => 'jquery.ui.base.css',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.cdyy.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.75 Safari/537.36 Maxthon/5.1.7.2000',
+  'x-devtools-emulate-network-conditions-client-id' => 'f7c4187e-ccfa-4058-94ad-ea87fca5975b',
+  'accept' => 'text/css,*/*;q=0.1',
+  'dnt' => '1',
+  'referer' => 'http://www.cdyy.com/admin/index/login.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN',
+  'cookie' => 'PHPSESSID=on7l6h0uaaottum2g0cm4cmb27; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-20T08:40:57+08:00 ] 127.0.0.1 GET /static/images/txt_input_bg.gif
+[ info ] www.cdyy.com/static/images/txt_input_bg.gif [运行时间：0.035852s][吞吐率：27.89req/s] [内存消耗：1,436.02kb] [文件加载：43]
+[ info ] [ LANG ] D:\xampp\htdocs\cdyy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'images',
+    2 => 'txt_input_bg.gif',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.cdyy.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.75 Safari/537.36 Maxthon/5.1.7.2000',
+  'x-devtools-emulate-network-conditions-client-id' => 'f7c4187e-ccfa-4058-94ad-ea87fca5975b',
+  'accept' => 'image/webp,image/*,*/*;q=0.8',
+  'dnt' => '1',
+  'referer' => 'http://www.cdyy.com/static/admin_login/style_log.css',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN',
+  'cookie' => 'PHPSESSID=on7l6h0uaaottum2g0cm4cmb27; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-20T08:41:03+08:00 ] 127.0.0.1 POST /admin/index/logincheck.html
+[ info ] www.cdyy.com/admin/index/logincheck.html [运行时间：0.059646s][吞吐率：16.77req/s] [内存消耗：2,927.04kb] [文件加载：59]
+[ info ] [ LANG ] D:\xampp\htdocs\cdyy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'logincheck',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.cdyy.com',
+  'connection' => 'keep-alive',
+  'content-length' => '67',
+  'cache-control' => 'max-age=0',
+  'origin' => 'http://www.cdyy.com',
+  'x-devtools-emulate-network-conditions-client-id' => 'f7c4187e-ccfa-4058-94ad-ea87fca5975b',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.75 Safari/537.36 Maxthon/5.1.7.2000',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'dnt' => '1',
+  'referer' => 'http://www.cdyy.com/admin/index/login.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN',
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=on7l6h0uaaottum2g0cm4cmb27; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+  'username' => 'admin',
+  'userpwd' => '19961104',
+  'code' => '2nx3',
+  'button' => '登录',
+)
+[ info ] [ RUN ] app\admin\controller\index->logincheck[ D:\xampp\htdocs\cdyy\application\admin\controller\Index.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000775s ] mysql:host=127.0.0.1;port=3306;dbname=cdyy;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.005288s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `name` = 'admin' LIMIT 1 [ RunTime:0.000391s ]
+[ sql ] [ SQL ] UPDATE `user`  SET `lastlogintime`='2018-03-20 08:41:03'  WHERE  `id` = 1 [ RunTime:0.000379s ]
+---------------------------------------------------------------
+[ 2018-03-20T08:41:03+08:00 ] 127.0.0.1 GET /admin/index/index.html
+[ info ] www.cdyy.com/admin/index/index.html [运行时间：0.147024s][吞吐率：6.80req/s] [内存消耗：3,215.77kb] [文件加载：62]
+[ info ] [ LANG ] D:\xampp\htdocs\cdyy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.cdyy.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'x-devtools-emulate-network-conditions-client-id' => 'f7c4187e-ccfa-4058-94ad-ea87fca5975b',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.75 Safari/537.36 Maxthon/5.1.7.2000',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'dnt' => '1',
+  'referer' => 'http://www.cdyy.com/admin/index/login.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN',
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=on7l6h0uaaottum2g0cm4cmb27; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\index->index[ D:\xampp\htdocs\cdyy\application\admin\controller\Index.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\xampp\htdocs\cdyy\public/../application/admin\view\index\index.html [ array (
+  0 => 'name',
+  1 => 'list1',
+  2 => 'list2',
+  3 => 'hostos',
+  4 => 'hostupload',
+  5 => 'hostsql',
+  6 => 'count1',
+  7 => 'list3',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000622s ] mysql:host=127.0.0.1;port=3306;dbname=cdyy;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `usertype` [ RunTime:0.004963s ]
+[ sql ] [ SQL ] SELECT * FROM `usertype` [ RunTime:0.000402s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `articletype` [ RunTime:0.004731s ]
+[ sql ] [ SQL ] SELECT * FROM `articletype` [ RunTime:0.000309s ]
+[ sql ] [ SQL ] select VERSION() [ RunTime:0.000168s ]
+[ sql ] [ SQL ] SELECT MAX(id) AS tp_max FROM `usertype` LIMIT 1 [ RunTime:0.000204s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.004651s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `user` WHERE  `usertype` = 1 LIMIT 1 [ RunTime:0.000299s ]
+[ sql ] [ SQL ] SELECT MAX(id) AS tp_max FROM `usertype` LIMIT 1 [ RunTime:0.000194s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `user` WHERE  `usertype` = 2 LIMIT 1 [ RunTime:0.000223s ]
+[ sql ] [ SQL ] SELECT MAX(id) AS tp_max FROM `usertype` LIMIT 1 [ RunTime:0.000182s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `user` WHERE  `usertype` = 3 LIMIT 1 [ RunTime:0.000221s ]
+[ sql ] [ SQL ] SELECT MAX(id) AS tp_max FROM `usertype` LIMIT 1 [ RunTime:0.000179s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `user` WHERE  `usertype` = 4 LIMIT 1 [ RunTime:0.000227s ]
+[ sql ] [ SQL ] SELECT MAX(id) AS tp_max FROM `usertype` LIMIT 1 [ RunTime:0.000178s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `user` WHERE  `usertype` = 5 LIMIT 1 [ RunTime:0.000218s ]
+[ sql ] [ SQL ] SELECT MAX(id) AS tp_max FROM `usertype` LIMIT 1 [ RunTime:0.000174s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `user` WHERE  `usertype` = 6 LIMIT 1 [ RunTime:0.000218s ]
+[ sql ] [ SQL ] SELECT MAX(id) AS tp_max FROM `usertype` LIMIT 1 [ RunTime:0.000174s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `user` WHERE  `usertype` = 7 LIMIT 1 [ RunTime:0.000208s ]
+[ sql ] [ SQL ] SELECT MAX(id) AS tp_max FROM `usertype` LIMIT 1 [ RunTime:0.000175s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `user` WHERE  `usertype` = 1 LIMIT 1 [ RunTime:0.000221s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `gymtype` [ RunTime:0.005012s ]
+[ sql ] [ SQL ] SELECT * FROM `gymtype` [ RunTime:0.000520s ]
+---------------------------------------------------------------
+[ 2018-03-20T08:41:06+08:00 ] 127.0.0.1 GET /admin/usermanage/index.html?id=1
+[ info ] www.cdyy.com/admin/usermanage/index.html?id=1 [运行时间：0.121858s][吞吐率：8.21req/s] [内存消耗：3,174.96kb] [文件加载：61]
+[ info ] [ LANG ] D:\xampp\htdocs\cdyy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'usermanage',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.cdyy.com',
+  'connection' => 'keep-alive',
+  'x-devtools-emulate-network-conditions-client-id' => 'f7c4187e-ccfa-4058-94ad-ea87fca5975b',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.75 Safari/537.36 Maxthon/5.1.7.2000',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'dnt' => '1',
+  'referer' => 'http://www.cdyy.com/admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN',
+  'cookie' => 'PHPSESSID=on7l6h0uaaottum2g0cm4cmb27; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+  'id' => '1',
+)
+[ info ] [ RUN ] app\admin\controller\Usermanage->index[ D:\xampp\htdocs\cdyy\application\admin\controller\Usermanage.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\xampp\htdocs\cdyy\public/../application/admin\view\usermanage\index.html [ array (
+  0 => 'name',
+  1 => 'list1',
+  2 => 'list2',
+  3 => 'typename',
+  4 => 'uid',
+  5 => 'list3',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001852s ] mysql:host=127.0.0.1;port=3306;dbname=cdyy;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `usertype` [ RunTime:0.004820s ]
+[ sql ] [ SQL ] SELECT * FROM `usertype` [ RunTime:0.000305s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `articletype` [ RunTime:0.004469s ]
+[ sql ] [ SQL ] SELECT * FROM `articletype` [ RunTime:0.000269s ]
+[ sql ] [ SQL ] SELECT * FROM `usertype` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.006211s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `gymtype` [ RunTime:0.004672s ]
+[ sql ] [ SQL ] SELECT * FROM `gymtype` [ RunTime:0.000258s ]
+---------------------------------------------------------------
+[ 2018-03-20T08:41:07+08:00 ] 127.0.0.1 GET /admin/usermanage/userlist?page=1&limit=10&id=1
+[ info ] www.cdyy.com/admin/usermanage/userlist?page=1&limit=10&id=1 [运行时间：0.064269s][吞吐率：15.56req/s] [内存消耗：2,759.29kb] [文件加载：52]
+[ info ] [ LANG ] D:\xampp\htdocs\cdyy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'usermanage',
+    2 => 'userlist',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.cdyy.com',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'x-devtools-emulate-network-conditions-client-id' => 'f7c4187e-ccfa-4058-94ad-ea87fca5975b',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.75 Safari/537.36 Maxthon/5.1.7.2000',
+  'dnt' => '1',
+  'referer' => 'http://www.cdyy.com/admin/usermanage/index.html?id=1',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN',
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=on7l6h0uaaottum2g0cm4cmb27; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+  'page' => '1',
+  'limit' => '10',
+  'id' => '1',
+)
+[ info ] [ RUN ] app\admin\controller\Usermanage->userlist[ D:\xampp\htdocs\cdyy\application\admin\controller\Usermanage.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000603s ] mysql:host=127.0.0.1;port=3306;dbname=cdyy;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `usertype` [ RunTime:0.004965s ]
+[ sql ] [ SQL ] SELECT * FROM `usertype` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000385s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.005818s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`mail`,`status`,`phonenumber`,`registertime`,`lastlogintime` FROM `user` WHERE  `usertype` = 1 LIMIT 0,10 [ RunTime:0.000456s ]
+---------------------------------------------------------------
+[ 2018-03-20T08:41:08+08:00 ] 127.0.0.1 GET /admin/usermanage/index.html?id=7
+[ info ] www.cdyy.com/admin/usermanage/index.html?id=7 [运行时间：0.080619s][吞吐率：12.40req/s] [内存消耗：3,003.86kb] [文件加载：59]
+[ info ] [ LANG ] D:\xampp\htdocs\cdyy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'usermanage',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.cdyy.com',
+  'connection' => 'keep-alive',
+  'x-devtools-emulate-network-conditions-client-id' => 'f7c4187e-ccfa-4058-94ad-ea87fca5975b',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.75 Safari/537.36 Maxthon/5.1.7.2000',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'dnt' => '1',
+  'referer' => 'http://www.cdyy.com/admin/usermanage/index.html?id=1',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN',
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=on7l6h0uaaottum2g0cm4cmb27; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+  'id' => '7',
+)
+[ info ] [ RUN ] app\admin\controller\Usermanage->index[ D:\xampp\htdocs\cdyy\application\admin\controller\Usermanage.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\xampp\htdocs\cdyy\public/../application/admin\view\usermanage\index.html [ array (
+  0 => 'name',
+  1 => 'list1',
+  2 => 'list2',
+  3 => 'typename',
+  4 => 'uid',
+  5 => 'list3',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000584s ] mysql:host=127.0.0.1;port=3306;dbname=cdyy;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `usertype` [ RunTime:0.004843s ]
+[ sql ] [ SQL ] SELECT * FROM `usertype` [ RunTime:0.000381s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `articletype` [ RunTime:0.004886s ]
+[ sql ] [ SQL ] SELECT * FROM `articletype` [ RunTime:0.000270s ]
+[ sql ] [ SQL ] SELECT * FROM `usertype` WHERE  `id` = 7 LIMIT 1 [ RunTime:0.000273s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `gymtype` [ RunTime:0.004522s ]
+[ sql ] [ SQL ] SELECT * FROM `gymtype` [ RunTime:0.000249s ]
+---------------------------------------------------------------
+[ 2018-03-20T08:41:08+08:00 ] 127.0.0.1 GET /admin/usermanage/userlist?page=1&limit=10&id=7
+[ info ] www.cdyy.com/admin/usermanage/userlist?page=1&limit=10&id=7 [运行时间：0.126903s][吞吐率：7.88req/s] [内存消耗：2,886.45kb] [文件加载：59]
+[ info ] [ LANG ] D:\xampp\htdocs\cdyy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'usermanage',
+    2 => 'userlist',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.cdyy.com',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'x-devtools-emulate-network-conditions-client-id' => 'f7c4187e-ccfa-4058-94ad-ea87fca5975b',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.75 Safari/537.36 Maxthon/5.1.7.2000',
+  'dnt' => '1',
+  'referer' => 'http://www.cdyy.com/admin/usermanage/index.html?id=7',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN',
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=on7l6h0uaaottum2g0cm4cmb27; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+  'page' => '1',
+  'limit' => '10',
+  'id' => '7',
+)
+[ info ] [ RUN ] app\admin\controller\Usermanage->userlist[ D:\xampp\htdocs\cdyy\application\admin\controller\Usermanage.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000633s ] mysql:host=127.0.0.1;port=3306;dbname=cdyy;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `usertype` [ RunTime:0.005393s ]
+[ sql ] [ SQL ] SELECT * FROM `usertype` WHERE  `id` = 7 LIMIT 1 [ RunTime:0.000421s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.006419s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`mail`,`status`,`phonenumber`,`registertime`,`lastlogintime` FROM `user` WHERE  `usertype` = 7 LIMIT 0,10 [ RunTime:0.000449s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `studentuser` [ RunTime:0.008043s ]
+[ sql ] [ SQL ] SELECT * FROM `studentuser` LIMIT 0,10 [ RunTime:0.000566s ]
+[ error ] [8]未定义数组下标: 1[D:\xampp\htdocs\cdyy\application\admin\controller\Usermanage.php:61]
+---------------------------------------------------------------
+[ 2018-03-20T08:41:10+08:00 ] 127.0.0.1 GET /admin/usermanage/index.html?id=7
+[ info ] www.cdyy.com/admin/usermanage/index.html?id=7 [运行时间：0.141824s][吞吐率：7.05req/s] [内存消耗：3,003.86kb] [文件加载：59]
+[ info ] [ LANG ] D:\xampp\htdocs\cdyy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'usermanage',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.cdyy.com',
+  'connection' => 'keep-alive',
+  'x-devtools-emulate-network-conditions-client-id' => 'f7c4187e-ccfa-4058-94ad-ea87fca5975b',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.75 Safari/537.36 Maxthon/5.1.7.2000',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'dnt' => '1',
+  'referer' => 'http://www.cdyy.com/admin/usermanage/index.html?id=7',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN',
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=on7l6h0uaaottum2g0cm4cmb27; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+  'id' => '7',
+)
+[ info ] [ RUN ] app\admin\controller\Usermanage->index[ D:\xampp\htdocs\cdyy\application\admin\controller\Usermanage.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\xampp\htdocs\cdyy\public/../application/admin\view\usermanage\index.html [ array (
+  0 => 'name',
+  1 => 'list1',
+  2 => 'list2',
+  3 => 'typename',
+  4 => 'uid',
+  5 => 'list3',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000673s ] mysql:host=127.0.0.1;port=3306;dbname=cdyy;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `usertype` [ RunTime:0.026916s ]
+[ sql ] [ SQL ] SELECT * FROM `usertype` [ RunTime:0.000412s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `articletype` [ RunTime:0.043011s ]
+[ sql ] [ SQL ] SELECT * FROM `articletype` [ RunTime:0.000291s ]
+[ sql ] [ SQL ] SELECT * FROM `usertype` WHERE  `id` = 7 LIMIT 1 [ RunTime:0.000283s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `gymtype` [ RunTime:0.006314s ]
+[ sql ] [ SQL ] SELECT * FROM `gymtype` [ RunTime:0.000470s ]
+---------------------------------------------------------------
+[ 2018-03-20T08:41:10+08:00 ] 127.0.0.1 GET /admin/usermanage/userlist?page=1&limit=10&id=7
+[ info ] www.cdyy.com/admin/usermanage/userlist?page=1&limit=10&id=7 [运行时间：0.084500s][吞吐率：11.83req/s] [内存消耗：2,886.45kb] [文件加载：59]
+[ info ] [ LANG ] D:\xampp\htdocs\cdyy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'usermanage',
+    2 => 'userlist',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.cdyy.com',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'x-devtools-emulate-network-conditions-client-id' => 'f7c4187e-ccfa-4058-94ad-ea87fca5975b',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.75 Safari/537.36 Maxthon/5.1.7.2000',
+  'dnt' => '1',
+  'referer' => 'http://www.cdyy.com/admin/usermanage/index.html?id=7',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN',
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=on7l6h0uaaottum2g0cm4cmb27; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+  'page' => '1',
+  'limit' => '10',
+  'id' => '7',
+)
+[ info ] [ RUN ] app\admin\controller\Usermanage->userlist[ D:\xampp\htdocs\cdyy\application\admin\controller\Usermanage.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000735s ] mysql:host=127.0.0.1;port=3306;dbname=cdyy;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `usertype` [ RunTime:0.005961s ]
+[ sql ] [ SQL ] SELECT * FROM `usertype` WHERE  `id` = 7 LIMIT 1 [ RunTime:0.000409s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.007719s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`mail`,`status`,`phonenumber`,`registertime`,`lastlogintime` FROM `user` WHERE  `usertype` = 7 LIMIT 0,10 [ RunTime:0.000706s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `studentuser` [ RunTime:0.006672s ]
+[ sql ] [ SQL ] SELECT * FROM `studentuser` LIMIT 0,10 [ RunTime:0.000326s ]
+[ error ] [8]未定义数组下标: 1[D:\xampp\htdocs\cdyy\application\admin\controller\Usermanage.php:61]
+---------------------------------------------------------------
+[ 2018-03-20T08:41:21+08:00 ] 127.0.0.1 GET /admin/usermanage/userlist?page=1&limit=10&id=7
+[ info ] www.cdyy.com/admin/usermanage/userlist?page=1&limit=10&id=7 [运行时间：0.090371s][吞吐率：11.07req/s] [内存消耗：2,911.25kb] [文件加载：61]
+[ info ] [ LANG ] D:\xampp\htdocs\cdyy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'usermanage',
+    2 => 'userlist',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.cdyy.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.75 Safari/537.36 Maxthon/5.1.7.2000',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'dnt' => '1',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN',
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=on7l6h0uaaottum2g0cm4cmb27; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+  'page' => '1',
+  'limit' => '10',
+  'id' => '7',
+)
+[ info ] [ RUN ] app\admin\controller\Usermanage->userlist[ D:\xampp\htdocs\cdyy\application\admin\controller\Usermanage.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000618s ] mysql:host=127.0.0.1;port=3306;dbname=cdyy;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `usertype` [ RunTime:0.004672s ]
+[ sql ] [ SQL ] SELECT * FROM `usertype` WHERE  `id` = 7 LIMIT 1 [ RunTime:0.000336s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.004554s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`mail`,`status`,`phonenumber`,`registertime`,`lastlogintime` FROM `user` WHERE  `usertype` = 7 LIMIT 0,10 [ RunTime:0.000339s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `studentuser` [ RunTime:0.004705s ]
+[ sql ] [ SQL ] SELECT * FROM `studentuser` LIMIT 0,10 [ RunTime:0.000264s ]
+[ error ] [8]未定义数组下标: 1[D:\xampp\htdocs\cdyy\application\admin\controller\Usermanage.php:61]
+---------------------------------------------------------------
+[ 2018-03-20T08:43:53+08:00 ] 127.0.0.1 GET /admin/usermanage/index.html?id=1
+[ info ] www.cdyy.com/admin/usermanage/index.html?id=1 [运行时间：0.084018s][吞吐率：11.90req/s] [内存消耗：3,003.86kb] [文件加载：59]
+[ info ] [ LANG ] D:\xampp\htdocs\cdyy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'usermanage',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.cdyy.com',
+  'connection' => 'keep-alive',
+  'x-devtools-emulate-network-conditions-client-id' => 'f7c4187e-ccfa-4058-94ad-ea87fca5975b',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.75 Safari/537.36 Maxthon/5.1.7.2000',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'dnt' => '1',
+  'referer' => 'http://www.cdyy.com/admin/usermanage/index.html?id=7',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN',
+  'cookie' => 'thinkphp_show_page_trace=1|3; PHPSESSID=on7l6h0uaaottum2g0cm4cmb27; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+  'id' => '1',
+)
+[ info ] [ RUN ] app\admin\controller\Usermanage->index[ D:\xampp\htdocs\cdyy\application\admin\controller\Usermanage.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\xampp\htdocs\cdyy\public/../application/admin\view\usermanage\index.html [ array (
+  0 => 'name',
+  1 => 'list1',
+  2 => 'list2',
+  3 => 'typename',
+  4 => 'uid',
+  5 => 'list3',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000735s ] mysql:host=127.0.0.1;port=3306;dbname=cdyy;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `usertype` [ RunTime:0.005420s ]
+[ sql ] [ SQL ] SELECT * FROM `usertype` [ RunTime:0.000334s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `articletype` [ RunTime:0.004620s ]
+[ sql ] [ SQL ] SELECT * FROM `articletype` [ RunTime:0.000265s ]
+[ sql ] [ SQL ] SELECT * FROM `usertype` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000283s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `gymtype` [ RunTime:0.005266s ]
+[ sql ] [ SQL ] SELECT * FROM `gymtype` [ RunTime:0.000332s ]
+---------------------------------------------------------------
+[ 2018-03-20T08:43:53+08:00 ] 127.0.0.1 GET /admin/usermanage/userlist?page=1&limit=10&id=1
+[ info ] www.cdyy.com/admin/usermanage/userlist?page=1&limit=10&id=1 [运行时间：0.063178s][吞吐率：15.83req/s] [内存消耗：2,759.29kb] [文件加载：52]
+[ info ] [ LANG ] D:\xampp\htdocs\cdyy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'usermanage',
+    2 => 'userlist',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.cdyy.com',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'x-devtools-emulate-network-conditions-client-id' => 'f7c4187e-ccfa-4058-94ad-ea87fca5975b',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.75 Safari/537.36 Maxthon/5.1.7.2000',
+  'dnt' => '1',
+  'referer' => 'http://www.cdyy.com/admin/usermanage/index.html?id=1',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN',
+  'cookie' => 'thinkphp_show_page_trace=1|3; PHPSESSID=on7l6h0uaaottum2g0cm4cmb27; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+  'page' => '1',
+  'limit' => '10',
+  'id' => '1',
+)
+[ info ] [ RUN ] app\admin\controller\Usermanage->userlist[ D:\xampp\htdocs\cdyy\application\admin\controller\Usermanage.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000723s ] mysql:host=127.0.0.1;port=3306;dbname=cdyy;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `usertype` [ RunTime:0.005506s ]
+[ sql ] [ SQL ] SELECT * FROM `usertype` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000400s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.005242s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`mail`,`status`,`phonenumber`,`registertime`,`lastlogintime` FROM `user` WHERE  `usertype` = 1 LIMIT 0,10 [ RunTime:0.000655s ]
+---------------------------------------------------------------
+[ 2018-03-20T08:43:56+08:00 ] 127.0.0.1 GET /admin/usermanage/index.html?id=6
+[ info ] www.cdyy.com/admin/usermanage/index.html?id=6 [运行时间：0.077446s][吞吐率：12.91req/s] [内存消耗：3,003.86kb] [文件加载：59]
+[ info ] [ LANG ] D:\xampp\htdocs\cdyy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'usermanage',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.cdyy.com',
+  'connection' => 'keep-alive',
+  'x-devtools-emulate-network-conditions-client-id' => 'f7c4187e-ccfa-4058-94ad-ea87fca5975b',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.75 Safari/537.36 Maxthon/5.1.7.2000',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'dnt' => '1',
+  'referer' => 'http://www.cdyy.com/admin/usermanage/index.html?id=1',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN',
+  'cookie' => 'thinkphp_show_page_trace=1|3; PHPSESSID=on7l6h0uaaottum2g0cm4cmb27; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+  'id' => '6',
+)
+[ info ] [ RUN ] app\admin\controller\Usermanage->index[ D:\xampp\htdocs\cdyy\application\admin\controller\Usermanage.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\xampp\htdocs\cdyy\public/../application/admin\view\usermanage\index.html [ array (
+  0 => 'name',
+  1 => 'list1',
+  2 => 'list2',
+  3 => 'typename',
+  4 => 'uid',
+  5 => 'list3',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000639s ] mysql:host=127.0.0.1;port=3306;dbname=cdyy;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `usertype` [ RunTime:0.004862s ]
+[ sql ] [ SQL ] SELECT * FROM `usertype` [ RunTime:0.000338s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `articletype` [ RunTime:0.004711s ]
+[ sql ] [ SQL ] SELECT * FROM `articletype` [ RunTime:0.000315s ]
+[ sql ] [ SQL ] SELECT * FROM `usertype` WHERE  `id` = 6 LIMIT 1 [ RunTime:0.000270s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `gymtype` [ RunTime:0.004443s ]
+[ sql ] [ SQL ] SELECT * FROM `gymtype` [ RunTime:0.000240s ]
+---------------------------------------------------------------
+[ 2018-03-20T08:43:56+08:00 ] 127.0.0.1 GET /admin/usermanage/userlist?page=1&limit=10&id=6
+[ info ] www.cdyy.com/admin/usermanage/userlist?page=1&limit=10&id=6 [运行时间：0.144971s][吞吐率：6.90req/s] [内存消耗：2,759.24kb] [文件加载：52]
+[ info ] [ LANG ] D:\xampp\htdocs\cdyy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'usermanage',
+    2 => 'userlist',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.cdyy.com',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'x-devtools-emulate-network-conditions-client-id' => 'f7c4187e-ccfa-4058-94ad-ea87fca5975b',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.75 Safari/537.36 Maxthon/5.1.7.2000',
+  'dnt' => '1',
+  'referer' => 'http://www.cdyy.com/admin/usermanage/index.html?id=6',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN',
+  'cookie' => 'thinkphp_show_page_trace=1|3; PHPSESSID=on7l6h0uaaottum2g0cm4cmb27; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+  'page' => '1',
+  'limit' => '10',
+  'id' => '6',
+)
+[ info ] [ RUN ] app\admin\controller\Usermanage->userlist[ D:\xampp\htdocs\cdyy\application\admin\controller\Usermanage.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000794s ] mysql:host=127.0.0.1;port=3306;dbname=cdyy;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `usertype` [ RunTime:0.044553s ]
+[ sql ] [ SQL ] SELECT * FROM `usertype` WHERE  `id` = 6 LIMIT 1 [ RunTime:0.000537s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.045660s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`mail`,`status`,`phonenumber`,`registertime`,`lastlogintime` FROM `user` WHERE  `usertype` = 6 LIMIT 0,10 [ RunTime:0.000386s ]
+---------------------------------------------------------------
+[ 2018-03-20T08:43:57+08:00 ] 127.0.0.1 GET /admin/usermanage/index.html?id=7
+[ info ] www.cdyy.com/admin/usermanage/index.html?id=7 [运行时间：0.078285s][吞吐率：12.77req/s] [内存消耗：3,003.86kb] [文件加载：59]
+[ info ] [ LANG ] D:\xampp\htdocs\cdyy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'usermanage',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.cdyy.com',
+  'connection' => 'keep-alive',
+  'x-devtools-emulate-network-conditions-client-id' => 'f7c4187e-ccfa-4058-94ad-ea87fca5975b',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.75 Safari/537.36 Maxthon/5.1.7.2000',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'dnt' => '1',
+  'referer' => 'http://www.cdyy.com/admin/usermanage/index.html?id=6',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN',
+  'cookie' => 'thinkphp_show_page_trace=1|3; PHPSESSID=on7l6h0uaaottum2g0cm4cmb27; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+  'id' => '7',
+)
+[ info ] [ RUN ] app\admin\controller\Usermanage->index[ D:\xampp\htdocs\cdyy\application\admin\controller\Usermanage.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\xampp\htdocs\cdyy\public/../application/admin\view\usermanage\index.html [ array (
+  0 => 'name',
+  1 => 'list1',
+  2 => 'list2',
+  3 => 'typename',
+  4 => 'uid',
+  5 => 'list3',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000589s ] mysql:host=127.0.0.1;port=3306;dbname=cdyy;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `usertype` [ RunTime:0.004671s ]
+[ sql ] [ SQL ] SELECT * FROM `usertype` [ RunTime:0.000373s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `articletype` [ RunTime:0.005041s ]
+[ sql ] [ SQL ] SELECT * FROM `articletype` [ RunTime:0.000272s ]
+[ sql ] [ SQL ] SELECT * FROM `usertype` WHERE  `id` = 7 LIMIT 1 [ RunTime:0.000272s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `gymtype` [ RunTime:0.004615s ]
+[ sql ] [ SQL ] SELECT * FROM `gymtype` [ RunTime:0.000249s ]
+---------------------------------------------------------------
+[ 2018-03-20T08:43:57+08:00 ] 127.0.0.1 GET /admin/usermanage/userlist?page=1&limit=10&id=7
+[ info ] www.cdyy.com/admin/usermanage/userlist?page=1&limit=10&id=7 [运行时间：0.077508s][吞吐率：12.90req/s] [内存消耗：2,886.45kb] [文件加载：59]
+[ info ] [ LANG ] D:\xampp\htdocs\cdyy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'usermanage',
+    2 => 'userlist',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.cdyy.com',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'x-devtools-emulate-network-conditions-client-id' => 'f7c4187e-ccfa-4058-94ad-ea87fca5975b',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.75 Safari/537.36 Maxthon/5.1.7.2000',
+  'dnt' => '1',
+  'referer' => 'http://www.cdyy.com/admin/usermanage/index.html?id=7',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN',
+  'cookie' => 'thinkphp_show_page_trace=1|3; PHPSESSID=on7l6h0uaaottum2g0cm4cmb27; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+  'page' => '1',
+  'limit' => '10',
+  'id' => '7',
+)
+[ info ] [ RUN ] app\admin\controller\Usermanage->userlist[ D:\xampp\htdocs\cdyy\application\admin\controller\Usermanage.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000750s ] mysql:host=127.0.0.1;port=3306;dbname=cdyy;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `usertype` [ RunTime:0.005042s ]
+[ sql ] [ SQL ] SELECT * FROM `usertype` WHERE  `id` = 7 LIMIT 1 [ RunTime:0.000549s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.006248s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`mail`,`status`,`phonenumber`,`registertime`,`lastlogintime` FROM `user` WHERE  `usertype` = 7 LIMIT 0,10 [ RunTime:0.000392s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `studentuser` [ RunTime:0.005299s ]
+[ sql ] [ SQL ] SELECT * FROM `studentuser` LIMIT 0,10 [ RunTime:0.000289s ]
+[ error ] [8]未定义数组下标: 1[D:\xampp\htdocs\cdyy\application\admin\controller\Usermanage.php:61]
+---------------------------------------------------------------
+[ 2018-03-20T08:44:52+08:00 ] 127.0.0.1 GET /admin/usermanage/userlist?page=1&limit=10&id=7
+[ info ] www.cdyy.com/admin/usermanage/userlist?page=1&limit=10&id=7 [运行时间：0.180021s][吞吐率：5.55req/s] [内存消耗：2,807.95kb] [文件加载：53]
+[ info ] [ LANG ] D:\xampp\htdocs\cdyy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'usermanage',
+    2 => 'userlist',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.cdyy.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.75 Safari/537.36 Maxthon/5.1.7.2000',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'dnt' => '1',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN',
+  'cookie' => 'thinkphp_show_page_trace=1|3; PHPSESSID=on7l6h0uaaottum2g0cm4cmb27; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+  'page' => '1',
+  'limit' => '10',
+  'id' => '7',
+)
+[ info ] [ RUN ] app\admin\controller\Usermanage->userlist[ D:\xampp\htdocs\cdyy\application\admin\controller\Usermanage.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000652s ] mysql:host=127.0.0.1;port=3306;dbname=cdyy;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `usertype` [ RunTime:0.040326s ]
+[ sql ] [ SQL ] SELECT * FROM `usertype` WHERE  `id` = 7 LIMIT 1 [ RunTime:0.000374s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.065473s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`mail`,`status`,`phonenumber`,`registertime`,`lastlogintime` FROM `user` WHERE  `usertype` = 7 LIMIT 0,10 [ RunTime:0.000391s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `studentuser` [ RunTime:0.023382s ]
+[ sql ] [ SQL ] SELECT * FROM `studentuser` LIMIT 0,10 [ RunTime:0.000269s ]
+---------------------------------------------------------------
+[ 2018-03-20T08:46:04+08:00 ] 127.0.0.1 GET /register/index/checkshow/mail/846513101%40qq.com.html
+[ info ] www.cdyy.com/register/index/checkshow/mail/846513101%40qq.com.html [运行时间：0.043611s][吞吐率：22.93req/s] [内存消耗：1,713.36kb] [文件加载：48]
+[ info ] [ LANG ] D:\xampp\htdocs\cdyy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'register',
+    1 => 'index',
+    2 => 'checkshow',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.cdyy.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.75 Safari/537.36 Maxthon/5.1.7.2000',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'dnt' => '1',
+  'referer' => 'http://www.cdyy.com/register',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; PHPSESSID=on7l6h0uaaottum2g0cm4cmb27; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+  'mail' => '846513101@qq.com',
+)
+[ info ] [ RUN ] app\register\controller\Index->checkshow[ D:\xampp\htdocs\cdyy\application\register\controller\Index.php ]
+[ info ] [ VIEW ] D:\xampp\htdocs\cdyy\public/../application/register\view\index\checkshow.html [ array (
+  0 => 'email',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-20T08:46:05+08:00 ] 127.0.0.1 GET /captcha.html
+[ info ] www.cdyy.com/captcha.html [运行时间：0.032534s][吞吐率：30.74req/s] [内存消耗：1,416.34kb] [文件加载：39]
+[ info ] [ LANG ] D:\xampp\htdocs\cdyy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\captcha\\CaptchaController',
+    1 => 'index',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.cdyy.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.75 Safari/537.36 Maxthon/5.1.7.2000',
+  'accept' => 'image/webp,image/*,*/*;q=0.8',
+  'dnt' => '1',
+  'referer' => 'http://www.cdyy.com/register',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN',
+  'cookie' => 'PHPSESSID=on7l6h0uaaottum2g0cm4cmb27; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+  'id' => NULL,
+)
+[ info ] [ RUN ] think\captcha\CaptchaController->index[ D:\xampp\htdocs\cdyy\vendor\topthink\think-captcha\src\CaptchaController.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-20T08:46:06+08:00 ] 127.0.0.1 GET /admin/index/login.html
+[ info ] www.cdyy.com/admin/index/login.html [运行时间：0.073853s][吞吐率：13.54req/s] [内存消耗：1,924.12kb] [文件加载：52]
+[ info ] [ LANG ] D:\xampp\htdocs\cdyy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.cdyy.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.75 Safari/537.36 Maxthon/5.1.7.2000',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'dnt' => '1',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN',
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=on7l6h0uaaottum2g0cm4cmb27; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\index->login[ D:\xampp\htdocs\cdyy\application\admin\controller\Index.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] D:\xampp\htdocs\cdyy\thinkphp\tpl\dispatch_jump.tpl [ array (
+  0 => 'code',
+  1 => 'msg',
+  2 => 'data',
+  3 => 'url',
+  4 => 'wait',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-20T08:46:08+08:00 ] 127.0.0.1 GET /register
+[ info ] www.cdyy.com/register [运行时间：0.040427s][吞吐率：24.74req/s] [内存消耗：1,774.25kb] [文件加载：49]
+[ info ] [ LANG ] D:\xampp\htdocs\cdyy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'register',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.cdyy.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.75 Safari/537.36 Maxthon/5.1.7.2000',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'dnt' => '1',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN',
+  'cookie' => 'PHPSESSID=on7l6h0uaaottum2g0cm4cmb27; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\register\controller\Index->index[ D:\xampp\htdocs\cdyy\application\register\controller\Index.php ]
+[ info ] [ VIEW ] D:\xampp\htdocs\cdyy\public/../application/register\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-20T08:46:08+08:00 ] 127.0.0.1 GET /captcha.html
+[ info ] www.cdyy.com/captcha.html [运行时间：0.037314s][吞吐率：26.80req/s] [内存消耗：1,416.35kb] [文件加载：39]
+[ info ] [ LANG ] D:\xampp\htdocs\cdyy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\captcha\\CaptchaController',
+    1 => 'index',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.cdyy.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.75 Safari/537.36 Maxthon/5.1.7.2000',
+  'accept' => 'image/webp,image/*,*/*;q=0.8',
+  'dnt' => '1',
+  'referer' => 'http://www.cdyy.com/register',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN',
+  'cookie' => 'PHPSESSID=on7l6h0uaaottum2g0cm4cmb27; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+  'id' => NULL,
+)
+[ info ] [ RUN ] think\captcha\CaptchaController->index[ D:\xampp\htdocs\cdyy\vendor\topthink\think-captcha\src\CaptchaController.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-20T08:52:13+08:00 ] 127.0.0.1 POST /register/index/checkshow/mail/846513101%40qq.com.html
+[ info ] www.cdyy.com/register/index/checkshow/mail/846513101%40qq.com.html [运行时间：0.054998s][吞吐率：18.18req/s] [内存消耗：1,926.45kb] [文件加载：51]
+[ info ] [ LANG ] D:\xampp\htdocs\cdyy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'register',
+    1 => 'index',
+    2 => 'checkshow',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.cdyy.com',
+  'connection' => 'keep-alive',
+  'content-length' => '11',
+  'cache-control' => 'max-age=0',
+  'origin' => 'http://www.cdyy.com',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.75 Safari/537.36 Maxthon/5.1.7.2000',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'dnt' => '1',
+  'referer' => 'http://www.cdyy.com/register/index/checkshow/mail/846513101%40qq.com.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; PHPSESSID=on7l6h0uaaottum2g0cm4cmb27; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+  'code' => '658682',
+  'mail' => '846513101@qq.com',
+)
+[ info ] [ RUN ] app\register\controller\Index->checkshow[ D:\xampp\htdocs\cdyy\application\register\controller\Index.php ]
+[ info ] [ VIEW ] D:\xampp\htdocs\cdyy\public/../application/register\view\index\checkshow.html [ array (
+  0 => 'email',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-20T08:52:16+08:00 ] 127.0.0.1 POST /register/index/checkshow/mail/846513101%40qq.com.html
+[ info ] www.cdyy.com/register/index/checkshow/mail/846513101%40qq.com.html [运行时间：0.046956s][吞吐率：21.30req/s] [内存消耗：1,776.36kb] [文件加载：49]
+[ info ] [ LANG ] D:\xampp\htdocs\cdyy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'register',
+    1 => 'index',
+    2 => 'checkshow',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.cdyy.com',
+  'connection' => 'keep-alive',
+  'content-length' => '11',
+  'cache-control' => 'max-age=0',
+  'origin' => 'http://www.cdyy.com',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.75 Safari/537.36 Maxthon/5.1.7.2000',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'dnt' => '1',
+  'referer' => 'http://www.cdyy.com/register/index/checkshow/mail/846513101%40qq.com.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; PHPSESSID=on7l6h0uaaottum2g0cm4cmb27; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+  'code' => '658682',
+  'mail' => '846513101@qq.com',
+)
+[ info ] [ RUN ] app\register\controller\Index->checkshow[ D:\xampp\htdocs\cdyy\application\register\controller\Index.php ]
+[ info ] [ VIEW ] D:\xampp\htdocs\cdyy\public/../application/register\view\index\checkshow.html [ array (
+  0 => 'email',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-20T08:52:19+08:00 ] 127.0.0.1 POST /register/index/checkshow.html?mail=846513101@qq.com
+[ info ] www.cdyy.com/register/index/checkshow.html?mail=846513101@qq.com [运行时间：0.048768s][吞吐率：20.51req/s] [内存消耗：1,776.23kb] [文件加载：49]
+[ info ] [ LANG ] D:\xampp\htdocs\cdyy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'register',
+    1 => 'index',
+    2 => 'checkshow',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.cdyy.com',
+  'connection' => 'keep-alive',
+  'content-length' => '11',
+  'cache-control' => 'max-age=0',
+  'origin' => 'http://www.cdyy.com',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.75 Safari/537.36 Maxthon/5.1.7.2000',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'dnt' => '1',
+  'referer' => 'http://www.cdyy.com/register/index/checkshow/mail/846513101%40qq.com.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN',
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=on7l6h0uaaottum2g0cm4cmb27; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+  'mail' => '846513101@qq.com',
+  'code' => '658682',
+)
+[ info ] [ RUN ] app\register\controller\Index->checkshow[ D:\xampp\htdocs\cdyy\application\register\controller\Index.php ]
+[ info ] [ VIEW ] D:\xampp\htdocs\cdyy\public/../application/register\view\index\checkshow.html [ array (
+  0 => 'email',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-20T08:52:29+08:00 ] 127.0.0.1 POST /register/index/checkshow.html?mail=846513101@qq.com
+[ info ] www.cdyy.com/register/index/checkshow.html?mail=846513101@qq.com [运行时间：0.049380s][吞吐率：20.25req/s] [内存消耗：1,776.23kb] [文件加载：49]
+[ info ] [ LANG ] D:\xampp\htdocs\cdyy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'register',
+    1 => 'index',
+    2 => 'checkshow',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.cdyy.com',
+  'connection' => 'keep-alive',
+  'content-length' => '11',
+  'cache-control' => 'max-age=0',
+  'origin' => 'http://www.cdyy.com',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.75 Safari/537.36 Maxthon/5.1.7.2000',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'dnt' => '1',
+  'referer' => 'http://www.cdyy.com/register/index/checkshow.html?mail=846513101@qq.com',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN',
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=on7l6h0uaaottum2g0cm4cmb27; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+  'mail' => '846513101@qq.com',
+  'code' => '658682',
+)
+[ info ] [ RUN ] app\register\controller\Index->checkshow[ D:\xampp\htdocs\cdyy\application\register\controller\Index.php ]
+[ info ] [ VIEW ] D:\xampp\htdocs\cdyy\public/../application/register\view\index\checkshow.html [ array (
+  0 => 'email',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-20T08:52:53+08:00 ] 127.0.0.1 POST /register/index/checkshow.html?mail=846513101@qq.com
+[ info ] www.cdyy.com/register/index/checkshow.html?mail=846513101@qq.com [运行时间：0.051158s][吞吐率：19.55req/s] [内存消耗：1,926.23kb] [文件加载：51]
+[ info ] [ LANG ] D:\xampp\htdocs\cdyy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'register',
+    1 => 'index',
+    2 => 'checkshow',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.cdyy.com',
+  'connection' => 'keep-alive',
+  'content-length' => '11',
+  'cache-control' => 'max-age=0',
+  'origin' => 'http://www.cdyy.com',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.75 Safari/537.36 Maxthon/5.1.7.2000',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'dnt' => '1',
+  'referer' => 'http://www.cdyy.com/register/index/checkshow.html?mail=846513101@qq.com',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN',
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=on7l6h0uaaottum2g0cm4cmb27; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+  'mail' => '846513101@qq.com',
+  'code' => '658682',
+)
+[ info ] [ RUN ] app\register\controller\Index->checkshow[ D:\xampp\htdocs\cdyy\application\register\controller\Index.php ]
+[ info ] [ VIEW ] D:\xampp\htdocs\cdyy\public/../application/register\view\index\checkshow.html [ array (
+  0 => 'email',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-20T08:52:54+08:00 ] 127.0.0.1 GET /register/index/checkshow.html?code=658682
+[ info ] www.cdyy.com/register/index/checkshow.html?code=658682 [运行时间：0.047845s][吞吐率：20.90req/s] [内存消耗：1,775.91kb] [文件加载：49]
+[ info ] [ LANG ] D:\xampp\htdocs\cdyy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'register',
+    1 => 'index',
+    2 => 'checkshow',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.cdyy.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.75 Safari/537.36 Maxthon/5.1.7.2000',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'dnt' => '1',
+  'referer' => 'http://www.cdyy.com/register/index/checkshow.html?mail=846513101@qq.com',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN',
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=on7l6h0uaaottum2g0cm4cmb27; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+  'code' => '658682',
+)
+[ info ] [ RUN ] app\register\controller\Index->checkshow[ D:\xampp\htdocs\cdyy\application\register\controller\Index.php ]
+[ info ] [ VIEW ] D:\xampp\htdocs\cdyy\public/../application/register\view\index\checkshow.html [ array (
+  0 => 'email',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-20T08:53:17+08:00 ] 127.0.0.1 POST /register/index/checkshow.html?mail=846513101@qq.com
+[ info ] www.cdyy.com/register/index/checkshow.html?mail=846513101@qq.com [运行时间：0.050089s][吞吐率：19.96req/s] [内存消耗：1,863.51kb] [文件加载：50]
+[ info ] [ LANG ] D:\xampp\htdocs\cdyy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'register',
+    1 => 'index',
+    2 => 'checkshow',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.cdyy.com',
+  'connection' => 'keep-alive',
+  'content-length' => '11',
+  'cache-control' => 'max-age=0',
+  'origin' => 'http://www.cdyy.com',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.75 Safari/537.36 Maxthon/5.1.7.2000',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'dnt' => '1',
+  'referer' => 'http://www.cdyy.com/register/index/checkshow.html?mail=846513101@qq.com',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN',
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=on7l6h0uaaottum2g0cm4cmb27; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+  'mail' => '846513101@qq.com',
+  'code' => '658682',
+)
+[ info ] [ RUN ] app\register\controller\Index->checkshow[ D:\xampp\htdocs\cdyy\application\register\controller\Index.php ]
+[ info ] [ VIEW ] D:\xampp\htdocs\cdyy\public/../application/register\view\index\checkshow.html [ array (
+  0 => 'email',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-20T08:53:19+08:00 ] 127.0.0.1 GET /register/index/codecheck?code=658682
+[ info ] www.cdyy.com/register/index/codecheck?code=658682 [运行时间：0.047100s][吞吐率：21.23req/s] [内存消耗：1,719.33kb] [文件加载：49]
+[ info ] [ LANG ] D:\xampp\htdocs\cdyy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'register',
+    1 => 'index',
+    2 => 'codecheck',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.cdyy.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.75 Safari/537.36 Maxthon/5.1.7.2000',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'dnt' => '1',
+  'referer' => 'http://www.cdyy.com/register/index/checkshow.html?mail=846513101@qq.com',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN',
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=on7l6h0uaaottum2g0cm4cmb27; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+  'code' => '658682',
+)
+[ info ] [ RUN ] app\register\controller\Index->codecheck[ D:\xampp\htdocs\cdyy\application\register\controller\Index.php ]
+[ info ] [ VIEW ] D:\xampp\htdocs\cdyy\thinkphp\tpl\dispatch_jump.tpl [ array (
+  0 => 'code',
+  1 => 'msg',
+  2 => 'data',
+  3 => 'url',
+  4 => 'wait',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-20T08:53:35+08:00 ] 127.0.0.1 POST /register/index/checkshow.html?mail=846513101@qq.com
+[ info ] www.cdyy.com/register/index/checkshow.html?mail=846513101@qq.com [运行时间：0.046669s][吞吐率：21.43req/s] [内存消耗：1,714.08kb] [文件加载：48]
+[ info ] [ LANG ] D:\xampp\htdocs\cdyy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'register',
+    1 => 'index',
+    2 => 'checkshow',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.cdyy.com',
+  'connection' => 'keep-alive',
+  'content-length' => '11',
+  'cache-control' => 'max-age=0',
+  'origin' => 'http://www.cdyy.com',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.75 Safari/537.36 Maxthon/5.1.7.2000',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'dnt' => '1',
+  'referer' => 'http://www.cdyy.com/register/index/checkshow.html?mail=846513101@qq.com',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN',
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=on7l6h0uaaottum2g0cm4cmb27; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+  'mail' => '846513101@qq.com',
+  'code' => '658682',
+)
+[ info ] [ RUN ] app\register\controller\Index->checkshow[ D:\xampp\htdocs\cdyy\application\register\controller\Index.php ]
+[ info ] [ VIEW ] D:\xampp\htdocs\cdyy\public/../application/register\view\index\checkshow.html [ array (
+  0 => 'email',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-20T08:53:39+08:00 ] 127.0.0.1 POST /register/index/checkshow.html?mail=846513101@qq.com
+[ info ] www.cdyy.com/register/index/checkshow.html?mail=846513101@qq.com [运行时间：0.045249s][吞吐率：22.10req/s] [内存消耗：1,714.08kb] [文件加载：48]
+[ info ] [ LANG ] D:\xampp\htdocs\cdyy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'register',
+    1 => 'index',
+    2 => 'checkshow',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.cdyy.com',
+  'connection' => 'keep-alive',
+  'content-length' => '11',
+  'cache-control' => 'max-age=0',
+  'origin' => 'http://www.cdyy.com',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.75 Safari/537.36 Maxthon/5.1.7.2000',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'dnt' => '1',
+  'referer' => 'http://www.cdyy.com/register/index/checkshow.html?mail=846513101@qq.com',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN',
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=on7l6h0uaaottum2g0cm4cmb27; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+  'mail' => '846513101@qq.com',
+  'code' => '658682',
+)
+[ info ] [ RUN ] app\register\controller\Index->checkshow[ D:\xampp\htdocs\cdyy\application\register\controller\Index.php ]
+[ info ] [ VIEW ] D:\xampp\htdocs\cdyy\public/../application/register\view\index\checkshow.html [ array (
+  0 => 'email',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-20T08:53:41+08:00 ] 127.0.0.1 GET /register/index/codecheck?code=658682
+[ info ] www.cdyy.com/register/index/codecheck?code=658682 [运行时间：0.046814s][吞吐率：21.36req/s] [内存消耗：1,719.33kb] [文件加载：49]
+[ info ] [ LANG ] D:\xampp\htdocs\cdyy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'register',
+    1 => 'index',
+    2 => 'codecheck',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.cdyy.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.75 Safari/537.36 Maxthon/5.1.7.2000',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'dnt' => '1',
+  'referer' => 'http://www.cdyy.com/register/index/checkshow.html?mail=846513101@qq.com',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN',
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=on7l6h0uaaottum2g0cm4cmb27; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+  'code' => '658682',
+)
+[ info ] [ RUN ] app\register\controller\Index->codecheck[ D:\xampp\htdocs\cdyy\application\register\controller\Index.php ]
+[ info ] [ VIEW ] D:\xampp\htdocs\cdyy\thinkphp\tpl\dispatch_jump.tpl [ array (
+  0 => 'code',
+  1 => 'msg',
+  2 => 'data',
+  3 => 'url',
+  4 => 'wait',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-20T08:53:45+08:00 ] 127.0.0.1 POST /register/index/checkshow.html?mail=846513101@qq.com
+[ info ] www.cdyy.com/register/index/checkshow.html?mail=846513101@qq.com [运行时间：0.045359s][吞吐率：22.05req/s] [内存消耗：1,714.08kb] [文件加载：48]
+[ info ] [ LANG ] D:\xampp\htdocs\cdyy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'register',
+    1 => 'index',
+    2 => 'checkshow',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.cdyy.com',
+  'connection' => 'keep-alive',
+  'content-length' => '11',
+  'cache-control' => 'max-age=0',
+  'origin' => 'http://www.cdyy.com',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.75 Safari/537.36 Maxthon/5.1.7.2000',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'dnt' => '1',
+  'referer' => 'http://www.cdyy.com/register/index/checkshow.html?mail=846513101@qq.com',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN',
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=on7l6h0uaaottum2g0cm4cmb27; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+  'mail' => '846513101@qq.com',
+  'code' => '658682',
+)
+[ info ] [ RUN ] app\register\controller\Index->checkshow[ D:\xampp\htdocs\cdyy\application\register\controller\Index.php ]
+[ info ] [ VIEW ] D:\xampp\htdocs\cdyy\public/../application/register\view\index\checkshow.html [ array (
+  0 => 'email',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-20T08:53:48+08:00 ] 127.0.0.1 GET /register/index/codecheck?code=658682
+[ info ] www.cdyy.com/register/index/codecheck?code=658682 [运行时间：0.046940s][吞吐率：21.30req/s] [内存消耗：1,719.33kb] [文件加载：49]
+[ info ] [ LANG ] D:\xampp\htdocs\cdyy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'register',
+    1 => 'index',
+    2 => 'codecheck',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.cdyy.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.75 Safari/537.36 Maxthon/5.1.7.2000',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'dnt' => '1',
+  'referer' => 'http://www.cdyy.com/register/index/checkshow.html?mail=846513101@qq.com',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN',
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=on7l6h0uaaottum2g0cm4cmb27; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+  'code' => '658682',
+)
+[ info ] [ RUN ] app\register\controller\Index->codecheck[ D:\xampp\htdocs\cdyy\application\register\controller\Index.php ]
+[ info ] [ VIEW ] D:\xampp\htdocs\cdyy\thinkphp\tpl\dispatch_jump.tpl [ array (
+  0 => 'code',
+  1 => 'msg',
+  2 => 'data',
+  3 => 'url',
+  4 => 'wait',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-20T08:54:10+08:00 ] 127.0.0.1 GET /register/index/codecheck?code=658682
+[ info ] www.cdyy.com/register/index/codecheck?code=658682 [运行时间：0.045373s][吞吐率：22.04req/s] [内存消耗：1,719.33kb] [文件加载：49]
+[ info ] [ LANG ] D:\xampp\htdocs\cdyy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'register',
+    1 => 'index',
+    2 => 'codecheck',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.cdyy.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.75 Safari/537.36 Maxthon/5.1.7.2000',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'dnt' => '1',
+  'referer' => 'http://www.cdyy.com/register/index/checkshow.html?mail=846513101@qq.com',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN',
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=on7l6h0uaaottum2g0cm4cmb27; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+  'code' => '658682',
+)
+[ info ] [ RUN ] app\register\controller\Index->codecheck[ D:\xampp\htdocs\cdyy\application\register\controller\Index.php ]
+[ info ] [ VIEW ] D:\xampp\htdocs\cdyy\thinkphp\tpl\dispatch_jump.tpl [ array (
+  0 => 'code',
+  1 => 'msg',
+  2 => 'data',
+  3 => 'url',
+  4 => 'wait',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-20T08:55:46+08:00 ] 127.0.0.1 POST /register/index/checkshow.html?mail=846513101@qq.com
+[ info ] www.cdyy.com/register/index/checkshow.html?mail=846513101@qq.com [运行时间：0.046851s][吞吐率：21.34req/s] [内存消耗：1,863.51kb] [文件加载：50]
+[ info ] [ LANG ] D:\xampp\htdocs\cdyy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'register',
+    1 => 'index',
+    2 => 'checkshow',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.cdyy.com',
+  'connection' => 'keep-alive',
+  'content-length' => '11',
+  'cache-control' => 'max-age=0',
+  'origin' => 'http://www.cdyy.com',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.75 Safari/537.36 Maxthon/5.1.7.2000',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'dnt' => '1',
+  'referer' => 'http://www.cdyy.com/register/index/checkshow.html?mail=846513101@qq.com',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN',
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=on7l6h0uaaottum2g0cm4cmb27; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+  'mail' => '846513101@qq.com',
+  'code' => '658682',
+)
+[ info ] [ RUN ] app\register\controller\Index->checkshow[ D:\xampp\htdocs\cdyy\application\register\controller\Index.php ]
+[ info ] [ VIEW ] D:\xampp\htdocs\cdyy\public/../application/register\view\index\checkshow.html [ array (
+  0 => 'email',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-20T08:57:23+08:00 ] 127.0.0.1 POST /register/index/codecheck?mail=846513101@qq.com
+[ info ] www.cdyy.com/register/index/codecheck?mail=846513101@qq.com [运行时间：0.082334s][吞吐率：12.15req/s] [内存消耗：2,846.59kb] [文件加载：59]
+[ info ] [ LANG ] D:\xampp\htdocs\cdyy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'register',
+    1 => 'index',
+    2 => 'codecheck',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.cdyy.com',
+  'connection' => 'keep-alive',
+  'content-length' => '11',
+  'cache-control' => 'max-age=0',
+  'origin' => 'http://www.cdyy.com',
+  'x-devtools-emulate-network-conditions-client-id' => 'b296e9aa-5549-482a-8a57-59c80224c1e9',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.75 Safari/537.36 Maxthon/5.1.7.2000',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'dnt' => '1',
+  'referer' => 'http://www.cdyy.com/register/index/checkshow.html?mail=846513101@qq.com',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN',
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=on7l6h0uaaottum2g0cm4cmb27; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+  'mail' => '846513101@qq.com',
+  'code' => '658682',
+)
+[ info ] [ RUN ] app\register\controller\Index->codecheck[ D:\xampp\htdocs\cdyy\application\register\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ VIEW ] D:\xampp\htdocs\cdyy\thinkphp\tpl\dispatch_jump.tpl [ array (
+  0 => 'code',
+  1 => 'msg',
+  2 => 'data',
+  3 => 'url',
+  4 => 'wait',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000823s ] mysql:host=127.0.0.1;port=3306;dbname=cdyy;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mailcode` [ RunTime:0.006552s ]
+[ sql ] [ SQL ] SELECT * FROM `mailcode` WHERE  `mail` = '846513101@qq.com' LIMIT 1 [ RunTime:0.000390s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.004936s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `mail` = '846513101@qq.com' LIMIT 1 [ RunTime:0.000369s ]
+[ sql ] [ SQL ] UPDATE `user`  SET `status`='需审核'  WHERE  `id` = 36 [ RunTime:0.000918s ]
+---------------------------------------------------------------
+[ 2018-03-20T08:57:26+08:00 ] 127.0.0.1 GET /register/index/checkshow.html?mail=846513101@qq.com
+[ info ] www.cdyy.com/register/index/checkshow.html?mail=846513101@qq.com [运行时间：0.041410s][吞吐率：24.15req/s] [内存消耗：1,714.15kb] [文件加载：48]
+[ info ] [ LANG ] D:\xampp\htdocs\cdyy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'register',
+    1 => 'index',
+    2 => 'checkshow',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.cdyy.com',
+  'connection' => 'keep-alive',
+  'x-devtools-emulate-network-conditions-client-id' => 'b296e9aa-5549-482a-8a57-59c80224c1e9',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.75 Safari/537.36 Maxthon/5.1.7.2000',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'dnt' => '1',
+  'referer' => 'http://www.cdyy.com/register/index/codecheck?mail=846513101@qq.com',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN',
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=on7l6h0uaaottum2g0cm4cmb27; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+  'mail' => '846513101@qq.com',
+)
+[ info ] [ RUN ] app\register\controller\Index->checkshow[ D:\xampp\htdocs\cdyy\application\register\controller\Index.php ]
+[ info ] [ VIEW ] D:\xampp\htdocs\cdyy\public/../application/register\view\index\checkshow.html [ array (
+  0 => 'email',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-20T08:57:33+08:00 ] 127.0.0.1 POST /register/index/codecheck?mail=846513101@qq.com
+[ info ] www.cdyy.com/register/index/codecheck?mail=846513101@qq.com [运行时间：0.090126s][吞吐率：11.10req/s] [内存消耗：2,788.74kb] [文件加载：57]
+[ info ] [ LANG ] D:\xampp\htdocs\cdyy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'register',
+    1 => 'index',
+    2 => 'codecheck',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.cdyy.com',
+  'connection' => 'keep-alive',
+  'content-length' => '11',
+  'cache-control' => 'max-age=0',
+  'origin' => 'http://www.cdyy.com',
+  'x-devtools-emulate-network-conditions-client-id' => 'b296e9aa-5549-482a-8a57-59c80224c1e9',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.75 Safari/537.36 Maxthon/5.1.7.2000',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'dnt' => '1',
+  'referer' => 'http://www.cdyy.com/register/index/checkshow.html?mail=846513101@qq.com',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN',
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=on7l6h0uaaottum2g0cm4cmb27; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+  'mail' => '846513101@qq.com',
+  'code' => '658682',
+)
+[ info ] [ RUN ] app\register\controller\Index->codecheck[ D:\xampp\htdocs\cdyy\application\register\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\xampp\htdocs\cdyy\thinkphp\tpl\dispatch_jump.tpl [ array (
+  0 => 'code',
+  1 => 'msg',
+  2 => 'data',
+  3 => 'url',
+  4 => 'wait',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000737s ] mysql:host=127.0.0.1;port=3306;dbname=cdyy;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mailcode` [ RunTime:0.022681s ]
+[ sql ] [ SQL ] SELECT * FROM `mailcode` WHERE  `mail` = '846513101@qq.com' LIMIT 1 [ RunTime:0.000448s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.005536s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `mail` = '846513101@qq.com' LIMIT 1 [ RunTime:0.000397s ]
+---------------------------------------------------------------
+[ 2018-03-20T08:57:37+08:00 ] 127.0.0.1 GET /register/index/checkshow.html?mail=846513101@qq.com
+[ info ] www.cdyy.com/register/index/checkshow.html?mail=846513101@qq.com [运行时间：0.041098s][吞吐率：24.33req/s] [内存消耗：1,714.15kb] [文件加载：48]
+[ info ] [ LANG ] D:\xampp\htdocs\cdyy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'register',
+    1 => 'index',
+    2 => 'checkshow',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.cdyy.com',
+  'connection' => 'keep-alive',
+  'x-devtools-emulate-network-conditions-client-id' => 'b296e9aa-5549-482a-8a57-59c80224c1e9',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.75 Safari/537.36 Maxthon/5.1.7.2000',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'dnt' => '1',
+  'referer' => 'http://www.cdyy.com/register/index/codecheck?mail=846513101@qq.com',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN',
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=on7l6h0uaaottum2g0cm4cmb27; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+  'mail' => '846513101@qq.com',
+)
+[ info ] [ RUN ] app\register\controller\Index->checkshow[ D:\xampp\htdocs\cdyy\application\register\controller\Index.php ]
+[ info ] [ VIEW ] D:\xampp\htdocs\cdyy\public/../application/register\view\index\checkshow.html [ array (
+  0 => 'email',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-20T08:57:39+08:00 ] 127.0.0.1 POST /register/index/codecheck?mail=846513101@qq.com
+[ info ] www.cdyy.com/register/index/codecheck?mail=846513101@qq.com [运行时间：0.072057s][吞吐率：13.88req/s] [内存消耗：2,788.74kb] [文件加载：57]
+[ info ] [ LANG ] D:\xampp\htdocs\cdyy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'register',
+    1 => 'index',
+    2 => 'codecheck',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.cdyy.com',
+  'connection' => 'keep-alive',
+  'content-length' => '11',
+  'cache-control' => 'max-age=0',
+  'origin' => 'http://www.cdyy.com',
+  'x-devtools-emulate-network-conditions-client-id' => 'b296e9aa-5549-482a-8a57-59c80224c1e9',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.75 Safari/537.36 Maxthon/5.1.7.2000',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'dnt' => '1',
+  'referer' => 'http://www.cdyy.com/register/index/checkshow.html?mail=846513101@qq.com',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN',
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=on7l6h0uaaottum2g0cm4cmb27; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+  'mail' => '846513101@qq.com',
+  'code' => '658682',
+)
+[ info ] [ RUN ] app\register\controller\Index->codecheck[ D:\xampp\htdocs\cdyy\application\register\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\xampp\htdocs\cdyy\thinkphp\tpl\dispatch_jump.tpl [ array (
+  0 => 'code',
+  1 => 'msg',
+  2 => 'data',
+  3 => 'url',
+  4 => 'wait',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000716s ] mysql:host=127.0.0.1;port=3306;dbname=cdyy;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mailcode` [ RunTime:0.004912s ]
+[ sql ] [ SQL ] SELECT * FROM `mailcode` WHERE  `mail` = '846513101@qq.com' LIMIT 1 [ RunTime:0.000374s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.004928s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `mail` = '846513101@qq.com' LIMIT 1 [ RunTime:0.000573s ]
+---------------------------------------------------------------
+[ 2018-03-20T08:57:42+08:00 ] 127.0.0.1 GET /register/index/checkshow.html?mail=846513101@qq.com
+[ info ] www.cdyy.com/register/index/checkshow.html?mail=846513101@qq.com [运行时间：0.041433s][吞吐率：24.14req/s] [内存消耗：1,714.15kb] [文件加载：48]
+[ info ] [ LANG ] D:\xampp\htdocs\cdyy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'register',
+    1 => 'index',
+    2 => 'checkshow',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.cdyy.com',
+  'connection' => 'keep-alive',
+  'x-devtools-emulate-network-conditions-client-id' => 'b296e9aa-5549-482a-8a57-59c80224c1e9',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.75 Safari/537.36 Maxthon/5.1.7.2000',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'dnt' => '1',
+  'referer' => 'http://www.cdyy.com/register/index/codecheck?mail=846513101@qq.com',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN',
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=on7l6h0uaaottum2g0cm4cmb27; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+  'mail' => '846513101@qq.com',
+)
+[ info ] [ RUN ] app\register\controller\Index->checkshow[ D:\xampp\htdocs\cdyy\application\register\controller\Index.php ]
+[ info ] [ VIEW ] D:\xampp\htdocs\cdyy\public/../application/register\view\index\checkshow.html [ array (
+  0 => 'email',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-20T09:00:13+08:00 ] 127.0.0.1 POST /register/index/codecheck?mail=846513101@qq.com
+[ info ] www.cdyy.com/register/index/codecheck?mail=846513101@qq.com [运行时间：0.085182s][吞吐率：11.74req/s] [内存消耗：2,788.37kb] [文件加载：57]
+[ info ] [ LANG ] D:\xampp\htdocs\cdyy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'register',
+    1 => 'index',
+    2 => 'codecheck',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.cdyy.com',
+  'connection' => 'keep-alive',
+  'content-length' => '11',
+  'cache-control' => 'max-age=0',
+  'origin' => 'http://www.cdyy.com',
+  'x-devtools-emulate-network-conditions-client-id' => 'b296e9aa-5549-482a-8a57-59c80224c1e9',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.75 Safari/537.36 Maxthon/5.1.7.2000',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'dnt' => '1',
+  'referer' => 'http://www.cdyy.com/register/index/checkshow.html?mail=846513101@qq.com',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN',
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=on7l6h0uaaottum2g0cm4cmb27; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+  'mail' => '846513101@qq.com',
+  'code' => '658682',
+)
+[ info ] [ RUN ] app\register\controller\Index->codecheck[ D:\xampp\htdocs\cdyy\application\register\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\xampp\htdocs\cdyy\thinkphp\tpl\dispatch_jump.tpl [ array (
+  0 => 'code',
+  1 => 'msg',
+  2 => 'data',
+  3 => 'url',
+  4 => 'wait',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000845s ] mysql:host=127.0.0.1;port=3306;dbname=cdyy;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `mailcode` [ RunTime:0.005483s ]
+[ sql ] [ SQL ] SELECT * FROM `mailcode` WHERE  `mail` = '846513101@qq.com' LIMIT 1 [ RunTime:0.000368s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.004999s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `mail` = '846513101@qq.com' LIMIT 1 [ RunTime:0.000479s ]
+---------------------------------------------------------------
+[ 2018-03-20T09:00:15+08:00 ] 127.0.0.1 GET /register/index/checkshow.html?mail=846513101@qq.com
+[ info ] www.cdyy.com/register/index/checkshow.html?mail=846513101@qq.com [运行时间：0.045525s][吞吐率：21.97req/s] [内存消耗：1,714.95kb] [文件加载：48]
+[ info ] [ LANG ] D:\xampp\htdocs\cdyy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'register',
+    1 => 'index',
+    2 => 'checkshow',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.cdyy.com',
+  'connection' => 'keep-alive',
+  'x-devtools-emulate-network-conditions-client-id' => 'b296e9aa-5549-482a-8a57-59c80224c1e9',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.75 Safari/537.36 Maxthon/5.1.7.2000',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'dnt' => '1',
+  'referer' => 'http://www.cdyy.com/register/index/codecheck?mail=846513101@qq.com',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN',
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=on7l6h0uaaottum2g0cm4cmb27; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+  'mail' => '846513101@qq.com',
+)
+[ info ] [ RUN ] app\register\controller\Index->checkshow[ D:\xampp\htdocs\cdyy\application\register\controller\Index.php ]
+[ info ] [ VIEW ] D:\xampp\htdocs\cdyy\public/../application/register\view\index\checkshow.html [ array (
+  0 => 'email',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-20T09:07:07+08:00 ] 127.0.0.1 GET /register/index/finail
+[ info ] www.cdyy.com/register/index/finail [运行时间：0.052876s][吞吐率：18.91req/s] [内存消耗：1,732.25kb] [文件加载：50]
+[ info ] [ LANG ] D:\xampp\htdocs\cdyy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'register',
+    1 => 'index',
+    2 => 'finail',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.cdyy.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.75 Safari/537.36 Maxthon/5.1.7.2000',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'dnt' => '1',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN',
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=on7l6h0uaaottum2g0cm4cmb27; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-20T09:07:10+08:00 ] 127.0.0.1 GET /register/index/final
+[ info ] www.cdyy.com/register/index/final [运行时间：0.046965s][吞吐率：21.29req/s] [内存消耗：1,732.27kb] [文件加载：50]
+[ info ] [ LANG ] D:\xampp\htdocs\cdyy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'register',
+    1 => 'index',
+    2 => 'final',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.cdyy.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.75 Safari/537.36 Maxthon/5.1.7.2000',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'dnt' => '1',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN',
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=on7l6h0uaaottum2g0cm4cmb27; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-20T09:08:16+08:00 ] 127.0.0.1 GET /register/index/finalreg
+[ info ] www.cdyy.com/register/index/finalreg [运行时间：0.048590s][吞吐率：20.58req/s] [内存消耗：1,732.75kb] [文件加载：50]
+[ info ] [ LANG ] D:\xampp\htdocs\cdyy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'register',
+    1 => 'index',
+    2 => 'finalreg',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.cdyy.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.75 Safari/537.36 Maxthon/5.1.7.2000',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'dnt' => '1',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN',
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=on7l6h0uaaottum2g0cm4cmb27; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-20T09:08:35+08:00 ] 127.0.0.1 GET /register/index/finalreg
+[ info ] www.cdyy.com/register/index/finalreg [运行时间：0.054081s][吞吐率：18.49req/s] [内存消耗：1,889.58kb] [文件加载：54]
+[ info ] [ LANG ] D:\xampp\htdocs\cdyy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'register',
+    1 => 'index',
+    2 => 'finalreg',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.cdyy.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.75 Safari/537.36 Maxthon/5.1.7.2000',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'dnt' => '1',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN',
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=on7l6h0uaaottum2g0cm4cmb27; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\register\controller\Index->finalreg[ D:\xampp\htdocs\cdyy\application\register\controller\Index.php ]
+[ info ] [ VIEW ] D:\xampp\htdocs\cdyy\public/../application/register\view\index\finalreg.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义变量: email[D:\xampp\htdocs\cdyy\runtime\temp\43bcd0860ef9da0518fec9e7053eee0d.php:82]
+---------------------------------------------------------------
+[ 2018-03-20T09:08:57+08:00 ] 127.0.0.1 GET /register/index/finalreg
+[ info ] www.cdyy.com/register/index/finalreg [运行时间：0.047883s][吞吐率：20.88req/s] [内存消耗：1,859.15kb] [文件加载：50]
+[ info ] [ LANG ] D:\xampp\htdocs\cdyy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'register',
+    1 => 'index',
+    2 => 'finalreg',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.cdyy.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.75 Safari/537.36 Maxthon/5.1.7.2000',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'dnt' => '1',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN',
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=on7l6h0uaaottum2g0cm4cmb27; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\register\controller\Index->finalreg[ D:\xampp\htdocs\cdyy\application\register\controller\Index.php ]
+[ info ] [ VIEW ] D:\xampp\htdocs\cdyy\public/../application/register\view\index\finalreg.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-20T09:09:11+08:00 ] 127.0.0.1 GET /register/index/finalreg
+[ info ] www.cdyy.com/register/index/finalreg [运行时间：0.049861s][吞吐率：20.06req/s] [内存消耗：1,859.15kb] [文件加载：50]
+[ info ] [ LANG ] D:\xampp\htdocs\cdyy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'register',
+    1 => 'index',
+    2 => 'finalreg',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.cdyy.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.75 Safari/537.36 Maxthon/5.1.7.2000',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'dnt' => '1',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN',
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=on7l6h0uaaottum2g0cm4cmb27; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\register\controller\Index->finalreg[ D:\xampp\htdocs\cdyy\application\register\controller\Index.php ]
+[ info ] [ VIEW ] D:\xampp\htdocs\cdyy\public/../application/register\view\index\finalreg.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-20T09:09:14+08:00 ] 127.0.0.1 GET /register/index/finalreg
+[ info ] www.cdyy.com/register/index/finalreg [运行时间：0.042300s][吞吐率：23.64req/s] [内存消耗：1,714.10kb] [文件加载：48]
+[ info ] [ LANG ] D:\xampp\htdocs\cdyy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'register',
+    1 => 'index',
+    2 => 'finalreg',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.cdyy.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.75 Safari/537.36 Maxthon/5.1.7.2000',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'dnt' => '1',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN',
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=on7l6h0uaaottum2g0cm4cmb27; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\register\controller\Index->finalreg[ D:\xampp\htdocs\cdyy\application\register\controller\Index.php ]
+[ info ] [ VIEW ] D:\xampp\htdocs\cdyy\public/../application/register\view\index\finalreg.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-20T09:10:41+08:00 ] 127.0.0.1 GET /register/index/finalreg
+[ info ] www.cdyy.com/register/index/finalreg [运行时间：0.046157s][吞吐率：21.67req/s] [内存消耗：1,859.18kb] [文件加载：50]
+[ info ] [ LANG ] D:\xampp\htdocs\cdyy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'register',
+    1 => 'index',
+    2 => 'finalreg',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.cdyy.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.75 Safari/537.36 Maxthon/5.1.7.2000',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'dnt' => '1',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN',
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=on7l6h0uaaottum2g0cm4cmb27; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\register\controller\Index->finalreg[ D:\xampp\htdocs\cdyy\application\register\controller\Index.php ]
+[ info ] [ VIEW ] D:\xampp\htdocs\cdyy\public/../application/register\view\index\finalreg.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-20T09:11:44+08:00 ] 127.0.0.1 GET /register/index/finalreg
+[ info ] www.cdyy.com/register/index/finalreg [运行时间：0.050147s][吞吐率：19.94req/s] [内存消耗：1,859.30kb] [文件加载：50]
+[ info ] [ LANG ] D:\xampp\htdocs\cdyy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'register',
+    1 => 'index',
+    2 => 'finalreg',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.cdyy.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.75 Safari/537.36 Maxthon/5.1.7.2000',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'dnt' => '1',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN',
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=on7l6h0uaaottum2g0cm4cmb27; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\register\controller\Index->finalreg[ D:\xampp\htdocs\cdyy\application\register\controller\Index.php ]
+[ info ] [ VIEW ] D:\xampp\htdocs\cdyy\public/../application/register\view\index\finalreg.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-20T09:11:47+08:00 ] 127.0.0.1 GET /register/index/finalreg
+[ info ] www.cdyy.com/register/index/finalreg [运行时间：0.042206s][吞吐率：23.69req/s] [内存消耗：1,714.12kb] [文件加载：48]
+[ info ] [ LANG ] D:\xampp\htdocs\cdyy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'register',
+    1 => 'index',
+    2 => 'finalreg',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.cdyy.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.75 Safari/537.36 Maxthon/5.1.7.2000',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'dnt' => '1',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN',
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=on7l6h0uaaottum2g0cm4cmb27; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\register\controller\Index->finalreg[ D:\xampp\htdocs\cdyy\application\register\controller\Index.php ]
+[ info ] [ VIEW ] D:\xampp\htdocs\cdyy\public/../application/register\view\index\finalreg.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-20T09:11:48+08:00 ] 127.0.0.1 GET /register/index/finalreg
+[ info ] www.cdyy.com/register/index/finalreg [运行时间：0.041354s][吞吐率：24.18req/s] [内存消耗：1,714.12kb] [文件加载：48]
+[ info ] [ LANG ] D:\xampp\htdocs\cdyy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'register',
+    1 => 'index',
+    2 => 'finalreg',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.cdyy.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.75 Safari/537.36 Maxthon/5.1.7.2000',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'dnt' => '1',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN',
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=on7l6h0uaaottum2g0cm4cmb27; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\register\controller\Index->finalreg[ D:\xampp\htdocs\cdyy\application\register\controller\Index.php ]
+[ info ] [ VIEW ] D:\xampp\htdocs\cdyy\public/../application/register\view\index\finalreg.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-20T09:11:53+08:00 ] 127.0.0.1 GET /register/index/finalreg
+[ info ] www.cdyy.com/register/index/finalreg [运行时间：0.046370s][吞吐率：21.57req/s] [内存消耗：1,859.30kb] [文件加载：50]
+[ info ] [ LANG ] D:\xampp\htdocs\cdyy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'register',
+    1 => 'index',
+    2 => 'finalreg',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.cdyy.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.75 Safari/537.36 Maxthon/5.1.7.2000',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'dnt' => '1',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN',
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=on7l6h0uaaottum2g0cm4cmb27; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\register\controller\Index->finalreg[ D:\xampp\htdocs\cdyy\application\register\controller\Index.php ]
+[ info ] [ VIEW ] D:\xampp\htdocs\cdyy\public/../application/register\view\index\finalreg.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-20T09:12:17+08:00 ] 127.0.0.1 GET /register/index/finalreg
+[ info ] www.cdyy.com/register/index/finalreg [运行时间：0.046769s][吞吐率：21.38req/s] [内存消耗：1,859.30kb] [文件加载：50]
+[ info ] [ LANG ] D:\xampp\htdocs\cdyy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'register',
+    1 => 'index',
+    2 => 'finalreg',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.cdyy.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.75 Safari/537.36 Maxthon/5.1.7.2000',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'dnt' => '1',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN',
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=on7l6h0uaaottum2g0cm4cmb27; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\register\controller\Index->finalreg[ D:\xampp\htdocs\cdyy\application\register\controller\Index.php ]
+[ info ] [ VIEW ] D:\xampp\htdocs\cdyy\public/../application/register\view\index\finalreg.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-20T09:12:19+08:00 ] 127.0.0.1 GET /register/index/finalreg
+[ info ] www.cdyy.com/register/index/finalreg [运行时间：0.043173s][吞吐率：23.16req/s] [内存消耗：1,714.12kb] [文件加载：48]
+[ info ] [ LANG ] D:\xampp\htdocs\cdyy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'register',
+    1 => 'index',
+    2 => 'finalreg',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.cdyy.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.75 Safari/537.36 Maxthon/5.1.7.2000',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'dnt' => '1',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN',
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=on7l6h0uaaottum2g0cm4cmb27; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\register\controller\Index->finalreg[ D:\xampp\htdocs\cdyy\application\register\controller\Index.php ]
+[ info ] [ VIEW ] D:\xampp\htdocs\cdyy\public/../application/register\view\index\finalreg.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-20T09:12:35+08:00 ] 127.0.0.1 GET /register/index/finalreg
+[ info ] www.cdyy.com/register/index/finalreg [运行时间：0.046257s][吞吐率：21.62req/s] [内存消耗：1,859.35kb] [文件加载：50]
+[ info ] [ LANG ] D:\xampp\htdocs\cdyy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'register',
+    1 => 'index',
+    2 => 'finalreg',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.cdyy.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.75 Safari/537.36 Maxthon/5.1.7.2000',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'dnt' => '1',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN',
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=on7l6h0uaaottum2g0cm4cmb27; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\register\controller\Index->finalreg[ D:\xampp\htdocs\cdyy\application\register\controller\Index.php ]
+[ info ] [ VIEW ] D:\xampp\htdocs\cdyy\public/../application/register\view\index\finalreg.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-20T09:13:09+08:00 ] 127.0.0.1 GET /register/index/finalreg
+[ info ] www.cdyy.com/register/index/finalreg [运行时间：0.046236s][吞吐率：21.63req/s] [内存消耗：1,859.39kb] [文件加载：50]
+[ info ] [ LANG ] D:\xampp\htdocs\cdyy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'register',
+    1 => 'index',
+    2 => 'finalreg',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.cdyy.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.75 Safari/537.36 Maxthon/5.1.7.2000',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'dnt' => '1',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN',
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=on7l6h0uaaottum2g0cm4cmb27; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\register\controller\Index->finalreg[ D:\xampp\htdocs\cdyy\application\register\controller\Index.php ]
+[ info ] [ VIEW ] D:\xampp\htdocs\cdyy\public/../application/register\view\index\finalreg.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-20T09:13:14+08:00 ] 127.0.0.1 GET /register/index/finalreg
+[ info ] www.cdyy.com/register/index/finalreg [运行时间：0.041823s][吞吐率：23.91req/s] [内存消耗：1,714.07kb] [文件加载：48]
+[ info ] [ LANG ] D:\xampp\htdocs\cdyy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'register',
+    1 => 'index',
+    2 => 'finalreg',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.cdyy.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.75 Safari/537.36 Maxthon/5.1.7.2000',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'dnt' => '1',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN',
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=on7l6h0uaaottum2g0cm4cmb27; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\register\controller\Index->finalreg[ D:\xampp\htdocs\cdyy\application\register\controller\Index.php ]
+[ info ] [ VIEW ] D:\xampp\htdocs\cdyy\public/../application/register\view\index\finalreg.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-20T09:13:39+08:00 ] 127.0.0.1 GET /register/index/finalreg
+[ info ] www.cdyy.com/register/index/finalreg [运行时间：0.045895s][吞吐率：21.79req/s] [内存消耗：1,859.39kb] [文件加载：50]
+[ info ] [ LANG ] D:\xampp\htdocs\cdyy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'register',
+    1 => 'index',
+    2 => 'finalreg',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.cdyy.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.75 Safari/537.36 Maxthon/5.1.7.2000',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'dnt' => '1',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN',
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=on7l6h0uaaottum2g0cm4cmb27; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\register\controller\Index->finalreg[ D:\xampp\htdocs\cdyy\application\register\controller\Index.php ]
+[ info ] [ VIEW ] D:\xampp\htdocs\cdyy\public/../application/register\view\index\finalreg.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-20T09:15:18+08:00 ] 127.0.0.1 GET /index
+[ info ] www.cdyy.com/index [运行时间：0.054486s][吞吐率：18.35req/s] [内存消耗：1,698.05kb] [文件加载：47]
+[ info ] [ LANG ] D:\xampp\htdocs\cdyy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.cdyy.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.75 Safari/537.36 Maxthon/5.1.7.2000',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'dnt' => '1',
+  'referer' => 'http://www.cdyy.com/register/index/finalreg',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN',
+  'cookie' => 'PHPSESSID=on7l6h0uaaottum2g0cm4cmb27; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ D:\xampp\htdocs\cdyy\application\index\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-20T09:35:31+08:00 ] 127.0.0.1 GET /register/index/finalreg
+[ info ] www.cdyy.com/register/index/finalreg [运行时间：0.045088s][吞吐率：22.18req/s] [内存消耗：1,713.86kb] [文件加载：48]
+[ info ] [ LANG ] D:\xampp\htdocs\cdyy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'register',
+    1 => 'index',
+    2 => 'finalreg',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.cdyy.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.75 Safari/537.36 Maxthon/5.1.7.2000',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'dnt' => '1',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN',
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=on7l6h0uaaottum2g0cm4cmb27; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\register\controller\Index->finalreg[ D:\xampp\htdocs\cdyy\application\register\controller\Index.php ]
+[ info ] [ VIEW ] D:\xampp\htdocs\cdyy\public/../application/register\view\index\finalreg.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-20T09:35:34+08:00 ] 127.0.0.1 GET /register/
+[ info ] www.cdyy.com/register/ [运行时间：0.049554s][吞吐率：20.18req/s] [内存消耗：1,927.75kb] [文件加载：51]
+[ info ] [ LANG ] D:\xampp\htdocs\cdyy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'register',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.cdyy.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.75 Safari/537.36 Maxthon/5.1.7.2000',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'dnt' => '1',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN',
+  'cookie' => 'PHPSESSID=on7l6h0uaaottum2g0cm4cmb27; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\register\controller\Index->index[ D:\xampp\htdocs\cdyy\application\register\controller\Index.php ]
+[ info ] [ VIEW ] D:\xampp\htdocs\cdyy\public/../application/register\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-20T09:35:34+08:00 ] 127.0.0.1 GET /captcha.html
+[ info ] www.cdyy.com/captcha.html [运行时间：0.170930s][吞吐率：5.85req/s] [内存消耗：1,416.38kb] [文件加载：39]
+[ info ] [ LANG ] D:\xampp\htdocs\cdyy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\captcha\\CaptchaController',
+    1 => 'index',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.cdyy.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.75 Safari/537.36 Maxthon/5.1.7.2000',
+  'accept' => 'image/webp,image/*,*/*;q=0.8',
+  'dnt' => '1',
+  'referer' => 'http://www.cdyy.com/register/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN',
+  'cookie' => 'PHPSESSID=on7l6h0uaaottum2g0cm4cmb27; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+  'id' => NULL,
+)
+[ info ] [ RUN ] think\captcha\CaptchaController->index[ D:\xampp\htdocs\cdyy\vendor\topthink\think-captcha\src\CaptchaController.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-20T09:39:00+08:00 ] 127.0.0.1 GET /register/
+[ info ] www.cdyy.com/register/ [运行时间：0.052843s][吞吐率：18.92req/s] [内存消耗：1,929.20kb] [文件加载：51]
+[ info ] [ LANG ] D:\xampp\htdocs\cdyy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'register',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.cdyy.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.75 Safari/537.36 Maxthon/5.1.7.2000',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'dnt' => '1',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN',
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=on7l6h0uaaottum2g0cm4cmb27; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\register\controller\Index->index[ D:\xampp\htdocs\cdyy\application\register\controller\Index.php ]
+[ info ] [ VIEW ] D:\xampp\htdocs\cdyy\public/../application/register\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-20T09:39:00+08:00 ] 127.0.0.1 GET /captcha.html
+[ info ] www.cdyy.com/captcha.html [运行时间：0.142736s][吞吐率：7.01req/s] [内存消耗：1,416.39kb] [文件加载：39]
+[ info ] [ LANG ] D:\xampp\htdocs\cdyy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\captcha\\CaptchaController',
+    1 => 'index',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.cdyy.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.75 Safari/537.36 Maxthon/5.1.7.2000',
+  'accept' => 'image/webp,image/*,*/*;q=0.8',
+  'dnt' => '1',
+  'referer' => 'http://www.cdyy.com/register/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN',
+  'cookie' => 'PHPSESSID=on7l6h0uaaottum2g0cm4cmb27; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+  'id' => NULL,
+)
+[ info ] [ RUN ] think\captcha\CaptchaController->index[ D:\xampp\htdocs\cdyy\vendor\topthink\think-captcha\src\CaptchaController.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-20T09:40:26+08:00 ] 127.0.0.1 GET /register/
+[ info ] www.cdyy.com/register/ [运行时间：0.047378s][吞吐率：21.11req/s] [内存消耗：1,930.09kb] [文件加载：51]
+[ info ] [ LANG ] D:\xampp\htdocs\cdyy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'register',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.cdyy.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.75 Safari/537.36 Maxthon/5.1.7.2000',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'dnt' => '1',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN',
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=on7l6h0uaaottum2g0cm4cmb27; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\register\controller\Index->index[ D:\xampp\htdocs\cdyy\application\register\controller\Index.php ]
+[ info ] [ VIEW ] D:\xampp\htdocs\cdyy\public/../application/register\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-20T09:40:26+08:00 ] 127.0.0.1 GET /captcha.html
+[ info ] www.cdyy.com/captcha.html [运行时间：0.041493s][吞吐率：24.10req/s] [内存消耗：1,416.44kb] [文件加载：39]
+[ info ] [ LANG ] D:\xampp\htdocs\cdyy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\captcha\\CaptchaController',
+    1 => 'index',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.cdyy.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.75 Safari/537.36 Maxthon/5.1.7.2000',
+  'accept' => 'image/webp,image/*,*/*;q=0.8',
+  'dnt' => '1',
+  'referer' => 'http://www.cdyy.com/register/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN',
+  'cookie' => 'PHPSESSID=on7l6h0uaaottum2g0cm4cmb27; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+  'id' => NULL,
+)
+[ info ] [ RUN ] think\captcha\CaptchaController->index[ D:\xampp\htdocs\cdyy\vendor\topthink\think-captcha\src\CaptchaController.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-20T09:40:41+08:00 ] 127.0.0.1 GET /register/
+[ info ] www.cdyy.com/register/ [运行时间：0.048480s][吞吐率：20.63req/s] [内存消耗：1,930.09kb] [文件加载：51]
+[ info ] [ LANG ] D:\xampp\htdocs\cdyy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'register',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.cdyy.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.75 Safari/537.36 Maxthon/5.1.7.2000',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'dnt' => '1',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN',
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=on7l6h0uaaottum2g0cm4cmb27; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\register\controller\Index->index[ D:\xampp\htdocs\cdyy\application\register\controller\Index.php ]
+[ info ] [ VIEW ] D:\xampp\htdocs\cdyy\public/../application/register\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-20T09:40:41+08:00 ] 127.0.0.1 GET /captcha.html
+[ info ] www.cdyy.com/captcha.html [运行时间：0.111241s][吞吐率：8.99req/s] [内存消耗：1,416.36kb] [文件加载：39]
+[ info ] [ LANG ] D:\xampp\htdocs\cdyy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\captcha\\CaptchaController',
+    1 => 'index',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.cdyy.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.75 Safari/537.36 Maxthon/5.1.7.2000',
+  'accept' => 'image/webp,image/*,*/*;q=0.8',
+  'dnt' => '1',
+  'referer' => 'http://www.cdyy.com/register/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN',
+  'cookie' => 'PHPSESSID=on7l6h0uaaottum2g0cm4cmb27; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+  'id' => NULL,
+)
+[ info ] [ RUN ] think\captcha\CaptchaController->index[ D:\xampp\htdocs\cdyy\vendor\topthink\think-captcha\src\CaptchaController.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-20T09:40:50+08:00 ] 127.0.0.1 GET /register/
+[ info ] www.cdyy.com/register/ [运行时间：0.051318s][吞吐率：19.49req/s] [内存消耗：1,930.09kb] [文件加载：51]
+[ info ] [ LANG ] D:\xampp\htdocs\cdyy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'register',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.cdyy.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.75 Safari/537.36 Maxthon/5.1.7.2000',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'dnt' => '1',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN',
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=on7l6h0uaaottum2g0cm4cmb27; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\register\controller\Index->index[ D:\xampp\htdocs\cdyy\application\register\controller\Index.php ]
+[ info ] [ VIEW ] D:\xampp\htdocs\cdyy\public/../application/register\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-20T09:40:50+08:00 ] 127.0.0.1 GET /captcha.html
+[ info ] www.cdyy.com/captcha.html [运行时间：0.038433s][吞吐率：26.02req/s] [内存消耗：1,416.36kb] [文件加载：39]
+[ info ] [ LANG ] D:\xampp\htdocs\cdyy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\captcha\\CaptchaController',
+    1 => 'index',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.cdyy.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.75 Safari/537.36 Maxthon/5.1.7.2000',
+  'accept' => 'image/webp,image/*,*/*;q=0.8',
+  'dnt' => '1',
+  'referer' => 'http://www.cdyy.com/register/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN',
+  'cookie' => 'PHPSESSID=on7l6h0uaaottum2g0cm4cmb27; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+  'id' => NULL,
+)
+[ info ] [ RUN ] think\captcha\CaptchaController->index[ D:\xampp\htdocs\cdyy\vendor\topthink\think-captcha\src\CaptchaController.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-20T09:40:55+08:00 ] 127.0.0.1 GET /register/
+[ info ] www.cdyy.com/register/ [运行时间：0.042473s][吞吐率：23.54req/s] [内存消耗：1,776.18kb] [文件加载：49]
+[ info ] [ LANG ] D:\xampp\htdocs\cdyy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'register',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.cdyy.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.75 Safari/537.36 Maxthon/5.1.7.2000',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'dnt' => '1',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN',
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=on7l6h0uaaottum2g0cm4cmb27; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\register\controller\Index->index[ D:\xampp\htdocs\cdyy\application\register\controller\Index.php ]
+[ info ] [ VIEW ] D:\xampp\htdocs\cdyy\public/../application/register\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-20T09:40:55+08:00 ] 127.0.0.1 GET /captcha.html
+[ info ] www.cdyy.com/captcha.html [运行时间：0.115852s][吞吐率：8.63req/s] [内存消耗：1,416.36kb] [文件加载：39]
+[ info ] [ LANG ] D:\xampp\htdocs\cdyy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\captcha\\CaptchaController',
+    1 => 'index',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.cdyy.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.75 Safari/537.36 Maxthon/5.1.7.2000',
+  'accept' => 'image/webp,image/*,*/*;q=0.8',
+  'dnt' => '1',
+  'referer' => 'http://www.cdyy.com/register/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN',
+  'cookie' => 'PHPSESSID=on7l6h0uaaottum2g0cm4cmb27; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+  'id' => NULL,
+)
+[ info ] [ RUN ] think\captcha\CaptchaController->index[ D:\xampp\htdocs\cdyy\vendor\topthink\think-captcha\src\CaptchaController.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-20T09:41:23+08:00 ] 127.0.0.1 GET /register/
+[ info ] www.cdyy.com/register/ [运行时间：0.057063s][吞吐率：17.52req/s] [内存消耗：1,930.09kb] [文件加载：51]
+[ info ] [ LANG ] D:\xampp\htdocs\cdyy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'register',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.cdyy.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.75 Safari/537.36 Maxthon/5.1.7.2000',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'dnt' => '1',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN',
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=on7l6h0uaaottum2g0cm4cmb27; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\register\controller\Index->index[ D:\xampp\htdocs\cdyy\application\register\controller\Index.php ]
+[ info ] [ VIEW ] D:\xampp\htdocs\cdyy\public/../application/register\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-20T09:41:23+08:00 ] 127.0.0.1 GET /captcha.html
+[ info ] www.cdyy.com/captcha.html [运行时间：0.050428s][吞吐率：19.83req/s] [内存消耗：1,416.42kb] [文件加载：39]
+[ info ] [ LANG ] D:\xampp\htdocs\cdyy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\captcha\\CaptchaController',
+    1 => 'index',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.cdyy.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.75 Safari/537.36 Maxthon/5.1.7.2000',
+  'accept' => 'image/webp,image/*,*/*;q=0.8',
+  'dnt' => '1',
+  'referer' => 'http://www.cdyy.com/register/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN',
+  'cookie' => 'PHPSESSID=on7l6h0uaaottum2g0cm4cmb27; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+  'id' => NULL,
+)
+[ info ] [ RUN ] think\captcha\CaptchaController->index[ D:\xampp\htdocs\cdyy\vendor\topthink\think-captcha\src\CaptchaController.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-20T09:41:44+08:00 ] 127.0.0.1 GET /register/
+[ info ] www.cdyy.com/register/ [运行时间：0.051009s][吞吐率：19.60req/s] [内存消耗：1,930.09kb] [文件加载：51]
+[ info ] [ LANG ] D:\xampp\htdocs\cdyy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'register',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.cdyy.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.75 Safari/537.36 Maxthon/5.1.7.2000',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'dnt' => '1',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN',
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=on7l6h0uaaottum2g0cm4cmb27; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\register\controller\Index->index[ D:\xampp\htdocs\cdyy\application\register\controller\Index.php ]
+[ info ] [ VIEW ] D:\xampp\htdocs\cdyy\public/../application/register\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-20T09:41:44+08:00 ] 127.0.0.1 GET /captcha.html
+[ info ] www.cdyy.com/captcha.html [运行时间：0.043831s][吞吐率：22.81req/s] [内存消耗：1,416.37kb] [文件加载：39]
+[ info ] [ LANG ] D:\xampp\htdocs\cdyy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\captcha\\CaptchaController',
+    1 => 'index',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.cdyy.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.75 Safari/537.36 Maxthon/5.1.7.2000',
+  'accept' => 'image/webp,image/*,*/*;q=0.8',
+  'dnt' => '1',
+  'referer' => 'http://www.cdyy.com/register/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN',
+  'cookie' => 'PHPSESSID=on7l6h0uaaottum2g0cm4cmb27; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+  'id' => NULL,
+)
+[ info ] [ RUN ] think\captcha\CaptchaController->index[ D:\xampp\htdocs\cdyy\vendor\topthink\think-captcha\src\CaptchaController.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-20T09:47:03+08:00 ] 127.0.0.1 GET /register/
+[ info ] www.cdyy.com/register/ [运行时间：0.047784s][吞吐率：20.93req/s] [内存消耗：1,777.38kb] [文件加载：49]
+[ info ] [ LANG ] D:\xampp\htdocs\cdyy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'register',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.cdyy.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.75 Safari/537.36 Maxthon/5.1.7.2000',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'dnt' => '1',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN',
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=on7l6h0uaaottum2g0cm4cmb27; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\register\controller\Index->index[ D:\xampp\htdocs\cdyy\application\register\controller\Index.php ]
+[ info ] [ VIEW ] D:\xampp\htdocs\cdyy\public/../application/register\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-20T09:47:04+08:00 ] 127.0.0.1 GET /captcha.html
+[ info ] www.cdyy.com/captcha.html [运行时间：0.059310s][吞吐率：16.86req/s] [内存消耗：1,416.41kb] [文件加载：39]
+[ info ] [ LANG ] D:\xampp\htdocs\cdyy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\captcha\\CaptchaController',
+    1 => 'index',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.cdyy.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.75 Safari/537.36 Maxthon/5.1.7.2000',
+  'accept' => 'image/webp,image/*,*/*;q=0.8',
+  'dnt' => '1',
+  'referer' => 'http://www.cdyy.com/register/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN',
+  'cookie' => 'PHPSESSID=on7l6h0uaaottum2g0cm4cmb27; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+  'id' => NULL,
+)
+[ info ] [ RUN ] think\captcha\CaptchaController->index[ D:\xampp\htdocs\cdyy\vendor\topthink\think-captcha\src\CaptchaController.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File

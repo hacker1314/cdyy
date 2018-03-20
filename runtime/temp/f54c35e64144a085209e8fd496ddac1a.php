@@ -1,3 +1,4 @@
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:77:"D:\xampp\htdocs\cdyy\public/../application/register\view\index\checkshow.html";i:1521507242;}*/ ?>
 <!DOCTYPE html>
 <html>
     <head>
@@ -34,11 +35,11 @@
                         <p style="font-size: 15px;padding-top: 15px;">验证码已发送至您手机，请输入邮件中的验证码，确保您的邮箱可以及时收到邮件。</p>
                     </span>
                 </div>
-                <form class="layui-form " action="/register/index/codecheck?mail={$email}" method="post" style="margin-left:auto;margin-right:auto;width: 500px">
+                <form class="layui-form " action="/register/index/codecheck?mail=<?php echo $email; ?>" method="post" style="margin-left:auto;margin-right:auto;width: 500px">
                     <div class="layui-form-item">
                         <label class="layui-form-label">邮箱：</label>
 
-                        <div class="layui-form-mid layui-word-aux" style="color: #1997d7">{$email}</div>
+                        <div class="layui-form-mid layui-word-aux" style="color: #1997d7"><?php echo $email; ?></div>
                     </div>
                     <div class="layui-form-item">
                         <label class="layui-form-label">验证码：</label>
@@ -97,7 +98,7 @@
                 hrefDom.className += " layui-btn-disabled";
                 hrefDom.onclick = "";
                 var $ = layui.$;
-                $.post("/register/index/resend", { mail: "{$email}"} );
+                $.post("/register/index/resend", { mail: "<?php echo $email; ?>"} );
                 setTimeout('ok()', 60000);
             }
             function ok() {

@@ -13,6 +13,7 @@ use think\Db;
 use app\index\model\User;
 use think\Session;
 use app\index\model\Mailcode;
+use app\index\model\Studentuser;
 
 /**
  * Description of index
@@ -28,7 +29,7 @@ class Index extends Controller {
     }
 
     //注册邮箱验证
-    public function check($name = "", $email = "", $phone = "", $password1 = "", $password2 = "", $code = "") {
+    public function check($name = "", $email = "", $phone = "", $password1 = "", $password2 = "", $code = "", $xh = "", $xy = "", $zy = "", $st = "") {
 //        $captcha = new \think\captcha\Captcha();
 //        if (!$captcha->check($code)) {
 //            return $this->error('验证码错误！');
@@ -41,23 +42,27 @@ class Index extends Controller {
         $ma = User::getByMail($email);
         if ($ma)
             return $this->error("邮箱已经存在，请重试！");
+        $xh1= Studentuser::getByXuehao($xh);
+        if(!$xh1)
+            return $this->error ("该学号已经注册过账号！");
         $user1 = new User;
         $user1->name = $name;
         $user1->mail = $email;
         $user1->phonenumber = $phone;
-        $user1->password = $password1;
+        $user1->password = md5($password1);
         $user1->usertype = 7;
         $user1->registertime = date("Y-m-d H:i:s", time());
         $user1->status = "邮箱未验证";
         $user1->save();
-        return $this->redirect("/register/index/checkshow");
+        return $this->redirect("/register/index/checkshow", ['mail' => $email]);
     }
 
     //邮箱验证
-    public function checkshow($mail="") {
+    public function checkshow($mail = "") {
         $this->assign('email', $mail);
         return $this->fetch();
     }
+
     //邮箱验证码发送
     public function resend($mail = "") {
         if ($mail == "")
@@ -74,7 +79,7 @@ class Index extends Controller {
                     $mailc->save();
                     $name = 'ndsy';
                     $subject = '宁德师范学院-场地预约管理系统-验证码';
-                    $content = '恭喜您已经提交注册，现在请按照注册界面输入验证码。此次验证码为：'.$code;
+                    $content = '恭喜您已经提交注册，现在请按照注册界面输入验证码。此次验证码为：' . $code;
                     send_mail($mail, $name, $subject, $content);
                 } else {
                     $code = rand('100000', '999999');
@@ -82,7 +87,7 @@ class Index extends Controller {
                     $mc->save();
                     $name = 'ndsy';
                     $subject = '宁德师范学院-场地预约管理系统-验证码';
-                    $content = '恭喜您已经提交注册，现在请按照注册界面输入验证码。此次验证码为：'.$code;
+                    $content = '恭喜您已经提交注册，现在请按照注册界面输入验证码。此次验证码为：' . $code;
                     send_mail($mail, $name, $subject, $content);
                 }
             } else
@@ -90,6 +95,32 @@ class Index extends Controller {
         } else
             return $this->error("该邮箱不存在！");
     }
-    
+
+    //邮箱验证码校验
+    public function codecheck($mail = "", $code = "") {
+        if ($mail == "")
+            return $this->error("邮箱为空！");
+        if ($code == "")
+            return $this->error("请填写验证码！");
+        $mc = Mailcode::getByMail($mail);
+        if ($mc) {
+            $user = User::getByMail($mail);
+            if ($user->status == "邮箱未验证") {
+                if ($mc->code == $code) {
+                    $user = User::getByMail($mail);
+                    $user->status = "需审核";
+                    $user->save();
+                    return $this->success("验证成功！");
+                } else
+                    return $this->error("验证码错误请重试！");
+            } else
+                return $this->success("该邮箱已经验证过！");
+        }
+    }
+
+    //注册成功！
+    public function finalreg() {
+        return $this->fetch();
+    }
 
 }
